@@ -1,9 +1,25 @@
 # Deploy no Netlify (SPA Angular)
 [build]
+  # `prebuild` roda o validador de conteúdo: publicação com JSON inválido falha aqui.
   command = "npm run build"
   publish = "dist/dataprev-study/browser"
 
-# Fallback SPA: todas as rotas servem o index.html
+# Manifesto: pequeno e precisa refletir publicações novas imediatamente.
+# Revalidar sempre custa um 304, e é ele quem anuncia as versões de conteúdo.
+[[headers]]
+  for = "/content/index.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Demais arquivos de conteúdo: buscados com ?v=<contentVersion>, então a URL
+# muda sozinha quando o conteúdo muda — pode cachear de forma imutável.
+[[headers]]
+  for = "/content/*/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fallback SPA: todas as rotas servem o index.html.
+# Arquivos existentes (inclusive /content/**) são servidos antes deste redirect.
 [[redirects]]
   from = "/*"
   to = "/index.html"

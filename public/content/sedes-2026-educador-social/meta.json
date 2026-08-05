@@ -1,0 +1,367 @@
+{
+  "slug": "sedes-2026-educador-social",
+  "name": "SEDES/DF 2026",
+  "role": "EDAS — Educador Social (Cargo 405)",
+  "year": 2026,
+  "examInfo": "Edital 1/2026 · Instituto Quadrix · Prova 06/09/2026 (manhã)",
+  "tree": [
+    {
+      "title": "Conhecimentos Gerais",
+      "children": [
+        {
+          "title": "Língua Portuguesa",
+          "topics": [
+            "Compreensão e interpretação de textos de gêneros variados",
+            "Reconhecimento de tipos e gêneros textuais",
+            "Domínio da ortografia oficial",
+            "Mecanismos de coesão textual: referenciação, substituição, repetição, conectores e sequenciação",
+            "Emprego de tempos e modos verbais",
+            "Estrutura morfossintática do período: classes de palavras",
+            "Relações de coordenação entre orações e entre termos da oração",
+            "Relações de subordinação entre orações e entre termos da oração",
+            "Emprego dos sinais de pontuação",
+            "Concordância verbal e nominal",
+            "Regência verbal e nominal",
+            "Emprego do sinal indicativo de crase",
+            "Colocação dos pronomes átonos",
+            "Reescrita de frases e parágrafos: significação das palavras, substituição de trechos, reorganização de orações e períodos e níveis de formalidade"
+          ]
+        },
+        {
+          "title": "Realidade do Distrito Federal e RIDE",
+          "topics": [
+            "Tópicos atuais e relevantes da realidade étnica, social, histórica, geográfica, cultural, política e econômica do Distrito Federal",
+            "Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE)",
+            "Lei Complementar Federal nº 94/1998 e suas alterações",
+            "Decreto Federal nº 7.469/2011 e suas alterações"
+          ]
+        },
+        {
+          "title": "Plano Distrital de Políticas para Mulheres (PDPM)",
+          "topics": [
+            "Estrutura e objetivos do Plano Distrital de Políticas para Mulheres",
+            "Eixos temáticos e metas",
+            "Comitê de Articulação e Monitoramento",
+            "Interface com a política de assistência social"
+          ]
+        },
+        {
+          "title": "Lei Orgânica do DF — Ordem Social e Meio Ambiente",
+          "topics": [
+            "Título VI da Lei Orgânica do Distrito Federal — Da Ordem Social e do Meio Ambiente",
+            "Seguridade social, saúde, assistência social e previdência no âmbito distrital",
+            "Educação, cultura, desporto, ciência e tecnologia",
+            "Família, criança, adolescente, pessoa idosa e pessoa com deficiência",
+            "Meio ambiente e ordem urbanística"
+          ]
+        },
+        {
+          "title": "LC nº 840/2011 — Deveres, Regime Disciplinar e PAD",
+          "topics": [
+            "Título I — Das Disposições Preliminares",
+            "Título V — Dos Deveres",
+            "Título VI — Do Regime Disciplinar: proibições, acumulação, responsabilidades e penalidades",
+            "Título VII — Dos Processos de Apuração de Infração Disciplinar: sindicância e processo administrativo disciplinar"
+          ]
+        },
+        {
+          "title": "Lei Maria da Penha (Lei nº 11.340/2006)",
+          "topics": [
+            "Formas de violência doméstica e familiar contra a mulher",
+            "Assistência à mulher em situação de violência doméstica e familiar",
+            "Atendimento pela autoridade policial",
+            "Medidas protetivas de urgência",
+            "Equipe de atendimento multidisciplinar e rede de serviços",
+            "Mínimo de 3 questões na prova objetiva (art. 6º da Lei Distrital nº 7.462/2024)"
+          ]
+        },
+        {
+          "title": "Lei Distrital nº 7.484/2024 — Carreira de Desenvolvimento e Assistência Social",
+          "topics": [
+            "Reestruturação da carreira pública de Desenvolvimento e Assistência Social",
+            "Composição: EDAS, TDAS e Auxiliar em Desenvolvimento e Assistência Social",
+            "Requisitos de ingresso e atribuições",
+            "Desenvolvimento na carreira, jornada e gestão"
+          ]
+        },
+        {
+          "title": "Noções de Primeiros Socorros",
+          "topics": [
+            "Cuidados iniciais com a vítima e avaliação da cena",
+            "Reconhecimento de situações de urgência e emergência",
+            "Acionamento do socorro especializado",
+            "Condutas básicas em engasgo (obstrução de vias aéreas)",
+            "Condutas básicas em sangramento e fratura",
+            "Condutas básicas em queimadura",
+            "Condutas básicas em desmaio e convulsão",
+            "Condutas básicas em intoxicação"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Específicos Comuns — EDAS",
+      "children": [
+        {
+          "title": "LOAS, PNAS/2004 e SUAS",
+          "topics": [
+            "Lei Orgânica da Assistência Social (Lei nº 8.742/1993): princípios, diretrizes e objetivos",
+            "Política Nacional de Assistência Social (PNAS/2004): organização da assistência social",
+            "Proteção Social Básica e Proteção Social Especial de média e alta complexidade",
+            "Seguranças socioassistenciais: acolhida, renda, convívio, autonomia e apoio em situações de contingência",
+            "Matricialidade sociofamiliar",
+            "Territorialização e intersetorialidade",
+            "Descentralização político-administrativa e comando único"
+          ]
+        },
+        {
+          "title": "NOB/SUAS e NOB-RH/SUAS",
+          "topics": [
+            "NOB/SUAS 2012: responsabilidades dos entes federados",
+            "Cofinanciamento, blocos de financiamento e Fundos de Assistência Social",
+            "Gestão do trabalho e estruturação da rede socioassistencial",
+            "Vigilância socioassistencial e Índice de Gestão Descentralizada",
+            "NOB-RH/SUAS (Resolução CNAS nº 269/2006): equipes de referência, princípios éticos e educação permanente"
+          ]
+        },
+        {
+          "title": "Tipificação Nacional de Serviços Socioassistenciais",
+          "topics": [
+            "Resolução CNAS nº 109/2009",
+            "Serviços da Proteção Social Básica: PAIF, SCFV e Proteção Social Básica no Domicílio",
+            "Serviços da Proteção Social Especial de Média Complexidade: PAEFI, Abordagem Social, MSE em meio aberto, Serviço para pessoa com deficiência e idosa",
+            "Serviços da Proteção Social Especial de Alta Complexidade: acolhimento institucional, república, família acolhedora e calamidades",
+            "Usuários, objetivos, provisões, aquisições e unidades de referência"
+          ]
+        },
+        {
+          "title": "Pactuação, Deliberação e Controle Social no SUAS",
+          "topics": [
+            "Comissão Intergestores Tripartite (CIT) e Bipartite (CIB)",
+            "Conselhos de Assistência Social: composição, natureza e competências",
+            "Conferências de Assistência Social",
+            "Controle social, participação popular e paridade"
+          ]
+        },
+        {
+          "title": "CadÚnico e Protocolo de Gestão Integrada",
+          "topics": [
+            "Cadastro Único para Programas Sociais: finalidade, unidade familiar e responsável familiar",
+            "Renda familiar per capita e critérios de inclusão",
+            "Protocolo de Gestão Integrada de Serviços, Benefícios e Transferências de Renda (Resolução CIT nº 7/2009)",
+            "Acompanhamento familiar e descumprimento de condicionalidades",
+            "Benefício de Prestação Continuada (BPC) e sua relação com os serviços"
+          ]
+        },
+        {
+          "title": "MROSC — Parcerias com Organizações da Sociedade Civil",
+          "topics": [
+            "Lei Federal nº 13.019/2014 e suas alterações",
+            "Instrumentos: termo de colaboração, termo de fomento e acordo de cooperação",
+            "Chamamento público e hipóteses de dispensa e inexigibilidade",
+            "Execução, monitoramento e avaliação das parcerias",
+            "Prestação de contas e responsabilidades"
+          ]
+        },
+        {
+          "title": "Criança, Adolescente e Juventude — ECA e SINASE",
+          "topics": [
+            "Estatuto da Criança e do Adolescente (Lei nº 8.069/1990): princípios e direitos fundamentais",
+            "Direito à convivência familiar e comunitária, acolhimento e adoção",
+            "Medidas de proteção e Conselho Tutelar",
+            "SINASE (Lei nº 12.594/2012) e medidas socioeducativas",
+            "Estatuto Digital da Criança e do Adolescente (Lei nº 15.211/2025)",
+            "Violência contra crianças e adolescentes e escuta protegida (Lei nº 13.431/2017)"
+          ]
+        },
+        {
+          "title": "Mulheres e Violência de Gênero",
+          "topics": [
+            "Violência doméstica e familiar contra a mulher: formas e ciclo",
+            "Medidas protetivas de urgência",
+            "Rede de atendimento e fluxos intersetoriais",
+            "Política Nacional de Enfrentamento à Violência contra as Mulheres",
+            "Feminicídio e Lei nº 14.164/2021"
+          ]
+        },
+        {
+          "title": "Pessoa Idosa e Pessoa com Deficiência",
+          "topics": [
+            "Estatuto da Pessoa Idosa (Lei nº 10.741/2003)",
+            "Política Nacional do Idoso (Lei nº 8.842/1994)",
+            "Lei Brasileira de Inclusão (Lei nº 13.146/2015)",
+            "Acessibilidade, barreiras e desenho universal",
+            "Violência e violação de direitos contra idosos e pessoas com deficiência"
+          ]
+        },
+        {
+          "title": "População em Situação de Rua, Pobreza e Exclusão Social",
+          "topics": [
+            "Política Nacional para a População em Situação de Rua (Decreto nº 7.053/2009)",
+            "Desproteção social, pobreza e exclusão",
+            "Centro POP e Serviço Especializado em Abordagem Social",
+            "Acesso a documentação civil, benefícios e direitos"
+          ]
+        },
+        {
+          "title": "Diversidade, Equidade e Relações Étnico-Raciais",
+          "topics": [
+            "Diversidade sexual e de gênero: nome social e identidade de gênero",
+            "Relações étnico-raciais e racismo estrutural",
+            "Crimes resultantes de preconceito de raça ou de cor (Lei nº 7.716/1989)",
+            "Entendimento do STF sobre homotransfobia (ADO 26 e MI 4.733)",
+            "Equidade no acesso aos serviços socioassistenciais"
+          ]
+        },
+        {
+          "title": "Programas e Benefícios Socioassistenciais do DF",
+          "topics": [
+            "Cartão Prato Cheio (Lei Distrital nº 7.009/2021; Decreto nº 42.873/2021)",
+            "Cartão Gás (Lei Distrital nº 6.938/2021; Decreto nº 42.376/2021)",
+            "Plano DF Social (Lei Distrital nº 7.008/2021; Decreto nº 42.872/2021; Portaria nº 42/2023)",
+            "Benefícios Eventuais no DF (Lei Distrital nº 5.165/2013; Decreto nº 35.191/2014)",
+            "SISAN e Restaurantes Comunitários (Seção II do Decreto nº 33.329/2011)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Educador Social — Específicos (Cargo 405)",
+      "children": [
+        {
+          "title": "Seguridade Social e Política Social",
+          "topics": [
+            "Seguridade Social no Brasil: conceito, organização e financiamento",
+            "Trajetória histórica da proteção social brasileira",
+            "Políticas públicas: conceito, formulação, ciclo, implementação e avaliação",
+            "Relação entre Estado, sociedade civil e políticas sociais"
+          ]
+        },
+        {
+          "title": "Matricialidade Sociofamiliar e Vigilância Socioassistencial",
+          "topics": [
+            "Matricialidade sociofamiliar no âmbito do SUAS",
+            "Territorialização e leitura do território",
+            "Vigilância socioassistencial: produção e uso de informação",
+            "Indicadores de vulnerabilidade e risco social"
+          ]
+        },
+        {
+          "title": "Família Contemporânea e Vulnerabilidade",
+          "topics": [
+            "Transformações históricas da família",
+            "Novas configurações familiares",
+            "Dinâmicas de vulnerabilidade social e fatores de proteção",
+            "Superação da visão normativa e moralizadora sobre as famílias"
+          ]
+        },
+        {
+          "title": "Educador Social na Proteção Social Básica (PAIF e SCFV)",
+          "topics": [
+            "Inserção e papel do Educador Social no CRAS",
+            "Serviço de Proteção e Atendimento Integral à Família (PAIF)",
+            "Serviço de Convivência e Fortalecimento de Vínculos (SCFV): percursos, grupos e público prioritário",
+            "Trabalho social essencial e ações particularizadas",
+            "Prevenção de situações de risco social"
+          ]
+        },
+        {
+          "title": "Educador Social na Proteção Social Especial (PAEFI e Abordagem)",
+          "topics": [
+            "Inserção e papel do Educador Social no CREAS",
+            "Serviço de Proteção e Atendimento Especializado a Famílias e Indivíduos (PAEFI)",
+            "Serviço Especializado em Abordagem Social",
+            "Acompanhamento de situações de violação de direitos",
+            "Articulação com o Sistema de Garantia de Direitos"
+          ]
+        },
+        {
+          "title": "Serviços de Acolhimento Institucional e Familiar",
+          "topics": [
+            "Princípios do acolhimento: excepcionalidade, provisoriedade e preservação de vínculos",
+            "Rotinas de cuidado e organização da vida cotidiana",
+            "Mediação de conflitos e construção de autonomia",
+            "Plano Individual de Atendimento (PIA) e reintegração familiar",
+            "Modalidades: abrigo institucional, casa-lar, república e família acolhedora"
+          ]
+        },
+        {
+          "title": "Rede de Proteção Social e Intersetorialidade",
+          "topics": [
+            "Fluxos de atendimento, referência e contrarreferência",
+            "Articulação entre Assistência Social, Saúde, Educação e Justiça",
+            "Sistema de Garantia de Direitos e órgãos de defesa",
+            "Trabalho em rede e corresponsabilidade"
+          ]
+        },
+        {
+          "title": "Trabalho Social com Famílias, Indivíduos e Grupos",
+          "topics": [
+            "Metodologias do trabalho social com famílias",
+            "Trabalho com grupos: formação, condução e avaliação",
+            "Acompanhamento sociofamiliar",
+            "Postura ética e não julgadora"
+          ]
+        },
+        {
+          "title": "Abordagem Social, Acolhida e Escuta Qualificada",
+          "topics": [
+            "Abordagem social em contextos de alta vulnerabilidade nas ruas e nos abrigos",
+            "Acolhida e escuta qualificada",
+            "Construção de vínculo de confiança e adesão ao atendimento",
+            "Respeito à autonomia e ao tempo do usuário",
+            "Busca ativa e mapeamento territorial"
+          ]
+        },
+        {
+          "title": "Interdisciplinaridade e Trabalho em Equipe",
+          "topics": [
+            "Interdisciplinaridade, multidisciplinaridade e transdisciplinaridade",
+            "Equipes de referência e composição mínima",
+            "Reuniões de equipe, estudo de caso e supervisão",
+            "Registro compartilhado e sigilo profissional"
+          ]
+        },
+        {
+          "title": "Planejamento e Avaliação de Ações Socioeducativas",
+          "topics": [
+            "Planejamento participativo de ações socioeducativas",
+            "Execução e registro das atividades",
+            "Monitoramento e avaliação de processos e resultados",
+            "Elaboração de material didático-pedagógico",
+            "Organização de eventos artísticos, lúdicos e culturais"
+          ]
+        },
+        {
+          "title": "Política sobre Drogas e Redução de Danos",
+          "topics": [
+            "Política Nacional sobre Drogas (Lei nº 11.343/2006 e alterações)",
+            "SISNAD e a rede de atenção",
+            "Dependência química: conceitos e determinantes sociais",
+            "Estratégias de Redução de Danos",
+            "Abordagem humanizada e não estigmatizante"
+          ]
+        },
+        {
+          "title": "Orientações Técnicas: Serviços de Acolhimento",
+          "topics": [
+            "Resolução Conjunta CNAS/CONANDA nº 1/2009",
+            "Parâmetros de funcionamento dos serviços de acolhimento para crianças e adolescentes",
+            "Recursos humanos, infraestrutura e capacidade de atendimento",
+            "Plano Nacional de Convivência Familiar e Comunitária"
+          ]
+        },
+        {
+          "title": "Direitos Humanos e Diretrizes Internacionais",
+          "topics": [
+            "Declaração Universal dos Direitos Humanos",
+            "Convenção sobre os Direitos da Criança",
+            "Diretrizes de RIAD — Prevenção da Delinquência Juvenil",
+            "Regras de Beijing — Administração da Justiça da Infância e da Juventude",
+            "Doutrina da proteção integral e prioridade absoluta"
+          ]
+        }
+      ]
+    }
+  ]
+}

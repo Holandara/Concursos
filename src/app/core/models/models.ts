@@ -16,6 +16,8 @@ export interface Contest {
   name: string;
   role: string;
   year: number;
+  /** Linha de rodapé do menu: banca, número do edital, data da prova. */
+  examInfo?: string;
   createdAt: number;
   updatedAt: number;
 }

@@ -20,9 +20,12 @@ export class ReviewService {
   async refresh(): Promise<void> {
     const endOfToday = new Date();
     endOfToday.setHours(23, 59, 59, 999);
+    // Só o concurso ativo: o sino da sidebar avisa sobre o que está em estudo,
+    // não sobre revisões de um edital que a pessoa deixou de lado.
+    const scope = this.store.scopeIds();
     const list = await db.reviews
       .where('done').equals(0)
-      .and((r) => r.dueAt <= endOfToday.getTime())
+      .and((r) => r.dueAt <= endOfToday.getTime() && scope.has(r.subjectId))
       .toArray();
     this.due.set(list.sort((a, b) => a.dueAt - b.dueAt));
   }

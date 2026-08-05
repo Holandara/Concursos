@@ -3,10 +3,12 @@ import { db } from '../../../core/db/database';
 import { REVIEW_INTERVALS, ReviewEntry, StudySession } from '../../../core/models/models';
 import { ReviewService } from '../../../core/services/review.service';
 import { SubjectStore } from '../../../core/services/subject.store';
+import { IconComponent } from '../../../shared/icon/icon.component';
 
 @Component({
   selector: 'app-reviews-tab',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [IconComponent],
   template: `
   @if (subject(); as s) {
     <div class="space-y-5">
@@ -62,7 +64,9 @@ import { SubjectStore } from '../../../core/services/subject.store';
         </div>
 
         <div class="mt-3">
-          <div class="label">✅ Revisei agora — agendar próxima em:</div>
+          <div class="label flex items-center gap-1.5">
+            <app-icon name="success" [size]="13" /> Revisei agora — agendar próxima em:
+          </div>
           <div class="flex flex-wrap gap-2">
             @for (d of intervals; track d) {
               <button type="button" class="btn" (click)="complete(d)">{{ d }} dia{{ d > 1 ? 's' : '' }}</button>
@@ -71,7 +75,9 @@ import { SubjectStore } from '../../../core/services/subject.store';
           </div>
         </div>
         <div class="mt-3">
-          <div class="label">📅 Apenas agendar (sem marcar como revisado):</div>
+          <div class="label flex items-center gap-1.5">
+            <app-icon name="calendar" [size]="13" /> Apenas agendar (sem marcar como revisado):
+          </div>
           <div class="flex flex-wrap gap-2">
             @for (d of intervals; track d) {
               <button type="button" class="btn !py-1 text-xs" (click)="schedule(d)">{{ d }}d</button>
@@ -86,7 +92,7 @@ import { SubjectStore } from '../../../core/services/subject.store';
         <div class="mt-2 space-y-1.5">
           @for (r of history(); track r.id) {
             <div class="flex items-center gap-2 text-sm text-soft">
-              <span>{{ r.done ? '✅' : '⏳' }}</span>
+              <app-icon [name]="r.done ? 'success' : 'clock'" [size]="14" />
               <span>
                 @if (r.done) { Revisado em {{ formatDate(r.completedAt!) }} }
                 @else { Agendado para {{ formatDate(r.dueAt) }} }

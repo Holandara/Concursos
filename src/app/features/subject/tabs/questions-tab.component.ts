@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { IconComponent } from '../../../shared/icon/icon.component';
 import { db, now } from '../../../core/db/database';
 import {
   DIFFICULTY_LABEL, Difficulty, QSTATUS_LABEL, Question, QuestionStatus,
@@ -26,7 +27,7 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 @Component({
   selector: 'app-questions-tab',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule],
+  imports: [FormsModule, IconComponent],
   template: `
   <div class="space-y-4">
     <!-- Barra de ações / filtros -->
@@ -39,10 +40,13 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
       </select>
       <label class="flex cursor-pointer items-center gap-1.5 text-sm text-soft">
         <input type="checkbox" [ngModel]="onlyFavorites()" (ngModelChange)="onlyFavorites.set($event)"
-               class="accent-[var(--accent)]"> ★ favoritas
+               class="accent-[var(--accent)]">
+        <app-icon name="star" [size]="13" [filled]="true" class="text-accent" />favoritas
       </label>
       <span class="ml-auto"></span>
-      <button type="button" class="btn btn-primary" (click)="startNew()">＋ Nova questão</button>
+      <button type="button" class="btn btn-primary" (click)="startNew()">
+        <app-icon name="add" [size]="15" />Nova questão
+      </button>
     </div>
 
     <!-- Formulário -->
@@ -65,13 +69,15 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
                 <input class="input" [ngModel]="d.options[i]"
                        (ngModelChange)="d.options[i] = $event" placeholder="Texto da alternativa">
                 @if (d.options.length > 2) {
-                  <button type="button" class="icon-btn btn-danger" (click)="removeOption(i)">✕</button>
+                  <button type="button" class="icon-btn btn-danger" (click)="removeOption(i)"><app-icon name="close" /></button>
                 }
               </div>
             }
           </div>
           @if (d.options.length < 6) {
-            <button type="button" class="btn btn-ghost mt-2 text-xs" (click)="d.options.push('')">＋ alternativa</button>
+            <button type="button" class="btn btn-ghost mt-2 text-xs" (click)="d.options.push('')">
+              <app-icon name="add" [size]="13" />alternativa
+            </button>
           }
         </div>
         <div class="grid gap-3 sm:grid-cols-3">
@@ -114,12 +120,12 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
           @for (tag of question.tags; track tag) { <span class="chip" style="background: var(--sel); color: var(--accent);">#{{ tag }}</span> }
           <span class="ml-auto flex items-center">
             <button type="button" class="icon-btn" [title]="question.favorite ? 'Desfavoritar' : 'Favoritar'" (click)="toggleFavorite(question)">
-              {{ question.favorite ? '★' : '☆' }}
+              <app-icon name="star" [filled]="question.favorite === 1" />
             </button>
-            <button type="button" class="icon-btn" title="Marcar para revisar" (click)="setStatus(question, 'revisar')">🔖</button>
-            <button type="button" class="icon-btn" title="Editar" (click)="edit(question)">🖊</button>
-            <button type="button" class="icon-btn" title="Duplicar" (click)="duplicate(question)">⧉</button>
-            <button type="button" class="icon-btn btn-danger" title="Excluir" (click)="remove(question)">🗑</button>
+            <button type="button" class="icon-btn" title="Marcar para revisar" (click)="setStatus(question, 'revisar')"><app-icon name="bookmark" /></button>
+            <button type="button" class="icon-btn" title="Editar" (click)="edit(question)"><app-icon name="edit" /></button>
+            <button type="button" class="icon-btn" title="Duplicar" (click)="duplicate(question)"><app-icon name="duplicate" /></button>
+            <button type="button" class="icon-btn btn-danger" title="Excluir" (click)="remove(question)"><app-icon name="delete" /></button>
           </span>
         </div>
 
@@ -143,7 +149,11 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
           <div class="mt-3 rounded-lg border border-line p-3 text-sm"
                [style.background]="answeredIdx(question.id!) === question.correct ? 'color-mix(in srgb, var(--ok) 8%, transparent)' : 'color-mix(in srgb, var(--bad) 8%, transparent)'">
             <div class="font-semibold">
-              {{ answeredIdx(question.id!) === question.correct ? '✅ Você acertou!' : '❌ Você errou.' }}
+              @if (answeredIdx(question.id!) === question.correct) {
+                <app-icon name="success" [size]="15" /> Você acertou!
+              } @else {
+                <app-icon name="error" [size]="15" /> Você errou.
+              }
               Gabarito: {{ letters[question.correct] }}
             </div>
             @if (question.justification) { <p class="mt-1"><b>Justificativa:</b> {{ question.justification }}</p> }
@@ -159,7 +169,7 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
     } @empty {
       @if (!draft()) {
         <div class="card p-8 text-center text-sm text-faint">
-          Nenhuma questão ainda. Crie a primeira com <b>＋ Nova questão</b>.
+          Nenhuma questão ainda. Crie a primeira com <b>Nova questão</b>.
         </div>
       }
     }

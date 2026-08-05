@@ -1,0 +1,598 @@
+{
+  "subjects": [
+    {
+      "subject": "Língua Portuguesa",
+      "summary": "\n<h1>Língua Portuguesa — mapa do edital</h1>\n<p>São <strong>20 questões de conhecimentos gerais</strong> valendo <strong>1 ponto cada</strong>, e a nota mínima é <strong>10 pontos</strong> nessa área. Português divide esse bloco com Conhecimentos do DF, legislação e primeiros socorros — ou seja, cada questão pesa. A prova <strong>discursiva</strong> também avalia o <strong>Domínio da Modalidade Escrita da Língua Portuguesa (DLP)</strong>, com peso 1,5.</p>\n\n<h2>1. Interpretação de textos</h2>\n<ul>\n<li>Diferencie <strong>informação explícita</strong> (está no texto), <strong>inferência</strong> (decorre necessariamente do texto) e <strong>extrapolação</strong> (vai além — quase sempre a alternativa errada);</li>\n<li>Atenção aos <strong>operadores argumentativos</strong>: <em>mas, porém, contudo, entretanto</em> (oposição); <em>portanto, logo, assim</em> (conclusão); <em>pois, porque, já que</em> (explicação/causa); <em>embora, ainda que, conquanto</em> (concessão);</li>\n<li>Tipos textuais: <strong>narração, descrição, dissertação (expositiva e argumentativa), injunção</strong>. Gêneros: notícia, editorial, artigo de opinião, carta, relatório, ofício, verbete, crônica.</li>\n</ul>\n\n<h2>2. Coesão e coerência</h2>\n<ul>\n<li><strong>Coesão referencial</strong>: anáfora (retoma o que veio antes) e catáfora (antecipa o que vem depois); pronomes, sinônimos, hiperônimos, elipse;</li>\n<li><strong>Coesão sequencial</strong>: conectivos que encadeiam as ideias;</li>\n<li><strong>Coerência</strong>: não contradição, continuidade temática, progressão e articulação lógica.</li>\n</ul>\n\n<h2>3. Crase — o essencial</h2>\n<ul>\n<li>Ocorre na fusão da preposição <strong>a</strong> com o artigo <strong>a(s)</strong> ou com os pronomes <strong>aquele(s), aquela(s), aquilo</strong>;</li>\n<li><strong>Não ocorre</strong> antes de palavra masculina (salvo <em>à moda de</em>), verbo, pronome pessoal, pronomes de tratamento (exceto senhora, senhorita, dona), palavra no plural precedida de <em>a</em> singular, e entre palavras repetidas (<em>cara a cara</em>, <em>gota a gota</em>);</li>\n<li><strong>Facultativa</strong> antes de nome próprio feminino, pronome possessivo feminino e depois de <em>até</em>;</li>\n<li>Teste prático: troque por palavra masculina. <em>Refiro-me à professora</em> → <em>ao professor</em>: há crase.</li>\n</ul>\n\n<h2>4. Concordância — os casos que mais caem</h2>\n<ul>\n<li><strong>Verbo haver</strong> no sentido de existir e <strong>fazer</strong> indicando tempo: <strong>impessoais</strong>, sempre no singular (<em>Havia muitas famílias</em>; <em>Faz dois anos</em>);</li>\n<li><strong>Verbo ser</strong> concorda com o predicativo em expressões como <em>é preciso, é necessário, é proibido</em> — sem determinante, fica invariável;</li>\n<li><strong>Partícula apassivadora se</strong>: verbo concorda com o sujeito (<em>Vendem-se casas</em>). <strong>Índice de indeterminação do sujeito</strong>: verbo no singular (<em>Precisa-se de educadores</em>);</li>\n<li>Sujeito composto <strong>anteposto</strong>: verbo no plural; <strong>posposto</strong>: plural ou concordância com o mais próximo.</li>\n</ul>\n\n<h2>5. Regência e colocação pronominal</h2>\n<ul>\n<li><strong>Assistir</strong> = ver (transitivo indireto, com <em>a</em>) / = ajudar (transitivo direto);</li>\n<li><strong>Visar</strong> = ter por objetivo (transitivo indireto) / = mirar, dar visto (transitivo direto);</li>\n<li><strong>Implicar</strong> no sentido de acarretar: <strong>transitivo direto</strong>, sem preposição;</li>\n<li><strong>Preferir</strong>: prefere-se algo <strong>a</strong> outra coisa — nunca <em>do que</em>;</li>\n<li>Colocação: palavras atrativas (negação, advérbio, pronome relativo, indefinido, interrogativo e conjunção subordinativa) puxam a <strong>próclise</strong>; a <strong>mesóclise</strong> aparece com futuro do presente ou do pretérito sem fator de próclise.</li>\n</ul>\n\n<h2>6. Pontuação</h2>\n<ul>\n<li><strong>Nunca</strong> separe sujeito de predicado, nem verbo de complemento, por uma única vírgula;</li>\n<li>Vírgula obrigatória: aposto explicativo, vocativo, adjuntos adverbiais deslocados de certa extensão, orações coordenadas assindéticas e <strong>orações adjetivas explicativas</strong>;</li>\n<li>Sem vírgula: <strong>oração adjetiva restritiva</strong> — distinção que muda o sentido e é campeã em provas.</li>\n</ul>\n\n<h2>7. Foco para a discursiva</h2>\n<p>O critério DLP avalia ortografia, pontuação, morfossintaxe e propriedade vocabular. Estratégias: períodos curtos; evitar subordinações encadeadas; revisar concordância e crase ao final; e não repetir a mesma palavra em frases seguidas.</p>\n",
+      "questions": [
+        {
+          "statement": "Assinale a alternativa em que o sinal indicativo de crase foi empregado corretamente.",
+          "options": [
+            "O relatório foi entregue à todos os membros da equipe.",
+            "A equipe começou à trabalhar no novo percurso do serviço.",
+            "O educador social referiu-se à situação de vulnerabilidade da família.",
+            "Os educadores sociais dirigiram-se à reuniões previamente agendadas.",
+            "Entregamos o material à Vossa Senhoria na data prevista."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Crase",
+          "tags": [
+            "crase",
+            "gramática"
+          ],
+          "comment": "Regra rápida: antes de pronome indefinido (todos), verbo (trabalhar) e pronome de tratamento (Vossa Senhoria) não há crase.",
+          "justification": "Em 'referiu-se à situação', o verbo referir-se exige a preposição a e o substantivo situação admite o artigo feminino a — daí a crase. Em 'à todos' e 'à Vossa Senhoria' não cabe artigo; antes de verbo ('à trabalhar') nunca há crase; e diante de palavra no plural precedida de 'a' no singular ('à reuniões') também não ocorre."
+        },
+        {
+          "statement": "Assinale a alternativa em que a concordância verbal está correta.",
+          "options": [
+            "Haviam muitas famílias aguardando atendimento no CRAS.",
+            "Fazem dois anos que o serviço foi implantado no território.",
+            "Precisam-se de educadores sociais para o novo percurso.",
+            "Vendem-se materiais pedagógicos produzidos pelo grupo.",
+            "Deve existir barreiras atitudinais no atendimento ao público."
+          ],
+          "correct": 3,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Concordância verbal",
+          "tags": [
+            "concordância",
+            "verbos impessoais",
+            "voz passiva sintética"
+          ],
+          "comment": "Trio clássico: haver (existir) e fazer (tempo) são impessoais; se apassivador concorda; se índice de indeterminação fica no singular.",
+          "justification": "'Vendem-se materiais' é voz passiva sintética — materiais é sujeito e o verbo concorda no plural. Haver (existir) e fazer (tempo) são impessoais: 'Havia' e 'Faz'. Em 'Precisa-se de educadores', o se é índice de indeterminação do sujeito, exigindo singular. Em 'Devem existir barreiras', o verbo existir é pessoal e o auxiliar deve concordar."
+        },
+        {
+          "statement": "No período \"Embora a família tenha sido incluída no serviço, os encaminhamentos não foram concluídos\", a oração destacada pela conjunção estabelece relação de:",
+          "options": [
+            "causa.",
+            "concessão.",
+            "conclusão.",
+            "finalidade.",
+            "proporção."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Conjunções e coesão",
+          "tags": [
+            "conectivos",
+            "concessão",
+            "coesão"
+          ],
+          "comment": "Embora, ainda que, conquanto, se bem que, mesmo que = concessão (admite um fato que não impede o outro).",
+          "justification": "A conjunção 'embora' introduz oração subordinada adverbial concessiva: apresenta um fato que, apesar de contrário, não impede a realização do que se afirma na oração principal."
+        }
+      ]
+    },
+    {
+      "subject": "Realidade do Distrito Federal e RIDE",
+      "summary": "\n<h1>Distrito Federal e RIDE</h1>\n\n<h2>1. Natureza jurídica e organização</h2>\n<ul>\n<li>O DF é <strong>unidade federativa autônoma</strong>, vedada sua divisão em municípios (art. 32 da CF/88);</li>\n<li>Acumula competências <strong>estaduais e municipais</strong> — por isso, no SUAS, a Sedes/DF exerce as duas funções e <strong>não há CIB</strong>;</li>\n<li>Organiza-se em <strong>Regiões Administrativas (RAs)</strong>, criadas por lei, sem autonomia política — os administradores regionais são nomeados pelo Governador;</li>\n<li>Poder Legislativo: <strong>Câmara Legislativa</strong>, com <strong>deputados distritais</strong>, exercendo competências de Assembleia e de Câmara Municipal.</li>\n</ul>\n\n<h2>2. Formação histórica</h2>\n<ul>\n<li>A ideia de interiorização da capital aparece já no <strong>Império</strong> e é constitucionalizada em <strong>1891</strong>, com a demarcação do Quadrilátero Cruls (1892–1894);</li>\n<li><strong>Inauguração em 21 de abril de 1960</strong>, no governo de Juscelino Kubitschek;</li>\n<li><strong>Plano Piloto</strong> de Lucio Costa; arquitetura de <strong>Oscar Niemeyer</strong>; paisagismo de <strong>Burle Marx</strong>;</li>\n<li><strong>1987</strong>: o conjunto urbanístico de Brasília é inscrito como <strong>Patrimônio Cultural da Humanidade</strong> pela UNESCO — o primeiro bem moderno a receber o título;</li>\n<li>Formação populacional marcada pelos <strong>candangos</strong>, sobretudo migrantes nordestinos e mineiros, e pela criação de cidades-satélites que abrigaram a população trabalhadora afastada do Plano Piloto.</li>\n</ul>\n\n<h2>3. Território, ambiente e economia</h2>\n<ul>\n<li>Bioma <strong>Cerrado</strong>; clima <strong>tropical de savana</strong>, com estação seca acentuada (inverno) e chuvosa (verão);</li>\n<li>Está em área de <strong>divisor de águas</strong> de três grandes bacias: <strong>Tocantins-Araguaia, São Francisco e Paraná</strong>;</li>\n<li>Economia baseada no <strong>setor de serviços e na administração pública</strong>, com o maior PIB per capita do país e, simultaneamente, uma das <strong>maiores desigualdades intramunicipais</strong> do Brasil;</li>\n<li>Essa desigualdade explica o desenho da política socioassistencial distrital: renda média elevada no conjunto, convivendo com regiões administrativas de alta vulnerabilidade.</li>\n</ul>\n\n<h2>4. RIDE — Região Integrada de Desenvolvimento</h2>\n<ul>\n<li>Criada pela <strong>Lei Complementar Federal nº 94/1998</strong>, regulamentada pelo <strong>Decreto Federal nº 7.469/2011</strong> (com alterações posteriores);</li>\n<li>Reúne o <strong>Distrito Federal</strong> e municípios de <strong>Goiás</strong> e de <strong>Minas Gerais</strong> — a chamada RIDE do DF e Entorno;</li>\n<li>Finalidade: <strong>articular e harmonizar as ações administrativas</strong> da União, do DF e dos entes envolvidos em <strong>serviços públicos comuns</strong> — transporte, saneamento, saúde, educação, habitação, meio ambiente, uso do solo e segurança;</li>\n<li>Instância de gestão: <strong>Conselho Administrativo da RIDE (COARIDE)</strong>;</li>\n<li>Não cria novo ente federativo nem transfere competências: é instrumento de <strong>cooperação</strong>;</li>\n<li>Implicação social: intenso <strong>movimento pendular</strong> de trabalhadores do Entorno para o DF, com pressão sobre serviços públicos distritais — inclusive sobre a rede socioassistencial.</li>\n</ul>\n\n<h2>5. Como isso cai na prova</h2>\n<p>Costuma-se cobrar: a vedação de divisão do DF em municípios; a data de inauguração; o título da UNESCO; a base legal da RIDE (LC 94/1998 e Decreto 7.469/2011); e a natureza cooperativa — não federativa — da região integrada.</p>\n",
+      "questions": [
+        {
+          "statement": "Sobre a Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE), assinale a alternativa correta.",
+          "options": [
+            "Foi criada pela Lei Complementar Federal nº 94/1998 e reúne o Distrito Federal e municípios de Goiás e de Minas Gerais, com a finalidade de articular a ação administrativa em serviços públicos comuns.",
+            "Constitui novo ente federativo, dotado de autonomia política e administrativa própria.",
+            "Abrange exclusivamente o Distrito Federal e municípios do Estado de Goiás.",
+            "Transfere ao Distrito Federal a competência para legislar sobre os municípios que a integram.",
+            "Foi instituída pela Lei Orgânica do Distrito Federal, com gestão a cargo da Câmara Legislativa."
+          ],
+          "correct": 0,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "RIDE",
+          "tags": [
+            "RIDE",
+            "LC 94/1998",
+            "Decreto 7.469/2011"
+          ],
+          "comment": "A RIDE é instrumento de cooperação: não cria ente, não transfere competência e não subordina municípios ao DF.",
+          "justification": "A LC nº 94/1998 autorizou a criação da RIDE do DF e Entorno, regulamentada pelo Decreto nº 7.469/2011, integrando o DF e municípios de Goiás e de Minas Gerais, para efeitos de articulação da ação administrativa da União, dos Estados e dos Municípios em serviços públicos comuns."
+        },
+        {
+          "statement": "A respeito da organização político-administrativa do Distrito Federal, é correto afirmar que:",
+          "options": [
+            "o Distrito Federal pode ser dividido em municípios, mediante lei complementar distrital.",
+            "as Regiões Administrativas possuem autonomia política, com prefeitos e câmaras eleitos pela população local.",
+            "é vedada a divisão do Distrito Federal em municípios, acumulando ele as competências legislativas reservadas aos Estados e aos Municípios.",
+            "o Poder Legislativo distrital é exercido pela Assembleia Legislativa, composta por deputados estaduais.",
+            "compete à União a organização e a manutenção de todos os serviços públicos prestados no Distrito Federal."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Organização do DF",
+          "tags": [
+            "CF/88",
+            "art. 32",
+            "regiões administrativas"
+          ],
+          "comment": "É essa acumulação de competências que explica o desenho da gestão do SUAS no DF e a ausência de CIB.",
+          "justification": "Art. 32 da CF/88: o Distrito Federal, vedada sua divisão em Municípios, reger-se-á por lei orgânica e a ele são atribuídas as competências legislativas reservadas aos Estados e Municípios. O Legislativo é a Câmara Legislativa, composta por deputados distritais."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Constituição Federal de 1988",
+          "heading": "Art. 32",
+          "html": "<p>Art. 32. O Distrito Federal, vedada sua divisão em Municípios, reger-se-á por lei orgânica, votada em dois turnos com interstício mínimo de dez dias, e aprovada por dois terços da Câmara Legislativa, que a promulgará, atendidos os princípios estabelecidos nesta Constituição.</p><p>§ 1º Ao Distrito Federal são atribuídas as competências legislativas reservadas aos Estados e Municípios.</p><p>§ 2º A eleição do Governador e do Vice-Governador, observadas as regras do art. 77, e dos Deputados Distritais coincidirá com a dos Governadores e Deputados Estaduais, para mandato de igual duração.</p><p>§ 3º Aos Deputados Distritais e à Câmara Legislativa aplica-se o disposto no art. 27.</p><p>§ 4º Lei federal disporá sobre a utilização, pelo Governo do Distrito Federal, das polícias civil e militar e do corpo de bombeiros militar.</p>",
+          "note": "Base de tudo no DF: sem municípios e com competências estaduais E municipais acumuladas. É o que explica a ausência de CIB no SUAS distrital.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei Complementar Federal nº 94/1998 (RIDE)",
+          "heading": "Art. 1º",
+          "html": "<p>Art. 1º É o Poder Executivo autorizado a criar, para efeitos de articulação da ação administrativa da União, dos Estados de Goiás e Minas Gerais e do Distrito Federal, consoante o disposto nos arts. 21, inciso IX, 43 e 48, inciso IV, da Constituição Federal, a Região Integrada de Desenvolvimento do Distrito Federal e Entorno - RIDE.</p>",
+          "note": "Palavra-chave: ARTICULAÇÃO da ação administrativa. A RIDE não cria ente federativo nem transfere competências.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei Complementar Federal nº 94/1998 (RIDE)",
+          "heading": "Art. 3º",
+          "html": "<p>Art. 3º Considera-se de interesse da Região Integrada de Desenvolvimento do Distrito Federal e Entorno os serviços públicos comuns ao Distrito Federal e aos Municípios que a integram, especialmente aqueles relacionados às áreas de infra-estrutura e de geração de empregos.</p>",
+          "note": "Serviços públicos comuns: transporte, saneamento, saúde, educação, habitação e segurança. O deslocamento pendular do Entorno pressiona diretamente a rede socioassistencial do DF.",
+          "important": 0
+        }
+      ]
+    },
+    {
+      "subject": "Plano Distrital de Políticas para Mulheres (PDPM)",
+      "summary": "\n<h1>Plano Distrital de Políticas para Mulheres</h1>\n\n<h2>1. O que é</h2>\n<p>Conjunto de propostas de políticas públicas elaboradas por órgãos governamentais, organizações não governamentais e sociedade civil para <strong>garantir a igualdade</strong> e <strong>combater a discriminação de gênero</strong> no Distrito Federal. O <strong>II PDPM</strong> foi aprovado pelo <strong>Decreto Distrital nº 42.590, de 7 de outubro de 2021</strong>, que também instituiu o <strong>Comitê de Articulação e Monitoramento</strong> do plano.</p>\n\n<h2>2. Estrutura</h2>\n<p>O plano organiza <strong>ações e metas distribuídas em nove eixos</strong>, resultado das deliberações das conferências de políticas para as mulheres e articulado ao Plano Nacional de Políticas para as Mulheres.</p>\n<ul>\n<li><strong>Eixo 1</strong> — Igualdade no mundo do trabalho e autonomia econômica;</li>\n<li><strong>Eixo 2</strong> — Educação para Igualdade;</li>\n<li><strong>Eixo 3</strong> — Saúde integral das mulheres, direitos sexuais e direitos reprodutivos;</li>\n<li><strong>Eixo 4</strong> — Enfrentamento de todas as formas de violência contra as mulheres;</li>\n<li><strong>Eixo 5</strong> — Participação das mulheres nos espaços de poder e decisão;</li>\n<li><strong>Eixo 6</strong> — Igualdade para as mulheres rurais;</li>\n<li><strong>Eixo 7</strong> — Cultura, Esporte, Comunicação e Mídia;</li>\n<li><strong>Eixo 8</strong> — Enfrentamento do racismo, sexismo, lesbofobia e transfobia;</li>\n<li><strong>Eixo 9</strong> — Igualdade para mulheres jovens, mulheres idosas e mulheres com deficiência.</li>\n</ul>\n\n<h2>3. Princípios que atravessam o plano</h2>\n<ul>\n<li><strong>Autonomia</strong> das mulheres sobre o próprio corpo, sobre a vida econômica e sobre as decisões políticas;</li>\n<li><strong>Igualdade efetiva</strong> entre mulheres e homens, com respeito à diversidade;</li>\n<li><strong>Laicidade do Estado</strong>;</li>\n<li><strong>Universalidade</strong> dos serviços e benefícios;</li>\n<li><strong>Equidade</strong>, com atenção às desigualdades de raça, classe, geração, deficiência e território;</li>\n<li><strong>Transversalidade</strong> de gênero em todas as políticas públicas — não é política de um único órgão;</li>\n<li><strong>Participação e controle social</strong>.</li>\n</ul>\n\n<h2>4. Interface com a assistência social</h2>\n<ul>\n<li>O eixo de enfrentamento à violência dialoga diretamente com <strong>CREAS/PAEFI</strong> e com os serviços de <strong>acolhimento</strong> para mulheres em risco de morte;</li>\n<li>A autonomia econômica se materializa em <strong>inclusão produtiva</strong>, qualificação profissional e acesso a benefícios — pauta do <strong>Plano DF Social</strong>;</li>\n<li>A titularidade feminina no <strong>CadÚnico</strong> e nos programas de transferência de renda é expressão da mesma diretriz;</li>\n<li>A <strong>Secretaria de Estado da Mulher do DF (SMDF)</strong> é um dos órgãos de lotação previstos neste concurso — daí a presença do tema no edital.</li>\n</ul>\n\n<h2>5. Rede de atendimento no DF</h2>\n<p>Casa da Mulher Brasileira, Centros de Referência de Atendimento à Mulher, Casas-Abrigo, Núcleos de Atendimento à Família e aos Autores de Violência Doméstica, DEAM, Juizados de Violência Doméstica e Familiar, Defensoria Pública e Ministério Público — articulados aos equipamentos do SUAS.</p>\n",
+      "questions": [
+        {
+          "statement": "Sobre o Plano Distrital de Políticas para Mulheres, assinale a alternativa correta.",
+          "options": [
+            "É documento de caráter exclusivamente normativo, elaborado pela Câmara Legislativa, sem participação da sociedade civil.",
+            "Organiza ações e metas em eixos temáticos, entre os quais o enfrentamento de todas as formas de violência contra as mulheres e a autonomia econômica, com diretriz de transversalidade de gênero nas políticas públicas.",
+            "Restringe-se às ações da Secretaria de Estado da Mulher, sem interface com as demais políticas setoriais.",
+            "Substitui a Lei Maria da Penha no âmbito do Distrito Federal, disciplinando as medidas protetivas de urgência.",
+            "Aplica-se exclusivamente às mulheres residentes nas regiões administrativas do Plano Piloto."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Estrutura do PDPM",
+          "tags": [
+            "PDPM",
+            "transversalidade",
+            "eixos"
+          ],
+          "comment": "Transversalidade é a palavra-chave: política para mulheres não é assunto de um órgão só, e sim diretriz que atravessa todas as políticas.",
+          "justification": "O II PDPM, aprovado pelo Decreto Distrital nº 42.590/2021, foi elaborado com participação de órgãos governamentais e da sociedade civil e organiza ações e metas em nove eixos, entre eles a autonomia econômica e o enfrentamento à violência, sob a diretriz de transversalidade de gênero."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Decreto Distrital nº 42.590/2021 (II PDPM)",
+          "heading": "Art. 1º e 2º",
+          "html": "<p>Art. 1º O II Plano Distrital de Políticas para as Mulheres - II PDPM, consiste em conjunto de propostas de políticas públicas elaboradas por órgãos governamentais, não governamentais e sociedade civil para garantir a igualdade das mulheres e combater a discriminação de gênero.</p><p>Art. 2º O II PDPM passa a vigorar nos termos do disposto no Anexo deste Decreto.</p>",
+          "note": "Definição literal do plano. Note a tríade de autoria: órgãos governamentais, não governamentais e sociedade civil.",
+          "important": 1
+        },
+        {
+          "lawRef": "Decreto Distrital nº 42.590/2021 (II PDPM)",
+          "heading": "Art. 3º e 4º",
+          "html": "<p>Art. 3º O acompanhamento, a articulação, o monitoramento e a avaliação periódica quanto ao cumprimento dos objetivos, metas e ações definidos no II PDPM, será implementado pelo Comitê de Articulação e Monitoramento do II PDPM, instituído nos termos deste Decreto e vinculado à Secretaria de Estado da Mulher do Distrito Federal.</p><p>Art. 4º O Comitê de Articulação e Monitoramento do II PDPM de que trata o artigo anterior será integrado por:</p><p>I - 4 (quatro) representantes do Conselho dos Direitos da Mulher do Distrito Federal, obrigatoriamente dentre as representações da sociedade civil; e</p><p>II - 1 (uma) representante, titular e suplente, dos seguintes órgãos da Administração Pública do Distrito Federal: Secretaria de Estado de Economia; Secretaria de Estado de Saúde; Secretaria de Estado de Comunicação; Secretaria de Estado de Justiça e Cidadania; Secretaria de Estado da Agricultura, Abastecimento e Desenvolvimento Rural; Secretaria de Estado de Cultura e Economia Criativa; Secretaria de Estado de Transporte e Mobilidade; Secretaria de Estado de Esporte e Lazer; Secretaria de Estado de Desenvolvimento Social; e demais órgãos indicados no Decreto.</p><p>§ 1º À Secretaria de Estado da Mulher competirá a coordenação do Comitê e indicará seus representantes nos termos do inciso II do art. 4º.</p>",
+          "note": "Comitê vinculado à Secretaria da Mulher, que também o coordena. A Sedes/DF integra o Comitê — é a interface direta com a assistência social.",
+          "important": 1
+        },
+        {
+          "lawRef": "Decreto Distrital nº 42.590/2021 (II PDPM)",
+          "heading": "Art. 5º",
+          "html": "<p>Art. 5º Compete ao Comitê de Articulação e Monitoramento do II PDPM:</p><p>I - articular, apoiar, incentivar e subsidiar tecnicamente a implementação do II PDPM;</p><p>II - estabelecer a metodologia de monitoramento do II PDPM;</p><p>III - acompanhar, monitorar e avaliar as atividades de implementação do II PDPM;</p><p>IV - promover a difusão do II PDPM junto a órgãos e entidades governamentais e não governamentais;</p><p>V - efetuar ajustes de objetivos, ações e metas do II PDPM;</p><p>VI - elaborar relatório anual de acompanhamento das ações do II PDPM, e</p><p>VII - criar as condições necessárias para a elaboração do III Plano Distrital de Políticas para as Mulheres, com escopo de garantir a continuidade e o aprimoramento das ações estipuladas no II PDPM.</p>",
+          "note": "Sete competências. O inciso VII é a engrenagem de continuidade entre um plano e o seguinte.",
+          "important": 0
+        },
+        {
+          "lawRef": "Decreto Distrital nº 42.590/2021 — Anexo",
+          "heading": "Os 9 eixos do II PDPM",
+          "html": "<p>O II Plano Distrital de Políticas para as Mulheres contempla ações e metas distribuídas em 9 eixos:</p><p>Eixo 1 – Igualdade no Mundo do Trabalho e Autonomia Econômica</p><p>Eixo 2 – Educação para Igualdade</p><p>Eixo 3 – Saúde Integral das Mulheres, Direitos Sexuais e Reprodutivos</p><p>Eixo 4 – Enfrentamento de Todas as Formas de Violência contra as Mulheres</p><p>Eixo 5 – Participação das Mulheres nos Espaços de Poder e Decisão</p><p>Eixo 6 – Igualdade para as Mulheres Rurais</p><p>Eixo 7 – Cultura, Esporte, Comunicação e Mídia</p><p>Eixo 8 – Enfrentamento do Racismo, Sexismo, Lesbofobia e Transfobia</p><p>Eixo 9 – Igualdade para Mulheres Jovens, Mulheres Idosas e Mulheres com Deficiência</p>",
+          "note": "Decore a ORDEM dos eixos: a banca costuma trocar a numeração entre si. Eixo 4 (violência) e Eixo 1 (autonomia econômica) são os de maior interface com o SUAS.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Lei Orgânica do DF — Ordem Social e Meio Ambiente",
+      "summary": "\n<h1>Lei Orgânica do DF — Título VI</h1>\n<p>O edital delimita o <strong>Título VI — Da Ordem Social e do Meio Ambiente</strong>. É onde a LODF trata de seguridade, educação, cultura, família, grupos vulneráveis e meio ambiente, em espelho ao Título VIII da Constituição Federal.</p>\n\n<h2>1. Seguridade social no DF</h2>\n<ul>\n<li>Reproduz o tripé <strong>saúde, previdência e assistência social</strong>, com organização própria no âmbito distrital;</li>\n<li><strong>Saúde</strong>: direito de todos e dever do Estado, com serviços integrados ao SUS, atendimento integral e participação da comunidade;</li>\n<li><strong>Assistência social</strong>: prestada a quem dela necessitar, independentemente de contribuição, com diretrizes de descentralização e participação — em harmonia com a LOAS.</li>\n</ul>\n\n<h2>2. Educação, cultura, desporto, ciência e tecnologia</h2>\n<ul>\n<li>Educação como direito de todos, com <strong>gestão democrática</strong> do ensino público;</li>\n<li>Garantia de <strong>educação inclusiva</strong> e de atendimento educacional especializado às pessoas com deficiência;</li>\n<li>Proteção ao <strong>patrimônio cultural</strong> — material e imaterial — do DF, com destaque para o conjunto urbanístico de Brasília;</li>\n<li>Fomento ao desporto, ao lazer, à ciência e à tecnologia.</li>\n</ul>\n\n<h2>3. Família, criança, adolescente, juventude, pessoa idosa e pessoa com deficiência</h2>\n<ul>\n<li>A <strong>família</strong> recebe especial proteção do Poder Público distrital;</li>\n<li>Dever da família, da sociedade e do Estado de assegurar à <strong>criança e ao adolescente</strong>, com <strong>absoluta prioridade</strong>, os direitos fundamentais, além de colocá-los a salvo de negligência, discriminação, exploração, violência, crueldade e opressão;</li>\n<li>Previsão de programas de <strong>prevenção e atendimento especializado</strong> às vítimas de violência e à criança e ao adolescente com deficiência;</li>\n<li>Amparo à <strong>pessoa idosa</strong>, assegurando participação na comunidade, defesa de sua dignidade e bem-estar, com preferência pelo atendimento <strong>no próprio lar</strong>;</li>\n<li>Garantias de <strong>acessibilidade</strong>, habilitação e reabilitação e integração social da pessoa com deficiência.</li>\n</ul>\n\n<h2>4. Meio ambiente e ordem urbanística</h2>\n<ul>\n<li>Meio ambiente ecologicamente equilibrado como <strong>bem de uso comum do povo</strong> e essencial à sadia qualidade de vida;</li>\n<li>Deveres do Poder Público: preservar processos ecológicos, proteger a fauna e a flora do <strong>Cerrado</strong>, exigir <strong>estudo prévio de impacto ambiental</strong> para obras potencialmente causadoras de degradação, promover educação ambiental e proteger os <strong>recursos hídricos</strong>;</li>\n<li>Política urbana voltada ao pleno desenvolvimento das funções sociais da cidade e à garantia do bem-estar de seus habitantes, com instrumentos de <strong>regularização fundiária</strong> e de proteção do conjunto urbanístico tombado.</li>\n</ul>\n\n<h2>5. O que a banca costuma explorar</h2>\n<p>Trocas de titularidade (atribuir à União o que é do DF), inversão da prioridade absoluta, supressão da expressão <em>independentemente de contribuição</em> na assistência social e a substituição da preferência pelo atendimento domiciliar da pessoa idosa pelo atendimento asilar.</p>\n",
+      "questions": [
+        {
+          "statement": "De acordo com a Lei Orgânica do Distrito Federal, no que se refere à ordem social, é correto afirmar que:",
+          "options": [
+            "a assistência social será prestada mediante contribuição prévia do beneficiário, nos termos de regulamento.",
+            "a assistência social será prestada a quem dela necessitar, independentemente de contribuição, observadas as diretrizes de descentralização e de participação da população.",
+            "compete exclusivamente à União a organização da assistência social prestada no território do Distrito Federal.",
+            "o amparo à pessoa idosa deve ser realizado preferencialmente em instituições de longa permanência.",
+            "a proteção à criança e ao adolescente é dever exclusivo da família, cabendo ao Estado atuação supletiva."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Ordem social na LODF",
+          "tags": [
+            "LODF",
+            "Título VI",
+            "assistência social"
+          ],
+          "comment": "As distratoras 'd' e 'e' repetem inversões que também aparecem no Estatuto da Pessoa Idosa e no ECA — vale treiná-las juntas.",
+          "justification": "A LODF, em harmonia com a CF/88 e a LOAS, estabelece a assistência social como política não contributiva, prestada a quem dela necessitar, com descentralização e participação. O amparo à pessoa idosa tem preferência pelo atendimento no próprio lar, e a proteção da criança é dever da família, da sociedade e do Estado."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei Orgânica do DF — Título VI",
+          "heading": "Estrutura do Título VI",
+          "html": "<p>Título VI — DA ORDEM SOCIAL E DO MEIO AMBIENTE, organizado nos seguintes capítulos:</p><p>Capítulo I — Das Disposições Gerais</p><p>Capítulo II — Da Saúde</p><p>Capítulo III — Da Promoção e da Assistência Social</p><p>Capítulo IV — Da Educação, da Cultura e do Desporto (a partir do art. 221)</p><p>Capítulo V — Da Ciência e Tecnologia</p><p>Capítulo VI — Da Comunicação Social</p><p>Capítulo VII — Da Família, da Criança, do Adolescente e do Idoso</p><p>Capítulo VIII — Da Pessoa com Deficiência</p><p>Capítulo IX — Da Segurança Pública</p><p>Capítulo X — Da Defesa do Consumidor</p><p>Capítulo XI — Do Meio Ambiente</p>",
+          "note": "Mapa do título cobrado no edital. Para o cargo, os capítulos II, III, VII e VIII são os de leitura obrigatória.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei Orgânica do DF",
+          "heading": "Art. 217",
+          "html": "<p>Art. 217. A assistência social é dever do Estado e será prestada a quem dela necessitar, independentemente de contribuição à seguridade social, assegurados os direitos sociais estabelecidos no art. 6º da Constituição Federal.</p><p>Parágrafo único. É dever do Poder Público proteger a família, a maternidade, a infância, a adolescência, a velhice, bem como integrar socialmente os segmentos desfavorecidos.</p>",
+          "note": "Espelha o art. 203 da CF e o art. 1º da LOAS. A expressão 'independentemente de contribuição' é o núcleo da natureza NÃO CONTRIBUTIVA da política.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "LC nº 840/2011 — Deveres, Regime Disciplinar e PAD",
+      "summary": "\n<h1>LC nº 840/2011 — o regime jurídico dos servidores do DF</h1>\n<p>O edital recorta quatro títulos: <strong>I (disposições preliminares)</strong>, <strong>V (deveres)</strong>, <strong>VI (regime disciplinar)</strong> e <strong>VII (processos de apuração de infração disciplinar)</strong>.</p>\n\n<h2>1. Disposições preliminares</h2>\n<ul>\n<li>Dispõe sobre o regime jurídico dos <strong>servidores públicos civis</strong> do DF, das autarquias e das fundações públicas distritais;</li>\n<li><strong>Servidor</strong> é a pessoa legalmente investida em cargo público; <strong>cargo público</strong> é o conjunto de atribuições e responsabilidades criado por lei, com denominação própria e vencimento pago pelos cofres públicos;</li>\n<li>Cargos são de <strong>provimento efetivo</strong> (concurso) ou <strong>em comissão</strong> (livre nomeação e exoneração).</li>\n</ul>\n\n<h2>2. Deveres do servidor</h2>\n<p>Entre os principais: exercer com zelo e dedicação as atribuições; ser leal às instituições; observar as normas legais e regulamentares; cumprir as ordens superiores, <strong>salvo quando manifestamente ilegais</strong>; atender com presteza ao público e à expedição de certidões; <strong>levar ao conhecimento da autoridade</strong> as irregularidades de que tiver ciência; zelar pela economia do material e pela conservação do patrimônio; guardar sigilo sobre assunto da repartição; manter conduta compatível com a moralidade administrativa; ser assíduo e pontual; tratar com urbanidade as pessoas; e representar contra ilegalidade, omissão ou abuso de poder.</p>\n<p>Detalhe de prova: a ressalva <strong>salvo quando manifestamente ilegais</strong> costuma ser suprimida nas alternativas incorretas.</p>\n\n<h2>3. Proibições e acumulação</h2>\n<ul>\n<li>Proibido: ausentar-se do serviço sem autorização; retirar documento da repartição sem prévia anuência; recusar fé a documentos públicos; opor resistência injustificada ao andamento de documento ou processo; <strong>valer-se do cargo</strong> para lograr proveito pessoal ou de outrem; receber propina, comissão, presente ou vantagem de qualquer espécie em razão das atribuições; praticar usura; proceder de forma desidiosa; e <strong>coagir subordinados</strong> a filiar-se a associação, partido ou sindicato;</li>\n<li><strong>Acumulação</strong>: vedada, salvo as hipóteses constitucionais (dois cargos de professor; um de professor com outro técnico ou científico; dois na área de saúde com profissões regulamentadas), sempre com <strong>compatibilidade de horários</strong> e observância do teto remuneratório.</li>\n</ul>\n\n<h2>4. Penalidades</h2>\n<ul>\n<li><strong>Advertência</strong>;</li>\n<li><strong>Suspensão</strong> — aplicável às infrações de gravidade intermediária, podendo, na forma da lei, ser convertida em multa, com o servidor permanecendo em serviço;</li>\n<li><strong>Demissão</strong>;</li>\n<li><strong>Cassação de aposentadoria ou de disponibilidade</strong>;</li>\n<li><strong>Destituição de cargo em comissão</strong>.</li>\n</ul>\n<p>Na aplicação (art. 196), consideram-se a <strong>natureza e a gravidade</strong> da infração, os <strong>danos</strong> dela decorrentes para o serviço público, a <strong>intenção</strong> do servidor, as <strong>circunstâncias agravantes e atenuantes</strong>, a <strong>culpabilidade</strong> e os <strong>antecedentes funcionais</strong>. As infrações classificam-se em <strong>leves</strong> (art. 190), <strong>médias</strong> (arts. 191 e 192) e <strong>graves</strong> (arts. 193 e 194).</p>\n<p><strong>Confira os prazos</strong> de conclusão da sindicância e do PAD diretamente no texto vigente do SINJ antes da prova: é o detalhe numérico que a Quadrix mais explora, e o que mais sofre alteração legislativa.</p>\n\n<h2>5. Processos de apuração</h2>\n<ul>\n<li><strong>Sindicância</strong> — pode resultar em arquivamento, aplicação de penalidade de menor gravidade ou instauração de PAD;</li>\n<li><strong>Processo administrativo disciplinar (PAD)</strong> — obrigatório quando a infração ensejar penalidade mais grave. Conduzido por comissão de <strong>servidores estáveis</strong>, vedada a participação de cônjuge, companheiro ou parente do acusado;</li>\n<li>Fases: <strong>instauração</strong>, <strong>inquérito administrativo</strong> (instrução, defesa e relatório) e <strong>julgamento</strong>;</li>\n<li>Garantias do <strong>contraditório e da ampla defesa</strong> em todas as fases; nulidade quando desrespeitadas;</li>\n<li>A <strong>autoridade que tiver ciência</strong> de irregularidade é obrigada a promover sua apuração imediata, sob pena de responsabilização.</li>\n</ul>\n\n<h2>6. Independência das instâncias</h2>\n<p>As responsabilidades <strong>civil, penal e administrativa</strong> são independentes e podem cumular-se. A absolvição criminal só afasta a responsabilidade administrativa quando negar a <strong>existência do fato</strong> ou a <strong>autoria</strong>.</p>\n",
+      "questions": [
+        {
+          "statement": "Nos termos da Lei Complementar nº 840/2011, constitui dever do servidor público do Distrito Federal:",
+          "options": [
+            "cumprir todas as ordens superiores, ainda que manifestamente ilegais, em razão do princípio da hierarquia.",
+            "cumprir as ordens superiores, exceto quando manifestamente ilegais.",
+            "abster-se de representar contra ilegalidade praticada por superior hierárquico, em respeito à cadeia de comando.",
+            "manter sigilo absoluto sobre irregularidades de que tenha ciência no exercício do cargo.",
+            "recusar fé a documentos públicos quando houver dúvida quanto à sua autenticidade."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Deveres",
+          "tags": [
+            "LC 840/2011",
+            "deveres",
+            "ordem ilegal"
+          ],
+          "comment": "A ressalva 'salvo quando manifestamente ilegais' é justamente o que a banca costuma apagar da alternativa.",
+          "justification": "A LC nº 840/2011 estabelece o dever de cumprir as ordens superiores, exceto quando manifestamente ilegais, bem como os deveres de levar irregularidades ao conhecimento da autoridade competente e de representar contra ilegalidade, omissão ou abuso de poder. Recusar fé a documentos públicos é proibição."
+        },
+        {
+          "statement": "A respeito do processo administrativo disciplinar previsto na LC nº 840/2011, assinale a alternativa correta.",
+          "options": [
+            "É conduzido por comissão composta por dois servidores, ainda que não estáveis, designados pela autoridade competente.",
+            "Compreende as fases de instauração, inquérito administrativo e julgamento, assegurados o contraditório e a ampla defesa.",
+            "Dispensa a defesa do acusado quando a infração for confessada por escrito.",
+            "A absolvição na esfera penal afasta automaticamente a responsabilidade administrativa em qualquer hipótese.",
+            "A penalidade de suspensão pode ser aplicada por prazo superior a cento e oitenta dias, conforme a gravidade da infração."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "PAD",
+          "tags": [
+            "LC 840/2011",
+            "PAD",
+            "contraditório",
+            "instâncias"
+          ],
+          "comment": "Fases e garantias são o núcleo seguro da questão. Os números de prazo e a composição exata da comissão devem ser confirmados no texto vigente da lei.",
+          "justification": "O PAD desenvolve-se em três fases — instauração, inquérito administrativo (instrução, defesa e relatório) e julgamento — com garantia do contraditório e da ampla defesa. A comissão é composta por servidores estáveis. Quanto às instâncias, a absolvição penal só repercute na esfera administrativa quando negar a existência do fato ou sua autoria (art. 195 lista as penalidades, entre elas a suspensão, cuja duração máxima é fixada em lei)."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei Complementar nº 840/2011",
+          "heading": "Art. 180 — Dos deveres",
+          "html": "<p>Art. 180. São deveres do servidor:</p><p>I - exercer com zelo e dedicação suas atribuições;</p><p>II - manter-se atualizado nos conhecimentos exigidos para o exercício de suas atribuições;</p><p>III - atuar com perícia, prudência e diligência no exercício de suas atribuições;</p><p>IV - atualizar, quando solicitado, seus dados cadastrais;</p><p>V - observar as normas legais e regulamentares no exercício de suas atribuições;</p><p>VI - cumprir as ordens superiores, exceto quando manifestamente ilegais;</p><p>VII - levar ao conhecimento da autoridade superior as falhas, vulnerabilidades e irregularidades de que tiver ciência em razão do cargo público ou do cargo de confiança;</p><p>VIII - representar contra ilegalidade, omissão ou abuso de poder;</p><p>IX - zelar pela economia do material e pela conservação do patrimônio público;</p><p>X - guardar sigilo sobre assunto da repartição;</p><p>XI - atender com presteza ao público em geral e à expedição de certidões requeridas para defesa de direito ou esclarecimento de situações de interesse pessoal;</p><p>XII - ser assíduo e pontual ao serviço;</p><p>XIII - tratar com urbanidade as pessoas;</p><p>XIV - manter conduta compatível com a moralidade administrativa.</p>",
+          "note": "Dois pontos campeões de prova: o inciso VI ('exceto quando manifestamente ilegais' — a banca apaga a ressalva) e o VIII (representar é DEVER, não faculdade).",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei Complementar nº 840/2011",
+          "heading": "Art. 195 e 196 — Das penalidades",
+          "html": "<p>Art. 195. São penalidades disciplinares:</p><p>I - advertência;</p><p>II - suspensão;</p><p>III - demissão;</p><p>IV - cassação de aposentadoria ou de disponibilidade;</p><p>V - destituição de cargo em comissão.</p><p>Art. 196. Na aplicação das penalidades, são consideradas a natureza e a gravidade da infração cometida, os danos que dela provierem para o serviço público, a intenção do servidor, as circunstâncias agravantes ou atenuantes, a culpabilidade e os antecedentes funcionais.</p>",
+          "note": "As infrações classificam-se em leves (art. 190), médias (arts. 191 e 192) e graves (arts. 193 e 194). A dosimetria do art. 196 é o que impede a aplicação automática da pena mais grave.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei Complementar nº 840/2011",
+          "heading": "Sindicância e PAD — visão geral",
+          "html": "<p>Título VII — Dos Processos de Apuração de Infração Disciplinar. Pontos estruturais:</p><p>A autoridade que tiver ciência de irregularidade no serviço público é obrigada a promover sua apuração imediata, mediante sindicância ou processo administrativo disciplinar, assegurados o contraditório e a ampla defesa.</p><p>A SINDICÂNCIA pode resultar em: arquivamento; aplicação de penalidade de advertência ou de suspensão de menor duração; ou instauração de processo administrativo disciplinar.</p><p>O PROCESSO ADMINISTRATIVO DISCIPLINAR é obrigatório quando a infração ensejar penalidade mais grave, e desenvolve-se nas fases de instauração, inquérito administrativo (instrução, defesa e relatório) e julgamento.</p><p>A comissão processante é composta por servidores estáveis, designados pela autoridade competente, vedada a participação de cônjuge, companheiro ou parente do acusado.</p><p>As responsabilidades civil, penal e administrativa são independentes e podem cumular-se; a absolvição criminal só afasta a responsabilidade administrativa quando negar a existência do fato ou sua autoria.</p>",
+          "note": "Síntese do Título VII. Confira os prazos exatos de conclusão e prorrogação diretamente no texto do SINJ antes da prova — é o detalhe que a Quadrix mais explora.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Lei Maria da Penha (Lei nº 11.340/2006)",
+      "summary": "\n<h1>Lei Maria da Penha</h1>\n<p>O <strong>art. 6º da Lei Distrital nº 7.462/2024</strong> obriga a inclusão de, no <strong>mínimo, 3 questões</strong> sobre a Lei Maria da Penha na prova objetiva — para <strong>todos os cargos</strong>. Em um bloco de 20 questões de conhecimentos gerais, esse tema sozinho vale ao menos 15% da área.</p>\n\n<h2>1. Estrutura da lei</h2>\n<ul>\n<li>Cria mecanismos para <strong>coibir e prevenir</strong> a violência doméstica e familiar contra a mulher, nos termos do § 8º do art. 226 da CF, da Convenção sobre a Eliminação de Todas as Formas de Discriminação contra as Mulheres (CEDAW) e da <strong>Convenção de Belém do Pará</strong>;</li>\n<li>Define <strong>violência doméstica e familiar contra a mulher</strong> como qualquer ação ou omissão baseada no <strong>gênero</strong> que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial.</li>\n</ul>\n\n<h2>2. Âmbitos (art. 5º)</h2>\n<ul>\n<li><strong>Unidade doméstica</strong> — espaço de convívio permanente de pessoas, com ou sem vínculo familiar, inclusive as esporadicamente agregadas;</li>\n<li><strong>Família</strong> — indivíduos que são ou se consideram aparentados, unidos por laços naturais, por afinidade ou por vontade expressa;</li>\n<li><strong>Relação íntima de afeto</strong> — o agressor conviva ou tenha convivido com a ofendida, <strong>independentemente de coabitação</strong>;</li>\n<li>Parágrafo único: as relações pessoais independem de <strong>orientação sexual</strong>.</li>\n</ul>\n\n<h2>3. Formas de violência (art. 7º)</h2>\n<p><strong>Física, psicológica, sexual, patrimonial e moral</strong>. A violência psicológica inclui expressamente a <strong>perseguição contumaz</strong>, o <strong>isolamento</strong>, a <strong>vigilância constante</strong>, a <strong>chantagem</strong>, a <strong>ridicularização</strong>, a <strong>limitação do direito de ir e vir</strong> e a <strong>distorção e omissão de fatos para desestabilizar emocionalmente</strong> a vítima.</p>\n\n<h2>4. Assistência e atendimento</h2>\n<ul>\n<li>A assistência à mulher será prestada de forma articulada, conforme os princípios do <strong>SUS</strong>, do <strong>SUAS</strong> e demais normas de proteção;</li>\n<li>Inclusão da mulher em <strong>cadastro de programas assistenciais</strong> do governo federal, estadual e municipal;</li>\n<li>Garantia de <strong>manutenção do vínculo trabalhista</strong>, quando necessário o afastamento do local de trabalho, por até <strong>6 meses</strong>;</li>\n<li><strong>Atendimento policial e pericial especializado</strong>, ininterrupto e prestado <strong>preferencialmente por servidoras do sexo feminino</strong>, previamente capacitadas;</li>\n<li>Vedada a aplicação de <strong>penas de cesta básica</strong>, prestação pecuniária ou substituição de pena que implique pagamento isolado de multa (art. 17).</li>\n</ul>\n\n<h2>5. Procedimento e medidas</h2>\n<ul>\n<li>A autoridade policial deve garantir proteção, encaminhar a ofendida a atendimento médico, fornecer transporte para local seguro e acompanhá-la para retirada de pertences;</li>\n<li>O pedido de <strong>medida protetiva</strong> será encaminhado ao juiz em até <strong>48 horas</strong>, que decidirá em igual prazo;</li>\n<li>A <strong>renúncia à representação</strong>, nos crimes de ação penal pública condicionada, só é admitida perante o juiz, em audiência especialmente designada, antes do recebimento da denúncia e ouvido o Ministério Público;</li>\n<li>Súmula relevante: nos casos de <strong>lesão corporal</strong> decorrente de violência doméstica, a ação penal é <strong>pública incondicionada</strong> (ADI 4.424 do STF);</li>\n<li><strong>Não se aplica</strong> a Lei nº 9.099/1995 (Juizados Especiais Criminais) aos crimes praticados com violência doméstica e familiar contra a mulher (art. 41).</li>\n</ul>\n\n<h2>6. Equipe multidisciplinar</h2>\n<p>Os Juizados de Violência Doméstica e Familiar contra a Mulher contarão com equipe de atendimento multidisciplinar integrada por profissionais das áreas <strong>psicossocial, jurídica e de saúde</strong>, competindo-lhe fornecer subsídios por escrito ao juiz, ao MP e à Defensoria, mediante laudos ou verbalmente em audiência, e desenvolver trabalhos de orientação, encaminhamento, prevenção e outras medidas voltadas à ofendida, ao agressor e aos familiares.</p>\n",
+      "articles": [
+        {
+          "lawRef": "Lei nº 11.340/2006 (Maria da Penha)",
+          "heading": "Art. 5º",
+          "html": "<p>Art. 5º Para os efeitos desta Lei, configura violência doméstica e familiar contra a mulher qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial:</p><p>I - no âmbito da unidade doméstica, compreendida como o espaço de convívio permanente de pessoas, com ou sem vínculo familiar, inclusive as esporadicamente agregadas;</p><p>II - no âmbito da família, compreendida como a comunidade formada por indivíduos que são ou se consideram aparentados, unidos por laços naturais, por afinidade ou por vontade expressa;</p><p>III - em qualquer relação íntima de afeto, na qual o agressor conviva ou tenha convivido com a ofendida, independentemente de coabitação.</p><p>Parágrafo único. As relações pessoais enunciadas neste artigo independem de orientação sexual.</p>",
+          "note": "Três âmbitos. A expressão 'independentemente de coabitação' no inciso III é frequentemente suprimida nas alternativas incorretas.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 11.340/2006 (Maria da Penha)",
+          "heading": "Art. 7º",
+          "html": "<p>Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:</p><p>I - a violência física, entendida como qualquer conduta que ofenda sua integridade ou saúde corporal;</p><p>II - a violência psicológica, entendida como qualquer conduta que lhe cause dano emocional e diminuição da autoestima ou que lhe prejudique e perturbe o pleno desenvolvimento ou que vise degradar ou controlar suas ações, comportamentos, crenças e decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, vigilância constante, perseguição contumaz, insulto, chantagem, violação de sua intimidade, ridicularização, exploração e limitação do direito de ir e vir ou qualquer outro meio que lhe cause prejuízo à saúde psicológica e à autodeterminação;</p><p>III - a violência sexual, entendida como qualquer conduta que a constranja a presenciar, a manter ou a participar de relação sexual não desejada, mediante intimidação, ameaça, coação ou uso da força;</p><p>IV - a violência patrimonial, entendida como qualquer conduta que configure retenção, subtração, destruição parcial ou total de seus objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econômicos, incluindo os destinados a satisfazer suas necessidades;</p><p>V - a violência moral, entendida como qualquer conduta que configure calúnia, difamação ou injúria.</p>",
+          "note": "Rol exemplificativo ('entre outras'). Física, psicológica, sexual, patrimonial e moral.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 11.340/2006 (Maria da Penha)",
+          "heading": "Art. 22",
+          "html": "<p>Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:</p><p>I - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente;</p><p>II - afastamento do lar, domicílio ou local de convivência com a ofendida;</p><p>III - proibição de determinadas condutas, entre as quais:</p><p>a) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;</p><p>b) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;</p><p>c) frequentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;</p><p>IV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;</p><p>V - prestação de alimentos provisionais ou provisórios;</p><p>VI - comparecimento do agressor a programas de recuperação e reeducação; e</p><p>VII - acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.</p>",
+          "note": "Medidas que obrigam o agressor. Os incisos VI e VII trazem a responsabilização educativa — ponto de contato com o trabalho socioeducativo.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 11.340/2006 (Maria da Penha)",
+          "heading": "Art. 9º",
+          "html": "<p>Art. 9º A assistência à mulher em situação de violência doméstica e familiar será prestada em caráter prioritário no Sistema Único de Saúde e no Sistema Único de Assistência Social, de forma articulada e conforme os princípios e as diretrizes previstos na Lei Orgânica da Assistência Social, no Sistema Único de Saúde, no Sistema Único de Segurança Pública, entre outras normas e políticas públicas de proteção, e emergencialmente quando for o caso.</p><p>§ 1º O juiz determinará, por prazo certo, a inclusão da mulher em situação de violência doméstica e familiar no cadastro de programas assistenciais do governo federal, estadual e municipal.</p><p>§ 2º O juiz assegurará à mulher em situação de violência doméstica e familiar, para preservar sua integridade física e psicológica:</p><p>I - acesso prioritário à remoção quando servidora pública, integrante da administração direta ou indireta;</p><p>II - manutenção do vínculo trabalhista, quando necessário o afastamento do local de trabalho, por até seis meses.</p>",
+          "note": "O SUAS é citado NOMINALMENTE na lei. O § 2º, II (vínculo trabalhista por até 6 meses) e o § 1º (inclusão em programas assistenciais) são os dispositivos que mais aproximam a lei do trabalho do Educador Social.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 11.340/2006 (Maria da Penha)",
+          "heading": "Art. 23 e 24",
+          "html": "<p>Art. 23. Poderá o juiz, quando necessário, sem prejuízo de outras medidas:</p><p>I - encaminhar a ofendida e seus dependentes a programa oficial ou comunitário de proteção ou de atendimento;</p><p>II - determinar a recondução da ofendida e a de seus dependentes ao respectivo domicílio, após afastamento do agressor;</p><p>III - determinar o afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos;</p><p>IV - determinar a separação de corpos;</p><p>V - determinar a matrícula dos dependentes da ofendida em instituição de educação básica mais próxima do seu domicílio, ou a transferência deles para essa instituição, independentemente da existência de vaga.</p><p>Art. 24. Para a proteção patrimonial dos bens da sociedade conjugal ou daqueles de propriedade particular da mulher, o juiz poderá determinar, liminarmente, as seguintes medidas, entre outras:</p><p>I - restituição de bens indevidamente subtraídos pelo agressor à ofendida;</p><p>II - proibição temporária para a celebração de atos e contratos de compra, venda e locação de propriedade em comum, salvo expressa autorização judicial;</p><p>III - suspensão das procurações conferidas pela ofendida ao agressor;</p><p>IV - prestação de caução provisória, mediante depósito judicial, por perdas e danos materiais decorrentes da prática de violência doméstica e familiar contra a ofendida.</p>",
+          "note": "Medidas protetivas À OFENDIDA (arts. 23 e 24), distintas das que obrigam o agressor (art. 22). O inciso V do art. 23 garante vaga escolar independentemente de existir vaga.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 11.340/2006 (Maria da Penha)",
+          "heading": "Art. 17, 24-A e 41",
+          "html": "<p>Art. 17. É vedada a aplicação, nos casos de violência doméstica e familiar contra a mulher, de penas de cesta básica ou outras de prestação pecuniária, bem como a substituição de pena que implique o pagamento isolado de multa.</p><p>Art. 24-A. Descumprir decisão judicial que defere medidas protetivas de urgência previstas nesta Lei:</p><p>Pena - detenção, de 3 (três) meses a 2 (dois) anos.</p><p>§ 1º A configuração do crime independe da competência civil ou criminal do juiz que deferiu as medidas.</p><p>§ 2º Na hipótese de prisão em flagrante, apenas a autoridade judicial poderá conceder fiança.</p><p>§ 3º O disposto neste artigo não exclui a aplicação de outras sanções cabíveis.</p><p>Art. 41. Aos crimes praticados com violência doméstica e familiar contra a mulher, independentemente da pena prevista, não se aplica a Lei nº 9.099, de 26 de setembro de 1995.</p>",
+          "note": "Trio de vedações e sanções. Art. 17: nada de cesta básica. Art. 24-A: descumprir medida protetiva é CRIME. Art. 41: fora do juizado especial, sempre.",
+          "important": 1
+        }
+      ],
+      "questions": [
+        {
+          "statement": "Nos termos da Lei nº 11.340/2006, configura violência doméstica e familiar contra a mulher a agressão praticada:",
+          "options": [
+            "somente quando houver coabitação entre a vítima e o agressor.",
+            "em qualquer relação íntima de afeto, na qual o agressor conviva ou tenha convivido com a ofendida, independentemente de coabitação.",
+            "exclusivamente no âmbito da unidade doméstica, assim entendida a residência da vítima.",
+            "apenas quando existir vínculo de parentesco natural ou civil entre vítima e agressor.",
+            "somente em relações heteroafetivas, conforme previsão expressa da lei."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Âmbito de aplicação",
+          "tags": [
+            "Lei Maria da Penha",
+            "art. 5º",
+            "coabitação"
+          ],
+          "comment": "Questão obrigatória: o edital garante no mínimo três itens sobre esta lei. As expressões 'somente', 'exclusivamente' e 'apenas' quase sempre marcam a alternativa errada aqui.",
+          "justification": "Art. 5º, III, da Lei nº 11.340/2006: em qualquer relação íntima de afeto, na qual o agressor conviva ou tenha convivido com a ofendida, independentemente de coabitação. O parágrafo único acrescenta que as relações independem de orientação sexual."
+        },
+        {
+          "statement": "Sobre a assistência à mulher em situação de violência doméstica e familiar prevista na Lei Maria da Penha, assinale a alternativa correta.",
+          "options": [
+            "É prestada exclusivamente pela política de segurança pública, cabendo à assistência social apenas o registro estatístico.",
+            "Será prestada de forma articulada e conforme os princípios e as diretrizes do SUS, do SUAS e demais normas e políticas de proteção, incluindo o acesso prioritário a programas assistenciais.",
+            "Depende de prévia representação criminal contra o agressor, sem a qual não pode haver encaminhamento a serviços.",
+            "Veda o afastamento da mulher do local de trabalho, ainda que necessário à sua proteção.",
+            "Restringe-se ao acolhimento institucional, não abrangendo atendimento psicossocial ou jurídico."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Assistência à mulher",
+          "tags": [
+            "Lei Maria da Penha",
+            "art. 9º",
+            "SUAS",
+            "SUS"
+          ],
+          "comment": "A lei cita expressamente o SUAS — porta de entrada para questões que cruzam Maria da Penha com a rede socioassistencial.",
+          "justification": "Art. 9º da Lei nº 11.340/2006: a assistência à mulher em situação de violência doméstica e familiar será prestada de forma articulada e conforme os princípios e as diretrizes previstos na Lei Orgânica da Assistência Social, no Sistema Único de Saúde, no Sistema Único de Segurança Pública, entre outras normas e políticas públicas de proteção, e emergencialmente quando for o caso. O § 2º garante manutenção do vínculo trabalhista por até seis meses."
+        },
+        {
+          "statement": "A respeito da aplicação da Lei nº 9.099/1995 aos casos de violência doméstica e familiar contra a mulher, é correto afirmar que:",
+          "options": [
+            "aplica-se integralmente, permitindo a transação penal e a suspensão condicional do processo.",
+            "não se aplica aos crimes praticados com violência doméstica e familiar contra a mulher, independentemente da pena prevista.",
+            "aplica-se apenas quando a pena máxima cominada não exceder dois anos.",
+            "aplica-se mediante concordância expressa da ofendida em audiência.",
+            "aplica-se subsidiariamente, admitindo-se a pena de prestação pecuniária e o pagamento isolado de multa."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Vedações processuais",
+          "tags": [
+            "Lei Maria da Penha",
+            "art. 41",
+            "art. 17",
+            "Lei 9.099/1995"
+          ],
+          "comment": "Combine com o art. 17: são vedadas penas de cesta básica, prestação pecuniária e pagamento isolado de multa.",
+          "justification": "Art. 41 da Lei nº 11.340/2006: aos crimes praticados com violência doméstica e familiar contra a mulher, independentemente da pena prevista, não se aplica a Lei nº 9.099/1995. O STF confirmou a constitucionalidade do dispositivo no julgamento da ADC 19."
+        }
+      ]
+    },
+    {
+      "subject": "Lei Distrital nº 7.484/2024 — Carreira de Desenvolvimento e Assistência Social",
+      "summary": "\n<h1>Lei Distrital nº 7.484/2024</h1>\n<p>Publicada em <strong>27 de março de 2024</strong>. É a lei do seu próprio cargo — e por isso costuma ser cobrada de forma bastante literal.</p>\n\n<h2>1. O que a lei fez</h2>\n<p>A <strong>Carreira Pública de Assistência Social</strong>, criada pela Lei nº 85, de 29 de dezembro de 1989, foi <strong>reestruturada</strong> e passou a denominar-se <strong>Carreira Pública de Desenvolvimento e Assistência Social</strong>.</p>\n\n<h2>2. Composição da carreira</h2>\n<ul>\n<li><strong>Especialista em Desenvolvimento e Assistência Social (EDAS)</strong> — nível superior. <strong>2.000</strong> cargos;</li>\n<li><strong>Técnico em Desenvolvimento e Assistência Social (TDAS)</strong> — nível médio. <strong>3.000</strong> cargos;</li>\n<li><strong>Auxiliar em Desenvolvimento e Assistência Social</strong> — cargo em extinção, sem novos ingressos.</li>\n</ul>\n\n<h2>3. Ingresso</h2>\n<ul>\n<li>Dá-se exclusivamente por <strong>concurso público</strong> de provas ou de provas e títulos;</li>\n<li>Requisitos por cargo: <strong>educação superior</strong> para EDAS (com a especialidade correspondente e registro no conselho de classe, quando exigido) e <strong>ensino médio</strong> para TDAS;</li>\n<li>Para a especialidade <strong>Educador Social</strong>, o requisito é diploma de conclusão de <strong>qualquer curso de graduação com licenciatura plena</strong>, reconhecido pelo MEC;</li>\n<li>O ingresso ocorre sempre na <strong>classe e no padrão iniciais</strong> da respectiva carreira.</li>\n</ul>\n\n<h2>4. Órgãos de lotação</h2>\n<p>Os cargos integram os quadros de pessoal permanente da <strong>Sedes/DF</strong>, da <strong>Secretaria de Estado da Mulher do DF (SMDF)</strong> e da <strong>Secretaria de Estado da Justiça e Cidadania do DF (Sejus)</strong>. A definição da secretaria de lotação é <strong>ato discricionário</strong> da administração, observada a ordem de classificação.</p>\n\n<h2>5. Desenvolvimento e gestão</h2>\n<ul>\n<li>Desenvolvimento na carreira por <strong>progressão</strong> (entre padrões da mesma classe) e <strong>promoção</strong> (de uma classe para a seguinte), conforme critérios de <strong>desempenho</strong>, <strong>tempo de efetivo exercício</strong> e <strong>qualificação profissional</strong>;</li>\n<li>Compete ao <strong>órgão central de gestão de pessoas do GDF</strong> a gestão da carreira;</li>\n<li><strong>Jornada</strong>: 30 horas semanais para os cargos deste certame; <strong>remuneração</strong> do EDAS: R$ 6.071,09, além de vale-alimentação de R$ 640,00 e das gratificações aplicáveis conforme a lotação.</li>\n</ul>\n\n<h2>6. Atribuições do Educador Social (cargo 405)</h2>\n<p>Planejar, coordenar, supervisionar, avaliar e executar atividades que demandem conhecimentos especializados em Educação com ênfase na <strong>educação social</strong>. Entre as atribuições detalhadas no edital:</p>\n<ul>\n<li>Planejar e executar atividades de educação social nos serviços socioassistenciais;</li>\n<li>Atender e acompanhar usuários em situação de risco, vulnerabilidade e direitos violados;</li>\n<li>Complementar o trabalho social com famílias, atuando na <strong>prevenção</strong> de situações de risco;</li>\n<li>Organizar o serviço em grupos e estimular a <strong>autonomia</strong> dos usuários conforme seu projeto de vida;</li>\n<li>Diagnosticar vulnerabilidades e potencialidades de territórios, grupos, famílias e indivíduos;</li>\n<li>Subsidiar o planejamento de ações organizadas em <strong>percursos</strong>;</li>\n<li>Desenvolver o <strong>sentimento de pertença</strong> e de identidade, e incentivar o fortalecimento de vínculos;</li>\n<li>Contribuir com a acolhida humanizada e a <strong>escuta qualificada</strong>;</li>\n<li>Elaborar <strong>material didático-pedagógico</strong> e organizar eventos artísticos, lúdicos e culturais;</li>\n<li>Realizar estudo, pesquisa e supervisão sobre temas da <strong>Educação Social</strong>;</li>\n<li>Elaborar relatórios, pareceres, laudos e notas técnicas; supervisionar estagiários.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "A Lei Distrital nº 7.484/2024 reestruturou a carreira pública de assistência social do Distrito Federal. Sobre essa norma, assinale a alternativa correta.",
+          "options": [
+            "Manteve a denominação original da carreira, alterando apenas a tabela remuneratória.",
+            "Reestruturou a carreira criada pela Lei nº 85/1989, que passou a denominar-se Carreira Pública de Desenvolvimento e Assistência Social, composta pelos cargos de Especialista, Técnico e Auxiliar.",
+            "Extinguiu os cargos de nível superior, mantendo apenas os de nível médio e fundamental.",
+            "Determinou que o ingresso na carreira ocorra mediante processo seletivo simplificado, dispensado o concurso público.",
+            "Vinculou a carreira exclusivamente à Secretaria de Estado de Desenvolvimento Social, vedada a lotação em outros órgãos."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Estrutura da carreira",
+          "tags": [
+            "Lei 7.484/2024",
+            "carreira",
+            "EDAS",
+            "TDAS"
+          ],
+          "comment": "Guarde os quantitativos: 2.000 cargos de EDAS e 3.000 de TDAS. E lembre-se dos três órgãos de lotação: Sedes, SMDF e Sejus.",
+          "justification": "A Lei Distrital nº 7.484/2024 reestruturou a carreira criada pela Lei nº 85/1989, renomeando-a como Carreira Pública de Desenvolvimento e Assistência Social, composta pelos cargos de Especialista, Técnico e Auxiliar, com ingresso mediante concurso público."
+        },
+        {
+          "statement": "Constitui atribuição do Especialista em Desenvolvimento e Assistência Social — especialidade Educador Social:",
+          "options": [
+            "emitir laudos psicológicos e realizar avaliação psicodiagnóstica dos usuários da assistência social.",
+            "conceder e cancelar benefícios eventuais, mediante análise da documentação apresentada pela família.",
+            "planejar e executar atividades de educação social, organizar o serviço em grupos, elaborar material didático-pedagógico e estimular a autonomia dos usuários conforme seu projeto de vida.",
+            "conduzir procedimentos de heteroidentificação e avaliação biopsicossocial de candidatos em concursos públicos.",
+            "representar judicialmente o órgão em ações relativas a violações de direitos de crianças e adolescentes."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Atribuições do cargo",
+          "tags": [
+            "Educador Social",
+            "cargo 405",
+            "atribuições"
+          ],
+          "comment": "As distratoras descrevem atribuições de outras especialidades: Psicologia, gestão de benefícios e Direito e Legislação.",
+          "justification": "O edital descreve, entre as atribuições do Educador Social, planejar e executar atividades na área de educação social, organizar o serviço em grupos, estimular a autonomia dos usuários de acordo com seu projeto de vida, elaborar material didático-pedagógico e contribuir com a acolhida e a escuta qualificada."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei Distrital nº 7.484/2024",
+          "heading": "Art. 1º — Reestruturação da carreira",
+          "html": "<p>Art. 1º A Carreira Pública de Assistência Social, criada na forma da Lei nº 85, de 29 de dezembro de 1989, fica reestruturada e passa a ser denominada Carreira Pública de Desenvolvimento e Assistência Social, integrante dos quadros de pessoal permanente dos órgãos responsáveis pela execução das políticas de desenvolvimento e assistência social do Distrito Federal.</p>",
+          "note": "Guarde o par: Lei nº 85/1989 (origem) → Lei nº 7.484/2024 (reestruturação e novo nome).",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei Distrital nº 7.484/2024",
+          "heading": "Composição da carreira",
+          "html": "<p>A Carreira Pública de Desenvolvimento e Assistência Social é composta pelos seguintes cargos:</p><p>I - Especialista em Desenvolvimento e Assistência Social (EDAS) — 2.000 (dois mil) cargos, de nível superior;</p><p>II - Técnico em Desenvolvimento e Assistência Social (TDAS) — 3.000 (três mil) cargos, de nível médio;</p><p>III - Auxiliar em Desenvolvimento e Assistência Social — cargos remanescentes, em extinção, vedado novo provimento.</p><p>O ingresso nos cargos da carreira dá-se exclusivamente mediante concurso público de provas ou de provas e títulos, sempre na classe e no padrão iniciais, observados os requisitos de escolaridade e de habilitação profissional exigidos para cada cargo e especialidade.</p><p>Compete ao órgão central de gestão de pessoas do Governo do Distrito Federal a gestão da carreira.</p>",
+          "note": "Números para decorar: 2.000 EDAS + 3.000 TDAS. Auxiliar está em extinção. Requisito do Educador Social: qualquer graduação com LICENCIATURA PLENA.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Noções de Primeiros Socorros",
+      "summary": "\n<h1>Noções de primeiros socorros</h1>\n<p>Primeiros socorros são os <strong>cuidados imediatos</strong> prestados a uma pessoa cujo estado exige atenção urgente, até a chegada do socorro especializado. O objetivo é <strong>preservar a vida, evitar o agravamento e promover a recuperação</strong> — não tratar.</p>\n\n<h2>1. Avaliação da cena e acionamento</h2>\n<ul>\n<li><strong>Segurança primeiro</strong>: avalie riscos antes de se aproximar. Socorrista ferido vira segunda vítima;</li>\n<li>Verifique <strong>responsividade</strong>: chame a pessoa, toque nos ombros;</li>\n<li><strong>Acione o socorro</strong>: <strong>SAMU 192</strong> (urgências médicas), <strong>Bombeiros 193</strong>, <strong>Polícia Militar 190</strong>. Informe local exato, o que aconteceu, número de vítimas e estado delas;</li>\n<li>Não remova a vítima, salvo risco iminente no local.</li>\n</ul>\n\n<h2>2. Urgência × emergência</h2>\n<ul>\n<li><strong>Emergência</strong> — risco <strong>imediato</strong> de morte, exige atendimento sem qualquer demora (parada cardiorrespiratória, hemorragia intensa, obstrução total de vias aéreas);</li>\n<li><strong>Urgência</strong> — necessita de atendimento rápido, mas sem risco imediato de morte (fratura fechada, crise hipertensiva).</li>\n</ul>\n\n<h2>3. Engasgo (obstrução de vias aéreas)</h2>\n<ul>\n<li><strong>Obstrução parcial</strong> — a pessoa tosse e fala: <strong>incentive a tossir</strong>, não bata nas costas nem ofereça água;</li>\n<li><strong>Obstrução total</strong> — não fala, não tosse, leva as mãos ao pescoço: aplique a <strong>manobra de Heimlich</strong> — compressões abdominais rápidas acima do umbigo, abaixo do apêndice xifoide;</li>\n<li><strong>Lactentes (menores de 1 ano)</strong>: alternar <strong>5 golpes nas costas</strong> (entre as escápulas) e <strong>5 compressões torácicas</strong>, com a cabeça mais baixa que o tronco. <strong>Não</strong> se faz Heimlich abdominal em lactente;</li>\n<li>Se a vítima perder a consciência, inicie <strong>RCP</strong> e acione o socorro.</li>\n</ul>\n\n<h2>4. Parada cardiorrespiratória</h2>\n<ul>\n<li>Vítima irresponsiva e sem respiração normal: acione o 192, peça um <strong>DEA</strong> e inicie compressões;</li>\n<li>Compressões no <strong>centro do tórax</strong>, com frequência de <strong>100 a 120 por minuto</strong> e profundidade de cerca de <strong>5 cm</strong> no adulto, permitindo o retorno completo do tórax;</li>\n<li>Leigo não treinado pode fazer <strong>somente compressões</strong>, sem ventilações;</li>\n<li>Use o <strong>DEA</strong> assim que disponível e siga os comandos de voz do aparelho.</li>\n</ul>\n\n<h2>5. Sangramentos</h2>\n<ul>\n<li><strong>Compressão direta</strong> sobre o ferimento com pano limpo ou gaze, mantendo pressão contínua;</li>\n<li>Não retire o pano encharcado: <strong>sobreponha</strong> outro;</li>\n<li><strong>Não remova objetos encravados</strong> — estabilize-os no lugar;</li>\n<li>Torniquete apenas em <strong>hemorragia grave de membro</strong> que não cede à compressão, anotando o horário de aplicação;</li>\n<li>Use luvas ou barreira sempre que possível.</li>\n</ul>\n\n<h2>6. Fraturas</h2>\n<ul>\n<li>Sinais: dor intensa, deformidade, edema, incapacidade funcional, crepitação;</li>\n<li><strong>Imobilize na posição encontrada</strong>, abrangendo as articulações acima e abaixo. <strong>Não tente alinhar</strong> nem reduzir;</li>\n<li>Em fratura exposta, cubra com pano limpo sem pressionar o osso exposto;</li>\n<li>Suspeita de lesão na coluna: <strong>não movimente</strong> a vítima, salvo risco iminente.</li>\n</ul>\n\n<h2>7. Queimaduras</h2>\n<ul>\n<li><strong>Resfrie com água corrente em temperatura ambiente</strong> por cerca de 10 a 20 minutos;</li>\n<li><strong>Nunca</strong> aplique pasta de dente, manteiga, óleo, pó de café, borra ou qualquer substância caseira;</li>\n<li><strong>Não</strong> estoure bolhas nem retire roupa aderida à pele;</li>\n<li>Cubra com pano limpo e seco; retire anéis e adornos antes do edema;</li>\n<li>Queimadura química: remova a roupa contaminada e lave abundantemente com água corrente.</li>\n</ul>\n\n<h2>8. Desmaio e convulsão</h2>\n<ul>\n<li><strong>Desmaio (síncope)</strong>: deite a pessoa, <strong>eleve as pernas</strong>, afrouxe as roupas, garanta ventilação. Não ofereça água enquanto inconsciente;</li>\n<li><strong>Convulsão</strong>: proteja a cabeça, afaste objetos, <strong>não contenha os movimentos</strong> e <strong>não coloque nada na boca</strong>. Ao cessar, lateralize a vítima (posição de recuperação), observe a respiração e permaneça ao lado até a plena recuperação;</li>\n<li>Acione o socorro se a crise durar mais de 5 minutos, se houver repetição, se for a primeira crise, se a pessoa estiver grávida ou não recuperar a consciência.</li>\n</ul>\n\n<h2>9. Intoxicação</h2>\n<ul>\n<li><strong>Não provoque vômito</strong>, especialmente em ingestão de produtos corrosivos, derivados de petróleo ou quando a vítima estiver inconsciente;</li>\n<li>Identifique a substância e leve a <strong>embalagem</strong> junto ao atendimento;</li>\n<li>Acione o SAMU 192 e, se necessário, o <strong>Centro de Informação e Assistência Toxicológica (CIATox) — 0800 722 6001</strong>;</li>\n<li>Intoxicação por inalação: remova a vítima para local arejado, garantindo antes a segurança do socorrista.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "Diante de uma pessoa adulta em crise convulsiva, a conduta correta é:",
+          "options": [
+            "conter firmemente os movimentos da vítima para evitar lesões.",
+            "colocar um objeto entre os dentes para impedir que ela morda a língua.",
+            "proteger a cabeça, afastar objetos das proximidades, não conter os movimentos e, ao término da crise, lateralizar a vítima.",
+            "oferecer água imediatamente para hidratação durante a crise.",
+            "aplicar compressões torácicas enquanto durar o episódio convulsivo."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Convulsão",
+          "tags": [
+            "primeiros socorros",
+            "convulsão",
+            "posição de recuperação"
+          ],
+          "comment": "Colocar objeto na boca é a crença popular mais perigosa do tema: causa fratura dentária, lesão de mandíbula e risco de obstrução das vias aéreas.",
+          "justification": "Na crise convulsiva, protege-se a vítima de traumas, afastam-se objetos e não se contêm os movimentos nem se introduz nada na boca. Após a crise, lateraliza-se a vítima na posição de recuperação, observando a respiração até a recuperação completa."
+        },
+        {
+          "statement": "Em relação aos primeiros socorros em queimaduras, assinale a alternativa correta.",
+          "options": [
+            "Deve-se aplicar manteiga ou pasta de dente sobre a área queimada para aliviar a dor.",
+            "As bolhas devem ser rompidas para evitar infecção secundária.",
+            "Deve-se resfriar a área com água corrente em temperatura ambiente, cobrir com pano limpo e seco e não romper as bolhas.",
+            "A roupa aderida à pele deve ser removida imediatamente, ainda que com uso de força.",
+            "Deve-se aplicar gelo diretamente sobre a lesão até a chegada do socorro."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Queimaduras",
+          "tags": [
+            "primeiros socorros",
+            "queimadura"
+          ],
+          "comment": "Gelo direto também é errado: agrava a lesão tecidual. Água corrente em temperatura ambiente é a conduta.",
+          "justification": "A conduta recomendada é resfriar com água corrente em temperatura ambiente, cobrir com pano limpo e seco, não romper bolhas, não aplicar substâncias caseiras e não remover roupas aderidas à pele."
+        },
+        {
+          "statement": "Uma criança de 8 meses apresenta obstrução total das vias aéreas por corpo estranho. A conduta indicada é:",
+          "options": [
+            "aplicar a manobra de Heimlich com compressões abdominais, como no adulto.",
+            "alternar cinco golpes nas costas, entre as escápulas, e cinco compressões torácicas, mantendo a cabeça mais baixa que o tronco.",
+            "introduzir o dedo na boca para retirar o objeto às cegas.",
+            "oferecer água para facilitar a deglutição do corpo estranho.",
+            "aguardar a resolução espontânea, mantendo a criança em posição sentada."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Engasgo em lactentes",
+          "tags": [
+            "primeiros socorros",
+            "engasgo",
+            "lactente",
+            "Heimlich"
+          ],
+          "comment": "Conteúdo diretamente aplicável ao cotidiano de quem atua em serviços de acolhimento e convivência com crianças pequenas.",
+          "justification": "Em lactentes (menores de 1 ano) com obstrução total, alternam-se cinco golpes no dorso, entre as escápulas, e cinco compressões torácicas, mantendo a cabeça mais baixa que o tronco. A manobra de Heimlich com compressões abdominais não é indicada nessa faixa etária, e a varredura digital às cegas pode aprofundar o corpo estranho."
+        }
+      ]
+    }
+  ]
+}

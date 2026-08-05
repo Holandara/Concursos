@@ -34,11 +34,14 @@ export class StatsService {
       ? leaves.reduce((acc, s) => acc + (STATUS_WEIGHT[s.status] ?? 0), 0) / totalLeaves
       : 0;
 
-    const questions = await db.questions.toArray();
+    // `questions` e `sessions` são tabelas globais: sem o filtro por escopo, o
+    // dashboard de um concurso somaria as estatísticas de todos os outros.
+    const scope = this.store.scopeIds();
+    const questions = (await db.questions.toArray()).filter((q) => scope.has(q.subjectId));
     const answered = questions.reduce((a, q) => a + q.answered, 0);
     const correct = questions.reduce((a, q) => a + q.correctCount, 0);
 
-    const sessions = await db.sessions.toArray();
+    const sessions = (await db.sessions.toArray()).filter((s) => scope.has(s.subjectId));
     const byDay = new Map<string, number>();
     for (const s of sessions) byDay.set(s.day, (byDay.get(s.day) ?? 0) + s.seconds);
 

@@ -1,0 +1,734 @@
+{
+  "subjects": [
+    {
+      "subject": "Gerenciamento Ágil de Projetos",
+      "summary": "\n<h1>Gerenciamento ágil de projetos</h1>\n\n<h2>1. Manifesto Ágil (2001) — 4 valores</h2>\n<blockquote>\n<p><strong>Indivíduos e interações</strong> mais que processos e ferramentas<br>\n<strong>Software em funcionamento</strong> mais que documentação abrangente<br>\n<strong>Colaboração com o cliente</strong> mais que negociação de contratos<br>\n<strong>Responder a mudanças</strong> mais que seguir um plano</p>\n</blockquote>\n<p>A frase final é decisiva: \"<em>há valor nos itens à direita, mas valorizamos <strong>mais</strong> os da esquerda</em>\". A banca adora afirmar que o ágil \"dispensa documentação\" ou \"não tem plano\" — está errado. São <strong>12 princípios</strong>.</p>\n\n<h2>2. Scrum — framework, não metodologia</h2>\n<table><tbody>\n<tr><td colspan=\"2\"><strong>3 responsabilidades (accountabilities)</strong></td></tr>\n<tr><td><strong>Product Owner</strong></td><td>Maximiza o valor; <strong>único responsável</strong> pelo Product Backlog e sua ordenação</td></tr>\n<tr><td><strong>Scrum Master</strong></td><td><strong>Líder servidor</strong>; garante a aplicação do Scrum, remove impedimentos. Não é gerente nem chefe</td></tr>\n<tr><td><strong>Developers</strong></td><td>Criam o incremento; <strong>autogerenciáveis</strong> e <strong>multifuncionais</strong>. Time Scrum típico: até 10 pessoas</td></tr>\n<tr><td colspan=\"2\"><strong>5 eventos</strong></td></tr>\n<tr><td><strong>Sprint</strong></td><td>Contêiner dos demais eventos; <strong>1 mês ou menos</strong>, duração fixa</td></tr>\n<tr><td><strong>Sprint Planning</strong></td><td>Até <strong>8h</strong> para Sprint de 1 mês. Define o <strong>Objetivo da Sprint</strong>, o \"o quê\" e o \"como\"</td></tr>\n<tr><td><strong>Daily Scrum</strong></td><td><strong>15 minutos</strong>, diário, para os Developers</td></tr>\n<tr><td><strong>Sprint Review</strong></td><td>Até <strong>4h</strong>; inspeciona o incremento com as partes interessadas</td></tr>\n<tr><td><strong>Sprint Retrospective</strong></td><td>Até <strong>3h</strong>; inspeciona pessoas, interações, processos e ferramentas</td></tr>\n<tr><td colspan=\"2\"><strong>3 artefatos e seus compromissos</strong></td></tr>\n<tr><td><strong>Product Backlog</strong></td><td>Compromisso: <strong>Objetivo do Produto</strong></td></tr>\n<tr><td><strong>Sprint Backlog</strong></td><td>Compromisso: <strong>Objetivo da Sprint</strong></td></tr>\n<tr><td><strong>Incremento</strong></td><td>Compromisso: <strong>Definição de Pronto (DoD)</strong></td></tr>\n</tbody></table>\n<p>Pilares empíricos: <strong>transparência, inspeção e adaptação</strong>. Valores: compromisso, foco, abertura, respeito e coragem.</p>\n\n<h2>3. Kanban</h2>\n<p>Método evolutivo (não prescreve papéis nem iterações). Práticas: <strong>visualizar o fluxo</strong>, <strong>limitar o trabalho em progresso (WIP)</strong>, gerenciar o fluxo, tornar as políticas explícitas, implementar loops de feedback e melhorar colaborativamente.</p>\n<p>Métricas: <strong>lead time</strong> (do pedido à entrega), <strong>cycle time</strong> (do início do trabalho à entrega), <strong>throughput</strong> e <strong>WIP</strong>. <strong>Lei de Little</strong>: WIP = throughput × lead time — limitar o WIP reduz o lead time.</p>\n\n<h2>4. Scrum x Kanban</h2>\n<table><tbody>\n<tr><td></td><td><strong>Scrum</strong></td><td><strong>Kanban</strong></td></tr>\n<tr><td>Cadência</td><td>Sprints de duração fixa</td><td>Fluxo contínuo</td></tr>\n<tr><td>Papéis</td><td>PO, SM, Developers</td><td>Não prescreve</td></tr>\n<tr><td>Limite de trabalho</td><td>Pelo Sprint Backlog</td><td>Limite explícito de <strong>WIP</strong></td></tr>\n<tr><td>Mudanças</td><td>Evitadas dentro da Sprint</td><td>A qualquer momento</td></tr>\n<tr><td>Métrica típica</td><td>Velocidade</td><td>Lead time e throughput</td></tr>\n</tbody></table>\n\n<h2>5. Outros conceitos</h2>\n<p><strong>XP</strong> (programação em par, TDD, integração contínua, refatoração), <strong>Lean</strong> (eliminar desperdício), <strong>SAFe / LeSS / Nexus</strong> (escala), <strong>MVP</strong>, <strong>Design Thinking</strong>, <strong>OKR</strong>, <strong>Story Points</strong> e <strong>Planning Poker</strong>, <strong>burndown</strong> e <strong>burnup</strong>. O <strong>PMBOK 7ª edição</strong> abandonou a estrutura por processos e adotou <strong>12 princípios</strong> e <strong>8 domínios de desempenho</strong>, incorporando abordagens adaptativas e híbridas.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que o Scrum Master é o gerente do projeto ou que prioriza o backlog — quem prioriza é o <strong>PO</strong>.</li>\n<li>Afirmar que a Daily dura 15 minutos <em>por pessoa</em> — é 15 minutos <strong>no total</strong>.</li>\n<li>Chamar o Scrum de metodologia com processos prescritivos detalhados — é <strong>framework</strong> leve.</li>\n<li>Dizer que ágil dispensa documentação e planejamento.</li>\n<li>Confundir Review (produto, com stakeholders) com Retrospective (processo, só o time).</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "De acordo com o Guia do Scrum, o responsável por maximizar o valor do produto e por gerenciar o Product Backlog é o:",
+          "options": [
+            "Scrum Master.",
+            "Product Owner.",
+            "Gerente de projetos.",
+            "Time de desenvolvimento, de forma colegiada.",
+            "Patrocinador do projeto."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Papéis do Scrum",
+          "tags": [
+            "Scrum",
+            "Product Owner"
+          ],
+          "comment": "O PO pode delegar a execução, mas permanece o único responsável (accountable). E o Scrum não prevê a figura do gerente de projetos.",
+          "justification": "O Guia do Scrum atribui ao Product Owner a responsabilidade por maximizar o valor do produto e por gerenciar efetivamente o Product Backlog, incluindo sua ordenação."
+        },
+        {
+          "statement": "Sobre os eventos do Scrum, assinale a alternativa correta.",
+          "options": [
+            "A Sprint Retrospective ocorre antes da Sprint Review, para que as melhorias sejam apresentadas às partes interessadas.",
+            "A Daily Scrum tem duração máxima de 15 minutos e destina-se aos Developers inspecionarem o progresso em direção ao Objetivo da Sprint.",
+            "A Sprint Planning tem duração máxima de 4 horas para uma Sprint de um mês.",
+            "A Sprint pode ter sua duração estendida quando o time não conclui o trabalho planejado.",
+            "A Sprint Review destina-se exclusivamente à avaliação do processo de trabalho da equipe."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Eventos do Scrum",
+          "tags": [
+            "Scrum",
+            "Daily",
+            "timebox"
+          ],
+          "comment": "Timeboxes para Sprint de 1 mês: Planning 8h, Review 4h, Retrospective 3h, Daily 15 min.",
+          "justification": "A Retrospective é o último evento da Sprint, após a Review. A Planning tem timebox de 8 horas para Sprint de um mês. A Sprint tem duração fixa e não é estendida. A Review inspeciona o incremento; o processo é tratado na Retrospective."
+        },
+        {
+          "statement": "No método Kanban, a prática de limitar a quantidade de itens em andamento simultaneamente tem como principal efeito:",
+          "options": [
+            "Aumentar o número de tarefas iniciadas por período.",
+            "Reduzir o lead time e evidenciar gargalos no fluxo de trabalho, conforme a Lei de Little.",
+            "Eliminar a necessidade de reuniões de acompanhamento.",
+            "Aumentar o tamanho do backlog do produto.",
+            "Garantir a entrega em iterações de duração fixa."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Kanban",
+          "tags": [
+            "Kanban",
+            "WIP",
+            "lead time"
+          ],
+          "comment": "Lei de Little: WIP = throughput × lead time. Com throughput estável, menos WIP significa menor lead time.",
+          "justification": "Limitar o WIP força a conclusão antes do início de novos itens, reduzindo o lead time e tornando visíveis os gargalos. O Kanban não trabalha com iterações de duração fixa."
+        }
+      ]
+    },
+    {
+      "subject": "Processos e Grupos de Processos",
+      "summary": "\n<h1>Processos, grupos de processos e áreas de conhecimento</h1>\n\n<h2>1. Conceitos fundamentais</h2>\n<p><strong>Projeto</strong>: esforço <strong>temporário</strong> para criar um produto, serviço ou resultado <strong>exclusivo</strong>. Distingue-se da <strong>operação</strong> (contínua e repetitiva). <strong>Programa</strong>: conjunto de projetos relacionados gerenciados de forma coordenada. <strong>Portfólio</strong>: projetos, programas e operações agrupados para atingir objetivos estratégicos.</p>\n\n<h2>2. Os 5 grupos de processos (PMBOK 6ª edição)</h2>\n<table><tbody>\n<tr><td><strong>Iniciação</strong></td><td>Autorização formal. Saída-chave: <strong>Termo de Abertura do Projeto (TAP)</strong> e registro das partes interessadas</td></tr>\n<tr><td><strong>Planejamento</strong></td><td><strong>Maior número de processos</strong> (24 dos 49). Produz o <strong>Plano de Gerenciamento do Projeto</strong> e as linhas de base de escopo, cronograma e custos</td></tr>\n<tr><td><strong>Execução</strong></td><td><strong>Maior consumo de recursos e tempo</strong>. Realiza o trabalho e produz as entregas</td></tr>\n<tr><td><strong>Monitoramento e Controle</strong></td><td>Percorre todo o ciclo; compara desempenho com a linha de base e aciona <strong>controle integrado de mudanças</strong></td></tr>\n<tr><td><strong>Encerramento</strong></td><td>Aceite formal, encerramento de contratos e registro das <strong>lições aprendidas</strong></td></tr>\n</tbody></table>\n<div data-callout=\"info\"><p>Grupos de processos <strong>não são fases</strong> do ciclo de vida: eles se sobrepõem e podem se repetir em cada fase do projeto.</p></div>\n\n<h2>3. As 10 áreas de conhecimento (PMBOK 6ª edição)</h2>\n<ol>\n<li><strong>Integração</strong> — única área presente nos 5 grupos; TAP, plano, controle de mudanças, encerramento;</li>\n<li><strong>Escopo</strong> — requisitos, EAP/WBS, validação e controle. <strong>Validar escopo</strong> (aceite pelo cliente) ≠ <strong>controlar a qualidade</strong> (conformidade técnica);</li>\n<li><strong>Cronograma</strong> — sequenciamento, duração, <strong>caminho crítico (CPM)</strong>, folga, compressão por <em>crashing</em> (mais recursos, mais custo) ou <em>fast tracking</em> (paralelismo, mais risco);</li>\n<li><strong>Custos</strong> — orçamento, <strong>Gerenciamento do Valor Agregado (EVM)</strong>;</li>\n<li><strong>Qualidade</strong> — planejar, gerenciar e controlar; prevenção sobre inspeção;</li>\n<li><strong>Recursos</strong> — equipe e recursos físicos;</li>\n<li><strong>Comunicações</strong> — canais = n(n−1)/2;</li>\n<li><strong>Riscos</strong> — identificação, análise qualitativa e quantitativa, respostas;</li>\n<li><strong>Aquisições</strong> — contratos e fornecedores;</li>\n<li><strong>Partes interessadas</strong> — identificação e engajamento.</li>\n</ol>\n\n<h2>4. Valor agregado (EVM) — fórmulas que caem</h2>\n<table><tbody>\n<tr><td><strong>VA (EV)</strong></td><td>Valor agregado: trabalho realizado × orçamento</td></tr>\n<tr><td><strong>VP (PV)</strong></td><td>Valor planejado até a data</td></tr>\n<tr><td><strong>CR (AC)</strong></td><td>Custo real incorrido</td></tr>\n<tr><td><strong>VPr (SV) = VA − VP</strong></td><td>Variação de <strong>prazo</strong>. Negativo = atrasado</td></tr>\n<tr><td><strong>VC (CV) = VA − CR</strong></td><td>Variação de <strong>custo</strong>. Negativo = acima do orçamento</td></tr>\n<tr><td><strong>IDP (SPI) = VA / VP</strong></td><td>Índice de desempenho de prazo. &lt; 1 = atrasado</td></tr>\n<tr><td><strong>IDC (CPI) = VA / CR</strong></td><td>Índice de desempenho de custo. &lt; 1 = gastando mais que o previsto</td></tr>\n<tr><td><strong>ENT (EAC) = ONT / IDC</strong></td><td>Estimativa no término (ritmo atual mantido)</td></tr>\n</tbody></table>\n\n<h2>5. PMBOK 7ª edição — a virada</h2>\n<p>Abandonou a estrutura por grupos de processos e áreas de conhecimento e adotou <strong>12 princípios</strong> (administração, equipe, partes interessadas, valor, pensamento sistêmico, liderança, adaptação, qualidade, complexidade, risco, adaptabilidade e resiliência, mudança) e <strong>8 domínios de desempenho</strong> (partes interessadas, equipe, abordagem de desenvolvimento e ciclo de vida, planejamento, trabalho do projeto, entrega, medição e incerteza). Foco em <strong>entrega de valor</strong> e em abordagens preditiva, adaptativa e híbrida.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Tratar grupos de processos como fases sequenciais.</li>\n<li>Confundir validar escopo (aceite) com controlar qualidade (conformidade).</li>\n<li>Errar o sinal do EVM: valores <strong>negativos</strong> e índices <strong>abaixo de 1</strong> são desfavoráveis.</li>\n<li>Dizer que o PMBOK 7 mantém as 10 áreas de conhecimento.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Em um projeto, o valor planejado (VP) até a data de corte é R$ 100.000, o valor agregado (VA) é R$ 80.000 e o custo real (CR) é R$ 90.000. É correto afirmar que o projeto está:",
+          "options": [
+            "Adiantado no cronograma e abaixo do orçamento.",
+            "Atrasado no cronograma e acima do orçamento, com IDP de 0,8 e IDC de aproximadamente 0,89.",
+            "No prazo e dentro do orçamento.",
+            "Atrasado no cronograma, porém abaixo do orçamento.",
+            "Adiantado no cronograma, porém acima do orçamento."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Valor agregado",
+          "tags": [
+            "EVM",
+            "PMBOK",
+            "IDP",
+            "IDC"
+          ],
+          "comment": "Truque: o VA é sempre o primeiro termo. Se o resultado for negativo ou o índice menor que 1, a notícia é ruim.",
+          "justification": "VPr = 80.000 − 100.000 = −20.000 (atrasado); VC = 80.000 − 90.000 = −10.000 (acima do orçamento). IDP = 80/100 = 0,8 e IDC = 80/90 ≈ 0,89."
+        },
+        {
+          "statement": "Sobre os grupos de processos de gerenciamento de projetos, assinale a alternativa correta.",
+          "options": [
+            "Correspondem às fases sequenciais do ciclo de vida do projeto, executadas uma única vez.",
+            "O grupo de Planejamento concentra o maior número de processos, enquanto o de Execução concentra o maior consumo de recursos.",
+            "O grupo de Monitoramento e Controle ocorre apenas ao final do projeto.",
+            "O Termo de Abertura do Projeto é elaborado no grupo de Planejamento.",
+            "O registro das lições aprendidas ocorre exclusivamente no grupo de Iniciação."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Grupos de processos",
+          "tags": [
+            "PMBOK",
+            "processos"
+          ],
+          "comment": "Grupos de processos se repetem a cada fase; não confundir com o ciclo de vida.",
+          "justification": "O Planejamento reúne 24 dos 49 processos do PMBOK 6, e a Execução consome a maior parte do orçamento e do tempo. O TAP é saída da Iniciação e o Monitoramento e Controle permeia todo o projeto."
+        },
+        {
+          "statement": "A técnica de compressão de cronograma que consiste em executar em paralelo atividades originalmente planejadas em sequência, aumentando o risco e a possibilidade de retrabalho sem necessariamente elevar o custo, é denominada:",
+          "options": [
+            "Crashing.",
+            "Fast tracking.",
+            "Nivelamento de recursos.",
+            "Análise de reservas.",
+            "Método do caminho crítico."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Cronograma",
+          "tags": [
+            "PMBOK",
+            "fast tracking",
+            "crashing"
+          ],
+          "comment": "Crashing = mais recursos, mais custo. Fast tracking = paralelismo, mais risco.",
+          "justification": "Fast tracking sobrepõe atividades sequenciais para reduzir a duração, ao custo de maior risco e possível retrabalho. Crashing adiciona recursos, elevando o custo."
+        }
+      ]
+    },
+    {
+      "subject": "Gestão de Riscos de TI",
+      "summary": "\n<h1>Gestão de riscos em projetos e serviços de TI</h1>\n\n<h2>1. Risco em projetos</h2>\n<p><strong>Risco</strong>: evento ou condição incerta que, se ocorrer, tem efeito <strong>positivo ou negativo</strong> sobre um ou mais objetivos. Distinção do PMBOK: <strong>riscos individuais</strong> x <strong>risco geral do projeto</strong>.</p>\n\n<h2>2. Processos (PMBOK 6ª edição)</h2>\n<ol>\n<li><strong>Planejar o gerenciamento dos riscos</strong> — define metodologia, papéis, escalas e apetite;</li>\n<li><strong>Identificar os riscos</strong> — brainstorming, Delphi, SWOT, checklists, análise de premissas, entrevistas. Saída: <strong>registro dos riscos</strong>;</li>\n<li><strong>Análise qualitativa</strong> — prioriza por probabilidade e impacto (matriz de calor); rápida e subjetiva;</li>\n<li><strong>Análise quantitativa</strong> — modela numericamente: <strong>valor monetário esperado (VME)</strong>, árvore de decisão, <strong>simulação de Monte Carlo</strong>, análise de sensibilidade (diagrama de tornado);</li>\n<li><strong>Planejar respostas</strong>;</li>\n<li><strong>Implementar respostas</strong>;</li>\n<li><strong>Monitorar os riscos</strong>.</li>\n</ol>\n\n<h2>3. Estratégias de resposta</h2>\n<table><tbody>\n<tr><td colspan=\"2\"><strong>Ameaças (риscos negativos)</strong></td><td colspan=\"2\"><strong>Oportunidades (riscos positivos)</strong></td></tr>\n<tr><td><strong>Prevenir/Evitar</strong></td><td>Eliminar a causa ou o objetivo ameaçado</td><td><strong>Explorar</strong></td><td>Garantir que a oportunidade ocorra</td></tr>\n<tr><td><strong>Transferir</strong></td><td>Seguro, garantia, terceirização</td><td><strong>Compartilhar</strong></td><td>Parceria com quem melhor captura o benefício</td></tr>\n<tr><td><strong>Mitigar</strong></td><td>Reduzir probabilidade ou impacto</td><td><strong>Melhorar</strong></td><td>Aumentar probabilidade ou impacto</td></tr>\n<tr><td><strong>Aceitar</strong></td><td>Ativa (reserva de contingência) ou passiva</td><td><strong>Aceitar</strong></td><td>Não perseguir ativamente</td></tr>\n</tbody></table>\n<p><strong>Escalar</strong> é resposta comum a ambos: o risco está fora da autoridade do gerente e vai para o programa ou portfólio.</p>\n\n<h2>4. Reservas</h2>\n<table><tbody>\n<tr><td><strong>Reserva de contingência</strong></td><td>Riscos <strong>conhecidos</strong> (known unknowns)</td><td>Faz parte da <strong>linha de base de custos</strong>; usada pelo gerente do projeto</td></tr>\n<tr><td><strong>Reserva gerencial</strong></td><td>Riscos <strong>desconhecidos</strong> (unknown unknowns)</td><td><strong>Fora</strong> da linha de base, dentro do orçamento total; liberada pela alta gestão</td></tr>\n</tbody></table>\n\n<h2>5. Riscos típicos em TI</h2>\n<p>Prazos irreais, requisitos voláteis, dependência de fornecedor único, dívida técnica, indisponibilidade de pessoas-chave, falha de integração, migração de dados, obsolescência tecnológica, <strong>riscos de segurança e de conformidade (LGPD)</strong>, riscos de terceiros e de cadeia de suprimentos.</p>\n\n<h2>6. Riscos em serviços de TI</h2>\n<p>No <strong>ITIL 4</strong>, a prática de <strong>gerenciamento de riscos</strong> integra a governança e alimenta o <strong>gerenciamento de mudanças</strong> (avaliação de risco de cada mudança) e a <strong>continuidade do serviço</strong>. No <strong>COBIT 2019</strong>, o objetivo <strong>EDM03 (Garantir a Otimização do Risco)</strong> e o <strong>APO12 (Gerenciar Riscos)</strong> tratam o tema; a referência especializada é o <strong>COBIT for Risk</strong> e o <strong>ISACA Risk IT Framework</strong>. Para segurança da informação, a norma é a <strong>ISO/IEC 27005</strong>, alinhada à <strong>ISO 31000</strong>.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Trocar reserva de contingência (conhecidos, na linha de base) por gerencial (desconhecidos, fora dela).</li>\n<li>Achar que a análise qualitativa precede sempre a quantitativa <em>obrigatoriamente</em> — a quantitativa é opcional e nem todo projeto a realiza.</li>\n<li>Aplicar \"mitigar\" a oportunidades — o correto é <strong>melhorar</strong>.</li>\n<li>Dizer que transferir o risco elimina a responsabilidade final.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Em gerenciamento de riscos de projetos, a reserva destinada a cobrir riscos desconhecidos (unknown unknowns), que não integra a linha de base de custos e cuja utilização depende de autorização da alta gestão, é a reserva:",
+          "options": [
+            "De contingência.",
+            "Gerencial.",
+            "Técnica.",
+            "Operacional.",
+            "De escopo."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Reservas",
+          "tags": [
+            "PMBOK",
+            "riscos",
+            "reservas"
+          ],
+          "comment": "Orçamento total = linha de base de custos (que já inclui contingência) + reserva gerencial.",
+          "justification": "A reserva gerencial cobre riscos não identificados, fica fora da linha de base de custos e sua liberação depende de aprovação da direção. A de contingência cobre riscos identificados e integra a linha de base."
+        },
+        {
+          "statement": "Uma organização identifica a possibilidade de concluir um projeto antes do prazo caso consiga formar parceria com um fornecedor especializado, e decide firmar essa parceria para aumentar a chance de que isso ocorra. Trata-se de estratégia de resposta a risco denominada:",
+          "options": [
+            "Mitigar.",
+            "Transferir.",
+            "Compartilhar.",
+            "Evitar.",
+            "Aceitar passivamente."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Respostas a riscos",
+          "tags": [
+            "PMBOK",
+            "oportunidades"
+          ],
+          "comment": "Ameaça: evitar, transferir, mitigar, aceitar. Oportunidade: explorar, compartilhar, melhorar, aceitar.",
+          "justification": "Compartilhar é a estratégia para oportunidades em que se atribui a terceiro, parcialmente, a propriedade do risco positivo, por meio de parceria ou joint venture."
+        },
+        {
+          "statement": "A técnica de análise quantitativa de riscos que utiliza a geração repetida de cenários aleatórios a partir de distribuições de probabilidade das variáveis do projeto, produzindo uma distribuição de resultados possíveis para custo e prazo, é a:",
+          "options": [
+            "Técnica Delphi.",
+            "Análise SWOT.",
+            "Simulação de Monte Carlo.",
+            "Matriz de probabilidade e impacto.",
+            "Análise de causa-raiz."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Análise quantitativa",
+          "tags": [
+            "Monte Carlo",
+            "riscos"
+          ],
+          "comment": "Delphi e SWOT são de identificação; a matriz de probabilidade e impacto é qualitativa.",
+          "justification": "A simulação de Monte Carlo executa milhares de iterações com valores sorteados, permitindo estimar a probabilidade de atingir determinado custo ou prazo."
+        }
+      ]
+    },
+    {
+      "subject": "ITIL v4",
+      "summary": "\n<h1>ITIL 4</h1>\n<p>Framework de <strong>gerenciamento de serviços de TI (ITSM)</strong>. A versão 4 (2019) abandonou o \"ciclo de vida do serviço\" da v3 e adotou o <strong>Sistema de Valor de Serviço (SVS)</strong>, com foco em <strong>cocriação de valor</strong>, integrando Agile, Lean e DevOps.</p>\n\n<h2>1. Conceitos-chave</h2>\n<ul>\n<li><strong>Serviço</strong>: meio de possibilitar a cocriação de valor ao facilitar resultados que os clientes desejam, <strong>sem que precisem gerenciar custos e riscos específicos</strong>;</li>\n<li><strong>Valor</strong>: percebido pelas partes interessadas; é <strong>cocriado</strong> entre provedor e consumidor;</li>\n<li><strong>Utilidade</strong> (fitness for purpose — o que o serviço faz) x <strong>Garantia</strong> (fitness for use — como é entregue: disponibilidade, capacidade, continuidade, segurança);</li>\n<li><strong>Oferta de serviço</strong>, <strong>relacionamento de serviço</strong> e papéis de consumidor: cliente, usuário e patrocinador.</li>\n</ul>\n\n<h2>2. Os 7 princípios orientadores</h2>\n<ol>\n<li><strong>Foco no valor</strong>;</li>\n<li><strong>Comece onde você está</strong>;</li>\n<li><strong>Progrida iterativamente com feedback</strong>;</li>\n<li><strong>Colabore e promova visibilidade</strong>;</li>\n<li><strong>Pense e trabalhe holisticamente</strong>;</li>\n<li><strong>Mantenha simples e prático</strong>;</li>\n<li><strong>Otimize e automatize</strong> (nesta ordem: otimizar antes de automatizar).</li>\n</ol>\n\n<h2>3. Sistema de Valor de Serviço (SVS)</h2>\n<p>Componentes: princípios orientadores · <strong>governança</strong> · <strong>cadeia de valor de serviço</strong> · <strong>práticas</strong> · <strong>melhoria contínua</strong>. Entradas: oportunidade e demanda. Saída: <strong>valor</strong>.</p>\n\n<h2>4. Cadeia de Valor de Serviço — 6 atividades</h2>\n<table><tbody>\n<tr><td><strong>Planejar</strong></td><td>Visão compartilhada, direção e melhoria</td></tr>\n<tr><td><strong>Melhorar</strong></td><td>Melhoria contínua de produtos, serviços e práticas</td></tr>\n<tr><td><strong>Engajar</strong></td><td>Entendimento das necessidades e relacionamento com as partes interessadas</td></tr>\n<tr><td><strong>Desenhar e Transicionar</strong></td><td>Garantir que produtos e serviços atendam a expectativas de qualidade, custo e time to market</td></tr>\n<tr><td><strong>Obter/Construir</strong></td><td>Disponibilizar componentes quando e onde necessários</td></tr>\n<tr><td><strong>Entregar e Suportar</strong></td><td>Entrega e suporte conforme especificações e expectativas</td></tr>\n</tbody></table>\n<p>As atividades <strong>não são sequenciais</strong>: combinam-se em diferentes <em>fluxos de valor</em> conforme o cenário.</p>\n\n<h2>5. As 4 dimensões (visão holística)</h2>\n<p><strong>Organizações e pessoas</strong> · <strong>Informação e tecnologia</strong> · <strong>Parceiros e fornecedores</strong> · <strong>Fluxos de valor e processos</strong>. Todas influenciadas por fatores <strong>PESTLE</strong> (político, econômico, social, tecnológico, legal e ambiental).</p>\n\n<h2>6. Práticas mais cobradas (das 34)</h2>\n<table><tbody>\n<tr><td><strong>Central de Serviços</strong></td><td>Ponto único de contato entre provedor e usuários</td></tr>\n<tr><td><strong>Gerenciamento de Incidentes</strong></td><td>Restaurar a operação normal <strong>o mais rápido possível</strong> — o objetivo não é achar a causa</td></tr>\n<tr><td><strong>Gerenciamento de Problemas</strong></td><td>Reduzir probabilidade e impacto: identificar <strong>causa raiz</strong>. Fases: identificação, controle e controle de erro. Gera <strong>erro conhecido</strong> e <strong>solução de contorno (workaround)</strong></td></tr>\n<tr><td><strong>Habilitação de Mudança</strong></td><td>Maximizar mudanças bem-sucedidas. Tipos: <strong>padrão</strong> (pré-aprovada, baixo risco), <strong>normal</strong> (avaliada e autorizada) e <strong>emergencial</strong> (autoridade específica). Papel da <strong>autoridade de mudança</strong> — a v4 não usa mais o termo CAB como obrigatório</td></tr>\n<tr><td><strong>Gerenciamento de Requisição de Serviço</strong></td><td>Requisições padronizadas do usuário; <strong>não é incidente</strong></td></tr>\n<tr><td><strong>Gerenciamento de Nível de Serviço</strong></td><td>Metas claras baseadas em resultados do negócio; <strong>SLA</strong> (com cliente), <strong>OLA</strong> (interno) e <strong>UC</strong> (contrato de apoio com fornecedor)</td></tr>\n<tr><td><strong>Gerenciamento de Ativos, Configuração e Eventos</strong></td><td>CMDB, ICs e monitoramento</td></tr>\n<tr><td><strong>Melhoria Contínua</strong></td><td>Modelo de 7 passos, do \"qual é a visão?\" ao \"como manter o impulso?\"</td></tr>\n</tbody></table>\n<p>As práticas dividem-se em <strong>gerais de gerenciamento (14)</strong>, <strong>de gerenciamento de serviços (17)</strong> e <strong>de gerenciamento técnico (3)</strong>.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que o gerenciamento de incidentes busca a causa raiz — isso é <strong>problema</strong>.</li>\n<li>Afirmar que a cadeia de valor é sequencial.</li>\n<li>Confundir utilidade (o que faz) com garantia (como entrega).</li>\n<li>Trocar SLA (cliente) por OLA (interno) e UC (fornecedor externo).</li>\n<li>Manter a estrutura de 5 fases do ciclo de vida da ITIL v3 na v4.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Na ITIL 4, o objetivo do gerenciamento de incidentes é:",
+          "options": [
+            "Identificar a causa raiz das interrupções e eliminá-la definitivamente.",
+            "Restaurar a operação normal do serviço o mais rapidamente possível, minimizando o impacto adverso ao negócio.",
+            "Autorizar e controlar mudanças na infraestrutura de TI.",
+            "Registrar e manter atualizados os itens de configuração no CMDB.",
+            "Negociar e documentar acordos de nível de serviço com os clientes."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Práticas",
+          "tags": [
+            "ITIL",
+            "incidentes",
+            "problemas"
+          ],
+          "comment": "Incidente = velocidade de restauração (pode usar workaround). Problema = causa raiz.",
+          "justification": "A prática de gerenciamento de incidentes visa restaurar o serviço com rapidez, ainda que por meio de solução de contorno. A investigação da causa raiz é objeto do gerenciamento de problemas."
+        },
+        {
+          "statement": "As atividades que compõem a Cadeia de Valor de Serviço da ITIL 4 são:",
+          "options": [
+            "Estratégia, Desenho, Transição, Operação e Melhoria Contínua.",
+            "Planejar, Melhorar, Engajar, Desenhar e Transicionar, Obter/Construir, e Entregar e Suportar.",
+            "Planejar, Fazer, Checar e Agir.",
+            "Identificar, Proteger, Detectar, Responder e Recuperar.",
+            "Iniciação, Planejamento, Execução, Monitoramento e Encerramento."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Cadeia de valor",
+          "tags": [
+            "ITIL 4",
+            "SVS"
+          ],
+          "comment": "A letra A é o ciclo de vida da ITIL v3 — distrator mais comum nessa questão.",
+          "justification": "A Cadeia de Valor de Serviço possui seis atividades interconectadas e não sequenciais, combinadas em fluxos de valor conforme a demanda."
+        },
+        {
+          "statement": "Na ITIL 4, o acordo firmado entre o provedor de serviços de TI e um fornecedor externo, que dá suporte ao cumprimento das metas pactuadas com o cliente, é denominado:",
+          "options": [
+            "SLA (Service Level Agreement).",
+            "OLA (Operational Level Agreement).",
+            "UC (Underpinning Contract) ou contrato de apoio.",
+            "RFC (Request for Change).",
+            "DoD (Definition of Done)."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Nível de serviço",
+          "tags": [
+            "ITIL",
+            "SLA",
+            "OLA",
+            "UC"
+          ],
+          "comment": "SLA = com o cliente. OLA = entre áreas internas. UC = com fornecedor externo.",
+          "justification": "O Underpinning Contract é o contrato com terceiros que sustenta os compromissos assumidos no SLA. O OLA é o acordo entre unidades internas do próprio provedor."
+        },
+        {
+          "statement": "Um dos princípios orientadores da ITIL 4 estabelece que a organização deve avaliar o estado atual dos serviços e métodos antes de decidir o que reaproveitar, evitando começar do zero desnecessariamente. Trata-se do princípio:",
+          "options": [
+            "Foco no valor.",
+            "Comece onde você está.",
+            "Mantenha simples e prático.",
+            "Otimize e automatize.",
+            "Colabore e promova visibilidade."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Princípios orientadores",
+          "tags": [
+            "ITIL 4",
+            "princípios"
+          ],
+          "comment": "São 7 princípios. \"Otimize e automatize\" traz a ordem: não automatize um processo ruim.",
+          "justification": "O princípio \"comece onde você está\" orienta a observar e medir a situação atual, aproveitando o que já funciona em vez de recomeçar."
+        }
+      ]
+    },
+    {
+      "subject": "COBIT 2019",
+      "summary": "\n<h1>COBIT 2019</h1>\n<p>Framework da <strong>ISACA</strong> para <strong>governança e gestão de informação e tecnologia (I&amp;T) corporativa</strong>. Não é framework de gerenciamento de serviços (isso é ITIL) nem de projetos (PMBOK): é de <strong>governança</strong>.</p>\n\n<h2>1. Governança x Gestão — a distinção central</h2>\n<table><tbody>\n<tr><td><strong>Governança</strong></td><td><strong>EDM</strong>: <em>Evaluate, Direct, Monitor</em></td><td>Responsabilidade do <strong>conselho de administração</strong>. Avalia necessidades das partes interessadas, define direção e monitora desempenho e conformidade</td></tr>\n<tr><td><strong>Gestão</strong></td><td><strong>PBRM</strong>: <em>Plan, Build, Run, Monitor</em></td><td>Responsabilidade da <strong>alta administração executiva</strong>. Planeja, constrói, executa e monitora atividades alinhadas à direção definida</td></tr>\n</tbody></table>\n\n<h2>2. Os 6 princípios do sistema de governança</h2>\n<ol>\n<li><strong>Fornecer valor às partes interessadas</strong>;</li>\n<li><strong>Abordagem holística</strong>;</li>\n<li><strong>Sistema de governança dinâmico</strong>;</li>\n<li><strong>Governança distinta da gestão</strong>;</li>\n<li><strong>Adaptado às necessidades da empresa</strong>;</li>\n<li><strong>Sistema de governança de ponta a ponta</strong> (cobre toda a empresa, não só a área de TI).</li>\n</ol>\n<p>Há ainda <strong>3 princípios do framework de governança</strong>: baseado em modelo conceitual, aberto e flexível, e alinhado a padrões relevantes.</p>\n\n<h2>3. Objetivos de governança e gestão — 40 no total</h2>\n<table><tbody>\n<tr><td><strong>EDM</strong> — Avaliar, Dirigir e Monitorar</td><td><strong>5 objetivos</strong></td><td>EDM01 estrutura de governança · EDM02 entrega de benefícios · <strong>EDM03 otimização do risco</strong> · EDM04 otimização de recursos · EDM05 engajamento de partes interessadas</td></tr>\n<tr><td><strong>APO</strong> — Alinhar, Planejar e Organizar</td><td><strong>14</strong></td><td>Inclui APO12 riscos, APO13 segurança, APO14 dados</td></tr>\n<tr><td><strong>BAI</strong> — Construir, Adquirir e Implementar</td><td><strong>11</strong></td><td>Inclui BAI06 mudanças de TI, BAI10 configuração</td></tr>\n<tr><td><strong>DSS</strong> — Entregar, Serviços e Suporte</td><td><strong>6</strong></td><td>DSS01 operações · DSS02 requisições e incidentes · DSS03 problemas · DSS04 continuidade · <strong>DSS05 serviços de segurança</strong> · DSS06 controles de processos de negócio</td></tr>\n<tr><td><strong>MEA</strong> — Monitorar, Avaliar e Analisar</td><td><strong>4</strong></td><td>MEA01 desempenho · MEA02 controle interno · MEA03 conformidade externa · MEA04 garantia (assurance)</td></tr>\n</tbody></table>\n<p>Total: 5 + 14 + 11 + 6 + 4 = <strong>40 objetivos</strong>. Mnemônico dos domínios de gestão: <strong>APO, BAI, DSS, MEA</strong>.</p>\n\n<h2>4. Componentes do sistema de governança</h2>\n<p>Substituem os \"habilitadores\" do COBIT 5: <strong>processos</strong> · <strong>estruturas organizacionais</strong> · <strong>princípios, políticas e procedimentos</strong> · <strong>informação</strong> · <strong>cultura, ética e comportamento</strong> · <strong>pessoas, habilidades e competências</strong> · <strong>serviços, infraestrutura e aplicativos</strong>.</p>\n\n<h2>5. Fatores de design (design factors)</h2>\n<p>São <strong>11</strong>: estratégia da empresa; metas da empresa; perfil de risco; questões relacionadas a I&amp;T; cenário de ameaças; requisitos de conformidade; papel da TI; modelo de fornecimento (sourcing); métodos de implementação de TI; estratégia de adoção de tecnologia; e porte da empresa. Servem para <strong>customizar</strong> o sistema de governança — o COBIT 2019 não é \"tamanho único\".</p>\n\n<h2>6. Medição de desempenho</h2>\n<p>O COBIT 2019 adota o <strong>CMMI</strong> como base: <strong>níveis de capacidade de 0 a 5</strong> por processo (0 incompleto, 1 realizado, 2 gerenciado, 3 estabelecido, 4 previsível, 5 otimizado) e <strong>níveis de maturidade</strong> por área de foco. A <strong>cascata de objetivos</strong> conecta necessidades das partes interessadas → metas corporativas (<strong>13</strong>) → metas de alinhamento (<strong>13</strong>) → objetivos de governança e gestão.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Repetir \"5 princípios e 7 habilitadores\" — isso é <strong>COBIT 5</strong>; o 2019 tem <strong>6 princípios e 7 componentes</strong>.</li>\n<li>Dizer que o COBIT é framework de gerenciamento de serviços.</li>\n<li>Errar a contagem dos domínios: EDM 5, APO 14, BAI 11, DSS 6, MEA 4.</li>\n<li>Confundir governança (EDM, conselho) com gestão (APO/BAI/DSS/MEA, executivos).</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "No COBIT 2019, o domínio composto pelos objetivos relacionados a avaliar, dirigir e monitorar, sendo responsabilidade do conselho de administração, é o:",
+          "options": [
+            "APO — Alinhar, Planejar e Organizar.",
+            "BAI — Construir, Adquirir e Implementar.",
+            "EDM — Avaliar, Dirigir e Monitorar.",
+            "DSS — Entregar, Serviços e Suporte.",
+            "MEA — Monitorar, Avaliar e Analisar."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Domínios",
+          "tags": [
+            "COBIT 2019",
+            "EDM",
+            "governança"
+          ],
+          "comment": "EDM é o único domínio de GOVERNANÇA; os outros quatro são de GESTÃO.",
+          "justification": "O domínio EDM contém os cinco objetivos de governança, atribuídos ao conselho, enquanto APO, BAI, DSS e MEA constituem os objetivos de gestão, atribuídos à administração executiva."
+        },
+        {
+          "statement": "Sobre os princípios do sistema de governança no COBIT 2019, assinale a alternativa correta.",
+          "options": [
+            "São cinco princípios, entre eles \"atender às necessidades das partes interessadas\" e \"cobrir a organização de ponta a ponta\".",
+            "São seis princípios, entre os quais \"governança distinta da gestão\" e \"sistema de governança adaptado às necessidades da empresa\".",
+            "São sete princípios, correspondentes aos sete habilitadores.",
+            "São quatro princípios, alinhados aos quatro domínios de gestão.",
+            "O COBIT 2019 não estabelece princípios, apenas processos."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Princípios",
+          "tags": [
+            "COBIT 2019",
+            "princípios"
+          ],
+          "comment": "A letra A descreve o COBIT 5 (5 princípios e 7 habilitadores). O 2019 tem 6 princípios de sistema, 3 de framework e 7 componentes.",
+          "justification": "O COBIT 2019 define seis princípios para o sistema de governança: fornecer valor às partes interessadas, abordagem holística, sistema dinâmico, governança distinta da gestão, adaptado às necessidades da empresa e de ponta a ponta."
+        },
+        {
+          "statement": "Os fatores de design (design factors) do COBIT 2019 têm por finalidade:",
+          "options": [
+            "Definir os níveis de maturidade obrigatórios para certificação da organização.",
+            "Customizar o sistema de governança da organização, considerando aspectos como estratégia, perfil de risco, cenário de ameaças, requisitos de conformidade e porte da empresa.",
+            "Substituir os objetivos de governança e gestão nas organizações de pequeno porte.",
+            "Estabelecer o cronograma de auditoria interna de TI.",
+            "Determinar as práticas de gerenciamento de serviços a serem adotadas."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Design factors",
+          "tags": [
+            "COBIT 2019",
+            "customização"
+          ],
+          "comment": "São 11 fatores. A mensagem central do COBIT 2019 é que governança não é \"tamanho único\".",
+          "justification": "Os fatores de design orientam a priorização dos objetivos e a definição dos níveis de capacidade desejados, adaptando o sistema de governança ao contexto da organização."
+        }
+      ]
+    },
+    {
+      "subject": "Língua Portuguesa",
+      "summary": "\n<h1>Língua Portuguesa — o que a FGV cobra</h1>\n<p>A FGV concentra a prova em <strong>interpretação de texto</strong>, <strong>coesão/coerência</strong> e <strong>reescrita de frases</strong>. As questões costumam pedir a alternativa que <strong>mantém o sentido original</strong> após uma alteração — mais do que a regra gramatical isolada.</p>\n\n<h2>1. Compreensão e interpretação</h2>\n<ul>\n<li><strong>Compreensão</strong> = o que está <em>explícito</em>. <strong>Interpretação</strong> = o que se <em>infere</em>;</li>\n<li>Atenção aos operadores argumentativos: <em>mas, porém, contudo, entretanto</em> (oposição, com <strong>ênfase no segundo termo</strong>); <em>pois, porque, já que</em> (causa); <em>portanto, logo, assim</em> (conclusão); <em>embora, ainda que</em> (concessão);</li>\n<li>Distinga <strong>fato</strong> de <strong>opinião</strong> e <strong>tese</strong> de <strong>argumento</strong>;</li>\n<li>Cuidado com extrapolação: se o texto não afirma, a alternativa está errada, ainda que seja verdade no mundo real.</li>\n</ul>\n\n<h2>2. Coesão textual</h2>\n<table><tbody>\n<tr><td><strong>Referenciação</strong></td><td>Anafórica (retoma o que veio antes: <em>este, esse, o referido</em>) e catafórica (antecipa: <em>este</em>, dois-pontos). Regra: <strong>este</strong> = próximo/posterior; <strong>esse</strong> = anterior/distante</td></tr>\n<tr><td><strong>Substituição</strong></td><td>Sinônimos, hiperônimos, pronomes</td></tr>\n<tr><td><strong>Elipse</strong></td><td>Omissão de termo recuperável</td></tr>\n<tr><td><strong>Conectores</strong></td><td>Estabelecem a relação lógica entre orações e parágrafos</td></tr>\n</tbody></table>\n\n<h2>3. Crase — os casos decisivos</h2>\n<p><strong>Há crase</strong> diante de palavra feminina quando há junção de preposição \"a\" + artigo \"a\": <em>Refiro-me à norma</em>. Também nas locuções adverbiais femininas (<em>às pressas, à noite, à vista</em>) e em <em>àquele(a), àquilo</em>.</p>\n<p><strong>Não há crase</strong> antes de: verbo (<em>a partir de</em>), palavra masculina (salvo \"à moda de\"), pronome de tratamento (<em>a Vossa Senhoria</em>), palavra no plural precedida de \"a\" singular (<em>a normas</em>), <em>a ela, a esta, a essa</em>, expressões repetidas (<em>face a face, gota a gota</em>) e antes de \"a\" pronome ou \"a\" antes de nomes de cidade sem determinante (<em>Vou a Brasília</em>; mas <em>Vou à Brasília dos anos 60</em>).</p>\n<p><strong>Teste prático</strong>: troque a palavra feminina por uma masculina. Se surgir \"ao\", há crase.</p>\n\n<h2>4. Concordância</h2>\n<ul>\n<li><strong>Verbal</strong>: o verbo concorda com o sujeito. <em>Haver</em> no sentido de existir é <strong>impessoal</strong> (<em>Havia problemas</em>); <em>fazer</em> indicando tempo também (<em>Faz dez anos</em>). Com \"que\" partícula expletiva ou sujeito composto posposto, atenção redobrada;</li>\n<li><strong>Nominal</strong>: <em>anexo, obrigado, mesmo, bastante</em> variam quando adjetivos; <em>menos</em> e <em>alerta</em> são invariáveis; <em>é proibido entrada</em> x <em>é proibida a entrada</em> (com determinante, concorda).</li>\n</ul>\n\n<h2>5. Regência e pontuação</h2>\n<p>Regências cobradas: <strong>assistir</strong> (ver = a; ajudar = direto), <strong>aspirar</strong> (desejar = a; sorver = direto), <strong>visar</strong> (almejar = a; mirar/dar visto = direto), <strong>obedecer/desobedecer</strong> (a), <strong>preferir</strong> (a, sem \"do que\"), <strong>implicar</strong> (acarretar = direto), <strong>chamar</strong>, <strong>proceder</strong>, <strong>esquecer/lembrar</strong> (pronominal exige \"de\").</p>\n<p>Pontuação: <strong>não se separa sujeito do predicado nem verbo do complemento por vírgula</strong>. Vírgula obrigatória em aposto explicativo, vocativo, adjunto adverbial deslocado longo, oração adjetiva <strong>explicativa</strong> (a restritiva não leva vírgula) e enumeração.</p>\n\n<h2>6. Reescrita</h2>\n<p>Ao reescrever, verifique: (1) manteve o <strong>sentido</strong>? (2) manteve a <strong>correção gramatical</strong>? (3) alterou a <strong>relação lógica</strong> entre as ideias? Trocar \"embora\" por \"porque\" muda concessão em causa — erro clássico. Voz passiva analítica (<em>foi feito por</em>) x sintética (<em>fez-se</em>) preserva sentido, mas altera o foco.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Marcar alternativa verdadeira no mundo real, mas não sustentada pelo texto.</li>\n<li>Colocar crase antes de verbo ou de palavra masculina.</li>\n<li>Separar sujeito e predicado com vírgula.</li>\n<li>Ignorar que o conectivo adversativo dá ênfase à <strong>segunda</strong> ideia.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Assinale a alternativa em que o uso do sinal indicativo de crase está CORRETO.",
+          "options": [
+            "O relatório foi encaminhado à todos os setores da empresa.",
+            "A equipe começou à trabalhar antes do horário previsto.",
+            "O analista referiu-se à norma técnica publicada no ano passado.",
+            "O documento foi entregue à Vossa Senhoria na data prevista.",
+            "Os dados foram enviados à partir da última quarta-feira."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Crase",
+          "tags": [
+            "crase",
+            "gramática"
+          ],
+          "comment": "Teste: \"referiu-se AO documento\" → confirma a crase em \"à norma\".",
+          "justification": "\"Referir-se\" exige a preposição \"a\" e \"norma\" admite o artigo \"a\" — daí a crase. Não há crase antes de \"todos\" (masculino/pronome indefinido), de verbo (\"trabalhar\", \"partir\") nem de pronome de tratamento (\"Vossa Senhoria\")."
+        },
+        {
+          "statement": "Considere o período: \"Embora o sistema tenha apresentado falhas recorrentes, a equipe manteve o cronograma de implantação.\" A reescrita que preserva integralmente o sentido original é:",
+          "options": [
+            "Como o sistema apresentou falhas recorrentes, a equipe manteve o cronograma de implantação.",
+            "O sistema apresentou falhas recorrentes; portanto, a equipe manteve o cronograma de implantação.",
+            "Apesar de o sistema ter apresentado falhas recorrentes, a equipe manteve o cronograma de implantação.",
+            "O sistema apresentou falhas recorrentes, porque a equipe manteve o cronograma de implantação.",
+            "Se o sistema apresentasse falhas recorrentes, a equipe manteria o cronograma de implantação."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Reescrita e conectivos",
+          "tags": [
+            "coesão",
+            "concessão",
+            "reescrita"
+          ],
+          "comment": "Concessivos: embora, ainda que, apesar de, conquanto, mesmo que, se bem que.",
+          "justification": "\"Embora\" introduz oração concessiva, cujo equivalente é \"apesar de\". As letras A e D transformam a concessão em causa, a B em conclusão e a E em condição hipotética."
+        },
+        {
+          "statement": "Assinale a alternativa em que a concordância verbal está CORRETA.",
+          "options": [
+            "Houveram muitas dificuldades durante a migração dos dados.",
+            "Fazem cinco anos que o sistema entrou em operação.",
+            "Existem diversos registros pendentes de auditoria no banco de dados.",
+            "Devem haver outras soluções para o problema apresentado.",
+            "Tratam-se de questões relativas à segurança da informação."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Concordância verbal",
+          "tags": [
+            "concordância",
+            "verbos impessoais"
+          ],
+          "comment": "\"Existir\" é pessoal e concorda; \"haver\" (existir) e \"fazer\" (tempo) são impessoais e ficam no singular, inclusive nos auxiliares.",
+          "justification": "\"Existem\" concorda com o sujeito \"diversos registros\". \"Haver\" no sentido de existir é impessoal (\"Houve\", \"Deve haver\"); \"fazer\" indicando tempo decorrido também (\"Faz cinco anos\"). \"Tratar-se de\" é impessoal: \"Trata-se de\"."
+        }
+      ]
+    },
+    {
+      "subject": "Língua Inglesa",
+      "summary": "\n<h1>Língua Inglesa — leitura instrumental</h1>\n<p>A prova cobra <strong>compreensão de texto</strong> e os itens gramaticais que afetam o sentido. Não é prova de conversação: é <strong>leitura técnica</strong>, frequentemente com textos de tecnologia e segurança.</p>\n\n<h2>1. Estratégias de leitura</h2>\n<table><tbody>\n<tr><td><strong>Skimming</strong></td><td>Leitura rápida para captar a <strong>ideia geral</strong> e o tema. Leia título, primeira e última frase de cada parágrafo</td></tr>\n<tr><td><strong>Scanning</strong></td><td>Busca de <strong>informação específica</strong> (número, nome, data)</td></tr>\n<tr><td><strong>Cognatos</strong></td><td>Palavras semelhantes ao português: <em>security, system, information, technology</em></td></tr>\n<tr><td><strong>Falsos cognatos</strong></td><td><em>actually</em> = na verdade · <em>eventually</em> = finalmente · <em>library</em> = biblioteca · <em>parents</em> = pais · <em>pretend</em> = fingir · <em>push</em> = empurrar · <em>realize</em> = perceber · <em>support</em> = apoiar · <em>comprehensive</em> = abrangente · <em>sensible</em> = sensato</td></tr>\n</tbody></table>\n\n<h2>2. Conectivos — a chave da coerência</h2>\n<table><tbody>\n<tr><td><strong>Adição</strong></td><td>moreover, furthermore, in addition, besides, also</td></tr>\n<tr><td><strong>Contraste</strong></td><td>however, nevertheless, nonetheless, although, though, whereas, despite / in spite of, yet, on the other hand</td></tr>\n<tr><td><strong>Causa</strong></td><td>because, since, as, due to, owing to, given that</td></tr>\n<tr><td><strong>Consequência</strong></td><td>therefore, thus, hence, consequently, as a result, so</td></tr>\n<tr><td><strong>Condição</strong></td><td>if, unless (= if not), provided that, as long as, otherwise</td></tr>\n<tr><td><strong>Exemplo</strong></td><td>for instance, such as, namely, e.g.</td></tr>\n</tbody></table>\n<p>Atenção: <strong>despite / in spite of</strong> vêm seguidos de substantivo ou <em>-ing</em>; <strong>although / though</strong>, de oração com sujeito e verbo.</p>\n\n<h2>3. Itens gramaticais que mudam o sentido</h2>\n<ul>\n<li><strong>Modais</strong>: <em>can/could</em> (capacidade, possibilidade) · <em>may/might</em> (possibilidade menor, permissão) · <em>must</em> (obrigação forte, dedução) · <em>should</em> (recomendação) · <em>have to</em> (obrigação externa) · <em>mustn't</em> (proibição) x <em>don't have to</em> (ausência de obrigação — <strong>não são sinônimos</strong>);</li>\n<li><strong>Voz passiva</strong>: <em>be + particípio</em>. Muito comum em texto técnico: <em>Data <strong>is encrypted</strong> before transmission</em>;</li>\n<li><strong>Tempos verbais</strong>: <em>present perfect</em> (ação com relevância no presente: <em>has increased</em>) x <em>simple past</em> (concluída no passado);</li>\n<li><strong>Condicionais</strong>: zero (fato geral), primeira (real futura), segunda (hipotética presente), terceira (hipotética passada, irreal);</li>\n<li><strong>Prefixos e sufixos</strong>: <em>un-, dis-, mis-, in-/im-</em> (negação) · <em>-less</em> (sem) · <em>-ful</em> (cheio de) · <em>-ly</em> (advérbio) · <em>-tion/-ment/-ness</em> (substantivo) · <em>-able/-ible</em> (adjetivo);</li>\n<li><strong>Referência pronominal</strong>: identificar a que substantivo <em>it, they, this, which, whose</em> se referem é pedido recorrente.</li>\n</ul>\n\n<h2>4. Vocabulário técnico frequente</h2>\n<p><em>threat</em> (ameaça) · <em>breach</em> (violação) · <em>vulnerability</em> · <em>patch</em> (correção) · <em>malware</em> · <em>ransomware</em> · <em>backup</em> · <em>encryption</em> · <em>compliance</em> (conformidade) · <em>awareness</em> (conscientização) · <em>enforcement</em> (aplicação) · <em>disclosure</em> (divulgação) · <em>framework</em> · <em>stakeholder</em> · <em>overhead</em> · <em>trade-off</em> · <em>leverage</em> (aproveitar) · <em>enhance</em> (aprimorar) · <em>mitigate</em> · <em>deploy</em> (implantar) · <em>rely on</em> (depender de) · <em>achieve</em> (alcançar) · <em>issue</em> (questão, problema) · <em>concern</em> (preocupação).</p>\n\n<h2>5. Tipos de pergunta e como atacar</h2>\n<ol>\n<li><strong>Main idea / best title</strong> — busque a tese, não um detalhe;</li>\n<li><strong>According to the text</strong> — informação explícita: volte e localize;</li>\n<li><strong>It can be inferred</strong> — inferência sustentada pelo texto, sem extrapolar;</li>\n<li><strong>The word \"X\" refers to</strong> — referência pronominal: leia a frase anterior;</li>\n<li><strong>The word \"X\" can be replaced by</strong> — sinônimo <strong>no contexto</strong>;</li>\n<li><strong>The author's attitude/tone</strong> — crítico, neutro, otimista, cético.</li>\n</ol>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Cair em falso cognato (<em>actually</em>, <em>eventually</em>, <em>pretend</em>).</li>\n<li>Confundir <em>mustn't</em> (proibido) com <em>don't have to</em> (não é obrigatório).</li>\n<li>Marcar alternativa verdadeira, porém não afirmada pelo texto.</li>\n<li>Ignorar o conectivo de contraste, que inverte a orientação argumentativa.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Read the sentence: \"Although the organization had deployed a comprehensive backup strategy, the ransomware attack still caused significant downtime.\" A palavra \"comprehensive\", no contexto, significa:",
+          "options": [
+            "Compreensiva, tolerante.",
+            "Abrangente, completa.",
+            "Compreensível, fácil de entender.",
+            "Comprimida, reduzida.",
+            "Compulsória, obrigatória."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Falsos cognatos",
+          "tags": [
+            "vocabulário",
+            "falso cognato"
+          ],
+          "comment": "\"Compreensível\" seria comprehensible; \"compreensiva\" (tolerante) seria understanding.",
+          "justification": "\"Comprehensive\" é falso cognato e significa abrangente, completo, que cobre amplamente um tema."
+        },
+        {
+          "statement": "Consider the following sentences: (I) Employees mustn't share their credentials. (II) Employees don't have to share their credentials. Sobre elas, é correto afirmar que:",
+          "options": [
+            "Ambas expressam a mesma ideia de proibição.",
+            "(I) expressa proibição e (II) expressa ausência de obrigação.",
+            "(I) expressa ausência de obrigação e (II) expressa proibição.",
+            "Ambas expressam recomendação.",
+            "Ambas expressam possibilidade."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Verbos modais",
+          "tags": [
+            "modais",
+            "gramática"
+          ],
+          "comment": "Diferença que muda completamente o sentido de uma política de segurança.",
+          "justification": "\"Mustn't\" indica proibição (é proibido compartilhar). \"Don't have to\" indica que a ação não é obrigatória, mas é permitida."
+        },
+        {
+          "statement": "Read: \"Despite the growing investment in security tools, many breaches still result from human error.\" O conectivo \"Despite\" estabelece uma relação de:",
+          "options": [
+            "Causa.",
+            "Consequência.",
+            "Contraste/concessão.",
+            "Adição.",
+            "Condição."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Conectivos",
+          "tags": [
+            "conectivos",
+            "leitura"
+          ],
+          "comment": "Despite/In spite of + substantivo ou -ing. Although/Though + sujeito e verbo.",
+          "justification": "\"Despite\" (apesar de) introduz ideia concessiva, contrastando o investimento crescente com a persistência das violações causadas por erro humano."
+        }
+      ]
+    },
+    {
+      "subject": "Raciocínio Lógico",
+      "summary": "\n<h1>Raciocínio Lógico</h1>\n\n<h2>1. Proposições e conectivos</h2>\n<table><tbody>\n<tr><td><strong>Negação</strong></td><td>~p</td><td>não p</td><td>Inverte o valor</td></tr>\n<tr><td><strong>Conjunção</strong></td><td>p ∧ q</td><td>p <strong>e</strong> q</td><td>V só quando <strong>ambas</strong> forem V</td></tr>\n<tr><td><strong>Disjunção inclusiva</strong></td><td>p ∨ q</td><td>p <strong>ou</strong> q</td><td>F só quando <strong>ambas</strong> forem F</td></tr>\n<tr><td><strong>Disjunção exclusiva</strong></td><td>p ⊻ q</td><td><strong>ou</strong> p <strong>ou</strong> q</td><td>V quando os valores forem <strong>diferentes</strong></td></tr>\n<tr><td><strong>Condicional</strong></td><td>p → q</td><td><strong>se</strong> p <strong>então</strong> q</td><td><strong>F apenas quando V → F</strong></td></tr>\n<tr><td><strong>Bicondicional</strong></td><td>p ↔ q</td><td>p <strong>se e somente se</strong> q</td><td>V quando os valores forem <strong>iguais</strong></td></tr>\n</tbody></table>\n<p>Tabela-verdade com n proposições simples tem <strong>2<sup>n</sup> linhas</strong>.</p>\n\n<h2>2. Negações — o bloco mais cobrado</h2>\n<table><tbody>\n<tr><td>~(p ∧ q)</td><td>= <strong>~p ∨ ~q</strong></td><td>De Morgan: nega e troca \"e\" por \"ou\"</td></tr>\n<tr><td>~(p ∨ q)</td><td>= <strong>~p ∧ ~q</strong></td><td>De Morgan</td></tr>\n<tr><td>~(p → q)</td><td>= <strong>p ∧ ~q</strong></td><td>Mantém a primeira, nega a segunda, vira \"e\"</td></tr>\n<tr><td>~(p ↔ q)</td><td>= p ⊻ q</td><td></td></tr>\n<tr><td>~(∀x)</td><td>= (∃x)~</td><td>\"Todo A é B\" → \"<strong>Algum</strong> A <strong>não</strong> é B\"</td></tr>\n<tr><td>~(∃x)</td><td>= (∀x)~</td><td>\"Algum A é B\" → \"<strong>Nenhum</strong> A é B\"</td></tr>\n</tbody></table>\n\n<h2>3. Equivalências da condicional</h2>\n<p><strong>p → q ≡ ~q → ~p</strong> (contrapositiva — a mais cobrada) <strong>≡ ~p ∨ q</strong>.</p>\n<p><strong>Não</strong> são equivalentes: a recíproca (q → p) e a inversa (~p → ~q).</p>\n\n<h2>4. Argumentos e regras de inferência</h2>\n<table><tbody>\n<tr><td><strong>Modus ponens</strong></td><td>p → q; p ⊢ q</td><td>Válido</td></tr>\n<tr><td><strong>Modus tollens</strong></td><td>p → q; ~q ⊢ ~p</td><td>Válido</td></tr>\n<tr><td><strong>Silogismo hipotético</strong></td><td>p → q; q → r ⊢ p → r</td><td>Válido</td></tr>\n<tr><td><strong>Silogismo disjuntivo</strong></td><td>p ∨ q; ~p ⊢ q</td><td>Válido</td></tr>\n<tr><td><strong>Falácia da afirmação do consequente</strong></td><td>p → q; q ⊢ p</td><td><strong>Inválido</strong></td></tr>\n<tr><td><strong>Falácia da negação do antecedente</strong></td><td>p → q; ~p ⊢ ~q</td><td><strong>Inválido</strong></td></tr>\n</tbody></table>\n<p>Um argumento é <strong>válido</strong> quando é impossível ter premissas verdadeiras e conclusão falsa. Validade trata da <strong>forma</strong>, não da verdade material das premissas.</p>\n\n<h2>5. Classificação de proposições compostas</h2>\n<p><strong>Tautologia</strong>: sempre V. <strong>Contradição</strong>: sempre F. <strong>Contingência</strong>: depende dos valores.</p>\n\n<h2>6. Diagramas lógicos (silogismos categóricos)</h2>\n<ul>\n<li><strong>Todo A é B</strong> — círculo A dentro de B. Não permite concluir que todo B é A;</li>\n<li><strong>Nenhum A é B</strong> — círculos disjuntos;</li>\n<li><strong>Algum A é B</strong> — interseção; equivale a \"algum B é A\". <strong>\"Algum\" significa \"pelo menos um\"</strong> e admite \"todos\";</li>\n<li><strong>Algum A não é B</strong> — parte de A fora de B.</li>\n</ul>\n<p>Estratégia: desenhe <strong>todos os cenários possíveis</strong>. A conclusão só é válida se valer em <strong>todos</strong> eles.</p>\n\n<h2>7. Problemas aritméticos, geométricos e matriciais</h2>\n<p><strong>Aritmética</strong>: razão e proporção, regra de três simples e composta, porcentagem, juros simples (J = C·i·t) e compostos (M = C(1+i)<sup>t</sup>), MMC/MDC, sequências, análise combinatória e probabilidade (P = casos favoráveis / casos possíveis).<br>\n<strong>Geometria</strong>: áreas e volumes, Pitágoras, semelhança.<br>\n<strong>Matrizes</strong>: soma, multiplicação (o número de colunas da primeira deve igualar o de linhas da segunda), transposta, determinante e matriz inversa; sistemas lineares.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Negar \"se p então q\" como \"se p então não q\" — o correto é <strong>p e não q</strong>.</li>\n<li>Negar \"todo\" com \"nenhum\" — o correto é <strong>algum não</strong>.</li>\n<li>Confundir contrapositiva (válida) com recíproca (inválida).</li>\n<li>Achar que \"algum\" exclui \"todos\".</li>\n<li>Julgar validade pela verdade das premissas, e não pela forma.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "A negação lógica da proposição \"Se o sistema falhar, então os dados serão restaurados a partir do backup\" é:",
+          "options": [
+            "Se o sistema não falhar, então os dados não serão restaurados a partir do backup.",
+            "Se os dados não forem restaurados a partir do backup, então o sistema não falhou.",
+            "O sistema falha e os dados não são restaurados a partir do backup.",
+            "O sistema não falha ou os dados são restaurados a partir do backup.",
+            "O sistema não falha e os dados são restaurados a partir do backup."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Negação de proposições",
+          "tags": [
+            "lógica",
+            "condicional",
+            "negação"
+          ],
+          "comment": "Regra: ~(p → q) = p ∧ ~q. \"Mantém a primeira, nega a segunda, troca por E.\"",
+          "justification": "A negação da condicional p → q é p ∧ ~q. A letra B é a contrapositiva (equivalente, não negação) e a letra D é a própria condicional reescrita como ~p ∨ q."
+        },
+        {
+          "statement": "Considere verdadeira a afirmação: \"Todo analista de segurança conhece criptografia.\" Uma negação correta dessa afirmação é:",
+          "options": [
+            "Nenhum analista de segurança conhece criptografia.",
+            "Todo analista de segurança não conhece criptografia.",
+            "Algum analista de segurança não conhece criptografia.",
+            "Alguém que conhece criptografia não é analista de segurança.",
+            "Nenhum profissional que conhece criptografia é analista de segurança."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Quantificadores",
+          "tags": [
+            "lógica",
+            "quantificadores"
+          ],
+          "comment": "Basta um contraexemplo para derrubar um \"todo\". Negar \"todo\" com \"nenhum\" é o erro mais frequente da matéria.",
+          "justification": "A negação de \"todo A é B\" é \"algum A não é B\" (existe pelo menos um contraexemplo), e não \"nenhum A é B\", que é a proposição contrária, mais forte."
+        },
+        {
+          "statement": "Considere as premissas: (I) Se houver falha de energia, o servidor será desligado. (II) O servidor não foi desligado. A conclusão logicamente válida é:",
+          "options": [
+            "Houve falha de energia.",
+            "Não houve falha de energia.",
+            "O servidor está em manutenção.",
+            "Nada se pode concluir.",
+            "Houve falha de energia e o servidor foi desligado."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Regras de inferência",
+          "tags": [
+            "modus tollens",
+            "lógica"
+          ],
+          "comment": "Modus tollens: negando o consequente, nega-se o antecedente. Se fosse dado \"o servidor foi desligado\", nada se concluiria (falácia da afirmação do consequente).",
+          "justification": "De p → q e ~q conclui-se ~p, pela regra do modus tollens."
+        },
+        {
+          "statement": "Uma proposição composta formada por 4 proposições simples distintas terá tabela-verdade com quantas linhas?",
+          "options": [
+            "4",
+            "8",
+            "12",
+            "16",
+            "32"
+          ],
+          "correct": 3,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Tabela-verdade",
+          "tags": [
+            "tabela-verdade",
+            "lógica"
+          ],
+          "comment": "Fórmula: 2^n. Com 2 proposições, 4 linhas; com 3, 8 linhas; com 4, 16.",
+          "justification": "O número de linhas é 2 elevado ao número de proposições simples: 2⁴ = 16."
+        }
+      ]
+    },
+    {
+      "subject": "Atualidades e Inteligência Artificial",
+      "summary": "\n<h1>Atualidades e Inteligência Artificial</h1>\n<div data-callout=\"warning\"><p><strong>Sobre atualidades:</strong> este resumo cobre os <strong>conceitos estruturantes de IA</strong>, que são estáveis e representam a maior parte da pontuação. Para o bloco de atualidades propriamente dito (segurança, economia, política, saúde, energia, relações internacionais, meio ambiente), acompanhe os <strong>12 meses anteriores à prova</strong> em fontes primárias — Agência Brasil, IBGE, Banco Central, relatórios da ANPD e do CGI.br. Use a aba Observações para registrar fatos recentes.</p></div>\n\n<h2>1. Conceitos de inteligência artificial</h2>\n<table><tbody>\n<tr><td><strong>IA</strong></td><td>Sistemas que executam tarefas que exigiriam inteligência humana</td></tr>\n<tr><td><strong>IA estreita (ANI)</strong></td><td>Especializada em uma tarefa — <strong>todo sistema existente hoje</strong></td></tr>\n<tr><td><strong>IA geral (AGI) e superinteligência (ASI)</strong></td><td>Hipotéticas</td></tr>\n<tr><td><strong>Aprendizado de máquina (ML)</strong></td><td>Subcampo da IA: aprende padrões a partir de <strong>dados</strong>, sem regras explicitamente programadas</td></tr>\n<tr><td><strong>Aprendizado profundo (deep learning)</strong></td><td>Subcampo do ML baseado em <strong>redes neurais com muitas camadas</strong></td></tr>\n</tbody></table>\n<p>Relação hierárquica: <strong>IA ⊃ ML ⊃ Deep Learning ⊃ Modelos generativos (LLMs)</strong>.</p>\n\n<h2>2. Paradigmas de aprendizado</h2>\n<table><tbody>\n<tr><td><strong>Supervisionado</strong></td><td>Dados <strong>rotulados</strong>; aprende a mapear entrada → saída</td><td><em>Classificação</em> (spam/não spam, detecção de fraude) e <em>regressão</em> (previsão de valor)</td></tr>\n<tr><td><strong>Não supervisionado</strong></td><td>Dados <strong>sem rótulo</strong>; descobre estrutura</td><td><em>Agrupamento (clustering)</em>, redução de dimensionalidade, <strong>detecção de anomalias</strong></td></tr>\n<tr><td><strong>Semissupervisionado</strong></td><td>Poucos rótulos + muitos dados não rotulados</td><td>Comum quando rotular é caro</td></tr>\n<tr><td><strong>Por reforço</strong></td><td>Agente aprende por <strong>recompensa e punição</strong> ao interagir com o ambiente</td><td>Jogos, robótica, otimização; base do RLHF</td></tr>\n</tbody></table>\n<p>Problemas clássicos: <strong>overfitting</strong> (decora o treino, generaliza mal — mitigado por regularização, validação cruzada e mais dados) e <strong>underfitting</strong> (modelo simples demais). Métricas: acurácia, <strong>precisão</strong>, <strong>revocação (recall)</strong>, <strong>F1</strong>, matriz de confusão e AUC-ROC.</p>\n\n<h2>3. Modelos generativos e LLMs</h2>\n<ul>\n<li><strong>IA generativa</strong>: cria conteúdo novo (texto, imagem, áudio, código) a partir do padrão aprendido;</li>\n<li><strong>LLM (Large Language Model)</strong>: modelo de linguagem treinado em enormes volumes de texto para prever o próximo <strong>token</strong>;</li>\n<li><strong>Transformer</strong> (2017, \"Attention is All You Need\") — arquitetura baseada no mecanismo de <strong>atenção</strong>, que revolucionou a área;</li>\n<li>Ciclo: <strong>pré-treinamento</strong> → <strong>ajuste fino (fine-tuning)</strong> → <strong>RLHF</strong> (alinhamento com preferências humanas);</li>\n<li><strong>Prompt engineering</strong>, <strong>RAG</strong> (Retrieval-Augmented Generation — busca em base própria antes de responder, reduzindo alucinação) e <strong>agentes</strong>;</li>\n<li><strong>Alucinação</strong>: geração de conteúdo plausível porém falso. É limitação estrutural, não bug pontual.</li>\n</ul>\n\n<h2>4. Riscos, ética e governança</h2>\n<table><tbody>\n<tr><td><strong>Viés algorítmico</strong></td><td>O modelo reproduz e amplifica desigualdades presentes nos dados de treino</td></tr>\n<tr><td><strong>Opacidade (caixa-preta)</strong></td><td>Dificuldade de explicar a decisão — motiva a <strong>IA explicável (XAI)</strong></td></tr>\n<tr><td><strong>Privacidade</strong></td><td>Treinamento com dados pessoais; memorização e vazamento; base legal e minimização (LGPD)</td></tr>\n<tr><td><strong>Segurança</strong></td><td><strong>Prompt injection</strong>, envenenamento de dados, extração de modelo, adversarial examples, <em>deepfakes</em>. Referência: <strong>OWASP Top 10 for LLM Applications</strong></td></tr>\n<tr><td><strong>Trabalho e propriedade intelectual</strong></td><td>Automação de tarefas, direitos autorais sobre dados de treino e sobre a saída</td></tr>\n</tbody></table>\n<p><strong>LGPD e IA</strong>: o <strong>art. 20</strong> assegura a <strong>revisão de decisões automatizadas</strong> que afetem interesses do titular, incluindo perfis pessoal, profissional, de consumo e de crédito; o § 2º permite ao titular solicitar informações sobre os <strong>critérios e procedimentos</strong> utilizados, observados os segredos comercial e industrial. O § 3º, que exigia revisão por pessoa natural, foi <strong>vetado</strong>.</p>\n<p><strong>Marcos de governança</strong>: <strong>AI Act</strong> da União Europeia (abordagem por níveis de risco: inaceitável, alto, limitado e mínimo) · <strong>NIST AI Risk Management Framework</strong> (funções Govern, Map, Measure, Manage) · <strong>ISO/IEC 42001</strong> (sistema de gestão de IA) · Recomendação da <strong>OCDE</strong> e da <strong>UNESCO</strong> sobre ética em IA · no Brasil, o <strong>PL 2.338/2023</strong> tramita como marco legal da IA — acompanhe o estágio antes da prova.</p>\n\n<h2>5. IA aplicada à segurança da informação</h2>\n<p><strong>Defesa</strong>: detecção de anomalia e UEBA, triagem automatizada no SOC, classificação de phishing, priorização de vulnerabilidades, análise de malware, correlação em SIEM.<br>\n<strong>Ataque</strong>: phishing altamente personalizado, deepfakes de voz para fraude, geração de malware polimórfico, automação de reconhecimento.<br>\nRegra de ouro para prova: IA <strong>amplia a escala</strong> tanto da defesa quanto do ataque; não elimina a necessidade de controles fundamentais.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que deep learning e machine learning são sinônimos — deep learning é <strong>subconjunto</strong>.</li>\n<li>Classificar agrupamento (clustering) como aprendizado supervisionado.</li>\n<li>Afirmar que a LGPD garante revisão por <strong>pessoa natural</strong> — o dispositivo foi vetado.</li>\n<li>Tratar alucinação como erro de programação corrigível.</li>\n<li>Confundir IA generativa (cria conteúdo) com IA discriminativa (classifica).</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Um algoritmo recebe um conjunto de registros de acesso sem qualquer rotulagem prévia e identifica agrupamentos de comportamento semelhante, destacando registros que não se enquadram em nenhum grupo. Essa abordagem caracteriza aprendizado de máquina:",
+          "options": [
+            "Supervisionado, do tipo classificação.",
+            "Supervisionado, do tipo regressão.",
+            "Não supervisionado, com agrupamento e detecção de anomalias.",
+            "Por reforço, baseado em recompensa acumulada.",
+            "Semissupervisionado, com rótulos parciais."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Paradigmas de ML",
+          "tags": [
+            "machine learning",
+            "clustering",
+            "UEBA"
+          ],
+          "comment": "É exatamente o mecanismo por trás de soluções de UEBA: aprender o normal sem rótulos e sinalizar o desvio.",
+          "justification": "A ausência de rótulos e a descoberta de estrutura nos dados caracterizam o aprendizado não supervisionado, cujas tarefas típicas são clustering, redução de dimensionalidade e detecção de anomalias."
+        },
+        {
+          "statement": "Nos termos do art. 20 da LGPD, sobre decisões tomadas unicamente com base em tratamento automatizado de dados pessoais, é correto afirmar que:",
+          "options": [
+            "O titular tem direito a que a revisão seja obrigatoriamente realizada por pessoa natural.",
+            "O titular tem direito a solicitar a revisão da decisão e a obter informações claras sobre os critérios e procedimentos utilizados, observados os segredos comercial e industrial.",
+            "A LGPD proíbe qualquer decisão automatizada que afete interesses do titular.",
+            "O direito à revisão aplica-se apenas a decisões relacionadas à concessão de crédito.",
+            "A ANPD deve autorizar previamente todo sistema de decisão automatizada."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "IA e LGPD",
+          "tags": [
+            "LGPD",
+            "art. 20",
+            "decisão automatizada"
+          ],
+          "comment": "O § 3º, que exigia revisão por pessoa natural, foi vetado — diferença relevante em relação ao art. 22 do GDPR, que assegura intervenção humana.",
+          "justification": "O art. 20, caput e § 1º da LGPD asseguram a revisão e o direito à informação sobre critérios e procedimentos. A exigência de revisão humana constava do § 3º, que foi vetado."
+        },
+        {
+          "statement": "A técnica que combina um modelo de linguagem com a recuperação de informações em uma base de conhecimento própria antes da geração da resposta, reduzindo a ocorrência de alucinações e permitindo respostas atualizadas, é conhecida como:",
+          "options": [
+            "Fine-tuning.",
+            "RLHF (Reinforcement Learning from Human Feedback).",
+            "RAG (Retrieval-Augmented Generation).",
+            "Prompt injection.",
+            "Transfer learning."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Modelos generativos",
+          "tags": [
+            "LLM",
+            "RAG",
+            "IA generativa"
+          ],
+          "comment": "RAG não altera o modelo; ele acrescenta contexto recuperado ao prompt. Fine-tuning, ao contrário, ajusta os pesos.",
+          "justification": "No RAG, a consulta do usuário aciona uma busca em base vetorial ou documental, e os trechos recuperados são fornecidos ao modelo como contexto, ancorando a resposta em fontes verificáveis."
+        },
+        {
+          "statement": "Sobre a relação entre inteligência artificial, aprendizado de máquina e aprendizado profundo, é correto afirmar que:",
+          "options": [
+            "São termos sinônimos, utilizados de forma intercambiável.",
+            "O aprendizado de máquina é um subcampo da inteligência artificial, e o aprendizado profundo é um subcampo do aprendizado de máquina, baseado em redes neurais com múltiplas camadas.",
+            "A inteligência artificial é um subcampo do aprendizado profundo.",
+            "O aprendizado profundo dispensa dados de treinamento.",
+            "O aprendizado de máquina baseia-se exclusivamente em regras explicitamente programadas por especialistas."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Conceitos de IA",
+          "tags": [
+            "IA",
+            "machine learning",
+            "deep learning"
+          ],
+          "comment": "Hierarquia de círculos concêntricos: IA ⊃ ML ⊃ DL ⊃ IA generativa/LLMs.",
+          "justification": "O ML é subcampo da IA que aprende padrões a partir de dados; o deep learning é subcampo do ML que usa redes neurais profundas. Sistemas baseados em regras explícitas são IA simbólica, não ML."
+        }
+      ]
+    }
+  ]
+}

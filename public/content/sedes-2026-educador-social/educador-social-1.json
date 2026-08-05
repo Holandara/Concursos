@@ -1,0 +1,625 @@
+{
+  "subjects": [
+    {
+      "subject": "Seguridade Social e Política Social",
+      "summary": "\n<h1>Seguridade Social e políticas públicas</h1>\n\n<h2>1. O conceito constitucional</h2>\n<blockquote><p>A seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à <strong>saúde</strong>, à <strong>previdência</strong> e à <strong>assistência social</strong> (art. 194 da CF/88).</p></blockquote>\n<ul>\n<li><strong>Saúde</strong>: universal, não contributiva — direito de todos;</li>\n<li><strong>Previdência</strong>: <strong>contributiva</strong> e de filiação obrigatória;</li>\n<li><strong>Assistência social</strong>: prestada a <strong>quem dela necessitar</strong>, independentemente de contribuição.</li>\n</ul>\n\n<h3>Objetivos da seguridade (art. 194, parágrafo único)</h3>\n<ul>\n<li>Universalidade da cobertura e do atendimento;</li>\n<li>Uniformidade e equivalência dos benefícios e serviços às populações urbanas e rurais;</li>\n<li><strong>Seletividade e distributividade</strong> na prestação dos benefícios e serviços;</li>\n<li>Irredutibilidade do valor dos benefícios;</li>\n<li>Equidade na forma de participação no custeio;</li>\n<li>Diversidade da base de financiamento;</li>\n<li>Caráter democrático e descentralizado da administração, mediante gestão quadripartite.</li>\n</ul>\n<p>Erro clássico: apresentar esses objetivos como diretrizes da <strong>assistência social</strong> — que são apenas três (descentralização com comando único, participação e primazia do Estado).</p>\n\n<h2>2. Financiamento</h2>\n<p>A seguridade é financiada por <strong>toda a sociedade</strong>, de forma direta e indireta, com recursos dos orçamentos da União, dos Estados, do DF e dos Municípios, e de contribuições sociais. A assistência social conta ainda com o <strong>FNAS</strong> e os fundos estaduais, distrital e municipais, com repasses <strong>fundo a fundo</strong>.</p>\n\n<h2>3. Trajetória histórica no Brasil</h2>\n<ul>\n<li><strong>Até 1930</strong> — caridade, filantropia e mutualismo. Proteção como favor;</li>\n<li><strong>1930–1970</strong> — <strong>cidadania regulada</strong>: direitos vinculados à carteira de trabalho (IAPs, CLT). Quem não tinha ocupação reconhecida ficava de fora;</li>\n<li><strong>1942</strong> — criação da <strong>LBA</strong> (Legião Brasileira de Assistência), marco do assistencialismo, do primeiro-damismo e da relação clientelista;</li>\n<li><strong>1988</strong> — a Constituição inclui a assistência social na seguridade e a transforma em <strong>direito</strong>;</li>\n<li><strong>1993</strong> — <strong>LOAS</strong>;\n</li>\n<li><strong>2004</strong> — <strong>PNAS</strong>; <strong>2005</strong> — NOB/SUAS implanta o <strong>SUAS</strong>; <strong>2009</strong> — Tipificação; <strong>2011</strong> — Lei nº 12.435 (Lei do SUAS) insere o SUAS na própria LOAS;</li>\n<li><strong>2012</strong> — NOB/SUAS vigente.</li>\n</ul>\n<p>A linha de força: <strong>de favor a direito</strong>; de tutela a autonomia; de benemerência a política pública.</p>\n\n<h2>4. Políticas públicas: conceito e ciclo</h2>\n<p>Política pública é o conjunto de decisões e ações do Estado voltado a enfrentar um problema socialmente reconhecido. O <strong>ciclo de políticas públicas</strong> costuma ser descrito em cinco fases:</p>\n<ul>\n<li><strong>Formação da agenda</strong> — o problema é reconhecido como público e disputa espaço na pauta;</li>\n<li><strong>Formulação</strong> — alternativas são construídas e escolhidas;</li>\n<li><strong>Tomada de decisão</strong> — a alternativa é oficializada em norma, plano ou orçamento;</li>\n<li><strong>Implementação</strong> — a política encontra o território, os trabalhadores e os usuários. É aqui que ela é reinterpretada na prática;</li>\n<li><strong>Avaliação</strong> — julgamento de processo, resultado e impacto, podendo realimentar o ciclo.</li>\n</ul>\n<p>O <strong>Educador Social é um implementador</strong>: aquilo que ele decide na ponta — quem entra num grupo, como acolhe, o que registra — dá forma concreta à política. É o que a literatura chama de <strong>burocracia de nível de rua</strong>.</p>\n\n<h2>5. Estado, sociedade civil e proteção social</h2>\n<p>Modelos clássicos de Estado de Bem-Estar (Esping-Andersen): <strong>liberal</strong> (benefícios residuais, focalizados, com teste de meios), <strong>conservador-corporativo</strong> (vinculado à posição ocupacional) e <strong>social-democrata</strong> (universalista e desmercadorizante). O Brasil combina traços dos três, com forte marca da focalização.</p>\n<p>Dois conceitos que costumam aparecer: <strong>universalização</strong> × <strong>focalização</strong>, e <strong>desmercadorização</strong> (grau em que o bem-estar independe da posição no mercado).</p>\n",
+      "questions": [
+        {
+          "statement": "Nos termos da Constituição Federal de 1988, a seguridade social compreende um conjunto integrado de ações destinadas a assegurar os direitos relativos:",
+          "options": [
+            "à saúde, à educação e à assistência social.",
+            "à saúde, à previdência e à assistência social.",
+            "ao trabalho, à moradia e à previdência social.",
+            "à previdência, à assistência social e à segurança pública.",
+            "à saúde, ao saneamento e à proteção da infância."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Tripé da seguridade",
+          "tags": [
+            "CF/88",
+            "art. 194",
+            "seguridade social"
+          ],
+          "comment": "Educação não integra a seguridade social — é direito social do art. 6º, mas fora do tripé.",
+          "justification": "Art. 194 da CF/88: saúde, previdência e assistência social. Apenas a previdência é contributiva; saúde é universal e assistência social é prestada a quem dela necessitar."
+        },
+        {
+          "statement": "A criação da Legião Brasileira de Assistência (LBA), em 1942, é geralmente apontada na literatura como marco:",
+          "options": [
+            "da consolidação da assistência social como direito de cidadania, com gestão descentralizada e participativa.",
+            "da tradição assistencialista e do primeiro-damismo na assistência social brasileira, anterior ao reconhecimento da política como direito.",
+            "da instituição do Sistema Único de Assistência Social e do cofinanciamento entre os entes federados.",
+            "da universalização dos benefícios não contributivos no Brasil.",
+            "da criação dos Conselhos de Assistência Social em âmbito nacional, estadual e municipal."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Trajetória histórica",
+          "tags": [
+            "LBA",
+            "assistencialismo",
+            "história da assistência social"
+          ],
+          "comment": "O reconhecimento como direito só vem com a CF/88 e a LOAS (1993). A LBA representa o período anterior.",
+          "justification": "A LBA nasceu vinculada ao esforço de guerra e foi historicamente conduzida pelas primeiras-damas, simbolizando a assistência como benemerência e favor — modelo rompido pela Constituição de 1988 e pela LOAS."
+        },
+        {
+          "statement": "Considerando o ciclo de políticas públicas, a atuação cotidiana do Educador Social nos serviços socioassistenciais situa-se, predominantemente, na fase de:",
+          "options": [
+            "formação da agenda.",
+            "formulação de alternativas.",
+            "tomada de decisão.",
+            "implementação.",
+            "avaliação de impacto."
+          ],
+          "correct": 3,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Ciclo de políticas públicas",
+          "tags": [
+            "políticas públicas",
+            "implementação",
+            "burocracia de nível de rua"
+          ],
+          "comment": "Isso não significa que o trabalhador não participe das outras fases — participa, por exemplo, nas conferências. Mas a atuação predominante é na implementação.",
+          "justification": "A implementação é a fase em que a política se materializa no território, mediada pelos trabalhadores que atendem diretamente o público — os chamados burocratas de nível de rua, cujas decisões cotidianas moldam o resultado efetivo da política."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Constituição Federal de 1988",
+          "heading": "Art. 194",
+          "html": "<p>Art. 194. A seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.</p><p>Parágrafo único. Compete ao Poder Público, nos termos da lei, organizar a seguridade social, com base nos seguintes objetivos:</p><p>I - universalidade da cobertura e do atendimento;</p><p>II - uniformidade e equivalência dos benefícios e serviços às populações urbanas e rurais;</p><p>III - seletividade e distributividade na prestação dos benefícios e serviços;</p><p>IV - irredutibilidade do valor dos benefícios;</p><p>V - equidade na forma de participação no custeio;</p><p>VI - diversidade da base de financiamento;</p><p>VII - caráter democrático e descentralizado da administração, mediante gestão quadripartite, com participação dos trabalhadores, dos empregadores, dos aposentados e do Governo nos órgãos colegiados.</p>",
+          "note": "Sete OBJETIVOS da seguridade — não confundir com as três DIRETRIZES da assistência social (art. 204 da CF e art. 5º da LOAS). É a troca mais frequente da banca.",
+          "important": 1
+        },
+        {
+          "lawRef": "Constituição Federal de 1988",
+          "heading": "Art. 203",
+          "html": "<p>Art. 203. A assistência social será prestada a quem dela necessitar, independentemente de contribuição à seguridade social, e tem por objetivos:</p><p>I - a proteção à família, à maternidade, à infância, à adolescência e à velhice;</p><p>II - o amparo às crianças e adolescentes carentes;</p><p>III - a promoção da integração ao mercado de trabalho;</p><p>IV - a habilitação e reabilitação das pessoas portadoras de deficiência e a promoção de sua integração à vida comunitária;</p><p>V - a garantia de um salário mínimo de benefício mensal à pessoa portadora de deficiência e ao idoso que comprovem não possuir meios de prover à própria manutenção ou de tê-la provida por sua família, conforme dispuser a lei.</p><p>VI - a redução da vulnerabilidade socioeconômica de famílias em situação de pobreza ou de extrema pobreza.</p>",
+          "note": "O inciso V é a matriz constitucional do BPC. O inciso VI foi acrescido pela EC 114/2021.",
+          "important": 1
+        },
+        {
+          "lawRef": "Constituição Federal de 1988",
+          "heading": "Art. 204",
+          "html": "<p>Art. 204. As ações governamentais na área da assistência social serão realizadas com recursos do orçamento da seguridade social, previstos no art. 195, além de outras fontes, e organizadas com base nas seguintes diretrizes:</p><p>I - descentralização político-administrativa, cabendo a coordenação e as normas gerais à esfera federal e a coordenação e a execução dos respectivos programas às esferas estadual e municipal, bem como a entidades beneficentes e de assistência social;</p><p>II - participação da população, por meio de organizações representativas, na formulação das políticas e no controle das ações em todos os níveis.</p><p>Parágrafo único. É facultado aos Estados e ao Distrito Federal vincular a programa de apoio à inclusão e promoção social até cinco décimos por cento de sua receita tributária líquida, vedada a aplicação desses recursos no pagamento de: I - despesas com pessoal e encargos sociais; II - serviço da dívida; III - qualquer outra despesa corrente não vinculada diretamente aos investimentos ou ações apoiados.</p>",
+          "note": "Duas diretrizes constitucionais (descentralização e participação). A LOAS acrescenta a terceira: primazia da responsabilidade do Estado.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Matricialidade Sociofamiliar e Vigilância Socioassistencial",
+      "summary": "\n<h1>Matricialidade sociofamiliar, território e vigilância</h1>\n\n<h2>1. Matricialidade sociofamiliar</h2>\n<p>A <strong>família é a unidade de referência</strong> da atenção — a matriz a partir da qual se organiza a proteção. Implica:</p>\n<ul>\n<li>Reconhecer a família em suas <strong>múltiplas configurações</strong>, sem modelo normativo;</li>\n<li>Considerar que a família é, ao mesmo tempo, <strong>espaço de proteção</strong> e, em certas situações, <strong>espaço de violação</strong>;</li>\n<li>Entender que a capacidade protetiva da família depende de <strong>condições objetivas</strong> — renda, moradia, trabalho, rede de apoio —, e não apenas de vontade;</li>\n<li>Atender o indivíduo <strong>sem descolá-lo</strong> do seu contexto familiar e comunitário.</li>\n</ul>\n<p>Consequência prática: mesmo quando a demanda chega por um indivíduo (o adolescente, a idosa, a criança), o plano de acompanhamento é <strong>familiar</strong>.</p>\n\n<h2>2. Territorialização</h2>\n<p>Território não é apenas recorte geográfico: é espaço <strong>vivido</strong>, com história, redes, conflitos e potências. Territorializar significa:</p>\n<ul>\n<li>Instalar as unidades <strong>onde a vulnerabilidade se concentra</strong>, e não onde é administrativamente cômodo;</li>\n<li>Definir uma <strong>área de abrangência</strong> e um número de famílias <strong>referenciadas</strong>;</li>\n<li>Produzir <strong>diagnóstico socioterritorial</strong>: quem vive ali, quais riscos incidem, que serviços e que redes comunitárias existem;</li>\n<li>Reconhecer as <strong>potencialidades</strong> do território — associações, lideranças, coletivos culturais, religiosos e esportivos —, e não apenas suas carências.</li>\n</ul>\n<p>Para o Educador Social, o diagnóstico do território é o insumo direto do planejamento dos grupos: define temas, horários, linguagem e parceiros.</p>\n\n<h2>3. Vigilância socioassistencial</h2>\n<p>Uma das <strong>três funções</strong> da política de assistência social (proteção social, vigilância socioassistencial e defesa de direitos), conforme o art. 2º da LOAS. Duas dimensões:</p>\n<ul>\n<li><strong>Vigilância de riscos e vulnerabilidades</strong> — dimensiona a demanda: quantas famílias vivem em determinada situação, onde estão, quais agravos incidem;</li>\n<li><strong>Vigilância de padrões de serviços</strong> — dimensiona a oferta: que serviços existem, com que cobertura, estrutura e qualidade.</li>\n</ul>\n<p>Fontes de dados: <strong>CadÚnico</strong>, <strong>Censo SUAS</strong>, <strong>RMA</strong> (Registro Mensal de Atendimentos), prontuários, sistemas do BPC e do Bolsa Família, dados do IBGE, da saúde e da educação.</p>\n\n<h2>4. Por que o registro importa</h2>\n<p>O que o Educador Social <strong>anota</strong> vira dado; o dado vira <strong>diagnóstico</strong>; o diagnóstico vira <strong>orçamento e serviço</strong>. Registro incompleto não é apenas falha burocrática: é invisibilização de demanda. Ao mesmo tempo, o registro deve observar <strong>sigilo</strong>, pertinência e finalidade — anota-se o que é necessário à proteção, não julgamentos morais sobre a família.</p>\n\n<h2>5. Distinções que caem em prova</h2>\n<ul>\n<li><strong>Vulnerabilidade</strong> (proteção básica) — fragilização de vínculos, pobreza, privação; <strong>risco pessoal e social</strong> (proteção especial) — violação de direitos já ocorrida;</li>\n<li><strong>Vigilância socioassistencial</strong> ≠ fiscalização de usuários ≠ auditoria de benefícios;</li>\n<li><strong>Família referenciada</strong> — reside na área de abrangência da unidade e por ela pode ser atendida; <strong>família em acompanhamento</strong> — tem plano de acompanhamento familiar em curso, com registro sistemático.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "Sobre a matricialidade sociofamiliar no SUAS, assinale a alternativa correta.",
+          "options": [
+            "Consiste em priorizar o atendimento individual, reservando o trabalho com famílias aos casos de violação de direitos.",
+            "Estabelece a família como unidade de referência da atenção, reconhecida em suas múltiplas configurações e considerada em seu contexto social e territorial.",
+            "Determina que apenas famílias nucleares, compostas por pais e filhos, sejam consideradas para fins de acompanhamento.",
+            "Impõe à família a responsabilidade exclusiva pela proteção de seus membros, cabendo ao Estado atuação subsidiária.",
+            "Aplica-se somente à proteção social especial de alta complexidade, em razão do rompimento de vínculos."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Matricialidade sociofamiliar",
+          "tags": [
+            "matricialidade",
+            "família",
+            "PNAS"
+          ],
+          "comment": "A alternativa 'd' é a inversão mais perigosa: familismo, isto é, transferir para a família a responsabilidade que é do Estado.",
+          "justification": "A PNAS/2004 estabelece a matricialidade sociofamiliar como eixo estruturante: a família é a unidade de referência, reconhecida em suas diversas configurações, e sua capacidade protetiva depende de condições objetivas que a política pública deve ajudar a assegurar."
+        },
+        {
+          "statement": "São dimensões da vigilância socioassistencial:",
+          "options": [
+            "vigilância sanitária e vigilância epidemiológica.",
+            "vigilância de riscos e vulnerabilidades e vigilância de padrões de serviços.",
+            "vigilância patrimonial e vigilância orçamentária.",
+            "vigilância de condicionalidades e vigilância de fraudes.",
+            "vigilância documental e vigilância cadastral."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Vigilância socioassistencial",
+          "tags": [
+            "vigilância socioassistencial",
+            "NOB/SUAS"
+          ],
+          "comment": "Uma dimensão olha a DEMANDA (território); a outra olha a OFERTA (rede).",
+          "justification": "A NOB/SUAS 2012 organiza a vigilância socioassistencial em vigilância de riscos e vulnerabilidades, que dimensiona as situações que incidem sobre as famílias no território, e vigilância de padrões de serviços, que analisa a rede ofertada."
+        },
+        {
+          "statement": "No planejamento das ações socioeducativas de um CRAS, a equipe utiliza dados do CadÚnico, do Censo SUAS, do RMA e do IBGE para caracterizar a área de abrangência. Essa atividade corresponde à elaboração do:",
+          "options": [
+            "plano individual de atendimento.",
+            "diagnóstico socioterritorial.",
+            "relatório de prestação de contas.",
+            "plano de aplicação do fundo de assistência social.",
+            "termo de referência para chamamento público."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Diagnóstico socioterritorial",
+          "tags": [
+            "território",
+            "diagnóstico socioterritorial",
+            "CadÚnico"
+          ],
+          "comment": "O PIA é individual/familiar; o diagnóstico socioterritorial é do território de abrangência da unidade.",
+          "justification": "O diagnóstico socioterritorial reúne informações sobre as vulnerabilidades, riscos e potencialidades do território de abrangência da unidade, subsidiando o planejamento da oferta de serviços e das ações socioeducativas."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 2º, II e art. 6º-A, parágrafo único",
+          "html": "<p>Art. 2º A assistência social tem por objetivos:</p><p>II - a vigilância socioassistencial, que visa a analisar territorialmente a capacidade protetiva das famílias e nela a ocorrência de vulnerabilidades, de ameaças, de vitimizações e danos;</p><p>Art. 6º-A. (...) Parágrafo único. A vigilância socioassistencial é um dos instrumentos das proteções da assistência social que identifica e previne as situações de risco e vulnerabilidade social e seus agravos no território.</p>",
+          "note": "Duas palavras definem o conceito: TERRITORIALMENTE e CAPACIDADE PROTETIVA das famílias. Vigilância socioassistencial não é fiscalização de usuários.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 6º, § 3º — Vigilância como área essencial",
+          "html": "<p>Art. 6º (...)</p><p>§ 3º A vigilância socioassistencial é um dos instrumentos das proteções da assistência social que identifica e previne as situações de risco e vulnerabilidade social e seus agravos no território, sendo função da gestão do Suas em todas as esferas de governo.</p><p>Compõem a vigilância socioassistencial, conforme a NOB/SUAS 2012:</p><p>I - a vigilância de riscos e vulnerabilidades, que dimensiona as situações que incidem sobre as famílias e indivíduos nos diferentes territórios; e</p><p>II - a vigilância de padrões de serviços, que analisa a rede socioassistencial ofertada quanto à cobertura, à estrutura e à qualidade.</p><p>São fontes de dados da vigilância: o Cadastro Único, o Censo SUAS, o Registro Mensal de Atendimentos (RMA), os prontuários, os sistemas do BPC e dos programas de transferência de renda, além de dados demográficos e das demais políticas setoriais.</p>",
+          "note": "Vigilância existe em TODAS as esferas — não é atribuição exclusiva da União. Suas duas dimensões: demanda (território) e oferta (rede).",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Família Contemporânea e Vulnerabilidade",
+      "summary": "\n<h1>A família contemporânea</h1>\n\n<h2>1. Da família modelo às famílias reais</h2>\n<p>O trabalho social no SUAS parte de uma recusa: não existe <strong>uma</strong> forma correta de família. O arranjo nuclear burguês — pai provedor, mãe cuidadora, filhos — é <strong>historicamente datado</strong>, não é natural nem universal.</p>\n<p>Configurações que compõem o cotidiano dos serviços:</p>\n<ul>\n<li><strong>Monoparentais</strong>, majoritariamente chefiadas por mulheres;</li>\n<li><strong>Extensas ou ampliadas</strong>, com avós, tios e primos exercendo cuidado;</li>\n<li><strong>Recompostas</strong>, reunindo filhos de uniões anteriores;</li>\n<li><strong>Homoafetivas</strong>, com ou sem filhos;</li>\n<li><strong>Unipessoais</strong> e <strong>famílias por afinidade</strong>, sem laço consanguíneo;</li>\n<li><strong>Intergeracionais</strong>, com idosos como principais provedores por meio do BPC ou da aposentadoria.</li>\n</ul>\n<p>Conceito de apoio (Constituição, art. 226): a família é a base da sociedade e tem <strong>especial proteção do Estado</strong>, reconhecendo-se como entidade familiar a união estável e a comunidade formada por qualquer dos pais e seus descendentes.</p>\n\n<h2>2. Transformações que produzem novas demandas</h2>\n<ul>\n<li><strong>Envelhecimento populacional</strong> e sobrecarga de cuidadoras familiares;</li>\n<li><strong>Entrada massiva das mulheres no mercado de trabalho</strong> sem redistribuição do trabalho de cuidado — a chamada <strong>dupla jornada</strong>;</li>\n<li><strong>Precarização e informalidade</strong> do trabalho, com renda instável;</li>\n<li><strong>Urbanização periférica</strong>: longas distâncias, transporte caro, tempo de convivência reduzido;</li>\n<li><strong>Encarceramento</strong> e violência urbana, que retiram membros do núcleo familiar;</li>\n<li>Aumento de <strong>arranjos monoparentais femininos</strong> entre as famílias mais pobres.</li>\n</ul>\n\n<h2>3. Vulnerabilidade: o conceito</h2>\n<p>Vulnerabilidade <strong>não é sinônimo de pobreza</strong>, embora frequentemente a acompanhe. É a combinação entre:</p>\n<ul>\n<li><strong>Ativos</strong> disponíveis (renda, trabalho, moradia, escolaridade, rede de apoio, saúde);</li>\n<li><strong>Estrutura de oportunidades</strong> oferecida pelo Estado, pelo mercado e pela comunidade;</li>\n<li><strong>Capacidade de resposta</strong> da família diante de eventos adversos.</li>\n</ul>\n<p>Daí a distinção operacional: <strong>vulnerabilidade</strong> (situação que pode levar à violação — atuação da proteção básica) × <strong>risco pessoal e social</strong> (violação já em curso — atuação da proteção especial).</p>\n\n<h2>4. Riscos profissionais a evitar</h2>\n<ul>\n<li><strong>Familismo</strong> — transferir para a família responsabilidades que são do Estado;</li>\n<li><strong>Culpabilização</strong> — atribuir à família a causa moral de sua condição (a mãe que não cuida, o pai ausente);</li>\n<li><strong>Idealização</strong> — supor que a família é sempre lugar seguro, ignorando que ela também pode ser espaço de violência;</li>\n<li><strong>Tutela</strong> — decidir pela família em nome de seu bem, em vez de com ela.</li>\n</ul>\n\n<h2>5. Como isso vira prática</h2>\n<p>No trabalho socioeducativo, significa: perguntar <strong>quem é família para você</strong> antes de preencher o campo do prontuário; construir horários compatíveis com a jornada de quem trabalha; reconhecer as estratégias de sobrevivência já existentes; e formular o plano de acompanhamento <strong>com</strong> a família, com metas que ela reconheça como suas.</p>\n",
+      "questions": [
+        {
+          "statement": "No trabalho social com famílias no âmbito do SUAS, é correto afirmar que:",
+          "options": [
+            "a família nuclear deve ser tomada como parâmetro de normalidade, sendo os demais arranjos considerados situações de risco.",
+            "as famílias devem ser reconhecidas em suas múltiplas configurações, sendo sua capacidade protetiva condicionada também por fatores objetivos, como renda, moradia e rede de apoio.",
+            "a ausência do genitor masculino no núcleo familiar caracteriza, por si só, situação de vulnerabilidade a ser superada.",
+            "cabe à equipe definir, de forma técnica e independentemente da percepção dos usuários, quem integra o núcleo familiar.",
+            "a família é, por definição, espaço de proteção, não sendo compatível com a ocorrência de violações de direitos em seu interior."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Configurações familiares",
+          "tags": [
+            "família",
+            "matricialidade",
+            "vulnerabilidade"
+          ],
+          "comment": "A alternativa 'e' derruba muita gente: a família também pode ser espaço de violação — é o que justifica a existência do PAEFI.",
+          "justification": "A PNAS/2004 e as orientações técnicas do PAIF reconhecem a diversidade de arranjos familiares e vinculam a capacidade protetiva a condições materiais e sociais concretas, afastando leituras normativas e moralizantes."
+        },
+        {
+          "statement": "Assinale a alternativa que distingue corretamente vulnerabilidade social e risco pessoal e social, conforme a organização da proteção social no SUAS.",
+          "options": [
+            "Vulnerabilidade refere-se a situações de violação de direitos já ocorridas; risco, a situações potenciais.",
+            "Vulnerabilidade refere-se a situações que podem levar à violação de direitos, atendidas pela proteção social básica; risco pessoal e social refere-se a violações já em curso, atendidas pela proteção social especial.",
+            "Ambos são sinônimos e recebem o mesmo tipo de atendimento, variando apenas a unidade de referência.",
+            "Vulnerabilidade é conceito econômico e risco é conceito jurídico, sem repercussão na organização dos serviços.",
+            "Vulnerabilidade aplica-se apenas a indivíduos e risco apenas a famílias."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Vulnerabilidade e risco",
+          "tags": [
+            "vulnerabilidade",
+            "risco",
+            "proteção básica",
+            "proteção especial"
+          ],
+          "comment": "A alternativa 'a' inverte os conceitos — é a distratora mais escolhida.",
+          "justification": "A PNAS/2004 destina a proteção social básica a situações de vulnerabilidade decorrentes de pobreza, privação e fragilização de vínculos, com caráter preventivo, e a proteção social especial a situações de risco pessoal e social por violação de direitos, com caráter protetivo e restaurador."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Constituição Federal de 1988",
+          "heading": "Art. 226",
+          "html": "<p>Art. 226. A família, base da sociedade, tem especial proteção do Estado.</p><p>§ 1º O casamento é civil e gratuita a celebração.</p><p>§ 3º Para efeito da proteção do Estado, é reconhecida a união estável entre o homem e a mulher como entidade familiar, devendo a lei facilitar sua conversão em casamento.</p><p>§ 4º Entende-se, também, como entidade familiar a comunidade formada por qualquer dos pais e seus descendentes.</p><p>§ 5º Os direitos e deveres referentes à sociedade conjugal são exercidos igualmente pelo homem e pela mulher.</p><p>§ 7º Fundado nos princípios da dignidade da pessoa humana e da paternidade responsável, o planejamento familiar é livre decisão do casal, competindo ao Estado propiciar recursos educacionais e científicos para o exercício desse direito, vedada qualquer forma coercitiva por parte de instituições oficiais ou privadas.</p><p>§ 8º O Estado assegurará a assistência à família na pessoa de cada um dos que a integram, criando mecanismos para coibir a violência no âmbito de suas relações.</p>",
+          "note": "O § 4º reconhece a família monoparental como entidade familiar. O § 8º é o fundamento constitucional da Lei Maria da Penha.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 25 — Família natural e extensa",
+          "html": "<p>Art. 25. Entende-se por família natural a comunidade formada pelos pais ou qualquer deles e seus descendentes.</p><p>Parágrafo único. Entende-se por família extensa ou ampliada aquela que se estende para além da unidade pais e filhos ou da unidade do casal, formada por parentes próximos com os quais a criança ou adolescente convive e mantém vínculos de afinidade e afetividade.</p>",
+          "note": "Dois elementos cumulativos na família extensa: parentesco próximo E convivência com vínculos de afinidade e afetividade. Só o parentesco não basta.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 19",
+          "html": "<p>Art. 19. É direito da criança e do adolescente ser criado e educado no seio de sua família e, excepcionalmente, em família substituta, assegurada a convivência familiar e comunitária, em ambiente que garanta seu desenvolvimento integral.</p><p>§ 1º Toda criança ou adolescente que estiver inserido em programa de acolhimento familiar ou institucional terá sua situação reavaliada, no máximo, a cada 3 (três) meses, devendo a autoridade judiciária competente, com base em relatório elaborado por equipe interprofissional ou multidisciplinar, decidir de forma fundamentada pela possibilidade de reintegração familiar ou pela colocação em família substituta, em quaisquer das modalidades previstas no art. 28 desta Lei.</p><p>§ 2º A permanência da criança e do adolescente em programa de acolhimento institucional não se prolongará por mais de 18 (dezoito) meses, salvo comprovada necessidade que atenda ao seu superior interesse, devidamente fundamentada pela autoridade judiciária.</p><p>§ 3º A manutenção ou a reintegração de criança ou adolescente à sua família terá preferência em relação a qualquer outra providência, caso em que será esta incluída em serviços e programas de proteção, apoio e promoção.</p>",
+          "note": "Números: reavaliação a cada 3 meses e permanência máxima de 18 meses. O § 3º dá PREFERÊNCIA à família de origem sobre qualquer outra providência.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Educador Social na Proteção Social Básica (PAIF e SCFV)",
+      "summary": "\n<h1>O Educador Social na Proteção Social Básica</h1>\n\n<h2>1. PAIF — o serviço obrigatório do CRAS</h2>\n<p><strong>Serviço de Proteção e Atendimento Integral à Família</strong>. Continuado, preventivo, protetivo e proativo. <strong>Exclusivo do CRAS</strong> — não pode ser executado por entidade privada.</p>\n<p><strong>Trabalho social essencial ao serviço</strong>: acolhida; estudo social; visita domiciliar; orientação e encaminhamentos; grupos de famílias; acompanhamento familiar; atividades comunitárias; campanhas socioeducativas; informação, comunicação e defesa de direitos; promoção ao acesso à documentação; mobilização e fortalecimento de redes sociais de apoio; desenvolvimento do convívio familiar e comunitário; mobilização para a cidadania; e elaboração de relatórios.</p>\n<p>Duas modalidades de atenção:</p>\n<ul>\n<li><strong>Atendimento</strong> — ação imediata, pontual (acolhida, orientação, encaminhamento);</li>\n<li><strong>Acompanhamento familiar</strong> — processo continuado, com <strong>plano de acompanhamento</strong>, objetivos pactuados e registro sistemático.</li>\n</ul>\n\n<h2>2. SCFV — onde o Educador Social mais atua</h2>\n<p><strong>Serviço de Convivência e Fortalecimento de Vínculos</strong>. Complementar ao PAIF, organizado em <strong>grupos por ciclo de vida</strong> e desenvolvido em <strong>percursos</strong>.</p>\n<ul>\n<li><strong>Objetivos</strong>: complementar o trabalho social com famílias; prevenir a institucionalização e a segregação; promover acessos a benefícios e serviços; estimular a participação na vida pública; desenvolver o sentimento de <strong>pertença</strong> e de identidade; e favorecer a construção de projetos de vida;</li>\n<li><strong>Percursos</strong>: sequência planejada de encontros com tema, objetivo e avaliação — o oposto de atividades soltas e recreativas;</li>\n<li><strong>Público prioritário</strong> (Resolução CNAS nº 1/2013): crianças e adolescentes em situação de <strong>trabalho infantil</strong>; em <strong>isolamento</strong>; em situação de <strong>acolhimento</strong>; em cumprimento de <strong>MSE em meio aberto</strong>; egressos de medidas socioeducativas; vítimas de <strong>violência, negligência ou abuso</strong>; fora da escola ou com defasagem superior a 2 anos; <strong>pessoas com deficiência</strong>, especialmente beneficiárias do BPC; e <strong>pessoas idosas</strong> beneficiárias do BPC ou em vulnerabilidade;</li>\n<li>Local de oferta: CRAS ou <strong>Centro de Convivência referenciado</strong> ao CRAS.</li>\n</ul>\n\n<h2>3. A dimensão socioeducativa</h2>\n<p>O que caracteriza a atuação do Educador Social não é a atividade em si (a oficina, o jogo, a roda), mas a <strong>intencionalidade pedagógica</strong> por trás dela. Toda atividade deve responder a três perguntas:</p>\n<ul>\n<li><strong>Para quê?</strong> — que aquisição do usuário essa atividade busca (convívio, autonomia, acolhida);</li>\n<li><strong>Para quem?</strong> — que características do grupo, do território e do ciclo de vida foram consideradas;</li>\n<li><strong>E depois?</strong> — como isso se articula ao percurso e ao acompanhamento familiar no PAIF.</li>\n</ul>\n\n<h2>4. O que o Educador Social faz — e o que não faz</h2>\n<ul>\n<li><strong>Faz</strong>: planejar e conduzir grupos e oficinas; acolher e escutar; mediar conflitos; realizar busca ativa e visitas domiciliares junto à equipe; produzir material didático-pedagógico; organizar eventos culturais; registrar e avaliar as ações; subsidiar a equipe com a leitura socioeducativa dos casos;</li>\n<li><strong>Não faz</strong>: conceder ou negar benefício; emitir laudo psicológico ou parecer social privativo de outras profissões; decidir sobre afastamento de criança do convívio familiar; substituir a escola ou o serviço de saúde.</li>\n</ul>\n\n<h2>5. Prevenção</h2>\n<p>A proteção básica trabalha com <strong>prevenção</strong>, o que exige uma inversão de lógica: o sucesso é aquilo que <strong>não aconteceu</strong>. Por isso o registro e a avaliação de processo importam tanto — sem eles, o serviço preventivo parece não produzir resultado.</p>\n",
+      "questions": [
+        {
+          "statement": "Sobre o Serviço de Proteção e Atendimento Integral à Família (PAIF), assinale a alternativa correta.",
+          "options": [
+            "Pode ser executado por entidades privadas conveniadas, desde que inscritas no Conselho de Assistência Social.",
+            "É serviço de oferta obrigatória e exclusiva do CRAS, de caráter continuado, com foco no trabalho social com famílias.",
+            "Destina-se exclusivamente a famílias em situação de violação de direitos, com vínculos rompidos.",
+            "Constitui serviço da proteção social especial de média complexidade, ofertado no CREAS.",
+            "Tem caráter emergencial e é ofertado somente em situações de calamidade pública."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "PAIF",
+          "tags": [
+            "PAIF",
+            "CRAS",
+            "proteção social básica"
+          ],
+          "comment": "Exclusividade estatal do PAIF é ponto certo de prova. O SCFV, ao contrário, pode ser ofertado em rede referenciada.",
+          "justification": "A Tipificação Nacional e a LOAS estabelecem que o PAIF é ofertado exclusivamente no CRAS, unidade pública estatal, com caráter continuado, preventivo, protetivo e proativo."
+        },
+        {
+          "statement": "São considerados público prioritário para inclusão no Serviço de Convivência e Fortalecimento de Vínculos, conforme a Resolução CNAS nº 1/2013:",
+          "options": [
+            "crianças e adolescentes em situação de trabalho infantil e pessoas idosas beneficiárias do BPC em situação de vulnerabilidade.",
+            "somente adolescentes em cumprimento de medida socioeducativa de internação.",
+            "famílias com renda superior a três salários-mínimos, para fins de contrapartida.",
+            "exclusivamente crianças de zero a seis anos matriculadas na educação infantil.",
+            "pessoas em situação de rua acompanhadas pelo Centro POP, com exclusividade."
+          ],
+          "correct": 0,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "SCFV — público prioritário",
+          "tags": [
+            "SCFV",
+            "público prioritário",
+            "trabalho infantil",
+            "BPC"
+          ],
+          "comment": "A alternativa 'b' erra ao citar internação: MSE em meio aberto (LA e PSC) é que integra o público prioritário.",
+          "justification": "A Resolução CNAS nº 1/2013 elenca como público prioritário, entre outros, crianças e adolescentes em situação de trabalho infantil, em isolamento, em acolhimento, em cumprimento de MSE em meio aberto, vítimas de violência, fora da escola, pessoas com deficiência e pessoas idosas beneficiárias do BPC ou em situação de vulnerabilidade."
+        },
+        {
+          "statement": "Ao planejar um percurso do SCFV com adolescentes de um território marcado por evasão escolar, o Educador Social deve, prioritariamente:",
+          "options": [
+            "reproduzir o currículo escolar formal, de modo a suprir os conteúdos perdidos e substituir a escola.",
+            "organizar atividades recreativas livres, sem definição prévia de objetivos, para garantir a espontaneidade do grupo.",
+            "definir objetivos socioeducativos articulados ao diagnóstico do território e ao acompanhamento familiar realizado no PAIF, com registro e avaliação das ações.",
+            "condicionar a permanência no serviço à frequência escolar comprovada mensalmente.",
+            "encaminhar o grupo integralmente ao CREAS, em razão da evasão escolar caracterizar violação de direitos."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Planejamento do SCFV",
+          "tags": [
+            "SCFV",
+            "percursos",
+            "planejamento",
+            "intencionalidade pedagógica"
+          ],
+          "comment": "Questão de método: o SCFV não é escola nem recreação — é ação socioeducativa planejada, articulada ao PAIF.",
+          "justification": "O SCFV organiza-se em percursos planejados, com objetivos definidos a partir do diagnóstico socioterritorial e das características do grupo, complementando o trabalho social com famílias do PAIF, com registro e avaliação sistemáticos. Condicionar acesso a contrapartidas contraria os princípios da LOAS."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 6º-C, § 1º — CRAS",
+          "html": "<p>Art. 6º-C (...) § 1º O CRAS é a unidade pública municipal, de base territorial, localizada em áreas com maiores índices de vulnerabilidade e risco social, destinada à articulação dos serviços socioassistenciais no seu território de abrangência e à prestação de serviços, programas e projetos socioassistenciais de proteção social básica às famílias.</p><p>§ 3º Os CRAS e os CREAS são unidades públicas estatais instituídas no âmbito do Suas, que possuem interface com as demais políticas públicas e articulam, coordenam e ofertam os serviços, programas, projetos e benefícios da assistência social.</p>",
+          "note": "Unidade pública ESTATAL, de base territorial, instalada onde a vulnerabilidade se concentra. Duas funções: articular a rede do território e ofertar a proteção básica.",
+          "important": 1
+        },
+        {
+          "lawRef": "Resolução CNAS nº 109/2009 (Tipificação)",
+          "heading": "PAIF — trabalho social essencial",
+          "html": "<p>Serviço de Proteção e Atendimento Integral à Família (PAIF) — consiste no trabalho social com famílias, de caráter continuado, com a finalidade de fortalecer a função protetiva das famílias, prevenir a ruptura de seus vínculos, promover seu acesso e usufruto de direitos e contribuir na melhoria de sua qualidade de vida.</p><p>Trabalho social essencial ao serviço: acolhida; estudo social; visita domiciliar; orientação e encaminhamentos; grupos de famílias; acompanhamento familiar; atividades comunitárias; campanhas socioeducativas; informação, comunicação e defesa de direitos; promoção ao acesso à documentação pessoal; mobilização e fortalecimento de redes sociais de apoio; desenvolvimento do convívio familiar e comunitário; mobilização para a cidadania; conhecimento do território; cadastramento socioeconômico; elaboração de relatórios e/ou prontuários; notificação da ocorrência de situações de vulnerabilidade e risco social; busca ativa.</p><p>Unidade: CRAS. Período de funcionamento: 5 dias por semana, 8 horas diárias.</p>",
+          "note": "Repare que BUSCA ATIVA e CONHECIMENTO DO TERRITÓRIO integram o trabalho social essencial — não são atividades acessórias.",
+          "important": 1
+        },
+        {
+          "lawRef": "Resolução CNAS nº 109/2009 (Tipificação)",
+          "heading": "SCFV — descrição e objetivos",
+          "html": "<p>Serviço de Convivência e Fortalecimento de Vínculos — serviço realizado em grupos, organizado a partir de percursos, de modo a garantir aquisições progressivas aos seus usuários, de acordo com o seu ciclo de vida, a fim de complementar o trabalho social com famílias e prevenir a ocorrência de situações de risco social.</p><p>Objetivos: complementar o trabalho social com família, prevenindo a ocorrência de situações de risco social e fortalecendo a convivência familiar e comunitária; prevenir a institucionalização e a segregação de crianças, adolescentes, jovens e idosos; promover acessos a benefícios e serviços socioassistenciais; oportunizar o acesso às informações sobre direitos e sobre participação cidadã; possibilitar acessos a experiências e manifestações artísticas, culturais, esportivas e de lazer, com vistas ao desenvolvimento de novas sociabilidades; favorecer o desenvolvimento de atividades intergeracionais, propiciando trocas de experiências e vivências, fortalecendo o respeito, a solidariedade e os vínculos familiares e comunitários.</p><p>Unidade: CRAS e Centro de Convivência referenciado ao CRAS.</p>",
+          "note": "Duas palavras estruturam o serviço: GRUPOS e PERCURSOS. Sem percurso planejado, a atividade deixa de ser SCFV e vira recreação avulsa.",
+          "important": 1
+        },
+        {
+          "lawRef": "Resolução CNAS nº 1/2013",
+          "heading": "Público prioritário do SCFV",
+          "html": "<p>São considerados em situação prioritária para inclusão no Serviço de Convivência e Fortalecimento de Vínculos as crianças, adolescentes, jovens e pessoas idosas em:</p><p>I - situação de isolamento;</p><p>II - trabalho infantil;</p><p>III - vivência de violência e/ou negligência;</p><p>IV - fora da escola ou com defasagem escolar superior a 2 (dois) anos;</p><p>V - em situação de acolhimento;</p><p>VI - em cumprimento de medida socioeducativa em meio aberto;</p><p>VII - egressos de medidas socioeducativas;</p><p>VIII - situação de abuso e/ou exploração sexual;</p><p>IX - com medidas de proteção do Estatuto da Criança e do Adolescente;</p><p>X - crianças e adolescentes em situação de rua;</p><p>XI - vulnerabilidade que diz respeito às pessoas com deficiência.</p>",
+          "note": "Note o inciso VI: MSE em MEIO ABERTO (LA e PSC). Internação não gera prioridade no SCFV, porque o adolescente está privado de liberdade.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Educador Social na Proteção Social Especial (PAEFI e Abordagem)",
+      "summary": "\n<h1>O Educador Social na Proteção Social Especial</h1>\n\n<h2>1. CREAS e PAEFI</h2>\n<p>O <strong>CREAS</strong> é a unidade pública de referência da média complexidade. Seu serviço obrigatório é o <strong>PAEFI — Serviço de Proteção e Atendimento Especializado a Famílias e Indivíduos</strong>.</p>\n<p><strong>Público</strong>: famílias e indivíduos que vivenciam violações de direitos, tais como:</p>\n<ul>\n<li>Violência física, psicológica e negligência;</li>\n<li>Violência sexual (abuso e exploração);</li>\n<li>Afastamento do convívio familiar por aplicação de medida de proteção;</li>\n<li>Tráfico de pessoas;</li>\n<li>Situação de rua e mendicância;</li>\n<li>Abandono;</li>\n<li>Vivência de trabalho infantil;</li>\n<li>Discriminação por orientação sexual, raça ou etnia;</li>\n<li>Descumprimento de condicionalidades por violação de direitos.</li>\n</ul>\n<p><strong>Trabalho social essencial</strong>: acolhida; escuta; estudo social; diagnóstico socioeconômico; monitoramento e avaliação do serviço; orientação e encaminhamento para a rede; construção de <strong>plano individual e/ou familiar de atendimento</strong>; orientação sociofamiliar; atendimento psicossocial; orientação jurídico-social; referência e contrarreferência; informação, comunicação e defesa de direitos; apoio à família na sua função protetiva; acesso à documentação pessoal; mobilização, identificação da família extensa ou ampliada; articulação da rede; e elaboração de relatórios.</p>\n\n<h2>2. Serviço Especializado em Abordagem Social</h2>\n<p>Serviço de média complexidade, ofertado de forma <strong>continuada e programada</strong>, com a finalidade de assegurar trabalho social de <strong>abordagem e busca ativa</strong> que identifique, nos territórios, a incidência de trabalho infantil, exploração sexual de crianças e adolescentes, situação de rua, uso abusivo de substâncias e mendicância.</p>\n<ul>\n<li>Realiza-se em <strong>praças, terminais, entroncamentos rodoviários, feiras e locais de intensa circulação</strong>;</li>\n<li>Objetivos: construir <strong>processo de saída das ruas</strong>; identificar famílias e indivíduos com direitos violados; promover ações de sensibilização e mobilização; e favorecer o acesso a serviços e benefícios;</li>\n<li>Requer <strong>planejamento prévio</strong>: mapa dos pontos, horários, frequência, composição da equipe e articulação com a rede;</li>\n<li><strong>Não</strong> é ação de recolhimento, higienização urbana ou operação policial. A adesão é <strong>voluntária</strong>.</li>\n</ul>\n\n<h2>3. O papel específico do Educador Social na PSE</h2>\n<ul>\n<li>Compor a equipe de <strong>abordagem</strong>, atuando na aproximação, na criação de vínculo e na oferta de informação sobre direitos;</li>\n<li>Desenvolver <strong>atividades socioeducativas e de convivência</strong> com os usuários em acompanhamento no PAEFI e nas unidades de acolhimento;</li>\n<li>Acompanhar adolescentes em <strong>MSE de meio aberto</strong> nas atividades coletivas, apoiando a construção do PIA;</li>\n<li>Contribuir com a leitura educativa dos casos nas reuniões de equipe e nos estudos de caso;</li>\n<li>Apoiar a articulação com o <strong>Sistema de Garantia de Direitos</strong>: Conselho Tutelar, Ministério Público, Defensoria, Vara da Infância, delegacias especializadas.</li>\n</ul>\n\n<h2>4. Referência e contrarreferência</h2>\n<ul>\n<li><strong>Referência</strong> — quando a proteção básica encaminha para a especial, ou quando a unidade encaminha para serviço de maior complexidade;</li>\n<li><strong>Contrarreferência</strong> — quando a proteção especial devolve o caso à básica, com informações que permitam a continuidade do acompanhamento.</li>\n</ul>\n<p>O encaminhamento é <strong>acompanhado</strong>, não apenas indicado: o serviço se responsabiliza por saber se a família chegou e foi atendida.</p>\n\n<h2>5. Postura em situações de violação</h2>\n<ul>\n<li>Escutar sem revitimizar: nada de repetir a coleta de detalhes já registrados;</li>\n<li>Não prometer o que não se pode cumprir, nem garantir sigilo absoluto quando há dever legal de comunicação;</li>\n<li>Comunicar suspeita de violência contra criança e adolescente ao <strong>Conselho Tutelar</strong> — obrigação legal (art. 13 do ECA);</li>\n<li>Registrar de forma objetiva e descritiva, separando fato observado de interpretação.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "O Serviço Especializado em Abordagem Social caracteriza-se por:",
+          "options": [
+            "ação eventual de recolhimento de pessoas em situação de rua, executada em conjunto com órgãos de segurança pública.",
+            "trabalho social continuado e programado de busca ativa nos territórios, com adesão voluntária dos usuários e construção de vínculo de confiança.",
+            "atendimento exclusivamente realizado no interior das unidades de acolhimento institucional.",
+            "serviço da proteção social básica, ofertado no CRAS a famílias em situação de vulnerabilidade.",
+            "atividade de fiscalização do cumprimento de condicionalidades de programas de transferência de renda."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Abordagem social",
+          "tags": [
+            "abordagem social",
+            "busca ativa",
+            "média complexidade"
+          ],
+          "comment": "Duas palavras salvam a questão: CONTINUADO e PROGRAMADO. Abordagem não é operação nem blitz.",
+          "justification": "Conforme a Tipificação Nacional, o Serviço Especializado em Abordagem Social é ofertado de forma continuada e programada, com a finalidade de assegurar trabalho social de abordagem e busca ativa nos territórios, respeitada a autonomia e a adesão voluntária dos usuários."
+        },
+        {
+          "statement": "Durante uma atividade socioeducativa em unidade de acolhimento, um adolescente relata ao Educador Social ter sofrido violência física por parte de um funcionário. A conduta adequada é:",
+          "options": [
+            "manter sigilo absoluto sobre o relato, para preservar o vínculo de confiança construído.",
+            "orientar o adolescente a procurar diretamente a delegacia, encerrando ali sua participação.",
+            "registrar objetivamente o relato, comunicar imediatamente a coordenação e o Conselho Tutelar e apoiar o adolescente no acesso à rede de proteção.",
+            "confrontar o funcionário citado, a fim de apurar a veracidade dos fatos antes de qualquer registro.",
+            "aguardar a repetição do relato em outras oportunidades, evitando decisões precipitadas."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Notificação de violência",
+          "tags": [
+            "ECA",
+            "art. 13",
+            "Conselho Tutelar",
+            "violência institucional"
+          ],
+          "comment": "Sigilo profissional não se aplica a suspeita de violência contra criança e adolescente: a comunicação é obrigação legal. Cabe à equipe proteger, não investigar.",
+          "justification": "Art. 13 do ECA: os casos de suspeita ou confirmação de castigo físico, tratamento cruel ou degradante e de maus-tratos contra criança ou adolescente serão obrigatoriamente comunicados ao Conselho Tutelar, sem prejuízo de outras providências legais. A apuração cabe às autoridades competentes, não ao profissional."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 6º-C, § 2º — CREAS",
+          "html": "<p>Art. 6º-C (...) § 2º O CREAS é a unidade pública de abrangência e gestão municipal, estadual ou regional, destinada à prestação de serviços a indivíduos e famílias que se encontram em situação de risco pessoal ou social, por violação de direitos ou contingência, que demandam intervenções especializadas da proteção social especial.</p>",
+          "note": "Diferente do CRAS (municipal), o CREAS pode ter gestão municipal, ESTADUAL ou REGIONAL — detalhe cobrado com frequência.",
+          "important": 1
+        },
+        {
+          "lawRef": "Resolução CNAS nº 109/2009 (Tipificação)",
+          "heading": "PAEFI — usuários e trabalho essencial",
+          "html": "<p>Serviço de Proteção e Atendimento Especializado a Famílias e Indivíduos (PAEFI) — serviço de apoio, orientação e acompanhamento a famílias com um ou mais de seus membros em situação de ameaça ou violação de direitos.</p><p>Usuários: famílias e indivíduos que vivenciam violações de direitos por ocorrência de violência física, psicológica e negligência; violência sexual (abuso e/ou exploração); afastamento do convívio familiar devido à aplicação de medida socioeducativa ou medida de proteção; tráfico de pessoas; situação de rua e mendicância; abandono; vivência de trabalho infantil; discriminação em decorrência da orientação sexual e/ou raça/etnia; outras formas de violação de direitos decorrentes de discriminações/submissões a situações que provocam danos e agravos à sua condição de vida e os impedem de usufruir autonomia e bem-estar.</p><p>Trabalho social essencial ao serviço: acolhida; escuta; estudo social; diagnóstico socioeconômico; monitoramento e avaliação do serviço; orientação e encaminhamentos para a rede de serviços locais; construção de plano individual e/ou familiar de atendimento; orientação sociofamiliar; atendimento psicossocial; orientação jurídico-social; referência e contrarreferência; informação, comunicação e defesa de direitos; apoio à família na sua função protetiva; acesso à documentação pessoal; mobilização, identificação da família extensa ou ampliada; articulação da rede de serviços socioassistenciais e com os serviços de outras políticas públicas; articulação interinstitucional com o Sistema de Garantia de Direitos.</p><p>Unidade: CREAS.</p>",
+          "note": "O rol de usuários é o mapa das violações de direitos atendidas pela média complexidade. 'Situação de rua' aparece aqui — mas o serviço específico é ofertado no Centro POP.",
+          "important": 1
+        },
+        {
+          "lawRef": "Resolução CNAS nº 109/2009 (Tipificação)",
+          "heading": "Serviço Especializado em Abordagem Social",
+          "html": "<p>Serviço ofertado de forma continuada e programada com a finalidade de assegurar trabalho social de abordagem e busca ativa que identifique, nos territórios, a incidência de trabalho infantil, exploração sexual de crianças e adolescentes, situação de rua, uso abusivo de crack e outras drogas, dentre outras.</p><p>Deverão ser consideradas praças, entroncamento de estradas, fronteiras, espaços públicos onde se realizam atividades laborais, locais de intensa circulação de pessoas e existência de comércio, terminais de ônibus, trens, metrô e outros.</p><p>Objetivos: construir o processo de saída das ruas e possibilitar condições de acesso à rede de serviços e a benefícios assistenciais; identificar famílias e indivíduos com direitos violados, a natureza das violações, as condições em que vivem, estratégias de sobrevivência, procedências, aspirações, desejos e relações estabelecidas com as instituições; promover ações de sensibilização para divulgação do trabalho realizado, direitos e necessidades de inclusão social e estabelecimento de parcerias; promover ações para a reinserção familiar e comunitária.</p>",
+          "note": "'Continuada e PROGRAMADA': exige planejamento prévio de pontos, horários e frequência. Abordagem não é ação emergencial nem operação de recolhimento.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 13 — Dever de comunicar",
+          "html": "<p>Art. 13. Os casos de suspeita ou confirmação de castigo físico, de tratamento cruel ou degradante e de maus-tratos contra criança ou adolescente serão obrigatoriamente comunicados ao Conselho Tutelar da respectiva localidade, sem prejuízo de outras providências legais.</p><p>§ 1º As gestantes ou mães que manifestem interesse em entregar seus filhos para adoção serão obrigatoriamente encaminhadas, sem constrangimento, à Justiça da Infância e da Juventude.</p><p>§ 2º Os serviços de saúde em suas diferentes portas de entrada, os serviços de assistência social em seu componente especializado, o Centro de Referência Especializado de Assistência Social (Creas) e os demais órgãos do Sistema de Garantia de Direitos da Criança e do Adolescente deverão conferir máxima prioridade ao atendimento das crianças na faixa etária da primeira infância com suspeita ou confirmação de violência de qualquer natureza.</p>",
+          "note": "Comunicação OBRIGATÓRIA e independente de autorização da família. Basta a SUSPEITA. O § 2º cita o CREAS nominalmente.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Serviços de Acolhimento Institucional e Familiar",
+      "summary": "\n<h1>Serviços de acolhimento</h1>\n\n<h2>1. Os três princípios inegociáveis</h2>\n<ul>\n<li><strong>Excepcionalidade</strong> — o acolhimento só ocorre quando esgotadas as possibilidades de manutenção na família de origem, nuclear ou extensa;</li>\n<li><strong>Provisoriedade</strong> — é medida de transição, não destino. Permanência máxima de <strong>18 meses</strong> para crianças e adolescentes, salvo comprovada necessidade;</li>\n<li><strong>Preservação e fortalecimento de vínculos</strong> familiares e comunitários — o acolhimento não interrompe o trabalho com a família de origem; ao contrário, é quando ele se intensifica.</li>\n</ul>\n<p>Corolário: <strong>pobreza não motiva acolhimento</strong> (art. 23 do ECA). E o acolhimento <strong>não é privação de liberdade</strong> (art. 101, § 1º).</p>\n\n<h2>2. Modalidades</h2>\n<ul>\n<li><strong>Abrigo institucional</strong> — atendimento em pequenos grupos. Para crianças e adolescentes: até <strong>20</strong> por unidade;</li>\n<li><strong>Casa-lar</strong> — residência privada com <strong>educador/cuidador residente</strong>, até <strong>10</strong> crianças e adolescentes;</li>\n<li><strong>Casa de passagem</strong> — acolhimento imediato e emergencial, com estudo diagnóstico breve;</li>\n<li><strong>Família acolhedora</strong> — acolhimento em residência de família cadastrada e acompanhada, com <strong>preferência legal</strong> sobre o institucional para crianças e adolescentes;</li>\n<li><strong>República</strong> — jovens de 18 a 21 anos egressos de acolhimento, adultos em processo de saída das ruas e idosos com autonomia;</li>\n<li><strong>Residência inclusiva</strong> — jovens e adultos com deficiência em situação de dependência, sem apoio familiar;</li>\n<li><strong>ILPI</strong> — Instituição de Longa Permanência para Idosos.</li>\n</ul>\n\n<h2>3. Parâmetros das Orientações Técnicas (Resolução Conjunta CNAS/CONANDA nº 1/2009)</h2>\n<ul>\n<li><strong>Ambiente residencial</strong>, com aparência de casa e inserido na comunidade, sem placas identificadoras que estigmatizem;</li>\n<li>Preservação de <strong>grupos de irmãos</strong> na mesma unidade;</li>\n<li>Atendimento <strong>personalizado</strong>, com objetos pessoais, espaço próprio e registro da história de vida (álbum, fotografias, prontuário);</li>\n<li><strong>Não desmembramento</strong> por sexo ou idade quando isso separar irmãos;</li>\n<li>Uso dos <strong>serviços da comunidade</strong> — escola, saúde, lazer —, jamais serviços internos que isolem;</li>\n<li>Proporção de referência para cuidadores: <strong>1 para cada 10</strong> usuários, reduzindo para <strong>1 para cada 8, 6 ou menos</strong> conforme a presença de crianças de até 1 ano, com deficiência ou com necessidades específicas de saúde;</li>\n<li><strong>PIA — Plano Individual de Atendimento</strong>: obrigatório, elaborado pela equipe técnica logo após o acolhimento, com previsão das ações para reintegração familiar ou, esgotada essa via, colocação em família substituta;</li>\n<li>Reavaliação da situação, no máximo, a cada <strong>3 meses</strong>, com relatório à autoridade judiciária.</li>\n</ul>\n\n<h2>4. Rotinas e o papel educativo</h2>\n<p>A vida cotidiana <strong>é</strong> o conteúdo educativo do acolhimento. Alimentação, higiene, sono, estudo e lazer não são tarefas domésticas: são situações de aprendizagem, cuidado e construção de autonomia.</p>\n<ul>\n<li><strong>Organização da vida cotidiana</strong>: rotinas previsíveis dão segurança, especialmente a quem viveu rupturas;</li>\n<li><strong>Normas de convivência construídas coletivamente</strong>, com participação dos acolhidos — não impostas;</li>\n<li><strong>Mediação de conflitos</strong>: escuta das partes, separação entre a conduta e a pessoa, reparação em vez de punição;</li>\n<li><strong>Gradualidade da autonomia</strong>: responsabilidades compatíveis com a idade e o desenvolvimento, culminando no <strong>preparo para o desligamento</strong>;</li>\n<li><strong>Vedação de castigos</strong> físicos, humilhação, isolamento punitivo e restrição de alimentação ou de visitas como sanção.</li>\n</ul>\n\n<h2>5. Desligamento</h2>\n<p>Deve ser <strong>planejado</strong> e preparado com antecedência, seja por reintegração familiar, colocação em família substituta ou alcance da maioridade. Para os jovens que completam 18 anos, a rede deve prever apoio à moradia (repúblicas), inclusão produtiva e continuidade do acompanhamento — o desligamento não pode ser abandono institucional.</p>\n",
+      "questions": [
+        {
+          "statement": "São princípios que orientam os serviços de acolhimento para crianças e adolescentes:",
+          "options": [
+            "definitividade, isolamento protetivo e substituição da família de origem.",
+            "excepcionalidade, provisoriedade e preservação e fortalecimento de vínculos familiares e comunitários.",
+            "universalidade, gratuidade e contrapartida familiar.",
+            "seletividade, distributividade e irredutibilidade.",
+            "obrigatoriedade, permanência e desvinculação da família de origem."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Princípios do acolhimento",
+          "tags": [
+            "acolhimento",
+            "excepcionalidade",
+            "provisoriedade",
+            "ECA"
+          ],
+          "comment": "Trio obrigatório. A alternativa 'd' repete objetivos da seguridade social — distratora recorrente.",
+          "justification": "Art. 101, § 1º, do ECA e Orientações Técnicas (Resolução Conjunta CNAS/CONANDA nº 1/2009): o acolhimento é medida provisória e excepcional, devendo preservar e fortalecer os vínculos familiares e comunitários."
+        },
+        {
+          "statement": "Em um serviço de acolhimento institucional, um adolescente descumpre reiteradamente as normas de convivência. À luz das Orientações Técnicas para os Serviços de Acolhimento, a conduta adequada da equipe é:",
+          "options": [
+            "suspender as visitas familiares até que haja mudança de comportamento.",
+            "restringir a alimentação como forma de responsabilização pedagógica.",
+            "isolar o adolescente dos demais acolhidos por período determinado.",
+            "mediar o conflito, retomar coletivamente as normas de convivência e buscar medidas educativas de reparação, vedados castigos físicos e humilhantes.",
+            "solicitar imediatamente sua transferência para outra unidade, a fim de preservar o grupo."
+          ],
+          "correct": 3,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Mediação de conflitos",
+          "tags": [
+            "acolhimento",
+            "mediação de conflitos",
+            "normas de convivência"
+          ],
+          "comment": "Convivência familiar é direito, não recompensa: suspender visitas como punição é violação de direito.",
+          "justification": "As Orientações Técnicas determinam que as normas de convivência sejam construídas coletivamente e que a atuação diante de transgressões seja educativa, sendo vedados castigos físicos, tratamento humilhante, isolamento punitivo e restrição de alimentação ou de convivência familiar como sanção."
+        },
+        {
+          "statement": "Sobre o Plano Individual de Atendimento (PIA) nos serviços de acolhimento, é correto afirmar que:",
+          "options": [
+            "é elaborado exclusivamente pela autoridade judiciária, cabendo ao serviço apenas executá-lo.",
+            "é facultativo, sendo exigido apenas nos casos de acolhimento superior a doze meses.",
+            "deve ser elaborado pela equipe técnica do serviço logo após o acolhimento, prevendo ações voltadas prioritariamente à reintegração familiar.",
+            "destina-se a organizar as rotinas internas da unidade, sem relação com a família de origem.",
+            "substitui a reavaliação periódica da situação da criança ou do adolescente pela autoridade judiciária."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "PIA",
+          "tags": [
+            "PIA",
+            "acolhimento",
+            "reintegração familiar"
+          ],
+          "comment": "O PIA é do serviço, elaborado com a participação da criança/adolescente e da família, e a reavaliação judicial continua sendo trimestral.",
+          "justification": "Art. 101, §§ 4º a 6º, do ECA: a equipe técnica do serviço de acolhimento elaborará plano individual de atendimento logo após o acolhimento, visando à reintegração familiar, salvo se houver determinação judicial em contrário, caso em que se buscará a colocação em família substituta. A reavaliação judicial ocorre, no máximo, a cada três meses."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 34 — Preferência do acolhimento familiar",
+          "html": "<p>Art. 34. O poder público estimulará, por meio de assistência jurídica, incentivos fiscais e subsídios, o acolhimento, sob a forma de guarda, de criança ou adolescente afastado do convívio familiar.</p><p>§ 1º A inclusão da criança ou adolescente em programas de acolhimento familiar terá preferência a seu acolhimento institucional, observado, em qualquer caso, o caráter temporário e excepcional da medida, nos termos desta Lei.</p><p>§ 2º Na hipótese do § 1º deste artigo a pessoa ou casal cadastrado no programa de acolhimento familiar poderá receber a criança ou adolescente mediante guarda, observado o disposto nos arts. 28 a 33 desta Lei.</p><p>§ 3º A União apoiará a implementação de serviços de acolhimento em família acolhedora como política pública, os quais deverão dispor de equipe que organize o acolhimento temporário de crianças e de adolescentes em residências de famílias selecionadas, capacitadas e acompanhadas que não estejam no cadastro de adoção.</p><p>§ 4º Poderão ser utilizados recursos federais, estaduais, distritais e municipais para a manutenção dos serviços de acolhimento em família acolhedora, facultando-se o repasse de recursos para a própria família acolhedora.</p>",
+          "note": "O § 3º é decisivo: a família acolhedora NÃO pode estar no cadastro de adoção. Acolher não é caminho para adotar.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 92 — Princípios das entidades de acolhimento",
+          "html": "<p>Art. 92. As entidades que desenvolvam programas de acolhimento familiar ou institucional deverão adotar os seguintes princípios:</p><p>I - preservação dos vínculos familiares e promoção da reintegração familiar;</p><p>II - integração em família substituta, quando esgotados os recursos de manutenção na família natural ou extensa;</p><p>III - atendimento personalizado e em pequenos grupos;</p><p>IV - desenvolvimento de atividades em regime de coeducação;</p><p>V - não desmembramento de grupos de irmãos;</p><p>VI - evitar, sempre que possível, a transferência para outras entidades de crianças e adolescentes abrigados;</p><p>VII - participação na vida da comunidade local;</p><p>VIII - preparação gradativa para o desligamento;</p><p>IX - participação de pessoas da comunidade no processo educativo.</p><p>§ 1º O dirigente de entidade que desenvolve programa de acolhimento institucional é equiparado ao guardião, para todos os efeitos de direito.</p><p>§ 2º Os dirigentes de entidades que desenvolvem programas de acolhimento familiar ou institucional remeterão à autoridade judiciária, no máximo a cada 6 (seis) meses, relatório circunstanciado acerca da situação de cada criança ou adolescente acolhido e sua família, para fins da reavaliação prevista no § 1º do art. 19 desta Lei.</p>",
+          "note": "Nove princípios — o artigo mais cobrado sobre acolhimento. Note os incisos V (irmãos juntos), VI (evitar transferências) e VIII (preparação gradativa para o desligamento).",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 101, §§ 4º a 6º — PIA",
+          "html": "<p>Art. 101 (...)</p><p>§ 4º Imediatamente após o acolhimento da criança ou do adolescente, a autoridade judiciária dará vista dos autos ao Ministério Público, para o regular prosseguimento do feito.</p><p>§ 5º Será garantida a convivência integral da criança com a mãe adolescente que estiver em acolhimento institucional.</p><p>§ 6º Constarão do plano individual, dentre outros:</p><p>I - os resultados da avaliação interdisciplinar;</p><p>II - os compromissos assumidos pelos pais ou responsável; e</p><p>III - a previsão das atividades a serem desenvolvidas com a criança ou com o adolescente acolhido e seus pais ou responsável, com vista na reintegração familiar ou, caso seja esta vedada por expressa e fundamentada determinação judicial, as providências a serem tomadas para sua colocação em família substituta, sob direta supervisão da autoridade judiciária.</p>",
+          "note": "O PIA é elaborado pela equipe técnica do serviço, com participação da criança/adolescente e da família, e tem como horizonte primeiro a REINTEGRAÇÃO FAMILIAR.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Rede de Proteção Social e Intersetorialidade",
+      "summary": "\n<h1>Rede de proteção e intersetorialidade</h1>\n\n<h2>1. Dois sentidos de rede</h2>\n<ul>\n<li><strong>Rede socioassistencial</strong> — conjunto integrado de serviços, programas, projetos e benefícios da assistência social, prestados diretamente pelo poder público (<strong>rede pública</strong>) ou por entidades vinculadas ao SUAS (<strong>rede privada complementar</strong>, inscrita no Conselho e cadastrada no CNEAS);</li>\n<li><strong>Rede intersetorial</strong> — articulação da assistência com <strong>saúde, educação, trabalho, habitação, cultura, esporte, segurança pública e sistema de justiça</strong>.</li>\n</ul>\n\n<h2>2. Sistema de Garantia de Direitos (SGD)</h2>\n<p>Organizado em três eixos:</p>\n<ul>\n<li><strong>Promoção</strong> — políticas públicas de atendimento: SUAS, SUS, educação, cultura;</li>\n<li><strong>Defesa</strong> — Conselho Tutelar, Ministério Público, Defensoria Pública, Poder Judiciário, delegacias especializadas, Ouvidorias;</li>\n<li><strong>Controle</strong> — conselhos de direitos e de políticas, conferências, organizações da sociedade civil.</li>\n</ul>\n\n<h2>3. Fluxos: referência e contrarreferência</h2>\n<ul>\n<li><strong>Referência</strong> — encaminhamento da unidade de menor para a de maior complexidade, ou para outra política;</li>\n<li><strong>Contrarreferência</strong> — retorno de informação e do acompanhamento à unidade de origem;</li>\n<li>O encaminhamento deve ser <strong>qualificado</strong>: com contato prévio, informação registrada, prazo, e retorno sobre o desfecho. Entregar um papel com endereço não é encaminhar.</li>\n</ul>\n\n<h2>4. Intersetorialidade não é apenas encaminhar</h2>\n<p>Intersetorialidade é <strong>corresponsabilidade</strong> na leitura do problema e na construção da resposta. Instrumentos que a materializam:</p>\n<ul>\n<li><strong>Reuniões de rede</strong> periódicas no território;</li>\n<li><strong>Estudos de caso</strong> conjuntos, com definição de responsável por cada ação;</li>\n<li><strong>Protocolos e fluxos pactuados</strong> por escrito entre as políticas;</li>\n<li><strong>Comitês e câmaras intersetoriais</strong> (enfrentamento à violência, trabalho infantil, população em situação de rua).</li>\n</ul>\n\n<h2>5. Interfaces mais frequentes para o Educador Social</h2>\n<ul>\n<li><strong>Educação</strong> — evasão e infrequência escolar, busca ativa escolar, articulação com a rede de ensino e com o programa de combate ao trabalho infantil;</li>\n<li><strong>Saúde</strong> — CAPS, CAPS-AD, Consultório na Rua, Estratégia Saúde da Família, saúde mental infantojuvenil;</li>\n<li><strong>Justiça e defesa</strong> — Conselho Tutelar, Vara da Infância e da Juventude, Ministério Público, Defensoria;</li>\n<li><strong>Trabalho e renda</strong> — qualificação profissional, intermediação de mão de obra, economia solidária, inclusão produtiva.</li>\n</ul>\n\n<h2>6. Limites e riscos</h2>\n<ul>\n<li><strong>Encaminhamento em cascata</strong>: a família circula entre serviços sem que nenhum assuma o caso. Antídoto: definir o serviço de referência;</li>\n<li><strong>Judicialização precoce</strong>: acionar o sistema de justiça antes de esgotar as possibilidades de proteção;</li>\n<li><strong>Compartilhamento indevido de informações</strong>: circula na rede apenas o que é necessário à proteção, com ciência da família sempre que possível;</li>\n<li><strong>Sobreposição de planos</strong>: várias políticas montando planos paralelos para a mesma família. Antídoto: plano único, pactuado em estudo de caso.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "Sobre os conceitos de referência e contrarreferência no SUAS, assinale a alternativa correta.",
+          "options": [
+            "Referência é o retorno de informações à unidade de origem; contrarreferência é o encaminhamento para serviço de maior complexidade.",
+            "Referência é o encaminhamento para unidade de maior complexidade ou para outra política; contrarreferência é o retorno do acompanhamento e das informações à unidade de origem.",
+            "Ambos designam o mesmo procedimento, diferenciando-se apenas quanto ao registro documental.",
+            "Referência aplica-se apenas entre unidades da assistência social; contrarreferência, apenas entre políticas distintas.",
+            "Referência é atribuição exclusiva do Conselho Tutelar; contrarreferência, do Ministério Público."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Fluxos da rede",
+          "tags": [
+            "referência",
+            "contrarreferência",
+            "rede"
+          ],
+          "comment": "A alternativa 'a' inverte os conceitos — a troca mais cobrada do tema.",
+          "justification": "Referência é o encaminhamento do usuário para unidade de maior complexidade ou para outra política setorial; contrarreferência é o movimento inverso, com devolutiva de informações que permitam a continuidade do acompanhamento pela unidade de origem."
+        },
+        {
+          "statement": "Uma família em acompanhamento no CRAS apresenta demandas de saúde mental, infrequência escolar de duas crianças e ausência de documentação civil. A atuação intersetorial adequada consiste em:",
+          "options": [
+            "encaminhar a família a cada serviço com documento escrito, encerrando o acompanhamento no CRAS.",
+            "aguardar que os demais serviços procurem o CRAS, evitando sobreposição de intervenções.",
+            "realizar estudo de caso com a rede, pactuar responsabilidades e prazos e manter o CRAS como serviço de referência do acompanhamento familiar.",
+            "acionar o Ministério Público, por se tratar de negligência familiar caracterizada.",
+            "transferir integralmente o caso ao CREAS, em razão do número de demandas apresentadas."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Intersetorialidade",
+          "tags": [
+            "intersetorialidade",
+            "estudo de caso",
+            "acompanhamento familiar"
+          ],
+          "comment": "Quantidade de demandas não é critério de transferência para a proteção especial — o critério é a existência de violação de direitos.",
+          "justification": "A intersetorialidade pressupõe corresponsabilidade: estudo de caso conjunto, pactuação de responsáveis e prazos, e manutenção de um serviço de referência. As demandas descritas não configuram, por si sós, violação de direitos que justifique a transferência ao CREAS."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 86 e 88 — Política de atendimento",
+          "html": "<p>Art. 86. A política de atendimento dos direitos da criança e do adolescente far-se-á através de um conjunto articulado de ações governamentais e não-governamentais, da União, dos estados, do Distrito Federal e dos municípios.</p><p>Art. 88. São diretrizes da política de atendimento:</p><p>I - municipalização do atendimento;</p><p>II - criação de conselhos municipais, estaduais e nacional dos direitos da criança e do adolescente, órgãos deliberativos e controladores das ações em todos os níveis, assegurada a participação popular paritária por meio de organizações representativas, segundo leis federal, estaduais e municipais;</p><p>III - criação e manutenção de programas específicos, observada a descentralização político-administrativa;</p><p>IV - manutenção de fundos nacional, estaduais e municipais vinculados aos respectivos conselhos dos direitos da criança e do adolescente;</p><p>V - integração operacional de órgãos do Judiciário, Ministério Público, Defensoria, Segurança Pública e Assistência Social, preferencialmente em um mesmo local, para efeito de agilização do atendimento inicial a adolescente a quem se atribua autoria de ato infracional;</p><p>VI - integração operacional de órgãos do Judiciário, Ministério Público, Defensoria, Conselho Tutelar e encarregados da execução das políticas sociais básicas e de assistência social, para efeito de agilização do atendimento de crianças e de adolescentes inseridos em programas de acolhimento familiar ou institucional, com vista na sua rápida reintegração à família de origem ou, se tal solução se mostrar comprovadamente inviável, sua colocação em família substituta, em quaisquer das modalidades previstas no art. 28 desta Lei;</p><p>IX - formação continuada e a capacitação dos profissionais que atuam nas diferentes áreas da atenção à primeira infância, incluindo os conhecimentos sobre direitos da criança e sobre desenvolvimento infantil.</p>",
+          "note": "Os incisos V e VI são a base legal da INTEGRAÇÃO OPERACIONAL — a intersetorialidade escrita na lei, e não apenas boa prática.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 6º-B — Rede socioassistencial",
+          "html": "<p>Art. 6º-B. As proteções sociais básica e especial serão ofertadas pela rede socioassistencial, de forma integrada, diretamente pelos entes públicos e/ou pelas entidades e organizações de assistência social vinculadas ao Suas, respeitadas as especificidades de cada ação.</p><p>§ 1º A vinculação ao Suas é o reconhecimento pelo Ministério do Desenvolvimento Social e Combate à Fome de que a entidade de assistência social integra a rede socioassistencial.</p><p>§ 2º Para o reconhecimento referido no § 1º, a entidade deverá cumprir os seguintes requisitos:</p><p>I - constituir-se em conformidade com o disposto no art. 3º;</p><p>II - inscrever-se em Conselho Municipal ou do Distrito Federal, na forma do art. 9º;</p><p>III - integrar o sistema de cadastro de entidades de que trata o inciso XI do art. 19.</p><p>§ 3º As entidades e organizações de assistência social vinculadas ao Suas celebrarão convênios, contratos, acordos ou ajustes com o poder público para a execução, garantido financiamento integral, pelo Estado, de serviços, programas, projetos e ações de assistência social, nos limites da capacidade instalada, aos beneficiários abrangidos por esta Lei, observando-se as disponibilidades orçamentárias.</p>",
+          "note": "Rede pública + rede privada complementar. A entidade precisa de INSCRIÇÃO no Conselho e de cadastro (CNEAS) para integrar o SUAS — o instrumento de parceria não substitui isso.",
+          "important": 1
+        }
+      ]
+    }
+  ]
+}

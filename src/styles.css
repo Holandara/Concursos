@@ -79,6 +79,8 @@ body {
   background: transparent;
 }
 .icon-btn:hover { background: var(--hover); color: var(--ink); }
+/* Ícone em estado ativo (favorito, marcado): preenchido com a cor corrente. */
+.icon-filled { fill: currentColor; }
 .input, .select, .textarea {
   @apply w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm text-ink outline-none;
 }

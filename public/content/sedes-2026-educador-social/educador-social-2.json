@@ -1,0 +1,524 @@
+{
+  "subjects": [
+    {
+      "subject": "Trabalho Social com Famílias, Indivíduos e Grupos",
+      "summary": "\n<h1>Trabalho social com famílias, indivíduos e grupos</h1>\n\n<h2>1. O que é trabalho social com famílias</h2>\n<p>Conjunto de procedimentos <strong>planejados e continuados</strong> que buscam contribuir para a convivência, o reconhecimento de direitos e o fortalecimento da <strong>função protetiva</strong> da família. Não é aconselhamento moral, não é fiscalização e não é distribuição de benefícios.</p>\n<p>Pressupostos:</p>\n<ul>\n<li><strong>Protagonismo dos usuários</strong> — a família participa das decisões sobre o próprio acompanhamento;</li>\n<li><strong>Territorialidade</strong> — o plano considera as condições reais do lugar onde a família vive;</li>\n<li><strong>Perspectiva de direitos</strong> — a demanda é lida como acesso não efetivado, não como falha pessoal;</li>\n<li><strong>Trabalho em equipe</strong> — as leituras profissionais se somam em um plano único.</li>\n</ul>\n\n<h2>2. Atendimento × acompanhamento</h2>\n<ul>\n<li><strong>Atendimento particularizado</strong> — ação pontual: acolhida, orientação, encaminhamento, concessão de benefício eventual;</li>\n<li><strong>Acompanhamento familiar</strong> — processo continuado, com <strong>plano de acompanhamento</strong>, objetivos pactuados, periodicidade definida, registro em prontuário e avaliação. É o núcleo do PAIF e do PAEFI.</li>\n</ul>\n\n<h2>3. Trabalho com grupos</h2>\n<p>O grupo é instrumento privilegiado do Educador Social. Etapas de condução:</p>\n<ul>\n<li><strong>Planejamento</strong> — definição de objetivo, público, número de encontros, temas, recursos e critérios de avaliação;</li>\n<li><strong>Formação e contrato inicial</strong> — apresentação, construção coletiva de combinados, esclarecimento sobre sigilo e sobre a natureza voluntária da participação;</li>\n<li><strong>Desenvolvimento</strong> — alternância de linguagens (roda de conversa, dinâmica, arte, jogo, produção coletiva), com espaço para conflito e divergência;</li>\n<li><strong>Fechamento</strong> — sistematização do que foi construído, devolutiva ao grupo e encaminhamentos;</li>\n<li><strong>Avaliação</strong> — com os participantes e com a equipe, alimentando o percurso seguinte.</li>\n</ul>\n<p>Tipos de grupo no SUAS: grupos de <strong>convivência</strong> (SCFV), grupos de <strong>famílias</strong> do PAIF, grupos <strong>socioeducativos</strong> temáticos, e grupos com <strong>adolescentes em MSE</strong>.</p>\n\n<h2>4. Instrumentos técnico-operativos</h2>\n<ul>\n<li><strong>Acolhida</strong> — primeiro contato; escuta da demanda; começa a construir o vínculo;</li>\n<li><strong>Entrevista</strong> — com roteiro flexível; combina perguntas abertas e fechadas;</li>\n<li><strong>Visita domiciliar</strong> — deve ser <strong>previamente combinada</strong> sempre que possível, com objetivo claro. Não é inspeção da casa nem verificação de padrão de vida;</li>\n<li><strong>Observação</strong> — registro do que se vê e se ouve, separando descrição de interpretação;</li>\n<li><strong>Estudo social</strong> — análise que reúne informações e produz compreensão da situação;</li>\n<li><strong>Genograma</strong> (composição e relações familiares ao longo de gerações) e <strong>ecomapa</strong> (relações da família com serviços, instituições e redes de apoio);</li>\n<li><strong>Registro em prontuário</strong> — objetivo, tempestivo, com finalidade protetiva.</li>\n</ul>\n\n<h2>5. Postura profissional</h2>\n<ul>\n<li><strong>Escuta ativa</strong>, sem interromper para corrigir a narrativa;</li>\n<li><strong>Não julgamento</strong> — suspender o julgamento moral sobre escolhas e modos de vida;</li>\n<li><strong>Linguagem acessível</strong> — traduzir a linguagem técnica e institucional;</li>\n<li><strong>Sigilo</strong> qualificado — compartilhar apenas o necessário à proteção, preferencialmente com ciência da família;</li>\n<li><strong>Vedação de contrapartidas</strong> — participação em grupo jamais pode ser condição para acesso a benefício.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "Sobre a visita domiciliar como instrumento do trabalho social no SUAS, assinale a alternativa correta.",
+          "options": [
+            "Destina-se a verificar as condições materiais da moradia, a fim de comprovar a veracidade das informações prestadas para concessão de benefícios.",
+            "Deve ter objetivo definido, ser previamente combinada com a família sempre que possível e respeitar a privacidade e a autonomia dos usuários.",
+            "Pode ser realizada sem aviso prévio como regra, para assegurar a fidedignidade da observação.",
+            "É privativa dos profissionais de nível superior de Serviço Social e Psicologia, vedada a participação de outros membros da equipe.",
+            "Substitui integralmente o atendimento na unidade, por permitir contato direto com a realidade familiar."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Visita domiciliar",
+          "tags": [
+            "visita domiciliar",
+            "instrumentos",
+            "sigilo"
+          ],
+          "comment": "A alternativa 'a' expressa a visita fiscalizatória, prática vedada pelo princípio da não comprovação vexatória de necessidade (art. 4º, III, da LOAS).",
+          "justification": "A visita domiciliar é instrumento do trabalho social essencial ao PAIF e ao PAEFI, com finalidade protetiva e objetivo previamente definido. Não se presta a fiscalizar condições de vida nem a comprovar necessidade."
+        },
+        {
+          "statement": "O instrumento que representa graficamente as relações da família com os serviços, instituições e redes de apoio existentes no território é o:",
+          "options": [
+            "genograma.",
+            "ecomapa.",
+            "fluxograma.",
+            "organograma.",
+            "cronograma."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Genograma e ecomapa",
+          "tags": [
+            "ecomapa",
+            "genograma",
+            "instrumentos"
+          ],
+          "comment": "Genograma olha para DENTRO da família (gerações e vínculos). Ecomapa olha para FORA (relações com o entorno).",
+          "justification": "O ecomapa representa as conexões da família com o ambiente externo — serviços, instituições, vizinhança, grupos religiosos e comunitários —, indicando a intensidade e a qualidade dessas relações. O genograma representa a composição familiar e as relações entre seus membros ao longo das gerações."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 4º, III — Vedação à comprovação vexatória",
+          "html": "<p>Art. 4º A assistência social rege-se pelos seguintes princípios:</p><p>III - respeito à dignidade do cidadão, à sua autonomia e ao seu direito a benefícios e serviços de qualidade, bem como à convivência familiar e comunitária, vedando-se qualquer comprovação vexatória de necessidade;</p>",
+          "note": "Este princípio governa a conduta em todos os instrumentos: entrevista, visita domiciliar e estudo social. Nada de inspeção de geladeira ou de armário.",
+          "important": 1
+        },
+        {
+          "lawRef": "Resolução CNAS nº 109/2009 (Tipificação)",
+          "heading": "Aquisições dos usuários",
+          "html": "<p>As aquisições dos usuários são organizadas pelas seguranças socioassistenciais e representam o que cada serviço deve assegurar às pessoas atendidas. No trabalho social com famílias, entre elas:</p><p>SEGURANÇA DE ACOLHIDA — ser acolhido em condições de dignidade, em ambiente favorecedor da expressão e do diálogo; ser estimulado a expressar necessidades e interesses; ter reparados ou minimizados os danos por vivências de violência e abusos; ter sua identidade, integridade e história de vida preservadas; ter acesso a espaços com padrões de qualidade quanto a higiene, acessibilidade, habitabilidade, salubridade, segurança e conforto.</p><p>SEGURANÇA DE CONVÍVIO OU VIVÊNCIA FAMILIAR, COMUNITÁRIA E SOCIAL — vivenciar experiências que contribuam para o fortalecimento de vínculos familiares e comunitários; ter acesso a serviços de outras políticas públicas setoriais; ter ampliada a capacidade protetiva da família e a superação de suas dificuldades de convívio.</p><p>SEGURANÇA DE DESENVOLVIMENTO DE AUTONOMIA — ter vivências pautadas pelo respeito a si próprio e aos outros; ter acesso a documentação civil; ter oportunidades de avaliar as atenções recebidas, expressar opiniões e reivindicações; ter acesso a informações e defesa de direitos.</p>",
+          "note": "O direito de AVALIAR o serviço e reivindicar é uma aquisição — não uma gentileza da equipe. Base da avaliação participativa.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Abordagem Social, Acolhida e Escuta Qualificada",
+      "summary": "\n<h1>Acolhida, escuta qualificada e construção de vínculo</h1>\n\n<h2>1. Acolhida</h2>\n<p>É a <strong>primeira segurança socioassistencial</strong> e o primeiro ato do trabalho social. Compreende recepção, escuta da demanda, identificação das necessidades e oferta de informação — em ambiente que assegure <strong>privacidade e dignidade</strong>.</p>\n<p>Acolhida não é triagem. Triagem seleciona quem entra; acolhida <strong>recebe todos</strong> e, a partir da escuta, define o percurso adequado.</p>\n\n<h2>2. Escuta qualificada</h2>\n<p>Escutar profissionalmente significa:</p>\n<ul>\n<li>Dar <strong>tempo</strong> à narrativa, sem apressar conclusões;</li>\n<li>Perguntar o que é <strong>necessário à proteção</strong>, não o que satisfaz a curiosidade;</li>\n<li>Não exigir a <strong>repetição</strong> de relatos de violência já registrados — repetir revitimiza;</li>\n<li>Reconhecer o <strong>não dito</strong> e o que a pessoa ainda não consegue nomear;</li>\n<li>Devolver o que foi compreendido, checando com o usuário;</li>\n<li>Não prometer o que não se pode cumprir.</li>\n</ul>\n<p>Distinção importante: a <strong>escuta especializada</strong> da Lei nº 13.431/2017 é procedimento formal da rede de proteção, limitado ao necessário à finalidade protetiva, e não se confunde com o <strong>depoimento especial</strong>, prestado à autoridade policial ou judiciária.</p>\n\n<h2>3. Abordagem social em campo</h2>\n<p>Sequência de trabalho:</p>\n<ul>\n<li><strong>Planejamento</strong> — mapa dos pontos de concentração, horários, frequência, composição da equipe, materiais e articulação prévia com a rede;</li>\n<li><strong>Aproximação</strong> — apresentar-se, identificar o serviço, pedir licença, respeitar o espaço da pessoa e seus pertences;</li>\n<li><strong>Escuta e oferta</strong> — informar sobre direitos, serviços e benefícios, sem condicionar;</li>\n<li><strong>Continuidade</strong> — retornar. O vínculo se constrói na <strong>repetição</strong> do encontro, muitas vezes ao longo de meses;</li>\n<li><strong>Registro</strong> — anotar o contato, mesmo quando não houve adesão.</li>\n</ul>\n<p>O que não fazer: abordar acompanhado de força policial em ação de rotina; fotografar pessoas sem consentimento; recolher pertences; condicionar atendimento à aceitação de acolhimento; ou tratar a recusa como fim do acompanhamento.</p>\n\n<h2>4. Construção de vínculo</h2>\n<ul>\n<li><strong>Constância</strong> — estar presente de forma previsível;</li>\n<li><strong>Coerência</strong> — cumprir exatamente o que foi combinado;</li>\n<li><strong>Reconhecimento</strong> — chamar pelo nome escolhido, lembrar a história já contada;</li>\n<li><strong>Respeito ao tempo</strong> — aceitar recusas sem retaliar;</li>\n<li><strong>Transparência</strong> — explicar o que será registrado e com quem a informação será compartilhada.</li>\n</ul>\n\n<h2>5. Acolhimento em situações difíceis</h2>\n<ul>\n<li><strong>Uso abusivo de substâncias</strong> — abstinência não é condição de acesso ao serviço (lógica de redução de danos);</li>\n<li><strong>Sofrimento psíquico</strong> — acolher sem diagnosticar; articular com CAPS e atenção básica;</li>\n<li><strong>Agressividade</strong> — priorizar a segurança de todos, reduzir estímulos, manter tom calmo, evitar confronto e nunca responder com humilhação;</li>\n<li><strong>Relato de violência</strong> — validar a fala, não questionar a veracidade, informar sobre os passos seguintes e acionar a rede de proteção.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "A acolhida, no âmbito dos serviços socioassistenciais, caracteriza-se por:",
+          "options": [
+            "ser procedimento de triagem que seleciona os usuários aptos a ingressar no serviço.",
+            "constituir o processo inicial de escuta das necessidades e de oferta de informações, realizado em condições que assegurem privacidade e dignidade.",
+            "consistir no preenchimento do cadastro socioeconômico para fins de concessão de benefícios.",
+            "ser atribuição privativa do coordenador da unidade, em razão da complexidade da avaliação.",
+            "restringir-se ao encaminhamento do usuário a outros serviços da rede."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "facil",
+          "subtopic": "Acolhida",
+          "tags": [
+            "acolhida",
+            "segurança socioassistencial",
+            "escuta"
+          ],
+          "comment": "Acolhida x triagem: a triagem filtra o acesso; a acolhida é a porta aberta a partir da qual se define o percurso.",
+          "justification": "A acolhida é a primeira das seguranças socioassistenciais e o trabalho social essencial de todos os serviços tipificados. Compreende recepção, escuta qualificada e informação, em ambiente que garanta privacidade e dignidade."
+        },
+        {
+          "statement": "Na abordagem social a pessoas em situação de rua, a construção do vínculo de confiança pressupõe:",
+          "options": [
+            "abordagem única e conclusiva, com definição imediata do encaminhamento adequado.",
+            "presença continuada e previsível da equipe no território, coerência entre o que é combinado e o que é cumprido, e respeito ao tempo e às recusas do usuário.",
+            "acompanhamento das ações por agentes de segurança pública, como forma de assegurar a autoridade da equipe.",
+            "condicionamento do atendimento à aceitação do encaminhamento para unidade de acolhimento.",
+            "registro fotográfico dos usuários abordados, para fins de identificação e monitoramento."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Construção de vínculo",
+          "tags": [
+            "abordagem social",
+            "vínculo",
+            "autonomia"
+          ],
+          "comment": "Tema recorrente na prova discursiva de estudo de caso: descrever a abordagem como processo, não como evento.",
+          "justification": "O Serviço Especializado em Abordagem Social é continuado e programado, e a adesão é voluntária. O vínculo se constrói pela constância, pela coerência e pelo respeito à autonomia, sendo vedado condicionar o atendimento à aceitação de encaminhamentos."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 13.431/2017",
+          "heading": "Art. 4º — Formas de violência",
+          "html": "<p>Art. 4º Para os efeitos desta Lei, sem prejuízo da tipificação das condutas criminosas, são formas de violência:</p><p>I - violência física, entendida como a ação infligida à criança ou ao adolescente que ofenda sua integridade ou saúde corporal ou que lhe cause sofrimento físico;</p><p>II - violência psicológica: a) qualquer conduta de discriminação, depreciação ou desrespeito em relação à criança ou ao adolescente mediante ameaça, constrangimento, humilhação, manipulação, isolamento, agressão verbal e xingamento, ridicularização, indiferença, exploração ou intimidação sistemática (bullying) que possa comprometer seu desenvolvimento psíquico ou emocional; b) o ato de alienação parental, assim entendido como a interferência na formação psicológica da criança ou do adolescente, promovida ou induzida por um dos genitores, pelos avós ou por quem os tenha sob sua autoridade, guarda ou vigilância, que leve ao repúdio de genitor ou que cause prejuízo ao estabelecimento ou à manutenção de vínculo com este; c) qualquer conduta que exponha a criança ou o adolescente, direta ou indiretamente, a crime violento contra membro de sua família ou de sua rede de apoio, independentemente do ambiente em que cometido, particularmente quando isto a torna testemunha;</p><p>III - violência sexual, entendida como qualquer conduta que constranja a criança ou o adolescente a praticar ou presenciar conjunção carnal ou qualquer outro ato libidinoso, inclusive exposição do corpo em foto ou vídeo por meio eletrônico ou não, que compreenda: a) abuso sexual; b) exploração sexual comercial; c) tráfico de pessoas;</p><p>IV - violência institucional, entendida como a praticada por instituição pública ou conveniada, inclusive quando gerar revitimização.</p>",
+          "note": "O inciso IV é o mais importante para o trabalho cotidiano: fazer a criança repetir o relato várias vezes configura VIOLÊNCIA INSTITUCIONAL por revitimização.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 13.431/2017",
+          "heading": "Art. 5º — Direitos no atendimento",
+          "html": "<p>Art. 5º A aplicação desta Lei, sem prejuízo dos princípios estabelecidos nas demais normas nacionais e internacionais de proteção dos direitos da criança e do adolescente, terá como base, entre outros, os direitos e garantias fundamentais da criança e do adolescente a:</p><p>I - receber prioridade absoluta e ter considerada a condição peculiar de pessoa em desenvolvimento;</p><p>II - receber tratamento digno e abrangente;</p><p>III - ter a intimidade e as condições pessoais protegidas quando vítima ou testemunha de violência;</p><p>IV - ser protegido contra qualquer tipo de discriminação, independentemente de classe, cor, etnia, deficiência, sexo, idade, religião, nacionalidade ou orientação sexual;</p><p>V - receber informação adequada à sua etapa de desenvolvimento sobre direitos, inclusive sociais, serviços disponíveis, representação jurídica, medidas de proteção, reparação de danos e qualquer procedimento a que seja submetido;</p><p>VI - ser ouvido e expressar seus desejos e opiniões, assim como permanecer em silêncio;</p><p>VII - receber assistência qualificada jurídica e psicossocial especializada, que facilite a sua participação e o resguarde contra comportamento inadequado, adotadas as medidas de aconselhamento proporcionais à sua idade;</p><p>VIII - ser resguardado e protegido de sofrimento, com direito a apoio, planejamento de sua participação, escolha e indicação de acompanhante;</p><p>IX - ser ouvido em horário que lhe for mais adequado e conveniente, sempre que possível.</p>",
+          "note": "O inciso VI garante o direito de PERMANECER EM SILÊNCIO. Insistir para que a criança fale é violação — não zelo profissional.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 13.431/2017",
+          "heading": "Art. 7º e 8º — Escuta especializada e depoimento especial",
+          "html": "<p>Art. 7º Escuta especializada é o procedimento de entrevista sobre situação de violência com criança ou adolescente perante órgão da rede de proteção, limitado o relato estritamente ao necessário para o cumprimento de sua finalidade.</p><p>Art. 8º Depoimento especial é o procedimento de oitiva de criança ou adolescente vítima ou testemunha de violência perante autoridade policial ou judiciária.</p>",
+          "note": "Escuta especializada = rede de proteção (inclusive SUAS), com finalidade PROTETIVA. Depoimento especial = polícia ou justiça, com finalidade PROBATÓRIA.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Interdisciplinaridade e Trabalho em Equipe",
+      "summary": "\n<h1>Interdisciplinaridade e trabalho em equipe</h1>\n\n<h2>1. Três palavras que a banca troca</h2>\n<ul>\n<li><strong>Multidisciplinaridade</strong> — várias disciplinas atuam sobre o mesmo objeto, <strong>lado a lado</strong>, sem integração. Cada profissional entrega seu pedaço;</li>\n<li><strong>Interdisciplinaridade</strong> — as disciplinas <strong>dialogam</strong>, trocam conceitos e constroem uma leitura comum, preservando suas identidades. É o modelo adotado no SUAS;</li>\n<li><strong>Transdisciplinaridade</strong> — as fronteiras entre as disciplinas se <strong>diluem</strong>, gerando um saber que atravessa e ultrapassa cada uma delas.</li>\n</ul>\n\n<h2>2. Equipes de referência (NOB-RH/SUAS)</h2>\n<p>São aquelas constituídas por <strong>servidores efetivos</strong>, responsáveis pela organização e oferta dos serviços, cuja composição mínima varia conforme o <strong>porte do município</strong> e o <strong>número de famílias referenciadas</strong>.</p>\n<ul>\n<li><strong>CRAS</strong>: coordenador, assistentes sociais, psicólogos e técnicos de nível médio — quantitativo crescente conforme o porte (pequeno porte I, II, médio, grande, metrópole);</li>\n<li><strong>CREAS</strong>: coordenador, assistentes sociais, psicólogos, <strong>advogado</strong>, profissionais para abordagem e auxiliares administrativos;</li>\n<li><strong>Unidades de acolhimento</strong>: coordenador, equipe técnica, <strong>cuidadores e auxiliares de cuidador</strong>, com proporção definida pelas Orientações Técnicas.</li>\n</ul>\n<p>O <strong>Educador Social</strong>, com formação em licenciatura plena, integra a equipe aportando a dimensão <strong>socioeducativa</strong> — planejamento pedagógico, condução de grupos, mediação e produção de material didático.</p>\n\n<h2>3. Instrumentos do trabalho coletivo</h2>\n<ul>\n<li><strong>Reunião de equipe</strong> — periódica, com pauta, registro e encaminhamentos com responsáveis;</li>\n<li><strong>Estudo de caso</strong> — análise conjunta de uma situação, resultando em plano único com divisão de responsabilidades;</li>\n<li><strong>Supervisão técnica</strong> — espaço de reflexão sobre a prática, e não de controle hierárquico da produtividade;</li>\n<li><strong>Educação permanente</strong> — formação continuada em serviço, prevista na NOB-RH e detalhada na PNEP/SUAS (Resolução CNAS nº 4/2013);</li>\n<li><strong>Prontuário compartilhado</strong> — registro único da família, acessível à equipe, com controle de finalidade.</li>\n</ul>\n\n<h2>4. Sigilo em equipe multiprofissional</h2>\n<p>O sigilo é <strong>da equipe</strong>, não do profissional isolado. Regras práticas:</p>\n<ul>\n<li>Compartilhar o que é <strong>necessário à proteção</strong>, com a finalidade explícita;</li>\n<li>Informar a família, sempre que possível, sobre o que será compartilhado e com quem;</li>\n<li>Não discutir casos em <strong>corredores, elevadores</strong> ou grupos de mensagens informais;</li>\n<li>Reconhecer os <strong>limites de atribuição</strong>: não emitir opinião técnica sobre matéria privativa de outra profissão.</li>\n</ul>\n\n<h2>5. Conflitos de equipe</h2>\n<p>Divergência entre profissionais é esperada e produtiva — o problema é quando ela se converte em disputa de poder que atinge o usuário. Encaminhamentos: levar o dissenso ao <strong>espaço coletivo</strong> (reunião, estudo de caso, supervisão); registrar as decisões pactuadas; e nunca comunicar à família orientações contraditórias vindas de profissionais diferentes.</p>\n",
+      "questions": [
+        {
+          "statement": "A atuação em que diferentes profissionais analisam a mesma situação de forma isolada, cada um a partir de seu campo, sem integração entre as leituras produzidas, caracteriza:",
+          "options": [
+            "interdisciplinaridade.",
+            "transdisciplinaridade.",
+            "multidisciplinaridade.",
+            "intersetorialidade.",
+            "matricialidade."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Multi, inter e transdisciplinaridade",
+          "tags": [
+            "interdisciplinaridade",
+            "multidisciplinaridade",
+            "equipe"
+          ],
+          "comment": "Mnemônico: MULTI = muitos, lado a lado. INTER = entre, com diálogo. TRANS = através, dissolvendo fronteiras.",
+          "justification": "Na multidisciplinaridade, as disciplinas atuam justapostas sobre o mesmo objeto, sem integração das leituras. A interdisciplinaridade pressupõe diálogo e construção de uma compreensão comum; a transdisciplinaridade, a diluição das fronteiras entre os campos."
+        },
+        {
+          "statement": "Sobre o sigilo profissional no trabalho em equipe multiprofissional no SUAS, assinale a alternativa correta.",
+          "options": [
+            "O sigilo é absoluto e individual, sendo vedado ao profissional compartilhar qualquer informação com os demais membros da equipe.",
+            "O sigilo é da equipe: as informações necessárias à proteção podem ser compartilhadas com finalidade definida, preferencialmente com ciência da família.",
+            "As informações podem ser livremente compartilhadas com qualquer serviço da rede, independentemente de finalidade.",
+            "O dever de sigilo não se aplica a profissionais sem conselho de classe próprio.",
+            "A comunicação de suspeita de maus-tratos contra criança ao Conselho Tutelar depende de autorização expressa dos responsáveis."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Sigilo",
+          "tags": [
+            "sigilo",
+            "equipe",
+            "ECA art. 13"
+          ],
+          "comment": "A alternativa 'e' é armadilha: a comunicação ao Conselho Tutelar é obrigatória e independe de autorização da família (art. 13 do ECA).",
+          "justification": "O sigilo no SUAS é qualificado e compartilhado no âmbito da equipe, limitado ao necessário à proteção e à finalidade do atendimento. O dever de sigilo alcança todos os trabalhadores, e a comunicação de suspeita de maus-tratos ao Conselho Tutelar é obrigação legal."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Resolução CNAS nº 269/2006 (NOB-RH/SUAS)",
+          "heading": "Equipes de referência",
+          "html": "<p>Equipes de referência são aquelas constituídas por servidores efetivos responsáveis pela organização e oferta de serviços, programas, projetos e benefícios de proteção social básica e especial, levando-se em consideração o número de famílias e indivíduos referenciados, o tipo de atendimento e as aquisições que devem ser garantidas aos usuários.</p><p>Composição de referência do CRAS, conforme o porte do município e o número de famílias referenciadas: coordenador, assistentes sociais, psicólogos, e técnicos de nível médio.</p><p>Composição de referência do CREAS: coordenador, assistentes sociais, psicólogos, advogado, profissionais para abordagem e auxiliares administrativos.</p><p>Além dos profissionais das equipes de referência, a NOB-RH prevê a atuação de outros profissionais de nível superior nas equipes, conforme as especificidades dos serviços ofertados e as necessidades identificadas no território.</p>",
+          "note": "Equipe de referência é composta por SERVIDORES EFETIVOS — o fundamento da exigência de concurso público para a rede socioassistencial.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 6º-E, parágrafo único",
+          "html": "<p>Art. 6º-E (...) Parágrafo único. A formação das equipes de referência deverá considerar o número de famílias e indivíduos referenciados, o tipo de atendimento e as aquisições que devem ser garantidas aos usuários, conforme deliberações do Conselho Nacional de Assistência Social (CNAS).</p>",
+          "note": "Três critérios de dimensionamento da equipe. Não é o orçamento disponível que define o tamanho da equipe — é a demanda e o tipo de serviço.",
+          "important": 0
+        },
+        {
+          "lawRef": "Lei nº 8.069/1990 (ECA)",
+          "heading": "Art. 13 e 245 — Comunicação obrigatória",
+          "html": "<p>Art. 13. Os casos de suspeita ou confirmação de castigo físico, de tratamento cruel ou degradante e de maus-tratos contra criança ou adolescente serão obrigatoriamente comunicados ao Conselho Tutelar da respectiva localidade, sem prejuízo de outras providências legais.</p><p>Art. 245. Deixar o médico, professor ou responsável por estabelecimento de atenção à saúde e de ensino fundamental, pré-escola ou creche, de comunicar à autoridade competente os casos de que tenha conhecimento, envolvendo suspeita ou confirmação de maus-tratos contra criança ou adolescente:</p><p>Pena - multa de três a vinte salários de referência, aplicando-se o dobro em caso de reincidência.</p>",
+          "note": "O sigilo profissional NÃO se opõe ao dever de comunicar suspeita de maus-tratos. A omissão é infração administrativa tipificada.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Planejamento e Avaliação de Ações Socioeducativas",
+      "summary": "\n<h1>Planejar, registrar, monitorar e avaliar</h1>\n\n<h2>1. Planejamento participativo</h2>\n<p>Planejar no SUAS não é preencher formulário: é decidir, com quem será afetado, o que fazer diante de um problema identificado. Elementos de um plano de ação socioeducativa:</p>\n<ul>\n<li><strong>Justificativa</strong> — o que o diagnóstico socioterritorial mostrou;</li>\n<li><strong>Objetivo geral e específicos</strong> — redigidos com verbo no infinitivo e resultado observável;</li>\n<li><strong>Público e critérios de participação</strong>;</li>\n<li><strong>Metodologia</strong> — como será feito, com que linguagens e em quantos encontros;</li>\n<li><strong>Recursos</strong> — humanos, materiais, espaço, parcerias;</li>\n<li><strong>Cronograma</strong>;</li>\n<li><strong>Indicadores e forma de avaliação</strong>.</li>\n</ul>\n\n<h2>2. Registro</h2>\n<p>Registrar é ato técnico, não burocracia acessória.</p>\n<ul>\n<li><strong>Objetividade</strong> — descrever o que foi observado, separando fato de interpretação;</li>\n<li><strong>Tempestividade</strong> — registrar o quanto antes, enquanto a memória é fiel;</li>\n<li><strong>Finalidade protetiva</strong> — anotar o necessário à proteção; juízos morais não entram em prontuário;</li>\n<li>Instrumentos: <strong>prontuário SUAS</strong>, lista de presença, relatório de atividade, <strong>RMA</strong> (Registro Mensal de Atendimentos), plano de acompanhamento familiar e PIA.</li>\n</ul>\n\n<h2>3. Monitoramento × avaliação</h2>\n<ul>\n<li><strong>Monitoramento</strong> — acompanhamento <strong>contínuo</strong> da execução: o que está sendo feito, com que frequência, para quantos. Responde <em>estamos fazendo como planejamos?</em>;</li>\n<li><strong>Avaliação</strong> — juízo de valor <strong>periódico</strong> sobre relevância, eficiência, eficácia e efetividade. Responde <em>valeu a pena, e o que mudou?</em>.</li>\n</ul>\n\n<h2>4. Tipos de avaliação</h2>\n<ul>\n<li>Quanto ao <strong>momento</strong>: <strong>ex ante</strong> (antes, avalia viabilidade), <strong>in itinere</strong> ou formativa (durante, corrige rumos) e <strong>ex post</strong> ou somativa (depois, julga resultados);</li>\n<li>Quanto ao <strong>objeto</strong>: de <strong>processo</strong> (como foi executado), de <strong>resultado</strong> (metas alcançadas) e de <strong>impacto</strong> (mudanças atribuíveis à intervenção);</li>\n<li>Quanto a <strong>quem avalia</strong>: interna, externa, mista e <strong>participativa</strong> — esta última envolvendo os próprios usuários.</li>\n</ul>\n\n<h2>5. Eficiência, eficácia e efetividade</h2>\n<ul>\n<li><strong>Eficiência</strong> — relação entre resultados e recursos empregados (fazer bem, com o mínimo de desperdício);</li>\n<li><strong>Eficácia</strong> — alcance das metas previstas (fazer o que foi proposto);</li>\n<li><strong>Efetividade</strong> — mudança real produzida na vida das pessoas (fazer diferença).</li>\n</ul>\n\n<h2>6. Indicadores em ações socioeducativas</h2>\n<ul>\n<li>De <strong>processo</strong>: número de encontros realizados sobre planejados; taxa de frequência; diversidade de linguagens utilizadas;</li>\n<li>De <strong>resultado</strong>: ampliação da participação em atividades comunitárias; acesso a documentação civil; retorno ou permanência escolar;</li>\n<li>De <strong>percepção</strong>: avaliação dos participantes sobre o que mudou — coletada em roda de avaliação, e não apenas em questionário.</li>\n</ul>\n<p>Cuidado com o indicador enganoso: <strong>alta frequência não significa, por si só, qualidade</strong>. Um grupo pode estar cheio e não produzir nenhuma aquisição.</p>\n\n<h2>7. Material didático-pedagógico</h2>\n<p>Atribuição expressa do cargo. Bons materiais são: <strong>adequados ao ciclo de vida</strong>, à escolaridade e à cultura do território; <strong>acessíveis</strong> (linguagem simples, recursos para pessoas com deficiência); <strong>não estigmatizantes</strong> (imagens que representem a diversidade real dos usuários); e <strong>reutilizáveis</strong>, com registro que permita a outro profissional reaplicar a atividade.</p>\n",
+      "questions": [
+        {
+          "statement": "Sobre monitoramento e avaliação de ações socioeducativas, assinale a alternativa correta.",
+          "options": [
+            "Monitoramento e avaliação são sinônimos, distinguindo-se apenas pelo responsável por sua realização.",
+            "O monitoramento é contínuo e acompanha a execução; a avaliação é periódica e emite juízo sobre relevância, eficiência, eficácia e efetividade.",
+            "O monitoramento ocorre apenas ao final da intervenção; a avaliação, apenas antes de seu início.",
+            "A avaliação de impacto mede exclusivamente o número de participantes atendidos no período.",
+            "A avaliação participativa é vedada nos serviços socioassistenciais, por comprometer a objetividade técnica."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Monitoramento e avaliação",
+          "tags": [
+            "monitoramento",
+            "avaliação",
+            "indicadores"
+          ],
+          "comment": "A avaliação participativa não só é permitida como é recomendada — coerente com o protagonismo dos usuários.",
+          "justification": "Monitoramento é o acompanhamento contínuo e sistemático da execução, voltado a verificar a aderência ao planejado. Avaliação é o julgamento periódico sobre a intervenção, quanto a processo, resultado e impacto."
+        },
+        {
+          "statement": "Um grupo do SCFV registrou frequência média de 95% dos participantes ao longo de doze encontros. Isoladamente, esse dado permite afirmar que houve:",
+          "options": [
+            "efetividade da intervenção, pois demonstra mudança na vida dos participantes.",
+            "impacto social, pois evidencia transformação das condições de vulnerabilidade do território.",
+            "bom desempenho em indicador de processo, sem que se possa concluir, apenas por ele, sobre resultados ou impacto.",
+            "eficiência na aplicação dos recursos, uma vez que o custo por participante foi reduzido.",
+            "alcance integral dos objetivos socioeducativos previstos no plano de ação."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "dificil",
+          "subtopic": "Indicadores",
+          "tags": [
+            "indicadores",
+            "processo",
+            "resultado",
+            "impacto"
+          ],
+          "comment": "Questão de raciocínio, não de memória — perfil que a Quadrix vem adotando nos itens mais difíceis.",
+          "justification": "A frequência é indicador de processo: informa sobre a execução da atividade, não sobre as aquisições dos usuários. Resultado e impacto exigem indicadores próprios, referidos às mudanças produzidas na vida dos participantes."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 8.742/1993 (LOAS)",
+          "heading": "Art. 30, parágrafo único e art. 19",
+          "html": "<p>Art. 19. Compete ao órgão da Administração Pública Federal responsável pela coordenação da Política Nacional de Assistência Social:</p><p>I - coordenar e articular as ações no campo da assistência social;</p><p>II - propor à aprovação do Conselho Nacional de Assistência Social a Política Nacional de Assistência Social, suas normas gerais, bem como os critérios de prioridade e de elegibilidade, além de padrões de qualidade na prestação de benefícios, serviços, programas e projetos;</p><p>III - prover recursos para o pagamento dos benefícios de prestação continuada definidos nesta Lei;</p><p>IV - elaborar e encaminhar a proposta orçamentária da assistência social, em conjunto com as demais de seguridade social;</p><p>V - propor os critérios de transferência dos recursos de que trata esta Lei;</p><p>VI - encaminhar à apreciação do Conselho Nacional de Assistência Social relatórios trimestrais e anuais de atividades e de realização financeira dos recursos;</p><p>XI - coordenar e manter atualizado o sistema de cadastro de entidades e organizações de assistência social, em articulação com os Estados, os Municípios e o Distrito Federal;</p><p>XII - articular-se com os órgãos responsáveis pelas políticas de saúde e previdência social, bem como com os demais responsáveis pelas políticas socioeconômicas setoriais, visando à elevação do patamar mínimo de atendimento às necessidades básicas.</p>",
+          "note": "Padrões de qualidade, relatórios periódicos e cadastro atualizado: a base normativa do monitoramento e da avaliação no SUAS.",
+          "important": 0
+        },
+        {
+          "lawRef": "Resolução CNAS nº 109/2009 (Tipificação)",
+          "heading": "Impacto social esperado",
+          "html": "<p>Cada serviço tipificado descreve o IMPACTO SOCIAL ESPERADO — o resultado que se pretende produzir na vida das pessoas atendidas. Exemplos:</p><p>PAIF: contribuir para a redução da ocorrência de situações de vulnerabilidade social; prevenir a ocorrência de riscos sociais, seu agravamento ou reincidência; aumentar os acessos a serviços socioassistenciais e setoriais; ampliar o acesso aos direitos socioassistenciais; e melhorar a qualidade de vida das famílias residentes no território de abrangência do CRAS.</p><p>SCFV: redução da ocorrência de situações de vulnerabilidade social; prevenção da ocorrência de riscos sociais, seu agravamento ou reincidência; aumento de acessos a serviços socioassistenciais e setoriais; melhoria da qualidade de vida dos usuários e suas famílias.</p><p>PAEFI: redução das violações dos direitos socioassistenciais, seus agravamentos ou reincidência; orientação e proteção social a famílias e indivíduos; identificação de situações de violação de direitos socioassistenciais; melhoria da qualidade de vida das famílias.</p>",
+          "note": "Impacto social é o nível mais alto de avaliação — acima de processo e de resultado. Repare que 'prevenir' e 'reduzir reincidência' são impactos, e não contagens de atendimento.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Política sobre Drogas e Redução de Danos",
+      "summary": "\n<h1>Política sobre drogas e redução de danos</h1>\n\n<h2>1. O marco legal</h2>\n<p><strong>Lei nº 11.343/2006</strong> institui o <strong>SISNAD — Sistema Nacional de Políticas Públicas sobre Drogas</strong>, e prescreve medidas para prevenção do uso indevido, atenção e reinserção social de usuários e dependentes, além de estabelecer normas para repressão à produção e ao tráfico.</p>\n<ul>\n<li>Distingue o <strong>usuário</strong> (art. 28) do <strong>traficante</strong> (art. 33). Ao usuário não se aplica pena privativa de liberdade, mas advertência, prestação de serviços à comunidade e medida educativa de comparecimento a programa ou curso educativo;</li>\n<li>Princípios do SISNAD incluem o <strong>respeito aos direitos fundamentais</strong>, o respeito à <strong>diversidade</strong> e às especificidades populacionais, e a promoção de <strong>estratégias de redução dos riscos e danos</strong> sociais e à saúde;</li>\n<li>A Lei nº 13.840/2019 alterou a Lei nº 11.343/2006, incluindo dispositivos sobre acolhimento em comunidades terapêuticas e internação involuntária — tema controverso, cobrado sobretudo em sua literalidade.</li>\n</ul>\n\n<h2>2. Redução de danos</h2>\n<p>Estratégia de saúde pública que busca <strong>reduzir os prejuízos</strong> associados ao uso de substâncias <strong>sem exigir a abstinência</strong> como condição prévia de acesso ao cuidado.</p>\n<ul>\n<li>Reconhece que a pessoa que usa drogas continua sendo <strong>sujeito de direitos</strong>;</li>\n<li>Trabalha com <strong>metas pactuadas</strong> e graduais — reduzir a frequência, trocar a via de uso, dormir sob abrigo, retomar alimentação e documentação;</li>\n<li><strong>Não</strong> significa estimular o uso nem renunciar à abstinência: a abstinência permanece como possibilidade, mas deixa de ser porta de entrada;</li>\n<li>Fundamenta-se no <strong>vínculo</strong>: quem é acolhido sem exigências volta; quem é recusado desaparece da rede.</li>\n</ul>\n\n<h2>3. Rede de atenção</h2>\n<ul>\n<li><strong>Saúde</strong>: CAPS-AD, Consultório na Rua, UBS, Unidades de Acolhimento (saúde), leitos em hospital geral;</li>\n<li><strong>Assistência social</strong>: CRAS/PAIF, CREAS/PAEFI, Centro POP, Serviço Especializado em Abordagem Social e serviços de acolhimento;</li>\n<li><strong>Comunidades terapêuticas</strong> — entidades privadas, de adesão <strong>voluntária</strong>, que não substituem os serviços públicos de saúde e assistência social;</li>\n<li>Articulação com trabalho, renda, moradia e cultura — sem inclusão social, o tratamento isolado tende a fracassar.</li>\n</ul>\n\n<h2>4. Papel do Educador Social</h2>\n<ul>\n<li>Acolher sem <strong>estigmatizar</strong>: não usar termos como viciado, drogado, noia ou recuperando;</li>\n<li>Não condicionar participação em grupo ou acesso a benefício à abstinência;</li>\n<li>Desenvolver ações socioeducativas de <strong>prevenção</strong> baseadas em informação e fortalecimento de vínculos — não em discurso de medo, que a literatura mostra ser ineficaz;</li>\n<li>Apoiar a construção de <strong>projetos de vida</strong> e a reinserção social e produtiva;</li>\n<li>Articular com a saúde e comunicar situações de risco, respeitando a autonomia do usuário adulto.</li>\n</ul>\n\n<h2>5. Erros de prova</h2>\n<ul>\n<li>Afirmar que redução de danos <strong>exige</strong> abstinência — errado, é justamente o contrário;</li>\n<li>Afirmar que redução de danos <strong>proíbe</strong> a abstinência como meta — também errado; ela é uma entre as metas possíveis;</li>\n<li>Afirmar que a internação involuntária é a regra — não é: é medida excepcional, com requisitos legais;</li>\n<li>Confundir <strong>uso</strong>, <strong>abuso</strong> e <strong>dependência</strong>, que descrevem padrões distintos de relação com a substância.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "A estratégia de redução de danos, adotada como diretriz nas políticas sobre drogas, caracteriza-se por:",
+          "options": [
+            "exigir a abstinência como condição prévia para o acesso ao cuidado e aos serviços.",
+            "reduzir os prejuízos à saúde e sociais decorrentes do uso de substâncias, sem condicionar o acesso ao cuidado à abstinência.",
+            "estimular o consumo controlado de substâncias como finalidade em si mesma.",
+            "substituir integralmente as ações de prevenção e de tratamento oferecidas pela rede de saúde.",
+            "restringir o atendimento aos usuários que apresentem quadro de dependência química diagnosticado."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Redução de danos",
+          "tags": [
+            "redução de danos",
+            "SISNAD",
+            "Lei 11.343/2006"
+          ],
+          "comment": "A redução de danos não é contra a abstinência: ela apenas se recusa a exigi-la como pedágio de entrada.",
+          "justification": "A Lei nº 11.343/2006 prevê, entre os princípios e diretrizes do SISNAD, a promoção de estratégias de redução dos riscos e danos sociais e à saúde, com respeito aos direitos fundamentais e à autonomia da pessoa."
+        },
+        {
+          "statement": "Um usuário do Centro POP que faz uso abusivo de álcool solicita participar de oficina socioeducativa. Ele comparece alcoolizado, mas sem apresentar risco a si ou a terceiros. A conduta adequada do Educador Social é:",
+          "options": [
+            "impedir a participação e condicionar o acesso à comprovação de abstinência.",
+            "encaminhá-lo compulsoriamente a comunidade terapêutica, por caracterizar dependência.",
+            "acolher o usuário, avaliar as condições de participação naquele momento, manter o vínculo e articular com a rede de saúde, sem exigir abstinência como condição de acesso.",
+            "registrar a ocorrência como falta disciplinar e suspender seu atendimento por trinta dias.",
+            "solicitar a presença de agente de segurança pública antes de qualquer interação."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Abordagem humanizada",
+          "tags": [
+            "redução de danos",
+            "Centro POP",
+            "não estigmatização"
+          ],
+          "comment": "Note que a resposta não ignora o contexto: acolher não é fingir que nada acontece — é avaliar a situação sem excluir a pessoa.",
+          "justification": "A abordagem humanizada e não estigmatizante e a lógica de redução de danos vedam condicionar o acesso ao serviço à abstinência. O encaminhamento a comunidade terapêutica depende de adesão voluntária, e a exclusão punitiva rompe o vínculo que sustenta o acompanhamento."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Lei nº 11.343/2006 (SISNAD)",
+          "heading": "Art. 1º e 4º — Princípios do SISNAD",
+          "html": "<p>Art. 1º Esta Lei institui o Sistema Nacional de Políticas Públicas sobre Drogas - Sisnad; prescreve medidas para prevenção do uso indevido, atenção e reinserção social de usuários e dependentes de drogas; estabelece normas para repressão à produção não autorizada e ao tráfico ilícito de drogas e define crimes.</p><p>Art. 4º São princípios do Sisnad:</p><p>I - o respeito aos direitos fundamentais da pessoa humana, especialmente quanto à sua autonomia e à sua liberdade;</p><p>II - o respeito à diversidade e às especificidades populacionais existentes;</p><p>III - a promoção dos valores éticos, culturais e de cidadania do povo brasileiro, reconhecendo-os como fatores de proteção para o uso indevido de drogas e outros comportamentos correlacionados;</p><p>IV - a promoção de consensos nacionais, de ampla participação social, para o estabelecimento dos fundamentos e estratégias do Sisnad;</p><p>V - a promoção da responsabilidade compartilhada entre Estado e Sociedade;</p><p>VI - o reconhecimento da intersetorialidade dos fatores correlacionados com o uso indevido de drogas;</p><p>VIII - a articulação com os órgãos do Ministério Público e dos Poderes Legislativo e Judiciário;</p><p>IX - a adoção de abordagem multidisciplinar;</p><p>X - a observância do equilíbrio entre as atividades de prevenção do uso indevido, atenção e reinserção social de usuários e dependentes de drogas e de repressão à sua produção não autorizada e ao seu tráfico ilícito.</p>",
+          "note": "O inciso I (autonomia e liberdade) e o II (diversidade) sustentam a abordagem não estigmatizante. O X exige EQUILÍBRIO entre prevenção/cuidado e repressão.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 11.343/2006 (SISNAD)",
+          "heading": "Art. 19 e 22 — Prevenção e reinserção",
+          "html": "<p>Art. 19. As atividades de prevenção do uso indevido de drogas devem observar os seguintes princípios e diretrizes:</p><p>I - o reconhecimento do uso indevido de drogas como fator de interferência na qualidade de vida do indivíduo e na sua relação com a comunidade à qual pertence;</p><p>II - a adoção de conceitos objetivos e de fundamentação científica como forma de orientar as ações dos serviços públicos comunitários e privados e de evitar preconceitos e estigmatização das pessoas e dos serviços que as atendam;</p><p>III - o fortalecimento da autonomia e da responsabilidade individual em relação ao uso indevido de drogas;</p><p>IV - o compartilhamento de responsabilidades e a colaboração mútua com as instituições do setor privado e com os diversos segmentos sociais;</p><p>VI - o reconhecimento do não-uso, do retardamento do uso e da redução de riscos como resultados desejáveis das atividades de natureza preventiva;</p><p>Art. 22. As atividades de atenção e as de reinserção social do usuário e do dependente de drogas e respectivos familiares devem observar os seguintes princípios e diretrizes:</p><p>I - respeito ao usuário e ao dependente de drogas, independentemente de quaisquer condições, observados os direitos fundamentais da pessoa humana, os princípios e diretrizes do Sistema Único de Saúde e da Política Nacional de Assistência Social;</p><p>II - a adoção de estratégias diferenciadas de atenção e reinserção social do usuário e do dependente de drogas e respectivos familiares que considerem as suas peculiaridades socioculturais;</p><p>III - definição de projeto terapêutico individualizado, orientado para a inclusão social e para a redução de riscos e de danos sociais e à saúde;</p><p>IV - atenção ao usuário ou dependente de drogas e aos respectivos familiares, sempre que possível, de forma multidisciplinar e por equipes multiprofissionais.</p>",
+          "note": "O art. 19, VI, é decisivo: o NÃO-USO, o RETARDAMENTO do uso e a REDUÇÃO DE RISCOS são todos resultados desejáveis. A abstinência não é a única meta legítima.",
+          "important": 1
+        },
+        {
+          "lawRef": "Lei nº 11.343/2006 (SISNAD)",
+          "heading": "Art. 28 — Usuário",
+          "html": "<p>Art. 28. Quem adquirir, guardar, tiver em depósito, transportar ou trouxer consigo, para consumo pessoal, drogas sem autorização ou em desacordo com determinação legal ou regulamentar será submetido às seguintes penas:</p><p>I - advertência sobre os efeitos das drogas;</p><p>II - prestação de serviços à comunidade;</p><p>III - medida educativa de comparecimento a programa ou curso educativo.</p><p>§ 2º Para determinar se a droga destinava-se a consumo pessoal, o juiz atenderá à natureza e à quantidade da substância apreendida, ao local e às condições em que se desenvolveu a ação, às circunstâncias sociais e pessoais, bem como à conduta e aos antecedentes do agente.</p><p>§ 7º O juiz determinará ao Poder Público que coloque à disposição do infrator, gratuitamente, estabelecimento de saúde, preferencialmente ambulatorial, para tratamento especializado.</p>",
+          "note": "Ao usuário NÃO se aplica pena privativa de liberdade. O § 7º prevê tratamento PREFERENCIALMENTE AMBULATORIAL — a internação não é a resposta padrão.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Orientações Técnicas: Serviços de Acolhimento",
+      "summary": "\n<h1>Orientações Técnicas: Serviços de Acolhimento para Crianças e Adolescentes</h1>\n<p><strong>Resolução Conjunta CNAS/CONANDA nº 1, de 18 de junho de 2009</strong>. Documento que detalha parâmetros de funcionamento dos serviços de acolhimento — citado nominalmente no edital.</p>\n\n<h2>1. Princípios orientadores</h2>\n<ul>\n<li><strong>Excepcionalidade</strong> do afastamento do convívio familiar;</li>\n<li><strong>Provisoriedade</strong> do afastamento;</li>\n<li><strong>Preservação e fortalecimento dos vínculos familiares e comunitários</strong>;</li>\n<li><strong>Garantia de acesso e respeito à diversidade e não discriminação</strong>;</li>\n<li><strong>Oferta de atendimento personalizado e individualizado</strong>;</li>\n<li><strong>Garantia de liberdade de crença e religião</strong>;</li>\n<li><strong>Respeito à autonomia</strong> da criança, do adolescente e do jovem.</li>\n</ul>\n\n<h2>2. Parâmetros de estrutura</h2>\n<ul>\n<li><strong>Abrigo institucional</strong>: até <strong>20</strong> crianças e adolescentes por unidade; ambiente residencial, inserido na comunidade, em área residencial, <strong>sem placas indicativas</strong> da natureza institucional;</li>\n<li><strong>Casa-lar</strong>: até <strong>10</strong> crianças e adolescentes, com <strong>educador/cuidador residente</strong>;</li>\n<li><strong>Quartos</strong>: recomendação de até <strong>4</strong> crianças ou adolescentes por dormitório;</li>\n<li><strong>Cuidadores</strong>: proporção de <strong>1 para cada 10</strong> usuários, reduzida a <strong>1 para cada 8</strong> quando houver criança de até 1 ano, e a <strong>1 para cada 6</strong> ou menos quando houver crianças ou adolescentes com deficiência ou necessidades específicas de saúde;</li>\n<li>Uso preferencial dos <strong>serviços da comunidade</strong> — escola, unidade de saúde, lazer, cultura — em vez de serviços internos que produzam isolamento.</li>\n</ul>\n\n<h2>3. Diretrizes do atendimento</h2>\n<ul>\n<li><strong>Preservação de grupos de irmãos</strong> na mesma unidade;</li>\n<li><strong>Evitar transferências</strong> entre serviços, que reforçam rupturas;</li>\n<li><strong>Registro da história de vida</strong>: álbum, fotografias, objetos pessoais e prontuário individual, com participação da própria criança ou adolescente;</li>\n<li><strong>Participação</strong> nas decisões que lhes dizem respeito, conforme o estágio de desenvolvimento;</li>\n<li><strong>Preparação para o desligamento</strong>, seja por reintegração familiar, colocação em família substituta ou maioridade;</li>\n<li><strong>Apoio à família de origem</strong>: o trabalho com a família não é interrompido pelo acolhimento — é intensificado, com inclusão em serviços e programas.</li>\n</ul>\n\n<h2>4. Plano Nacional de Convivência Familiar e Comunitária (2006)</h2>\n<p>Aprovado conjuntamente por CONANDA e CNAS, estabelece como eixos:</p>\n<ul>\n<li>Análise da situação e sistemas de informação;</li>\n<li><strong>Atendimento socioassistencial às famílias</strong>, com foco na prevenção do rompimento de vínculos;</li>\n<li><strong>Reordenamento dos serviços de acolhimento</strong> — do modelo de grandes abrigos para unidades de pequeno porte e caráter residencial;</li>\n<li>Adoção centrada no interesse da criança e do adolescente;</li>\n<li>Mobilização, articulação e participação.</li>\n</ul>\n<p>A diretriz-síntese: <strong>investir na família de origem</strong> para que o acolhimento seja a exceção que a lei promete.</p>\n\n<h2>5. Serviço de Família Acolhedora</h2>\n<ul>\n<li>Famílias cadastradas, selecionadas, <strong>capacitadas e acompanhadas</strong> pela equipe do serviço;</li>\n<li><strong>Preferência legal</strong> sobre o acolhimento institucional para crianças e adolescentes (art. 34, § 1º, do ECA);</li>\n<li>A família acolhedora <strong>não</strong> se confunde com adoção: acolher <strong>não gera preferência</strong> para adotar, e a finalidade é a reintegração familiar;</li>\n<li>Pode receber apoio financeiro (bolsa/auxílio), que não caracteriza remuneração por vínculo empregatício.</li>\n</ul>\n",
+      "questions": [
+        {
+          "statement": "Conforme as Orientações Técnicas: Serviços de Acolhimento para Crianças e Adolescentes (Resolução Conjunta CNAS/CONANDA nº 1/2009), o abrigo institucional deve atender, por unidade, no máximo:",
+          "options": [
+            "10 crianças e adolescentes.",
+            "15 crianças e adolescentes.",
+            "20 crianças e adolescentes.",
+            "30 crianças e adolescentes.",
+            "50 crianças e adolescentes."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Parâmetros de estrutura",
+          "tags": [
+            "Orientações Técnicas",
+            "abrigo institucional",
+            "capacidade"
+          ],
+          "comment": "Par de números para decorar: abrigo institucional = 20; casa-lar = 10. Cuidadores: 1 para cada 10, reduzindo conforme a especificidade.",
+          "justification": "As Orientações Técnicas estabelecem o atendimento em pequenos grupos, com capacidade máxima de 20 crianças e adolescentes por unidade de abrigo institucional e de 10 na modalidade casa-lar, que conta com educador/cuidador residente."
+        },
+        {
+          "statement": "Sobre o Serviço de Acolhimento em Família Acolhedora, assinale a alternativa correta.",
+          "options": [
+            "Constitui etapa preparatória da adoção, gerando preferência à família acolhedora na habilitação para adotar.",
+            "É modalidade de acolhimento em residências de famílias cadastradas, capacitadas e acompanhadas, tendo preferência legal sobre o acolhimento institucional para crianças e adolescentes.",
+            "Dispensa acompanhamento técnico, uma vez que a criança permanece em ambiente familiar.",
+            "Aplica-se exclusivamente a crianças menores de dois anos de idade.",
+            "É serviço da proteção social básica, vinculado ao CRAS de referência do território."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Família acolhedora",
+          "tags": [
+            "família acolhedora",
+            "ECA art. 34",
+            "alta complexidade"
+          ],
+          "comment": "Acolher não é adotar. A finalidade primeira do serviço é a reintegração familiar, e ele integra a alta complexidade.",
+          "justification": "Art. 34, § 1º, do ECA: a inclusão da criança ou adolescente em programas de acolhimento familiar terá preferência a seu acolhimento institucional. O serviço integra a proteção social especial de alta complexidade, exige acompanhamento técnico das famílias acolhedoras e não gera preferência para adoção."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Resolução Conjunta CNAS/CONANDA nº 1/2009",
+          "heading": "Princípios das Orientações Técnicas",
+          "html": "<p>As Orientações Técnicas: Serviços de Acolhimento para Crianças e Adolescentes estabelecem os seguintes princípios:</p><p>1. Excepcionalidade do afastamento do convívio familiar;</p><p>2. Provisoriedade do afastamento do convívio familiar;</p><p>3. Preservação e fortalecimento dos vínculos familiares e comunitários;</p><p>4. Garantia de acesso e respeito à diversidade e não discriminação;</p><p>5. Oferta de atendimento personalizado e individualizado;</p><p>6. Garantia de liberdade de crença e religião;</p><p>7. Respeito à autonomia da criança, do adolescente e do jovem.</p>",
+          "note": "Sete princípios. O 6 e o 7 costumam ser esquecidos: liberdade religiosa e respeito à autonomia dos acolhidos são princípios expressos.",
+          "important": 1
+        },
+        {
+          "lawRef": "Resolução Conjunta CNAS/CONANDA nº 1/2009",
+          "heading": "Parâmetros de estrutura e de pessoal",
+          "html": "<p>ABRIGO INSTITUCIONAL — atendimento em pequenos grupos, com capacidade máxima de 20 crianças e adolescentes por unidade; ambiente com aspecto semelhante ao de uma residência, inserido na comunidade, em área residencial, sem placas indicativas da natureza institucional do equipamento, e sem distanciar-se excessivamente do ponto de vista geográfico e socioeconômico da comunidade de origem das crianças e adolescentes atendidos.</p><p>CASA-LAR — atendimento em unidade residencial com capacidade máxima de 10 crianças e adolescentes, na qual pelo menos uma pessoa ou casal trabalha como educador/cuidador residente.</p><p>QUARTOS — recomenda-se, no máximo, 4 crianças ou adolescentes por dormitório.</p><p>CUIDADORES — proporção de 1 cuidador para até 10 usuários por turno, reduzindo-se para 1 para até 8 quando houver criança de até um ano, e para 1 para até 6 quando houver usuário com deficiência ou com necessidades específicas de saúde que demandem atenção permanente.</p><p>EQUIPE TÉCNICA — coordenador e profissionais de nível superior (psicólogo e assistente social), com atribuição de elaborar o Plano Individual de Atendimento, acompanhar as famílias de origem e articular a rede.</p><p>USO DOS SERVIÇOS DA COMUNIDADE — escola, unidade de saúde, atividades de lazer, cultura e esporte devem ser utilizados na própria comunidade, evitando-se serviços internos que promovam isolamento.</p>",
+          "note": "Números essenciais: 20 (abrigo), 10 (casa-lar), 4 por quarto, 1 cuidador para 10 (reduzindo para 8 e 6 conforme a especificidade).",
+          "important": 1
+        },
+        {
+          "lawRef": "Plano Nacional de Convivência Familiar e Comunitária (2006)",
+          "heading": "Eixos estratégicos",
+          "html": "<p>O Plano Nacional de Promoção, Proteção e Defesa do Direito de Crianças e Adolescentes à Convivência Familiar e Comunitária, aprovado conjuntamente pelo CONANDA e pelo CNAS, organiza-se nos seguintes eixos estratégicos:</p><p>Eixo 1 — Análise da situação e sistemas de informação;</p><p>Eixo 2 — Atendimento socioassistencial às famílias, com foco na prevenção do rompimento de vínculos e no fortalecimento da função protetiva;</p><p>Eixo 3 — Marcos normativos e regulatórios, incluindo o reordenamento dos serviços de acolhimento — da lógica dos grandes abrigos para unidades de pequeno porte e de caráter residencial;</p><p>Eixo 4 — Mobilização, articulação e participação.</p><p>Diretriz-síntese: investir no fortalecimento da família de origem, de modo que o acolhimento seja efetivamente excepcional e provisório, e priorizar a reintegração familiar sobre qualquer outra providência.</p>",
+          "note": "O Plano é a origem do REORDENAMENTO dos serviços de acolhimento no Brasil: fim dos grandes abrigos, entrada das unidades residenciais de pequeno porte.",
+          "important": 1
+        }
+      ]
+    },
+    {
+      "subject": "Direitos Humanos e Diretrizes Internacionais",
+      "summary": "\n<h1>Direitos humanos e diretrizes internacionais</h1>\n\n<h2>1. Declaração Universal dos Direitos Humanos (1948)</h2>\n<ul>\n<li>Adotada pela Assembleia Geral da ONU em <strong>10 de dezembro de 1948</strong>, com <strong>30 artigos</strong>;</li>\n<li>Art. 1º: <strong>todos os seres humanos nascem livres e iguais em dignidade e direitos</strong>, dotados de razão e consciência, devendo agir uns para com os outros em espírito de fraternidade;</li>\n<li>Não é tratado: é <strong>resolução</strong>, sem força vinculante originária — mas hoje amplamente reconhecida como direito costumeiro internacional;</li>\n<li>Características dos direitos humanos: <strong>universalidade</strong>, <strong>indivisibilidade</strong>, <strong>interdependência</strong>, <strong>inalienabilidade</strong>, <strong>imprescritibilidade</strong> e <strong>historicidade</strong>.</li>\n</ul>\n\n<h2>2. Convenção sobre os Direitos da Criança (1989)</h2>\n<ul>\n<li>Tratado mais ratificado da história; internalizada no Brasil pelo <strong>Decreto nº 99.710/1990</strong>;</li>\n<li>Consagra a <strong>doutrina da proteção integral</strong>, base do ECA;</li>\n<li>Considera criança todo ser humano <strong>menor de 18 anos</strong>, salvo se a lei nacional fixar maioridade anterior;</li>\n<li>Quatro princípios estruturantes: <strong>não discriminação</strong>; <strong>melhor interesse da criança</strong>; <strong>direito à vida, à sobrevivência e ao desenvolvimento</strong>; e <strong>respeito à opinião da criança</strong> (direito de ser ouvida);</li>\n<li>Estabelece que a privação de liberdade será medida de <strong>último recurso</strong> e pelo <strong>menor tempo possível</strong>.</li>\n</ul>\n\n<h2>3. Regras de Beijing (1985)</h2>\n<p><strong>Regras Mínimas das Nações Unidas para a Administração da Justiça da Infância e da Juventude</strong>.</p>\n<ul>\n<li>Foco no <strong>adolescente já em conflito com a lei</strong>: processo, medidas e execução;</li>\n<li>Diretrizes centrais: proporcionalidade entre a medida e as circunstâncias do jovem e da infração; <strong>privação de liberdade como último recurso</strong> e pelo mínimo período necessário; respeito ao <strong>devido processo legal</strong>; proteção da <strong>privacidade</strong> do adolescente; e prioridade a <strong>medidas alternativas</strong> à institucionalização;</li>\n<li>Incentivam a <strong>desjudicialização</strong> quando possível, com remissão e encaminhamento a serviços comunitários.</li>\n</ul>\n\n<h2>4. Diretrizes de RIAD (1990)</h2>\n<p><strong>Diretrizes das Nações Unidas para a Prevenção da Delinquência Juvenil</strong>, adotadas em Riad, na Arábia Saudita.</p>\n<ul>\n<li>Foco na <strong>prevenção</strong>, anterior ao conflito com a lei;</li>\n<li>Afirmam que a prevenção exige <strong>investimento em políticas sociais universais</strong> — família, escola, comunidade, meios de comunicação e trabalho;</li>\n<li>Advertem contra a <strong>rotulação</strong>: qualificar precocemente um jovem como desviante contribui para consolidar o comportamento;</li>\n<li>Reconhecem que muitos comportamentos juvenis fazem parte do <strong>processo de amadurecimento</strong> e tendem a desaparecer com a idade adulta;</li>\n<li>Defendem a participação ativa dos jovens como <strong>sujeitos</strong>, e não como objetos de controle.</li>\n</ul>\n\n<h2>5. Como não confundir os três documentos</h2>\n<ul>\n<li><strong>RIAD</strong> — <strong>antes</strong> do ato infracional: prevenção e políticas sociais;</li>\n<li><strong>Beijing</strong> — <strong>durante</strong>: administração da justiça juvenil e medidas;</li>\n<li><strong>Regras de Tóquio</strong> (1990) — medidas <strong>não privativas</strong> de liberdade em geral;</li>\n<li><strong>Regras de Havana</strong> (1990) — proteção dos jovens <strong>privados de liberdade</strong>.</li>\n</ul>\n\n<h2>6. Repercussão na prática do Educador Social</h2>\n<p>Esses documentos sustentam três posturas concretas: <strong>não rotular</strong> o adolescente pelo ato praticado; <strong>priorizar o meio aberto</strong> e a convivência comunitária; e tratar a escuta do adolescente como <strong>direito</strong>, incorporando sua opinião ao PIA e ao acompanhamento.</p>\n",
+      "questions": [
+        {
+          "statement": "As Diretrizes das Nações Unidas para a Prevenção da Delinquência Juvenil (Diretrizes de RIAD) caracterizam-se por:",
+          "options": [
+            "disciplinar o processo de apuração de ato infracional e a aplicação de medidas socioeducativas.",
+            "estabelecer regras para a proteção de jovens privados de liberdade em unidades de internação.",
+            "enfatizar a prevenção mediante políticas sociais universais e advertir contra a rotulação precoce dos jovens como desviantes.",
+            "definir os parâmetros de funcionamento dos serviços de acolhimento institucional.",
+            "regular a cooperação internacional em matéria de adoção de crianças e adolescentes."
+          ],
+          "correct": 2,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Diretrizes de RIAD",
+          "tags": [
+            "RIAD",
+            "prevenção",
+            "rotulação",
+            "ONU"
+          ],
+          "comment": "RIAD = prevenção (antes). Beijing = justiça juvenil (durante). Havana = privados de liberdade (depois).",
+          "justification": "As Diretrizes de RIAD (1990) tratam da prevenção da delinquência juvenil, atribuindo centralidade às políticas sociais universais — família, educação, comunidade, meios de comunicação e trabalho — e alertando para os efeitos negativos da estigmatização e da rotulação precoce."
+        },
+        {
+          "statement": "São princípios estruturantes da Convenção sobre os Direitos da Criança (1989):",
+          "options": [
+            "seletividade, distributividade, irredutibilidade e equidade no custeio.",
+            "não discriminação, melhor interesse da criança, direito à vida, sobrevivência e desenvolvimento, e respeito à opinião da criança.",
+            "excepcionalidade, provisoriedade, brevidade e proporcionalidade.",
+            "universalidade, gratuidade, integralidade e hierarquização.",
+            "legalidade, impessoalidade, moralidade, publicidade e eficiência."
+          ],
+          "correct": 1,
+          "banca": "Quadrix (estilo)",
+          "year": 2026,
+          "orgao": "Sedes/DF",
+          "difficulty": "media",
+          "subtopic": "Convenção sobre os Direitos da Criança",
+          "tags": [
+            "Convenção 1989",
+            "melhor interesse",
+            "proteção integral"
+          ],
+          "comment": "As distratoras trazem princípios da seguridade social, do acolhimento, do SUS e da administração pública — teste clássico de leitura atenta.",
+          "justification": "O Comitê dos Direitos da Criança da ONU identifica quatro princípios gerais na Convenção de 1989: não discriminação (art. 2º), melhor interesse da criança (art. 3º), direito à vida, à sobrevivência e ao desenvolvimento (art. 6º) e respeito à opinião da criança (art. 12)."
+        }
+      ],
+      "articles": [
+        {
+          "lawRef": "Declaração Universal dos Direitos Humanos (1948)",
+          "heading": "Art. I, II e XXV",
+          "html": "<p>Artigo I. Todos os seres humanos nascem livres e iguais em dignidade e direitos. São dotados de razão e consciência e devem agir em relação uns aos outros com espírito de fraternidade.</p><p>Artigo II. Toda pessoa tem capacidade para gozar os direitos e as liberdades estabelecidos nesta Declaração, sem distinção de qualquer espécie, seja de raça, cor, sexo, língua, religião, opinião política ou de outra natureza, origem nacional ou social, riqueza, nascimento, ou qualquer outra condição.</p><p>Artigo XXV. 1. Toda pessoa tem direito a um padrão de vida capaz de assegurar a si e a sua família saúde e bem-estar, inclusive alimentação, vestuário, habitação, cuidados médicos e os serviços sociais indispensáveis, e direito à segurança em caso de desemprego, doença, invalidez, viuvez, velhice ou outros casos de perda dos meios de subsistência em circunstâncias fora de seu controle.</p><p>2. A maternidade e a infância têm direito a cuidados e assistência especiais. Todas as crianças, nascidas dentro ou fora do matrimônio, gozarão da mesma proteção social.</p>",
+          "note": "Adotada em 10/12/1948, com 30 artigos. O Artigo XXV é o fundamento internacional da proteção social e dos serviços sociais indispensáveis.",
+          "important": 1
+        },
+        {
+          "lawRef": "Convenção sobre os Direitos da Criança (Decreto nº 99.710/1990)",
+          "heading": "Arts. 1º, 2º, 3º, 6º e 12",
+          "html": "<p>Artigo 1. Para efeitos da presente Convenção considera-se como criança todo ser humano com menos de dezoito anos de idade, a não ser que, em conformidade com a lei aplicável à criança, a maioridade seja alcançada antes.</p><p>Artigo 2. Os Estados Partes respeitarão os direitos enunciados na presente Convenção e assegurarão sua aplicação a cada criança sujeita à sua jurisdição, sem distinção alguma, independentemente de raça, cor, sexo, idioma, crença, opinião política ou de outra índole, origem nacional, étnica ou social, posição econômica, deficiências físicas, nascimento ou qualquer outra condição da criança, de seus pais ou de seus representantes legais.</p><p>Artigo 3. Todas as ações relativas às crianças, levadas a efeito por instituições públicas ou privadas de bem-estar social, tribunais, autoridades administrativas ou órgãos legislativos, devem considerar, primordialmente, o interesse maior da criança.</p><p>Artigo 6. Os Estados Partes reconhecem que toda criança tem o direito inerente à vida e assegurarão ao máximo a sobrevivência e o desenvolvimento da criança.</p><p>Artigo 12. Os Estados Partes assegurarão à criança que estiver capacitada a formular seus próprios juízos o direito de expressar suas opiniões livremente sobre todos os assuntos relacionados com a criança, levando-se devidamente em consideração essas opiniões, em função da idade e maturidade da criança.</p>",
+          "note": "Os quatro princípios gerais reconhecidos pelo Comitê da ONU: não discriminação (2), melhor interesse (3), vida/sobrevivência/desenvolvimento (6) e respeito à opinião (12).",
+          "important": 1
+        },
+        {
+          "lawRef": "Regras de Beijing (Resolução ONU 40/33, de 1985)",
+          "heading": "Diretrizes centrais",
+          "html": "<p>Regras Mínimas das Nações Unidas para a Administração da Justiça da Infância e da Juventude. Entre suas orientações:</p><p>Regra 1 — Os Estados membros procurarão promover o bem-estar do jovem e de sua família, e desenvolver condições que assegurem ao jovem uma vida significativa na comunidade, fomentando um processo de desenvolvimento pessoal e educação o mais afastado possível de todo contato com a criminalidade e a delinquência.</p><p>Regra 5 — O sistema de justiça de menores enfatizará o bem-estar do jovem e garantirá que qualquer decisão em relação aos jovens infratores seja sempre proporcional às circunstâncias do infrator e do delito.</p><p>Regra 8 — Respeitar-se-á, em todas as etapas, o direito do jovem à privacidade, para evitar que a publicidade indevida ou o processo de difamação lhe causem danos.</p><p>Regra 11 — Examinar-se-á a possibilidade, quando apropriado, de atender os jovens infratores sem recorrer às autoridades competentes para que os julguem oficialmente (remissão e encaminhamento a serviços comunitários).</p><p>Regra 17 — A restrição da liberdade pessoal do jovem será imposta somente após estudo cuidadoso e se reduzirá ao mínimo possível; a privação de liberdade somente será imposta em caso de ato grave que envolva violência contra outra pessoa ou por reincidência em cometer outros delitos graves, e sempre que não haja outra medida adequada.</p>",
+          "note": "Beijing trata do jovem JÁ em conflito com a lei: proporcionalidade, privacidade, desjudicialização e privação de liberdade como último recurso.",
+          "important": 1
+        },
+        {
+          "lawRef": "Diretrizes de RIAD (Resolução ONU 45/112, de 1990)",
+          "heading": "Princípios fundamentais",
+          "html": "<p>Diretrizes das Nações Unidas para a Prevenção da Delinquência Juvenil. Entre seus princípios fundamentais:</p><p>1. A prevenção da delinquência juvenil é parte essencial da prevenção do delito na sociedade. Ao dedicar-se a atividades lícitas e socialmente úteis, os jovens podem desenvolver uma postura não criminógena.</p><p>2. Para prevenir eficazmente a delinquência juvenil, é necessário que toda a sociedade procure um desenvolvimento harmônico dos adolescentes, respeitando e cultivando sua personalidade desde a primeira infância.</p><p>3. Para os fins de interpretação das presentes Diretrizes, deve-se orientar por uma perspectiva centrada na criança e no jovem. Os jovens devem ter uma função ativa e participativa na sociedade e não podem ser considerados meros objetos de socialização ou controle.</p><p>5. Deve-se reconhecer a necessidade e a importância de aplicar uma política progressista de prevenção da delinquência, bem como de estudar sistematicamente e elaborar medidas pertinentes que evitem criminalizar e penalizar a criança ou o adolescente por um comportamento que não cause grandes prejuízos a seu desenvolvimento nem prejudique os demais.</p><p>6. Os serviços e programas comunitários devem ser utilizados na prevenção da delinquência juvenil, recorrendo-se aos organismos judiciais ou de controle social apenas em último recurso.</p>",
+          "note": "O princípio 3 (jovem como sujeito, não objeto de controle) e o 5 (evitar criminalizar comportamentos próprios do desenvolvimento) são os mais cobrados.",
+          "important": 1
+        }
+      ]
+    }
+  ]
+}

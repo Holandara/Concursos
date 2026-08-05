@@ -4,6 +4,7 @@ import { db, now } from '../../../core/db/database';
 import { LawArticle } from '../../../core/models/models';
 import { RichEditorComponent, EditorChange } from '../../../shared/editor/rich-editor.component';
 import { SafeHtmlPipe } from '../../../shared/safe-html.pipe';
+import { IconComponent } from '../../../shared/icon/icon.component';
 
 /**
  * Leitor de legislação: cada artigo é um bloco separado com destaques,
@@ -12,7 +13,7 @@ import { SafeHtmlPipe } from '../../../shared/safe-html.pipe';
 @Component({
   selector: 'app-legislation-tab',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule, RichEditorComponent, SafeHtmlPipe],
+  imports: [FormsModule, RichEditorComponent, SafeHtmlPipe, IconComponent],
   template: `
   <div class="space-y-4">
     <div class="flex flex-wrap items-center justify-between gap-2">
@@ -20,7 +21,9 @@ import { SafeHtmlPipe } from '../../../shared/safe-html.pipe';
         {{ articles().length }} dispositivo(s).
         Adicione artigos da legislação deste assunto e grife como em um leitor de PDF.
       </p>
-      <button type="button" class="btn btn-primary" (click)="startNew()">＋ Adicionar artigo</button>
+      <button type="button" class="btn btn-primary" (click)="startNew()">
+        <app-icon name="add" [size]="15" />Adicionar artigo
+      </button>
     </div>
 
     @if (creating()) {
@@ -53,19 +56,23 @@ import { SafeHtmlPipe } from '../../../shared/safe-html.pipe';
           <span class="text-xs font-semibold uppercase tracking-wide text-accent">{{ article.lawRef }}</span>
           <span class="text-sm font-bold">{{ article.heading }}</span>
           <span class="ml-auto flex items-center gap-1">
-            <button type="button" class="icon-btn" [title]="article.important ? 'Remover destaque de importante' : 'Grifar como importante'"
+            <button type="button" class="icon-btn" [class.text-accent]="article.important"
+                    [title]="article.important ? 'Remover destaque de importante' : 'Grifar como importante'"
                     (click)="toggleImportant(article)">
-              {{ article.important ? '🚩' : '🏳️' }}
+              <app-icon name="flag" [filled]="article.important === 1" />
             </button>
-            <button type="button" class="icon-btn" [title]="article.favorite ? 'Desfavoritar' : 'Favoritar'"
+            <button type="button" class="icon-btn" [class.text-accent]="article.favorite"
+                    [title]="article.favorite ? 'Desfavoritar' : 'Favoritar'"
                     (click)="toggleFavorite(article)">
-              {{ article.favorite ? '★' : '☆' }}
+              <app-icon name="star" [filled]="article.favorite === 1" />
             </button>
             <button type="button" class="icon-btn" [title]="editingId() === article.id ? 'Concluir edição' : 'Editar/destacar texto'"
                     (click)="editingId.set(editingId() === article.id ? null : article.id!)">
-              {{ editingId() === article.id ? '✔' : '🖊' }}
+              <app-icon [name]="editingId() === article.id ? 'check' : 'edit'" />
             </button>
-            <button type="button" class="icon-btn btn-danger" title="Excluir" (click)="remove(article)">🗑</button>
+            <button type="button" class="icon-btn btn-danger" title="Excluir" (click)="remove(article)">
+              <app-icon name="delete" />
+            </button>
           </span>
         </header>
 
@@ -94,7 +101,7 @@ import { SafeHtmlPipe } from '../../../shared/safe-html.pipe';
     } @empty {
       @if (!creating()) {
         <div class="card p-8 text-center text-sm text-faint">
-          Nenhum dispositivo ainda. Clique em <b>＋ Adicionar artigo</b> e cole a legislação
+          Nenhum dispositivo ainda. Clique em <b>Adicionar artigo</b> e cole a legislação
           relacionada a este assunto (ex.: artigos da LGPD, trechos de normas ISO…).
         </div>
       }

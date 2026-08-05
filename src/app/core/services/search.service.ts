@@ -31,6 +31,10 @@ export class SearchService {
     if (q.length < 2) return [];
     const results: SearchResult[] = [];
     const titleOf = (id: number) => this.store.byId(id)?.title ?? '';
+    // Busca "global" é global DENTRO do concurso ativo. Misturar editais aqui
+    // produziria resultados que nem sequer abrem no menu lateral atual.
+    const scope = this.store.scopeIds();
+    const inScope = (subjectId: number) => scope.has(subjectId);
 
     for (const s of this.store.subjects()) {
       const hay = norm(s.title + ' ' + s.topics.join(' '));
@@ -44,7 +48,7 @@ export class SearchService {
 
     const docs = await db.docs.toArray();
     for (const d of docs) {
-      if (norm(d.text).includes(q)) {
+      if (inScope(d.subjectId) && norm(d.text).includes(q)) {
         results.push({
           type: d.kind === 'summary' ? 'resumo' : 'observacao',
           subjectId: d.subjectId, subjectTitle: titleOf(d.subjectId),
@@ -57,7 +61,7 @@ export class SearchService {
 
     const articles = await db.articles.toArray();
     for (const a of articles) {
-      if (norm(a.text + ' ' + a.heading + ' ' + a.lawRef + ' ' + a.note).includes(q)) {
+      if (inScope(a.subjectId) && norm(a.text + ' ' + a.heading + ' ' + a.lawRef + ' ' + a.note).includes(q)) {
         results.push({
           type: 'legislacao', subjectId: a.subjectId, subjectTitle: titleOf(a.subjectId),
           title: `${a.lawRef} — ${a.heading}`, snippet: snippetOf(a.text, q), tab: 'legislacao',
@@ -68,7 +72,7 @@ export class SearchService {
     const questions = await db.questions.toArray();
     for (const question of questions) {
       const hay = norm([question.statement, ...question.options, question.comment, question.justification, question.myNote, question.tags.join(' ')].join(' '));
-      if (hay.includes(q)) {
+      if (inScope(question.subjectId) && hay.includes(q)) {
         results.push({
           type: 'questao', subjectId: question.subjectId, subjectTitle: titleOf(question.subjectId),
           title: `Questão ${question.banca ? '· ' + question.banca : ''} ${question.year ?? ''}`.trim(),
@@ -79,7 +83,7 @@ export class SearchService {
 
     const cards = await db.flashcards.toArray();
     for (const c of cards) {
-      if (norm(c.front + ' ' + c.back).includes(q)) {
+      if (inScope(c.subjectId) && norm(c.front + ' ' + c.back).includes(q)) {
         results.push({
           type: 'flashcard', subjectId: c.subjectId, subjectTitle: titleOf(c.subjectId),
           title: 'Flashcard', snippet: snippetOf(c.front + ' — ' + c.back, q), tab: 'flashcards',

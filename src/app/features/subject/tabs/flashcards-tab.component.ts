@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { IconComponent } from '../../../shared/icon/icon.component';
 import { db, now } from '../../../core/db/database';
 import { Flashcard } from '../../../core/models/models';
 import { ReviewService } from '../../../core/services/review.service';
@@ -7,7 +8,7 @@ import { ReviewService } from '../../../core/services/review.service';
 @Component({
   selector: 'app-flashcards-tab',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule],
+  imports: [FormsModule, IconComponent],
   template: `
   <div class="space-y-4">
 
@@ -30,7 +31,7 @@ import { ReviewService } from '../../../core/services/review.service';
           }
           <button type="button" class="btn btn-ghost mt-4 text-xs" (click)="stopStudy()">Encerrar sessão</button>
         } @else {
-          <div class="text-2xl">🎉</div>
+          <app-icon name="celebrate" [size]="30" class="text-accent" />
           <p class="mt-2 text-sm text-soft">Sessão concluída! Nenhum card pendente.</p>
           <button type="button" class="btn mt-4" (click)="stopStudy()">Voltar</button>
         }
@@ -42,12 +43,16 @@ import { ReviewService } from '../../../core/services/review.service';
         </p>
         <div class="flex gap-2">
           @if (dueCount() > 0) {
-            <button type="button" class="btn btn-primary" (click)="startStudy(true)">▶ Revisar pendentes ({{ dueCount() }})</button>
+            <button type="button" class="btn btn-primary" (click)="startStudy(true)">
+              <app-icon name="play" [size]="15" />Revisar pendentes ({{ dueCount() }})
+            </button>
           }
           @if (cards().length > 0) {
             <button type="button" class="btn" (click)="startStudy(false)">Estudar todos</button>
           }
-          <button type="button" class="btn" (click)="creating.set(!creating())">＋ Novo card</button>
+          <button type="button" class="btn" (click)="creating.set(!creating())">
+            <app-icon name="add" [size]="15" />Novo card
+          </button>
         </div>
       </div>
 
@@ -85,12 +90,16 @@ import { ReviewService } from '../../../core/services/review.service';
               <div class="mt-2 whitespace-pre-wrap border-t border-line pt-2 text-[13px] text-soft">{{ card.back }}</div>
               <div class="mt-3 flex items-center gap-1 text-[11px] text-faint">
                 <span [class.text-accent]="isDue(card)">
-                  {{ isDue(card) ? '⏰ revisar hoje' : 'próx.: ' + dueLabel(card) }}
+                  @if (isDue(card)) {
+                    <app-icon name="clock" [size]="12" class="mr-1 align-[-2px]" />revisar hoje
+                  } @else {
+                    próx.: {{ dueLabel(card) }}
+                  }
                 </span>
                 <span>· {{ card.reps }} rev.</span>
                 <span class="ml-auto flex">
-                  <button type="button" class="icon-btn !h-6 !w-6" title="Editar" (click)="startEdit(card)">🖊</button>
-                  <button type="button" class="icon-btn btn-danger !h-6 !w-6" title="Excluir" (click)="remove(card)">🗑</button>
+                  <button type="button" class="icon-btn !h-6 !w-6" title="Editar" (click)="startEdit(card)"><app-icon name="edit" [size]="13" /></button>
+                  <button type="button" class="icon-btn btn-danger !h-6 !w-6" title="Excluir" (click)="remove(card)"><app-icon name="delete" [size]="13" /></button>
                 </span>
               </div>
             }

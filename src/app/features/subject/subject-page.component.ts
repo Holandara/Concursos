@@ -12,16 +12,17 @@ import { LegislationTabComponent } from './tabs/legislation-tab.component';
 import { QuestionsTabComponent } from './tabs/questions-tab.component';
 import { ReviewsTabComponent } from './tabs/reviews-tab.component';
 import { FlashcardsTabComponent } from './tabs/flashcards-tab.component';
+import { IconComponent, IconName } from '../../shared/icon/icon.component';
 
 type TabId = 'resumo' | 'legislacao' | 'questoes' | 'observacoes' | 'revisoes' | 'flashcards';
 
-const TABS: { id: TabId; label: string; icon: string }[] = [
-  { id: 'resumo', label: 'Resumo', icon: '📝' },
-  { id: 'legislacao', label: 'Legislação', icon: '⚖️' },
-  { id: 'questoes', label: 'Questões', icon: '❓' },
-  { id: 'observacoes', label: 'Observações', icon: '💭' },
-  { id: 'revisoes', label: 'Revisões', icon: '🔁' },
-  { id: 'flashcards', label: 'Flashcards', icon: '🃏' },
+const TABS: { id: TabId; label: string; icon: IconName }[] = [
+  { id: 'resumo', label: 'Resumo', icon: 'summary' },
+  { id: 'legislacao', label: 'Legislação', icon: 'legislation' },
+  { id: 'questoes', label: 'Questões', icon: 'question' },
+  { id: 'observacoes', label: 'Observações', icon: 'note' },
+  { id: 'revisoes', label: 'Revisões', icon: 'review' },
+  { id: 'flashcards', label: 'Flashcards', icon: 'flashcard' },
 ];
 
 @Component({
@@ -29,7 +30,7 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     DocTabComponent, LegislationTabComponent, QuestionsTabComponent,
-    ReviewsTabComponent, FlashcardsTabComponent,
+    ReviewsTabComponent, FlashcardsTabComponent, IconComponent,
   ],
   template: `
   @if (subject(); as s) {
@@ -49,9 +50,10 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
         <h1 class="min-w-0 text-2xl font-bold leading-tight tracking-tight">
           {{ s.title }}
         </h1>
-        <button type="button" class="icon-btn text-lg" (click)="store.toggleFavorite(s.id!)"
+        <button type="button" class="icon-btn" (click)="store.toggleFavorite(s.id!)"
+                [class.text-accent]="s.favorite"
                 [title]="s.favorite ? 'Remover dos favoritos' : 'Favoritar'">
-          {{ s.favorite ? '★' : '☆' }}
+          <app-icon name="star" [size]="18" [filled]="s.favorite === 1" />
         </button>
       </div>
 
@@ -90,24 +92,39 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
         <div class="flex gap-1 overflow-x-auto pb-0 pt-1">
           @for (t of tabs; track t.id) {
             <button type="button"
-                    class="whitespace-nowrap rounded-t-lg border-b-2 px-3 py-2 text-sm font-medium transition-colors"
+                    class="flex items-center gap-1.5 whitespace-nowrap rounded-t-lg border-b-2 px-3 py-2 text-sm font-medium transition-colors"
                     [class.tab-on]="tab() === t.id"
                     [class.tab-off]="tab() !== t.id"
                     (click)="selectTab(t.id)">
-              <span class="mr-1">{{ t.icon }}</span>{{ t.label }}
+              <app-icon [name]="t.icon" [size]="15" />{{ t.label }}
             </button>
           }
         </div>
       </div>
 
       <div class="py-5">
-        @switch (tab()) {
-          @case ('resumo') { <app-doc-tab [subjectId]="s.id!" kind="summary" /> }
-          @case ('legislacao') { <app-legislation-tab [subjectId]="s.id!" /> }
-          @case ('questoes') { <app-questions-tab [subjectId]="s.id!" /> }
-          @case ('observacoes') { <app-doc-tab [subjectId]="s.id!" kind="notes" /> }
-          @case ('revisoes') { <app-reviews-tab [subjectId]="s.id!" /> }
-          @case ('flashcards') { <app-flashcards-tab [subjectId]="s.id!" /> }
+        <!--
+          O bloco abaixo é CHAVEADO pelo id do assunto (track openSubjectId).
+
+          Motivo: .../assunto/1 e .../assunto/2 são a MESMA rota — só o parâmetro muda.
+          O Angular reaproveita esta página e apenas atualiza os inputs, sem
+          destruir/recriar os componentes das abas. Como cada aba carrega seus
+          dados no ngOnInit, sem esta chave o conteúdo continuaria sendo o do
+          assunto anterior (só o cabeçalho se atualizava).
+
+          Ao trocar de assunto, a chave muda: a aba antiga é destruída — o que
+          também faz o editor gravar (flush) qualquer alteração pendente no
+          documento CORRETO — e uma nova instância é criada já com o novo id.
+        -->
+        @for (openSubjectId of [s.id!]; track openSubjectId) {
+          @switch (tab()) {
+            @case ('resumo') { <app-doc-tab [subjectId]="openSubjectId" kind="summary" /> }
+            @case ('legislacao') { <app-legislation-tab [subjectId]="openSubjectId" /> }
+            @case ('questoes') { <app-questions-tab [subjectId]="openSubjectId" /> }
+            @case ('observacoes') { <app-doc-tab [subjectId]="openSubjectId" kind="notes" /> }
+            @case ('revisoes') { <app-reviews-tab [subjectId]="openSubjectId" /> }
+            @case ('flashcards') { <app-flashcards-tab [subjectId]="openSubjectId" /> }
+          }
         }
       </div>
     </div>
@@ -145,11 +162,14 @@ export class SubjectPageComponent implements OnDestroy {
     return id != null ? this.store.pathOf(id) : [];
   });
 
-  /** Rota: /assunto/:id */
+  /** Rota: /c/:contest/assunto/:id */
   @Input() set id(value: string) {
     const num = Number(value);
     if (!Number.isFinite(num)) return;
+    if (this.subjectId() === num) return;
     this.subjectId.set(num);
+    // Estado local pertence ao assunto aberto — não deve vazar para o próximo.
+    this.showTopics.set(false);
     this.tracker.start(num);
   }
 

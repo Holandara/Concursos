@@ -4,11 +4,13 @@ import { DashboardStats, StatsService } from '../../core/services/stats.service'
 import { ReviewService } from '../../core/services/review.service';
 import { SubjectStore } from '../../core/services/subject.store';
 import { STATUS_LABEL, PRIORITY_LABEL } from '../../core/models/models';
+import { contestLink } from '../../core/routing/contest.routing';
+import { IconComponent } from '../../shared/icon/icon.component';
 
 @Component({
   selector: 'app-dashboard',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink],
+  imports: [RouterLink, IconComponent],
   template: `
   <div class="mx-auto max-w-5xl px-4 py-6 sm:px-6">
     <h1 class="text-2xl font-bold tracking-tight">Dashboard</h1>
@@ -49,13 +51,15 @@ import { STATUS_LABEL, PRIORITY_LABEL } from '../../core/models/models';
       <section class="mt-8">
         <h2 class="text-base font-semibold">Revisões do dia</h2>
         @if (dueSubjects().length === 0) {
-          <p class="mt-2 text-sm text-faint">Nada para revisar hoje. 🎉</p>
+          <p class="mt-2 flex items-center gap-1.5 text-sm text-faint">
+            <app-icon name="celebrate" /> Nada para revisar hoje.
+          </p>
         } @else {
           <div class="mt-3 grid gap-2 sm:grid-cols-2">
             @for (item of dueSubjects(); track item.id) {
-              <a [routerLink]="['/assunto', item.subjectId]" [queryParams]="{ tab: 'revisoes' }"
+              <a [routerLink]="link('assunto', item.subjectId)" [queryParams]="{ tab: 'revisoes' }"
                  class="card flex items-center gap-3 p-3 no-underline hover:border-accent transition-colors">
-                <span class="text-lg">⏰</span>
+                <app-icon name="clock" [size]="17" class="text-accent" />
                 <span class="min-w-0">
                   <span class="block truncate text-sm font-medium text-ink">{{ item.title }}</span>
                   <span class="block text-xs text-soft">intervalo de {{ item.intervalDays }} dia(s)</span>
@@ -88,7 +92,7 @@ import { STATUS_LABEL, PRIORITY_LABEL } from '../../core/models/models';
           <h2 class="text-base font-semibold">Últimos assuntos</h2>
           <div class="mt-3 space-y-2">
             @for (subject of s.recent; track subject.id) {
-              <a [routerLink]="['/assunto', subject.id]"
+              <a [routerLink]="link('assunto', subject.id!)"
                  class="card flex items-center gap-3 p-3 no-underline hover:border-accent transition-colors">
                 <span class="min-w-0 flex-1">
                   <span class="block truncate text-sm font-medium text-ink">{{ subject.title }}</span>
@@ -107,13 +111,15 @@ import { STATUS_LABEL, PRIORITY_LABEL } from '../../core/models/models';
           <h2 class="text-base font-semibold">Assuntos pendentes</h2>
           <div class="mt-3 space-y-2">
             @for (subject of s.pending; track subject.id) {
-              <a [routerLink]="['/assunto', subject.id]"
+              <a [routerLink]="link('assunto', subject.id!)"
                  class="card flex items-center gap-3 p-3 no-underline hover:border-accent transition-colors">
                 <span class="min-w-0 flex-1 truncate text-sm font-medium text-ink">{{ subject.title }}</span>
                 <span class="chip" [class]="'pr-' + subject.priority">{{ priorityLabel[subject.priority] }}</span>
               </a>
             } @empty {
-              <p class="text-sm text-faint">Nenhum assunto pendente. 👏</p>
+              <p class="flex items-center gap-1.5 text-sm text-faint">
+                <app-icon name="success" /> Nenhum assunto pendente.
+              </p>
             }
           </div>
         </section>
@@ -142,6 +148,9 @@ import { STATUS_LABEL, PRIORITY_LABEL } from '../../core/models/models';
   `],
 })
 export class DashboardComponent implements OnInit {
+  /** Links do dashboard já nascem prefixados com o concurso ativo. */
+  link = (...segments: (string | number)[]) => contestLink(this.store.activeSlug(), ...segments);
+
   readonly store = inject(SubjectStore);
   private statsService = inject(StatsService);
   private reviewService = inject(ReviewService);

@@ -1,20 +1,32 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SearchResult, SearchService } from '../../core/services/search.service';
+import { IconComponent, IconName } from '../../shared/icon/icon.component';
+import { SubjectStore } from '../../core/services/subject.store';
+import { contestLink } from '../../core/routing/contest.routing';
 
 const TYPE_LABEL: Record<SearchResult['type'], string> = {
-  assunto: '📚 Assunto',
-  resumo: '📝 Resumo',
-  observacao: '💭 Observação',
-  legislacao: '⚖️ Legislação',
-  questao: '❓ Questão',
-  flashcard: '🃏 Flashcard',
+  assunto: 'Assunto',
+  resumo: 'Resumo',
+  observacao: 'Observação',
+  legislacao: 'Legislação',
+  questao: 'Questão',
+  flashcard: 'Flashcard',
+};
+
+const TYPE_ICON: Record<SearchResult['type'], IconName> = {
+  assunto: 'subject',
+  resumo: 'summary',
+  observacao: 'note',
+  legislacao: 'legislation',
+  questao: 'question',
+  flashcard: 'flashcard',
 };
 
 @Component({
   selector: 'app-search-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink],
+  imports: [RouterLink, IconComponent],
   template: `
   <div class="mx-auto max-w-3xl px-4 py-6 sm:px-6">
     <h1 class="text-2xl font-bold tracking-tight">Busca global</h1>
@@ -29,10 +41,12 @@ const TYPE_LABEL: Record<SearchResult['type'], string> = {
       <p class="mt-4 text-xs text-faint">{{ results().length }} resultado(s)</p>
       <div class="mt-2 space-y-2">
         @for (r of results(); track $index) {
-          <a [routerLink]="['/assunto', r.subjectId]" [queryParams]="r.tab ? { tab: r.tab } : {}"
+          <a [routerLink]="link('assunto', r.subjectId)" [queryParams]="r.tab ? { tab: r.tab } : {}"
              class="card block p-3 no-underline hover:border-accent transition-colors">
             <div class="flex items-center gap-2 text-xs text-soft">
-              <span>{{ typeLabel[r.type] }}</span>
+              <span class="inline-flex items-center gap-1">
+                <app-icon [name]="typeIcon[r.type]" [size]="13" />{{ typeLabel[r.type] }}
+              </span>
               <span class="text-faint">·</span>
               <span class="truncate">{{ r.subjectTitle }}</span>
             </div>
@@ -52,12 +66,18 @@ const TYPE_LABEL: Record<SearchResult['type'], string> = {
   `,
 })
 export class SearchPageComponent implements OnInit {
+  private store = inject(SubjectStore);
+
+  /** Os resultados são do concurso ativo — os links seguem o mesmo prefixo. */
+  link = (...segments: (string | number)[]) => contestLink(this.store.activeSlug(), ...segments);
+
   private searchService = inject(SearchService);
 
   readonly query = signal('');
   readonly results = signal<SearchResult[]>([]);
   readonly loading = signal(false);
   readonly typeLabel = TYPE_LABEL;
+  readonly typeIcon = TYPE_ICON;
 
   private timer: ReturnType<typeof setTimeout> | null = null;
 

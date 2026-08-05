@@ -12,28 +12,64 @@
     [class.-translate-x-full]="!sidebarOpen()"
     [class.hidden]="!isMobile() && !sidebarOpen()">
 
-    <div class="flex items-center gap-2 px-4 pt-4 pb-2">
-      <a routerLink="/" (click)="closeSidebarOnMobile()" class="flex items-center gap-2 no-underline">
-        <span class="flex h-8 w-8 items-center justify-center rounded-lg text-sm font-bold"
-              style="background: var(--accent); color: var(--accent-ink);">D</span>
-        <span class="leading-tight">
-          <span class="block text-sm font-bold text-ink">{{ store.contest()?.name ?? 'Concurso Studio' }}</span>
-          <span class="block text-[11px] text-faint">{{ store.contest()?.role }}</span>
+    <!--
+      CONCURSOS — seletor do edital ativo.
+
+      Fica no topo porque define o significado de tudo o que vem abaixo: a
+      árvore, o dashboard, a busca e as revisões pertencem ao concurso escolhido.
+    -->
+    <div class="px-3 pt-3">
+      <div class="px-1 pb-1 text-[11px] font-semibold uppercase tracking-wider text-faint">
+        Concursos
+      </div>
+
+      <button type="button"
+              class="flex w-full items-center gap-2 rounded-lg border border-line px-2 py-2 text-left transition-colors hover:bg-hoverc"
+              [attr.aria-expanded]="pickerOpen()"
+              (click)="pickerOpen.set(!pickerOpen())">
+        <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-[11px] font-bold"
+              style="background: var(--accent); color: var(--accent-ink);">
+          {{ contestInitials() }}
         </span>
-      </a>
+        <span class="min-w-0 flex-1 leading-tight">
+          <span class="block truncate text-[13px] font-bold text-ink">
+            {{ store.contest()?.name ?? 'Selecionar concurso' }}
+          </span>
+          <span class="block truncate text-[11px] text-faint">{{ store.contest()?.role }}</span>
+        </span>
+        <app-icon [name]="pickerOpen() ? 'chevron-down' : 'chevron-right'" [size]="14" />
+      </button>
+
+      @if (pickerOpen()) {
+        <div class="mt-1 rounded-lg border border-line p-1" style="background: var(--raised);">
+          @for (c of store.contests(); track c.id) {
+            <a [routerLink]="['/', prefix, c.slug]" (click)="chooseContest()"
+               class="block rounded-md px-2 py-1.5 text-[13px] no-underline transition-colors hover:bg-hoverc"
+               [class.text-accent]="c.slug === store.activeSlug()"
+               [class.text-soft]="c.slug !== store.activeSlug()">
+              <span class="block truncate font-medium">{{ c.name }}</span>
+              <span class="block truncate text-[11px] text-faint">{{ c.role }}</span>
+            </a>
+          }
+          <a routerLink="/concursos" (click)="chooseContest()"
+             class="mt-1 flex items-center gap-1.5 rounded-md border-t border-line px-2 py-1.5 text-[12px] font-medium text-soft no-underline hover:bg-hoverc hover:text-ink">
+            <app-icon name="contests" [size]="13" />Ver todos os concursos
+          </a>
+        </div>
+      }
     </div>
 
     <nav class="px-3 py-2">
-      <a routerLink="/" (click)="closeSidebarOnMobile()"
+      <a [routerLink]="link()" (click)="closeSidebarOnMobile()"
          class="flex items-center gap-2 rounded-md px-2 py-1.5 text-[13.5px] font-medium text-soft hover:bg-hoverc hover:text-ink">
-        📊 Dashboard
+        <app-icon name="dashboard" />Dashboard
         @if (dueCount() > 0) {
           <span class="chip ml-auto" style="background: var(--sel); color: var(--accent);">{{ dueCount() }} p/ revisar</span>
         }
       </a>
-      <a routerLink="/busca" (click)="closeSidebarOnMobile()"
+      <a [routerLink]="link('busca')" (click)="closeSidebarOnMobile()"
          class="flex items-center gap-2 rounded-md px-2 py-1.5 text-[13.5px] font-medium text-soft hover:bg-hoverc hover:text-ink">
-        🔍 Busca global
+        <app-icon name="search" />Busca global
       </a>
     </nav>
 
@@ -45,6 +81,7 @@
       @for (node of store.tree(); track node.id) {
         <app-sidebar-node
           [node]="node" [depth]="0"
+          [contestSlug]="store.activeSlug()"
           [expandedIds]="expandedIds()"
           (toggle)="toggleNode($event)"
           (navigated)="closeSidebarOnMobile()" />
@@ -52,25 +89,33 @@
     </div>
 
     <div class="border-t border-line px-4 py-2 text-[11px] text-faint">
-      Edital 001/2026 · FGV · Prova 11/10/2026
+      {{ footerNote() }}
     </div>
   </aside>
 
   <!-- Main -->
   <div class="flex min-w-0 flex-1 flex-col">
     <header class="flex items-center gap-2 border-b border-line bg-surface px-3 py-2 sm:px-4">
-      <button type="button" class="icon-btn" (click)="toggleSidebar()" aria-label="Alternar menu">☰</button>
+      <button type="button" class="icon-btn" (click)="toggleSidebar()" aria-label="Alternar menu">
+        <app-icon name="menu" [size]="18" />
+      </button>
 
       <div class="relative mx-auto w-full max-w-xl">
         <input #searchInput type="search" class="input !py-1.5 !pl-8"
                placeholder="Buscar em tudo…  (Ctrl+K)"
                (keydown.enter)="submitSearch(searchInput.value)">
-        <span class="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-faint text-sm">🔍</span>
+        <span class="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-faint">
+          <app-icon name="search" [size]="15" />
+        </span>
       </div>
+
+      <a routerLink="/concursos" class="icon-btn" aria-label="Trocar de concurso" title="Concursos">
+        <app-icon name="contests" [size]="17" />
+      </a>
 
       <button type="button" class="icon-btn" (click)="theme.toggle()"
               [attr.aria-label]="theme.theme() === 'dark' ? 'Tema claro' : 'Tema escuro'">
-        {{ theme.theme() === 'dark' ? '☀️' : '🌙' }}
+        <app-icon [name]="theme.theme() === 'dark' ? 'sun' : 'moon'" [size]="17" />
       </button>
     </header>
 

@@ -19,6 +19,7 @@ import TextStyle from '@tiptap/extension-text-style';
 import Color from '@tiptap/extension-color';
 import Placeholder from '@tiptap/extension-placeholder';
 import { Callout, FontSize } from './tiptap-extensions';
+import { IconComponent } from '../icon/icon.component';
 
 export interface EditorChange {
   json: string;
@@ -51,13 +52,14 @@ const EMPTY: ActiveState = {
 @Component({
   selector: 'app-rich-editor',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [IconComponent],
   template: `
   <div class="card overflow-hidden">
     @if (editable) {
       <div class="flex flex-wrap items-center gap-0.5 border-b border-line px-2 py-1.5 bg-app/50 sticky top-0 z-10"
            style="background: var(--bg);">
-        <button type="button" class="icon-btn" title="Desfazer (Ctrl+Z)" (click)="cmd('undo')">↺</button>
-        <button type="button" class="icon-btn" title="Refazer (Ctrl+Y)" (click)="cmd('redo')">↻</button>
+        <button type="button" class="icon-btn" title="Desfazer (Ctrl+Z)" (click)="cmd('undo')"><app-icon name="undo" /></button>
+        <button type="button" class="icon-btn" title="Refazer (Ctrl+Y)" (click)="cmd('redo')"><app-icon name="redo" /></button>
         <span class="mx-1 h-5 w-px bg-line"></span>
 
         <select class="select !w-auto !py-1 !px-2 text-xs" title="Estilo do bloco"
@@ -77,11 +79,11 @@ const EMPTY: ActiveState = {
         </select>
         <span class="mx-1 h-5 w-px bg-line"></span>
 
-        <button type="button" class="icon-btn font-bold" [class.tb-on]="active().bold" title="Negrito (Ctrl+B)" (click)="cmd('bold')">B</button>
-        <button type="button" class="icon-btn italic" [class.tb-on]="active().italic" title="Itálico (Ctrl+I)" (click)="cmd('italic')">I</button>
-        <button type="button" class="icon-btn underline" [class.tb-on]="active().underline" title="Sublinhado (Ctrl+U)" (click)="cmd('underline')">U</button>
-        <button type="button" class="icon-btn line-through" [class.tb-on]="active().strike" title="Tachado" (click)="cmd('strike')">S</button>
-        <button type="button" class="icon-btn" [class.tb-on]="active().code" title="Código inline" (click)="cmd('code')">&lt;&gt;</button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().bold" title="Negrito (Ctrl+B)" (click)="cmd('bold')"><app-icon name="bold" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().italic" title="Itálico (Ctrl+I)" (click)="cmd('italic')"><app-icon name="italic" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().underline" title="Sublinhado (Ctrl+U)" (click)="cmd('underline')"><app-icon name="underline" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().strike" title="Tachado" (click)="cmd('strike')"><app-icon name="strikethrough" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().code" title="Código inline" (click)="cmd('code')"><app-icon name="code" /></button>
         <span class="mx-1 h-5 w-px bg-line"></span>
 
         <button type="button" class="icon-btn" [class.tb-on]="active().hlYellow" title="Destaque amarelo" (click)="highlight('yellow')">
@@ -94,31 +96,31 @@ const EMPTY: ActiveState = {
           <span class="w-4 h-4 rounded-sm" style="background: var(--hl-red); border: 1px solid var(--line);"></span>
         </button>
         <label class="icon-btn" title="Cor do texto">
-          <span class="font-bold" style="border-bottom: 3px solid var(--accent); line-height: 1;">A</span>
+          <app-icon name="text-color" />
           <input type="color" class="w-0 h-0 opacity-0 absolute" (change)="setColor($any($event.target).value)">
         </label>
-        <button type="button" class="icon-btn text-xs" title="Limpar formatação" (click)="clearFormat()">Tx</button>
+        <button type="button" class="icon-btn" title="Limpar formatação" (click)="clearFormat()"><app-icon name="clear-format" /></button>
         <span class="mx-1 h-5 w-px bg-line"></span>
 
-        <button type="button" class="icon-btn" [class.tb-on]="active().bulletList" title="Lista" (click)="cmd('bulletList')">•≡</button>
-        <button type="button" class="icon-btn" [class.tb-on]="active().orderedList" title="Lista numerada" (click)="cmd('orderedList')">1≡</button>
-        <button type="button" class="icon-btn" [class.tb-on]="active().taskList" title="Checklist" (click)="cmd('taskList')">☑</button>
-        <button type="button" class="icon-btn" [class.tb-on]="active().blockquote" title="Citação" (click)="cmd('blockquote')">❝</button>
-        <button type="button" class="icon-btn" [class.tb-on]="active().callout" title="Callout" (click)="cmd('callout')">💡</button>
-        <button type="button" class="icon-btn" [class.tb-on]="active().codeBlock" title="Bloco de código" (click)="cmd('codeBlock')">&#123;&#125;</button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().bulletList" title="Lista" (click)="cmd('bulletList')"><app-icon name="list-bullet" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().orderedList" title="Lista numerada" (click)="cmd('orderedList')"><app-icon name="list-ordered" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().taskList" title="Checklist" (click)="cmd('taskList')"><app-icon name="list-task" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().blockquote" title="Citação" (click)="cmd('blockquote')"><app-icon name="quote" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().callout" title="Callout" (click)="cmd('callout')"><app-icon name="callout" /></button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().codeBlock" title="Bloco de código" (click)="cmd('codeBlock')"><app-icon name="code-block" /></button>
         <span class="mx-1 h-5 w-px bg-line"></span>
 
-        <button type="button" class="icon-btn" [class.tb-on]="active().link" title="Link" (click)="setLink()">🔗</button>
-        <button type="button" class="icon-btn" title="Imagem (URL)" (click)="addImageUrl()">🖼</button>
+        <button type="button" class="icon-btn" [class.tb-on]="active().link" title="Link" (click)="setLink()"><app-icon name="link" /></button>
+        <button type="button" class="icon-btn" title="Imagem (URL)" (click)="addImageUrl()"><app-icon name="image" /></button>
         <label class="icon-btn" title="Enviar imagem">
-          ⬆🖼
+          <app-icon name="image-upload" />
           <input type="file" accept="image/*" class="hidden" (change)="uploadImage($event)">
         </label>
-        <button type="button" class="icon-btn" title="Tabela" (click)="insertTable()">⊞</button>
+        <button type="button" class="icon-btn" title="Tabela" (click)="insertTable()"><app-icon name="table" /></button>
         @if (active().table) {
-          <button type="button" class="icon-btn text-xs" title="+ linha" (click)="tableCmd('addRow')">+L</button>
-          <button type="button" class="icon-btn text-xs" title="+ coluna" (click)="tableCmd('addCol')">+C</button>
-          <button type="button" class="icon-btn text-xs btn-danger" title="Excluir tabela" (click)="tableCmd('delete')">⊟</button>
+          <button type="button" class="icon-btn" title="Adicionar linha" (click)="tableCmd('addRow')"><app-icon name="table-row" /></button>
+          <button type="button" class="icon-btn" title="Adicionar coluna" (click)="tableCmd('addCol')"><app-icon name="table-column" /></button>
+          <button type="button" class="icon-btn btn-danger" title="Excluir tabela" (click)="tableCmd('delete')"><app-icon name="delete" /></button>
         }
       </div>
     }

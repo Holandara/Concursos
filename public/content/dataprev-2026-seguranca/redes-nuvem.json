@@ -1,0 +1,839 @@
+{
+  "subjects": [
+    {
+      "subject": "Conceitos de Redes",
+      "summary": "\n<h1>Conceitos de redes</h1>\n\n<h2>1. Classificação por abrangência</h2>\n<table><tbody>\n<tr><td><strong>PAN</strong></td><td>Pessoal, poucos metros</td><td>Bluetooth, NFC, Zigbee</td></tr>\n<tr><td><strong>LAN</strong></td><td>Local: prédio, campus</td><td>Ethernet, Wi-Fi. Alta taxa, baixa latência, meio próprio</td></tr>\n<tr><td><strong>MAN</strong></td><td>Metropolitana, cidade</td><td>Metro Ethernet</td></tr>\n<tr><td><strong>WAN</strong></td><td>Longa distância, países</td><td>MPLS, links dedicados, internet. Custo por enlace, latência maior</td></tr>\n<tr><td><strong>SAN</strong></td><td>Rede de armazenamento</td><td>Fibre Channel, iSCSI</td></tr>\n<tr><td><strong>WLAN / WWAN</strong></td><td>Sem fio local / ampla</td><td>Wi-Fi / 4G, 5G</td></tr>\n</tbody></table>\n\n<h2>2. Meios de transmissão</h2>\n<table><tbody>\n<tr><td><strong>Par trançado UTP/STP</strong></td><td>Cat5e (1 Gbps), Cat6 (1 Gbps a 100 m; 10 Gbps a 55 m), Cat6a (10 Gbps a 100 m), Cat7/8. Limite de <strong>100 m</strong> no segmento horizontal. Sujeito a EMI e crosstalk</td></tr>\n<tr><td><strong>Coaxial</strong></td><td>Legado em LAN; ainda usado em TV a cabo</td></tr>\n<tr><td><strong>Fibra óptica</strong></td><td><strong>Monomodo</strong> (núcleo ~9 µm, laser, dezenas de km) e <strong>multimodo</strong> (50/62,5 µm, LED/VCSEL, centenas de metros). Imune a EMI, difícil de grampear, alta banda</td></tr>\n<tr><td><strong>Sem fio</strong></td><td>Rádio; meio compartilhado e broadcast por natureza — exige criptografia</td></tr>\n</tbody></table>\n\n<h2>3. Topologias</h2>\n<table><tbody>\n<tr><td><strong>Barramento</strong></td><td>Meio compartilhado; falha no cabo derruba a rede; usa CSMA/CD</td></tr>\n<tr><td><strong>Anel</strong></td><td>Token Ring/FDDI; determinístico; anel duplo para redundância</td></tr>\n<tr><td><strong>Estrela</strong></td><td>Concentrador central (switch). <strong>Padrão atual das LANs</strong>; o central é ponto único de falha</td></tr>\n<tr><td><strong>Malha (mesh)</strong></td><td>Full mesh: n(n−1)/2 enlaces. Máxima redundância, alto custo</td></tr>\n<tr><td><strong>Árvore / híbrida</strong></td><td>Hierarquia de estrelas — modelo de campus</td></tr>\n</tbody></table>\n<p>Distinga <strong>topologia física</strong> (como o cabo corre) de <strong>topologia lógica</strong> (como o sinal trafega): a Ethernet moderna é fisicamente estrela e logicamente ponto a ponto comutado.</p>\n\n<h2>4. Comutação e transmissão</h2>\n<ul>\n<li><strong>Comutação de circuitos</strong> (telefonia) x <strong>comutação de pacotes</strong> (internet) x comutação de mensagens;</li>\n<li><strong>Simplex</strong>, <strong>half-duplex</strong> (revezamento; hub e Wi-Fi) e <strong>full-duplex</strong> (simultâneo; switch);</li>\n<li><strong>Unicast</strong>, <strong>broadcast</strong>, <strong>multicast</strong> e <strong>anycast</strong>;</li>\n<li><strong>Banda passante x throughput x latência x jitter</strong>: banda é a capacidade nominal; throughput é o efetivamente entregue; latência é o atraso; jitter é a variação da latência (crítico em VoIP e vídeo).</li>\n</ul>\n\n<h2>5. Redes sem fio — fundamentos</h2>\n<p>Modos <strong>infraestrutura</strong> (com AP) e <strong>ad hoc</strong> (IBSS). Conjunto <strong>BSS</strong> (um AP), <strong>ESS</strong> (vários APs com o mesmo SSID) e <strong>BSSID</strong> (MAC do rádio do AP). Acesso ao meio por <strong>CSMA/CA</strong> — o Wi-Fi não detecta colisão, ele a <em>evita</em> (problema do <em>terminal oculto</em>, resolvido com RTS/CTS). Bandas 2,4 GHz (maior alcance, mais interferência, 3 canais não sobrepostos: 1, 6, 11), 5 GHz (mais canais e banda) e 6 GHz (Wi-Fi 6E/7).</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que Wi-Fi usa CSMA/CD — usa <strong>CSMA/CA</strong>.</li>\n<li>Trocar monomodo (longa distância) por multimodo (curta).</li>\n<li>Confundir topologia física com lógica.</li>\n<li>Afirmar que o limite do par trançado é 100 metros <em>por rede</em> — é por <strong>segmento</strong>.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Sobre os meios físicos de transmissão, assinale a alternativa correta.",
+          "options": [
+            "A fibra multimodo é indicada para enlaces de longa distância, superiores a 40 km, por utilizar fonte laser.",
+            "A fibra monomodo possui núcleo de menor diâmetro e é indicada para longas distâncias, enquanto a multimodo atende distâncias curtas, típicas de backbone interno.",
+            "O par trançado categoria 6 suporta 10 Gbps a 100 metros em qualquer condição.",
+            "O cabo coaxial é imune a interferências eletromagnéticas.",
+            "A fibra óptica é mais suscetível a interferência eletromagnética que o par trançado."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Meios de transmissão",
+          "tags": [
+            "fibra",
+            "cabeamento"
+          ],
+          "comment": "Mono = um modo de propagação, núcleo estreito, laser, longa distância. Multi = vários modos, dispersão modal limita o alcance.",
+          "justification": "A monomodo tem núcleo de ~9 µm e alcança dezenas de quilômetros; a multimodo (50/62,5 µm) atende centenas de metros. O Cat6 entrega 10 Gbps apenas até cerca de 55 m — para 100 m é preciso Cat6a. A fibra é imune a EMI."
+        },
+        {
+          "statement": "Em redes locais sem fio padrão IEEE 802.11, o método de acesso ao meio utilizado é o:",
+          "options": [
+            "CSMA/CD, com detecção de colisão.",
+            "CSMA/CA, com prevenção de colisão.",
+            "Token passing.",
+            "TDMA puro.",
+            "Polling centralizado obrigatório."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Acesso ao meio",
+          "tags": [
+            "CSMA/CA",
+            "802.11",
+            "Wi-Fi"
+          ],
+          "comment": "A estação de rádio não consegue transmitir e escutar ao mesmo tempo, por isso não detecta colisão — apenas a evita.",
+          "justification": "O 802.11 usa CSMA/CA, com espera aleatória e, opcionalmente, RTS/CTS para mitigar o problema do terminal oculto. O CSMA/CD é da Ethernet legada em meio compartilhado."
+        },
+        {
+          "statement": "A variação da latência entre pacotes sucessivos, especialmente crítica para aplicações de voz e vídeo em tempo real, é denominada:",
+          "options": [
+            "Throughput.",
+            "Largura de banda.",
+            "Jitter.",
+            "Atenuação.",
+            "Crosstalk."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Desempenho de rede",
+          "tags": [
+            "jitter",
+            "QoS"
+          ],
+          "comment": "Mitigação típica: buffer de jitter no receptor e políticas de QoS priorizando o tráfego sensível.",
+          "justification": "Jitter é a variação do atraso. Atenuação é a perda de intensidade do sinal ao longo do meio; crosstalk é a interferência entre pares adjacentes."
+        }
+      ]
+    },
+    {
+      "subject": "Interconexão de Redes",
+      "summary": "\n<h1>Interconexão de redes</h1>\n\n<h2>1. Dispositivos por camada</h2>\n<table><tbody>\n<tr><td><strong>Repetidor / Hub</strong></td><td>Camada 1</td><td>Regenera o sinal; <strong>um único domínio de colisão e de broadcast</strong>; half-duplex</td></tr>\n<tr><td><strong>Bridge / Switch</strong></td><td>Camada 2</td><td>Comuta por <strong>MAC</strong>; <strong>cada porta é um domínio de colisão</strong>; a VLAN delimita o domínio de broadcast; full-duplex</td></tr>\n<tr><td><strong>Roteador</strong></td><td>Camada 3</td><td>Encaminha por <strong>IP</strong>; <strong>separa domínios de broadcast</strong>; não propaga broadcast por padrão</td></tr>\n<tr><td><strong>Switch L3</strong></td><td>Camadas 2 e 3</td><td>Roteamento entre VLANs em ASIC, alta velocidade</td></tr>\n<tr><td><strong>Gateway</strong></td><td>Até a 7</td><td>Traduz protocolos e formatos distintos</td></tr>\n<tr><td><strong>Access Point</strong></td><td>Camadas 1 e 2</td><td>Ponte entre meio sem fio e cabeado</td></tr>\n</tbody></table>\n<div data-callout=\"info\"><p>Frase-resumo de prova: <strong>switch segmenta colisão; roteador segmenta broadcast</strong>. Um switch de 24 portas cria 24 domínios de colisão e 1 domínio de broadcast (se houver apenas uma VLAN).</p></div>\n\n<h2>2. Operação do switch</h2>\n<p>Aprende MACs de origem, monta a <strong>tabela CAM</strong>, encaminha por destino, inunda (<em>flooding</em>) quando o destino é desconhecido ou broadcast. Métodos de comutação: <strong>store-and-forward</strong> (recebe todo o quadro, valida FCS — mais latência, sem erro), <strong>cut-through</strong> (encaminha após ler o destino — menor latência) e <strong>fragment-free</strong> (lê os primeiros 64 bytes).</p>\n<p><strong>STP (802.1D)</strong> e evoluções (RSTP 802.1w, MSTP 802.1s) evitam loops de camada 2: elegem a <em>root bridge</em> pelo menor <em>bridge ID</em> e bloqueiam portas redundantes. <strong>Agregação de enlaces</strong>: 802.3ad/LACP.</p>\n\n<h2>3. VLANs</h2>\n<ul>\n<li>Segmentação lógica independente da topologia física; cada VLAN é um <strong>domínio de broadcast</strong> e, tipicamente, uma sub-rede IP;</li>\n<li><strong>Porta de acesso</strong> (um único VLAN, quadro sem tag) x <strong>porta trunk</strong> (várias VLANs, quadros marcados com <strong>802.1Q</strong> — tag de 4 bytes com <strong>VLAN ID de 12 bits</strong>, permitindo 4.094 VLANs úteis);</li>\n<li><strong>VLAN nativa</strong> trafega sem tag no trunk — mude do padrão (VLAN 1) para mitigar <em>double tagging</em>;</li>\n<li><strong>Roteamento inter-VLAN</strong>: router-on-a-stick (subinterfaces) ou switch L3 com SVI;</li>\n<li>Benefícios: segurança, contenção de broadcast, flexibilidade, QoS.</li>\n</ul>\n\n<h2>4. Cabeamento estruturado (ABNT NBR 14565 / ANSI-TIA-568)</h2>\n<table><tbody>\n<tr><td><strong>Entrada do edifício</strong></td><td>Chegada das operadoras</td></tr>\n<tr><td><strong>Sala de equipamentos</strong></td><td>Equipamentos ativos principais</td></tr>\n<tr><td><strong>Backbone (cabeação vertical)</strong></td><td>Interliga salas de telecomunicações; normalmente fibra</td></tr>\n<tr><td><strong>Sala de telecomunicações</strong></td><td>Distribuidor de piso, patch panels</td></tr>\n<tr><td><strong>Cabeação horizontal</strong></td><td>Da sala de telecom à área de trabalho: <strong>máximo de 90 m</strong> de cabo fixo + 10 m de patch cords = <strong>100 m</strong></td></tr>\n<tr><td><strong>Área de trabalho</strong></td><td>Tomada de telecomunicações e cordão até o equipamento</td></tr>\n</tbody></table>\n<p>Pinagem: <strong>T568A</strong> e <strong>T568B</strong>. Cabo <strong>direto</strong> usa o mesmo padrão nas duas pontas; cabo <strong>crossover</strong> usa padrões diferentes (hoje dispensável graças ao <strong>Auto-MDI/MDIX</strong>).</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que o switch separa domínios de broadcast — quem separa é o <strong>roteador</strong> (ou a VLAN).</li>\n<li>Afirmar que hub opera em full-duplex.</li>\n<li>Trocar os 90 m da cabeação horizontal pelos 100 m do canal completo.</li>\n<li>Confundir 802.1Q (VLAN tagging) com 802.1X (controle de acesso) e 802.1D (STP).</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Um switch Ethernet de 24 portas, com todas as portas na mesma VLAN, cria:",
+          "options": [
+            "24 domínios de broadcast e 1 domínio de colisão.",
+            "1 domínio de broadcast e 24 domínios de colisão.",
+            "1 domínio de broadcast e 1 domínio de colisão.",
+            "24 domínios de broadcast e 24 domínios de colisão.",
+            "Nenhum domínio de colisão, pois a Ethernet moderna não sofre colisões."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Domínios de colisão e broadcast",
+          "tags": [
+            "switch",
+            "VLAN",
+            "camada 2"
+          ],
+          "comment": "Regra: switch segmenta colisão (por porta); roteador ou VLAN segmenta broadcast.",
+          "justification": "Cada porta do switch é um domínio de colisão independente. Sem segmentação por VLAN, todas as portas compartilham um único domínio de broadcast."
+        },
+        {
+          "statement": "A respeito do padrão IEEE 802.1Q, assinale a alternativa correta.",
+          "options": [
+            "Define o controle de acesso à rede baseado em porta, com autenticação via RADIUS.",
+            "Define o protocolo Spanning Tree para prevenção de loops de camada 2.",
+            "Define a marcação (tagging) de quadros para identificação de VLANs, com campo de VLAN ID de 12 bits.",
+            "Define a agregação de enlaces por meio do protocolo LACP.",
+            "Define o padrão de cabeamento estruturado para redes locais."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "VLANs",
+          "tags": [
+            "802.1Q",
+            "VLAN",
+            "trunk"
+          ],
+          "comment": "Família 802.1: .1D STP, .1Q VLAN, .1X NAC, .1w RSTP, .1s MSTP, .1AX agregação.",
+          "justification": "O 802.1Q insere uma tag de 4 bytes no quadro Ethernet, com VLAN ID de 12 bits (4.094 VLANs utilizáveis). O 802.1X trata de controle de acesso e o 802.1D, do STP."
+        },
+        {
+          "statement": "Segundo as normas de cabeamento estruturado, o comprimento máximo do cabo fixo da cabeação horizontal, entre o distribuidor de piso e a tomada de telecomunicações, é de:",
+          "options": [
+            "100 metros.",
+            "90 metros.",
+            "55 metros.",
+            "10 metros.",
+            "150 metros."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Cabeamento estruturado",
+          "tags": [
+            "NBR 14565",
+            "TIA-568"
+          ],
+          "comment": "90 m de cabo fixo + até 10 m somando os patch cords das duas pontas = canal de 100 m.",
+          "justification": "A norma prevê 90 m para o cabeamento permanente (permanent link) e até 10 m de cordões, totalizando o canal de 100 m."
+        }
+      ]
+    },
+    {
+      "subject": "Modelo de Referência OSI",
+      "summary": "\n<h1>Modelo de referência OSI</h1>\n<p>Padrão da ISO (ISO/IEC 7498-1) com <strong>7 camadas</strong>. É modelo <strong>de referência</strong>, não implementação. Mnemônico de baixo para cima: <em>Físico, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação</em>.</p>\n\n<h2>1. As sete camadas</h2>\n<table><tbody>\n<tr><td><strong>7 — Aplicação</strong></td><td>Interface com o usuário e serviços de rede</td><td>HTTP, SMTP, FTP, DNS, SNMP</td></tr>\n<tr><td><strong>6 — Apresentação</strong></td><td><strong>Tradução, criptografia e compressão</strong>; sintaxe dos dados</td><td>TLS/SSL (didaticamente), JPEG, ASCII, MIME</td></tr>\n<tr><td><strong>5 — Sessão</strong></td><td>Estabelece, gerencia e encerra sessões; <strong>checkpoints</strong> e diálogo</td><td>NetBIOS, RPC, PPTP</td></tr>\n<tr><td><strong>4 — Transporte</strong></td><td>Comunicação fim a fim, <strong>segmentação</strong>, controle de fluxo e de erro, portas</td><td>TCP, UDP · PDU: <strong>segmento</strong> / datagrama</td></tr>\n<tr><td><strong>3 — Rede</strong></td><td><strong>Endereçamento lógico e roteamento</strong>, fragmentação</td><td>IP, ICMP, IPsec, OSPF, BGP · PDU: <strong>pacote</strong></td></tr>\n<tr><td><strong>2 — Enlace</strong></td><td>Endereçamento <strong>físico (MAC)</strong>, controle de acesso ao meio, detecção de erro (FCS). Subcamadas <strong>LLC</strong> e <strong>MAC</strong></td><td>Ethernet, PPP, ARP (fronteira 2/3), switch · PDU: <strong>quadro</strong></td></tr>\n<tr><td><strong>1 — Física</strong></td><td>Bits, sinais, conectores, meio</td><td>Cabos, hub, repetidor, RJ-45 · PDU: <strong>bit</strong></td></tr>\n</tbody></table>\n\n<h2>2. Encapsulamento</h2>\n<p>Dado → <strong>segmento</strong> (cabeçalho TCP/UDP) → <strong>pacote</strong> (cabeçalho IP) → <strong>quadro</strong> (cabeçalho e trailer Ethernet) → <strong>bits</strong>. No destino ocorre o desencapsulamento na ordem inversa. Cada camada só conversa com a camada equivalente do outro host (<em>comunicação par a par</em>).</p>\n\n<h2>3. OSI x TCP/IP</h2>\n<table><tbody>\n<tr><td><strong>OSI (7)</strong></td><td><strong>TCP/IP (4 camadas, RFC 1122)</strong></td></tr>\n<tr><td>Aplicação, Apresentação, Sessão</td><td><strong>Aplicação</strong></td></tr>\n<tr><td>Transporte</td><td><strong>Transporte</strong></td></tr>\n<tr><td>Rede</td><td><strong>Internet</strong></td></tr>\n<tr><td>Enlace, Física</td><td><strong>Acesso à rede / Interface de rede</strong></td></tr>\n</tbody></table>\n<p>Alguns autores apresentam o TCP/IP em <strong>5 camadas</strong>, separando enlace e física. Leia o enunciado: se a questão citar \"modelo TCP/IP de quatro camadas\", siga a RFC 1122.</p>\n\n<h2>4. Onde cada dispositivo atua</h2>\n<p>Hub e repetidor (1) · switch e bridge (2) · roteador e switch L3 (3) · firewall stateful (3–4) · NGFW, WAF e proxy (7) · gateway (múltiplas).</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Inverter Sessão (5) e Apresentação (6).</li>\n<li>Atribuir criptografia à camada de sessão — é <strong>apresentação</strong>.</li>\n<li>Chamar de \"pacote\" a PDU da camada 2 — é <strong>quadro</strong>.</li>\n<li>Dizer que o modelo OSI foi o adotado na internet — a internet usa <strong>TCP/IP</strong>; o OSI é referência didática e de projeto.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "No modelo de referência OSI, as funções de tradução de formatos, compressão e criptografia dos dados são atribuídas à camada de:",
+          "options": [
+            "Aplicação.",
+            "Apresentação.",
+            "Sessão.",
+            "Transporte.",
+            "Enlace de dados."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Camadas OSI",
+          "tags": [
+            "OSI",
+            "apresentação"
+          ],
+          "comment": "Apresentação cuida da SINTAXE dos dados; sessão cuida do DIÁLOGO entre as partes.",
+          "justification": "A camada 6 (Apresentação) é responsável pela representação, tradução, compressão e criptografia dos dados."
+        },
+        {
+          "statement": "A unidade de dados de protocolo (PDU) da camada de enlace de dados do modelo OSI é o:",
+          "options": [
+            "Bit.",
+            "Quadro (frame).",
+            "Pacote.",
+            "Segmento.",
+            "Datagrama."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "PDUs",
+          "tags": [
+            "OSI",
+            "encapsulamento"
+          ],
+          "comment": "Sequência: bit (1), quadro (2), pacote (3), segmento (4), dados (5-7).",
+          "justification": "A PDU da camada 2 é o quadro; da camada 3, o pacote; da camada 4, o segmento (TCP) ou datagrama (UDP)."
+        },
+        {
+          "statement": "Ao comparar o modelo OSI com a arquitetura TCP/IP de quatro camadas, é correto afirmar que:",
+          "options": [
+            "A camada de Aplicação do TCP/IP corresponde às camadas de Aplicação, Apresentação e Sessão do OSI.",
+            "A camada de Internet do TCP/IP corresponde à camada de Transporte do OSI.",
+            "O modelo TCP/IP possui uma camada de Apresentação equivalente à do OSI.",
+            "A camada de Acesso à Rede do TCP/IP corresponde apenas à camada Física do OSI.",
+            "O modelo OSI possui quatro camadas e o TCP/IP, sete."
+          ],
+          "correct": 0,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "OSI x TCP/IP",
+          "tags": [
+            "OSI",
+            "TCP/IP"
+          ],
+          "comment": "O TCP/IP condensa as três camadas superiores em uma e as duas inferiores em outra.",
+          "justification": "A camada de Aplicação do TCP/IP agrega as camadas 5, 6 e 7 do OSI; a de Acesso à Rede agrega as camadas 1 e 2."
+        }
+      ]
+    },
+    {
+      "subject": "Padrões IEEE 802",
+      "summary": "\n<h1>Padrões IEEE 802</h1>\n\n<h2>1. Mapa da família</h2>\n<table><tbody>\n<tr><td><strong>802.1</strong></td><td>Gerenciamento e arquitetura de rede. <strong>802.1D</strong> STP · <strong>802.1Q</strong> VLAN tagging · <strong>802.1X</strong> controle de acesso por porta · <strong>802.1w</strong> RSTP · <strong>802.1s</strong> MSTP · <strong>802.1AX</strong> agregação de enlaces (LACP) · <strong>802.1AE</strong> MACsec</td></tr>\n<tr><td><strong>802.2</strong></td><td>Subcamada <strong>LLC</strong> (Logical Link Control)</td></tr>\n<tr><td><strong>802.3</strong></td><td><strong>Ethernet</strong> — CSMA/CD em meio compartilhado</td></tr>\n<tr><td><strong>802.11</strong></td><td><strong>Wi-Fi</strong> — WLAN, CSMA/CA</td></tr>\n<tr><td><strong>802.15</strong></td><td>WPAN: <strong>802.15.1</strong> Bluetooth · <strong>802.15.4</strong> Zigbee</td></tr>\n<tr><td><strong>802.16</strong></td><td>WiMAX (banda larga sem fio metropolitana)</td></tr>\n<tr><td><strong>802.3af / 802.3at / 802.3bt</strong></td><td>PoE (15,4 W) · PoE+ (30 W) · PoE++ (60/100 W)</td></tr>\n</tbody></table>\n\n<h2>2. IEEE 802.3 — Ethernet</h2>\n<p>Quadro Ethernet: preâmbulo + SFD, <strong>MAC destino (6 bytes)</strong>, <strong>MAC origem (6 bytes)</strong>, EtherType/tamanho (2), dados (46 a 1500 — <strong>MTU padrão de 1500 bytes</strong>) e <strong>FCS (4 bytes, CRC-32)</strong>. Quadro mínimo: 64 bytes; máximo: 1518 (1522 com tag 802.1Q). <strong>Jumbo frames</strong> chegam a 9000 bytes.</p>\n<p>O <strong>endereço MAC</strong> tem 48 bits: os 24 primeiros são o <strong>OUI</strong> do fabricante. Bit menos significativo do primeiro octeto indica unicast (0) ou multicast (1); broadcast é FF:FF:FF:FF:FF:FF.</p>\n<table><tbody>\n<tr><td>10BASE-T</td><td>10 Mbps, Cat3+, 100 m</td></tr>\n<tr><td>100BASE-TX</td><td>Fast Ethernet, Cat5, 100 m</td></tr>\n<tr><td>1000BASE-T</td><td>Gigabit, Cat5e, 4 pares, 100 m</td></tr>\n<tr><td>10GBASE-T</td><td>10 Gbps, Cat6a a 100 m (Cat6 a ~55 m)</td></tr>\n<tr><td>1000BASE-LX / SX</td><td>Gigabit em fibra mono / multimodo</td></tr>\n</tbody></table>\n\n<h2>3. IEEE 802.11 — as gerações do edital</h2>\n<table><tbody>\n<tr><td><strong>802.11a</strong></td><td>5 GHz</td><td>54 Mbps</td><td>OFDM. Não interopera com b/g</td></tr>\n<tr><td><strong>802.11b</strong></td><td>2,4 GHz</td><td>11 Mbps</td><td>DSSS</td></tr>\n<tr><td><strong>802.11g</strong></td><td>2,4 GHz</td><td>54 Mbps</td><td>OFDM; compatível com b</td></tr>\n<tr><td><strong>802.11n (Wi-Fi 4)</strong></td><td>2,4 e 5 GHz</td><td>até 600 Mbps</td><td><strong>MIMO</strong>, canais de 40 MHz, agregação de quadros</td></tr>\n<tr><td><strong>802.11ac (Wi-Fi 5)</strong></td><td><strong>Somente 5 GHz</strong></td><td>Gigabit+</td><td>Canais de 80/160 MHz, 256-QAM, <strong>MU-MIMO</strong> (downlink)</td></tr>\n</tbody></table>\n<p>Além do edital, para contexto: <strong>802.11ax (Wi-Fi 6/6E)</strong> traz OFDMA, MU-MIMO bidirecional, TWT e a banda de 6 GHz; <strong>802.11be (Wi-Fi 7)</strong> traz 320 MHz e Multi-Link Operation. Segurança: <strong>802.11i</strong> (WPA2, CCMP/AES) e <strong>802.11w</strong> (proteção de quadros de gerenciamento).</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que o 802.11ac opera em 2,4 GHz — opera <strong>somente em 5 GHz</strong>.</li>\n<li>Confundir 802.11a (5 GHz, 54 Mbps) com 802.11b (2,4 GHz, 11 Mbps).</li>\n<li>Trocar 802.1Q (VLAN) por 802.1X (NAC).</li>\n<li>Atribuir CSMA/CD ao 802.11.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Sobre os padrões IEEE 802.11, assinale a alternativa correta.",
+          "options": [
+            "O 802.11b opera na faixa de 5 GHz com taxa máxima de 54 Mbps.",
+            "O 802.11ac opera exclusivamente na faixa de 5 GHz e introduziu MU-MIMO no sentido de downlink.",
+            "O 802.11n opera exclusivamente na faixa de 2,4 GHz.",
+            "O 802.11g é incompatível com equipamentos 802.11b.",
+            "O 802.11a e o 802.11b são interoperáveis por operarem na mesma faixa de frequência."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "802.11",
+          "tags": [
+            "802.11ac",
+            "Wi-Fi",
+            "IEEE"
+          ],
+          "comment": "O 802.11n é o único da lista que é dual band; o ac é só 5 GHz e o a/b/g são de banda única.",
+          "justification": "O 802.11ac (Wi-Fi 5) opera apenas em 5 GHz, com canais de até 160 MHz, 256-QAM e MU-MIMO em downlink. O 802.11b é 2,4 GHz/11 Mbps; o 802.11n é dual band; g e b são compatíveis por compartilharem a faixa de 2,4 GHz."
+        },
+        {
+          "statement": "O campo de verificação de erros presente ao final do quadro Ethernet (IEEE 802.3), calculado por CRC-32 e com 4 bytes de comprimento, é o:",
+          "options": [
+            "Preâmbulo.",
+            "EtherType.",
+            "FCS (Frame Check Sequence).",
+            "SFD (Start Frame Delimiter).",
+            "Payload."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Quadro Ethernet",
+          "tags": [
+            "802.3",
+            "Ethernet",
+            "FCS"
+          ],
+          "comment": "A camada de enlace DETECTA erro pelo FCS, mas não corrige — o quadro é simplesmente descartado.",
+          "justification": "O FCS é o trailer de 4 bytes do quadro Ethernet, calculado por CRC-32 para detecção de erros de transmissão."
+        },
+        {
+          "statement": "O padrão IEEE responsável por definir o fornecimento de energia elétrica por meio do cabeamento Ethernet (Power over Ethernet) é o:",
+          "options": [
+            "802.1X.",
+            "802.3af/at/bt.",
+            "802.11ac.",
+            "802.15.4.",
+            "802.1AE."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Família 802",
+          "tags": [
+            "PoE",
+            "IEEE 802.3"
+          ],
+          "comment": "PoE 15,4 W · PoE+ 30 W · PoE++ 60 W (tipo 3) e 100 W (tipo 4). Usado em APs, câmeras e telefones IP.",
+          "justification": "As emendas 802.3af, 802.3at e 802.3bt definem PoE, PoE+ e PoE++, respectivamente. O 802.1AE é o MACsec e o 802.15.4, o Zigbee."
+        }
+      ]
+    },
+    {
+      "subject": "Arquitetura TCP/IP",
+      "summary": "\n<h1>Arquitetura TCP/IP</h1>\n\n<h2>1. Camada de rede — IPv4</h2>\n<p>Endereço de <strong>32 bits</strong>. Cabeçalho de 20 bytes (sem opções) com <strong>TTL</strong>, protocolo, checksum de cabeçalho, identificação e flags de fragmentação.</p>\n<table><tbody>\n<tr><td>Classe A</td><td>1–126</td><td>/8</td></tr>\n<tr><td>Classe B</td><td>128–191</td><td>/16</td></tr>\n<tr><td>Classe C</td><td>192–223</td><td>/24</td></tr>\n<tr><td>Classe D</td><td>224–239</td><td>Multicast</td></tr>\n<tr><td>Classe E</td><td>240–255</td><td>Experimental</td></tr>\n</tbody></table>\n<p><strong>Privados (RFC 1918)</strong>: 10.0.0.0/8 · 172.16.0.0/12 · 192.168.0.0/16. <strong>Loopback</strong> 127.0.0.0/8. <strong>APIPA/link-local</strong> 169.254.0.0/16. <strong>CGNAT</strong> 100.64.0.0/10.</p>\n<p><strong>Sub-redes</strong>: hosts válidos = 2<sup>n</sup> − 2 (menos rede e broadcast), onde n é o número de bits de host. Exemplos: /24 → 254 hosts · /25 → 126 · /26 → 62 · /27 → 30 · /28 → 14 · /30 → 2 (enlaces ponto a ponto). <strong>CIDR</strong> e <strong>VLSM</strong> permitem máscaras de tamanho variável e sumarização de rotas.</p>\n\n<h2>2. IPv6</h2>\n<ul>\n<li><strong>128 bits</strong>, notação hexadecimal em 8 grupos; <code>::</code> comprime <em>uma única</em> sequência de zeros;</li>\n<li>Cabeçalho <strong>fixo de 40 bytes</strong>, <strong>sem checksum</strong> e <strong>sem fragmentação por roteadores</strong> (só pela origem, via cabeçalho de extensão);</li>\n<li><strong>Não existe broadcast</strong> — foi substituído por <strong>multicast</strong> e <strong>anycast</strong>;</li>\n<li>Tipos: <strong>unicast global</strong> (2000::/3), <strong>link-local</strong> (<strong>fe80::/10</strong>), <strong>única local</strong> (fc00::/7), <strong>multicast</strong> (ff00::/8), loopback ::1;</li>\n<li><strong>NDP</strong> (ICMPv6) substitui o ARP; <strong>SLAAC</strong> permite autoconfiguração sem DHCP;</li>\n<li>Transição: pilha dupla, tunelamento (6to4, Teredo) e tradução (NAT64/DNS64).</li>\n</ul>\n\n<h2>3. IPsec</h2>\n<p>Nativo na arquitetura IPv6 e opcional no IPv4. <strong>AH</strong> (protocolo 51): integridade e autenticação, sem cifra. <strong>ESP</strong> (protocolo 50): confidencialidade, integridade e autenticação. Modos <strong>transporte</strong> e <strong>túnel</strong>. Negociação por <strong>IKE</strong> (UDP 500; NAT-T em UDP 4500), com Diffie-Hellman e PFS. SAs são unidirecionais, identificadas pelo <strong>SPI</strong>.</p>\n\n<h2>4. Roteamento</h2>\n<table><tbody>\n<tr><td><strong>RIP</strong></td><td>Vetor de distância</td><td>Métrica: saltos (máx. 15)</td><td>IGP</td></tr>\n<tr><td><strong>OSPF</strong></td><td><strong>Estado de enlace</strong></td><td>Custo (baseado em banda); áreas; algoritmo de Dijkstra</td><td>IGP</td></tr>\n<tr><td><strong>EIGRP</strong></td><td>Híbrido</td><td>Banda e atraso</td><td>IGP (Cisco)</td></tr>\n<tr><td><strong>IS-IS</strong></td><td>Estado de enlace</td><td>Comum em operadoras</td><td>IGP</td></tr>\n<tr><td><strong>BGP</strong></td><td>Vetor de caminho</td><td>Atributos e políticas entre <strong>sistemas autônomos</strong></td><td><strong>EGP</strong> — o protocolo da internet</td></tr>\n</tbody></table>\n<p>Decisão de encaminhamento: <strong>prefixo mais longo (longest prefix match)</strong> → distância administrativa → métrica.</p>\n\n<h2>5. Camada de transporte</h2>\n<table><tbody>\n<tr><td></td><td><strong>TCP</strong></td><td><strong>UDP</strong></td></tr>\n<tr><td>Conexão</td><td>Orientado a conexão — <strong>three-way handshake</strong> (SYN, SYN-ACK, ACK)</td><td>Sem conexão</td></tr>\n<tr><td>Confiabilidade</td><td>ACK, retransmissão, ordenação</td><td>Melhor esforço</td></tr>\n<tr><td>Controle</td><td>Fluxo (janela deslizante) e congestionamento (slow start, AIMD)</td><td>Nenhum</td></tr>\n<tr><td>Cabeçalho</td><td>20 bytes (mínimo)</td><td><strong>8 bytes</strong></td></tr>\n<tr><td>Uso</td><td>HTTP, SSH, SMTP, FTP</td><td>DNS (consulta), DHCP, SNMP, VoIP, streaming</td></tr>\n</tbody></table>\n<p>Encerramento TCP: <strong>four-way handshake</strong> (FIN, ACK, FIN, ACK). Flags: SYN, ACK, FIN, RST, PSH, URG.</p>\n\n<h2>6. Camada de aplicação — portas</h2>\n<table><tbody>\n<tr><td>FTP 20/21 (TCP)</td><td>SSH/SFTP 22</td><td>Telnet 23</td><td>SMTP 25 (587 submissão, 465 SMTPS)</td></tr>\n<tr><td>DNS 53 (UDP e TCP)</td><td>DHCP 67/68 (UDP)</td><td>HTTP 80</td><td>POP3 110 (995 seguro)</td></tr>\n<tr><td>NTP 123 (UDP)</td><td>IMAP 143 (993 seguro)</td><td>SNMP 161/162 (UDP)</td><td>LDAP 389 (636 LDAPS)</td></tr>\n<tr><td>HTTPS 443</td><td>SMB 445</td><td>Syslog 514 (UDP)</td><td><strong>RDP 3389</strong></td></tr>\n</tbody></table>\n<p><strong>DNS</strong>: hierárquico (raiz → TLD → autoritativo), com resolvedores recursivos e cache. Registros: <strong>A</strong> (IPv4), <strong>AAAA</strong> (IPv6), <strong>CNAME</strong>, <strong>MX</strong>, <strong>NS</strong>, <strong>PTR</strong> (reverso), <strong>SOA</strong>, <strong>TXT</strong> (SPF, DKIM, DMARC). Usa UDP 53 para consultas e <strong>TCP 53</strong> para transferência de zona e respostas grandes. <strong>DNSSEC</strong> garante integridade e autenticidade (não confidencialidade); <strong>DoT/DoH</strong> garantem confidencialidade.</p>\n<p><strong>SSL/TLS</strong>: TLS 1.2 e <strong>TLS 1.3</strong> (handshake de 1-RTT, apenas cifras AEAD, PFS obrigatório, remoção de RSA como troca de chaves). SSL 2.0/3.0 e TLS 1.0/1.1 estão obsoletos.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que o IPv6 tem broadcast — <strong>não tem</strong>.</li>\n<li>Errar a conta de hosts: lembre-se do <strong>−2</strong>.</li>\n<li>Classificar o BGP como IGP — é <strong>EGP</strong>.</li>\n<li>Afirmar que o DNS usa apenas UDP.</li>\n<li>Trocar o handshake de três vias (abertura) pelo de quatro (encerramento).</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "A sub-rede 192.168.10.64/27 comporta quantos endereços IP atribuíveis a hosts?",
+          "options": [
+            "32",
+            "30",
+            "62",
+            "14",
+            "16"
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Endereçamento IPv4",
+          "tags": [
+            "sub-rede",
+            "CIDR",
+            "IPv4"
+          ],
+          "comment": "Cálculo: 32 − 27 = 5 bits de host → 2^5 = 32 endereços − 2 (rede e broadcast) = 30.",
+          "justification": "Em /27 restam 5 bits de host, totalizando 32 endereços, dos quais o primeiro (192.168.10.64) é o da rede e o último (192.168.10.95), o de broadcast — sobram 30 utilizáveis."
+        },
+        {
+          "statement": "Sobre o protocolo IPv6, assinale a alternativa correta.",
+          "options": [
+            "Utiliza endereços de 64 bits e mantém o endereçamento de broadcast do IPv4.",
+            "Utiliza endereços de 128 bits, possui cabeçalho fixo de 40 bytes, não possui broadcast e substitui o ARP pelo Neighbor Discovery Protocol.",
+            "Permite a fragmentação de pacotes por roteadores intermediários, assim como o IPv4.",
+            "Mantém o campo de checksum no cabeçalho para verificação de integridade.",
+            "Não admite configuração automática de endereços, dependendo obrigatoriamente de DHCPv6."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "IPv6",
+          "tags": [
+            "IPv6",
+            "NDP",
+            "SLAAC"
+          ],
+          "comment": "Simplificações do IPv6: cabeçalho fixo, sem checksum, sem fragmentação em trânsito, sem broadcast.",
+          "justification": "O IPv6 usa 128 bits e cabeçalho básico fixo de 40 bytes, sem checksum. A fragmentação é feita apenas na origem. O broadcast foi substituído por multicast e anycast, e o SLAAC permite autoconfiguração sem DHCP."
+        },
+        {
+          "statement": "Assinale a alternativa que associa corretamente o protocolo à sua porta padrão.",
+          "options": [
+            "RDP — 3306/TCP.",
+            "SNMP — 161/UDP para consultas e 162/UDP para traps.",
+            "LDAPS — 389/TCP.",
+            "IMAP seguro (IMAPS) — 995/TCP.",
+            "Syslog — 443/TCP."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Portas",
+          "tags": [
+            "portas",
+            "SNMP",
+            "camada de aplicação"
+          ],
+          "comment": "RDP é 3389 (3306 é MySQL); LDAPS é 636; IMAPS é 993 (995 é POP3S); Syslog é 514/UDP.",
+          "justification": "O SNMP usa a porta 161/UDP para requisições do gerente ao agente e a 162/UDP para o recebimento de traps e informs."
+        },
+        {
+          "statement": "A respeito dos protocolos de roteamento, assinale a alternativa correta.",
+          "options": [
+            "O OSPF é um protocolo de vetor de distância que utiliza a contagem de saltos como métrica.",
+            "O BGP é um protocolo de roteamento interno (IGP), utilizado dentro de um mesmo sistema autônomo.",
+            "O OSPF é um protocolo de estado de enlace, baseado no algoritmo de Dijkstra, que utiliza custo relacionado à largura de banda e organiza a rede em áreas.",
+            "O RIP não possui limite de contagem de saltos.",
+            "O BGP utiliza exclusivamente a contagem de saltos para seleção de rotas."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Roteamento",
+          "tags": [
+            "OSPF",
+            "BGP",
+            "RIP"
+          ],
+          "comment": "BGP é vetor de CAMINHO (path vector) e decide por atributos e políticas — não por métrica simples.",
+          "justification": "O OSPF é link-state, calcula a árvore de caminhos mínimos por Dijkstra e usa custo baseado em banda. O RIP é vetor de distância com limite de 15 saltos e o BGP é o EGP da internet."
+        }
+      ]
+    },
+    {
+      "subject": "Gerência de Redes",
+      "summary": "\n<h1>Gerência de redes — SNMP e RMON</h1>\n\n<h2>1. Modelo FCAPS (ISO/OSI)</h2>\n<table><tbody>\n<tr><td><strong>F</strong>ault</td><td>Detecção, isolamento e correção de falhas</td></tr>\n<tr><td><strong>C</strong>onfiguration</td><td>Inventário, configuração e controle de versões</td></tr>\n<tr><td><strong>A</strong>ccounting</td><td>Contabilização e cobrança pelo uso</td></tr>\n<tr><td><strong>P</strong>erformance</td><td>Desempenho, capacidade, SLA</td></tr>\n<tr><td><strong>S</strong>ecurity</td><td>Controle de acesso e proteção dos recursos gerenciados</td></tr>\n</tbody></table>\n\n<h2>2. SNMP — arquitetura</h2>\n<p>Componentes: <strong>gerente (NMS)</strong>, <strong>agente</strong> (no dispositivo), <strong>MIB</strong> (base de informações, estruturada em árvore hierárquica) e <strong>OID</strong> (identificador único do objeto). A estrutura é definida pela <strong>SMI</strong> e codificada em <strong>ASN.1/BER</strong>. A <strong>MIB-II</strong> (RFC 1213) é a base padrão.</p>\n<table><tbody>\n<tr><td><strong>GetRequest</strong></td><td>Gerente lê um objeto</td></tr>\n<tr><td><strong>GetNextRequest</strong></td><td>Percorre a árvore (walk)</td></tr>\n<tr><td><strong>GetBulkRequest</strong></td><td>Leitura em massa — <strong>introduzido na v2</strong></td></tr>\n<tr><td><strong>SetRequest</strong></td><td>Gerente escreve/altera um objeto</td></tr>\n<tr><td><strong>Response</strong></td><td>Resposta do agente</td></tr>\n<tr><td><strong>Trap</strong></td><td>Notificação <strong>assíncrona</strong> do agente, sem confirmação</td></tr>\n<tr><td><strong>InformRequest</strong></td><td>Notificação <strong>com confirmação</strong> — v2</td></tr>\n</tbody></table>\n<p>Portas: <strong>161/UDP</strong> (requisições ao agente) e <strong>162/UDP</strong> (traps e informs no gerente).</p>\n\n<h2>3. Versões do SNMP</h2>\n<table><tbody>\n<tr><td><strong>v1</strong></td><td>Community string em <strong>texto claro</strong> (public/private). Sem segurança real</td></tr>\n<tr><td><strong>v2c</strong></td><td>GetBulk, Inform, mais tipos de dados — mas <strong>continua com community em texto claro</strong></td></tr>\n<tr><td><strong>v3</strong></td><td><strong>USM</strong> (User-based Security Model) e <strong>VACM</strong> (controle de acesso por visão). Oferece <strong>autenticação</strong> (MD5/SHA), <strong>privacidade</strong> (DES/AES) e <strong>integridade/anti-replay</strong>. Níveis: <em>noAuthNoPriv</em>, <em>authNoPriv</em>, <em>authPriv</em></td></tr>\n</tbody></table>\n<div data-callout=\"warning\"><p>Em ambiente de produção, use <strong>SNMPv3 com authPriv</strong>. SNMP v1/v2c com community \"public\" habilitada é achado recorrente em pentest e permite mapear toda a infraestrutura.</p></div>\n\n<h2>4. RMON — Remote Network Monitoring</h2>\n<p>Extensão da MIB voltada ao monitoramento <strong>proativo e distribuído</strong>: a <em>probe</em> coleta e analisa localmente, enviando apenas resumos ao gerente — reduz drasticamente o tráfego de gerência e continua funcionando mesmo com o gerente inacessível (<em>offline operation</em>).</p>\n<table><tbody>\n<tr><td><strong>RMON1 (RFC 2819)</strong></td><td>Camadas <strong>1 e 2</strong> — 9 grupos: statistics, history, alarm, host, hostTopN, matrix, filter, packet capture, event</td></tr>\n<tr><td><strong>RMON2 (RFC 2021)</strong></td><td>Camadas <strong>3 a 7</strong> — visibilidade por protocolo e por aplicação, tráfego entre redes</td></tr>\n</tbody></table>\n<p>Diferença essencial para o SNMP puro: o SNMP é orientado a <strong>consulta por dispositivo</strong>; o RMON é orientado ao <strong>monitoramento do segmento de rede</strong> e ao comportamento do tráfego.</p>\n\n<h2>5. Outras ferramentas de gerência</h2>\n<p><strong>NetFlow / IPFIX / sFlow</strong> (fluxos de tráfego), <strong>Syslog</strong> (514/UDP, centralização de logs), <strong>NTP</strong> (sincronização — pré-requisito para correlação), <strong>ICMP</strong> (ping, traceroute), <strong>NETCONF/YANG</strong> e <strong>gNMI</strong> (configuração programável moderna).</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que o SNMPv2c corrigiu a segurança — quem corrigiu foi o <strong>v3</strong>.</li>\n<li>Trocar as portas 161 e 162.</li>\n<li>Afirmar que trap tem confirmação — quem confirma é o <strong>Inform</strong>.</li>\n<li>Dizer que RMON1 monitora camadas de aplicação — isso é o <strong>RMON2</strong>.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "A versão do protocolo SNMP que introduziu mecanismos efetivos de autenticação, privacidade e controle de acesso, por meio dos modelos USM e VACM, é a:",
+          "options": [
+            "SNMPv1.",
+            "SNMPv2c.",
+            "SNMPv3.",
+            "SNMPv2u, posteriormente descontinuada em favor da v2c.",
+            "Todas as versões oferecem criptografia por padrão."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Versões do SNMP",
+          "tags": [
+            "SNMP",
+            "SNMPv3",
+            "USM"
+          ],
+          "comment": "v1 e v2c enviam a community string em texto claro — qualquer sniffer a captura.",
+          "justification": "O SNMPv3 acrescentou o User-based Security Model (autenticação e privacidade) e o View-based Access Control Model, com os níveis noAuthNoPriv, authNoPriv e authPriv."
+        },
+        {
+          "statement": "No SNMP, a mensagem enviada pelo agente ao gerente para notificar um evento e que, diferentemente do trap, exige confirmação de recebimento, é o:",
+          "options": [
+            "GetRequest.",
+            "GetBulkRequest.",
+            "SetRequest.",
+            "InformRequest.",
+            "Response."
+          ],
+          "correct": 3,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Operações SNMP",
+          "tags": [
+            "SNMP",
+            "trap",
+            "inform"
+          ],
+          "comment": "Trap é fire-and-forget (pode se perder no UDP); Inform é confirmado.",
+          "justification": "O InformRequest, introduzido no SNMPv2, é uma notificação com confirmação (o receptor responde), ao contrário do Trap, que não possui reconhecimento."
+        },
+        {
+          "statement": "Sobre o RMON (Remote Network Monitoring), assinale a alternativa correta.",
+          "options": [
+            "O RMON1 opera nas camadas de rede a aplicação, permitindo análise por protocolo e por aplicação.",
+            "O RMON2 estendeu o monitoramento às camadas 3 a 7, permitindo análise de tráfego por protocolo e por aplicação, enquanto o RMON1 atua nas camadas 1 e 2.",
+            "O RMON exige que o gerente esteja permanentemente conectado à probe para que a coleta ocorra.",
+            "O RMON substitui integralmente o protocolo SNMP.",
+            "O RMON aumenta significativamente o tráfego de gerência na rede."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "RMON",
+          "tags": [
+            "RMON",
+            "monitoramento"
+          ],
+          "comment": "RMON é uma MIB especializada — usa o próprio SNMP como transporte, não o substitui.",
+          "justification": "O RMON1 (RFC 2819) cobre as camadas física e de enlace com nove grupos; o RMON2 (RFC 2021) alcança as camadas 3 a 7. A probe opera de forma autônoma e reduz o tráfego de gerência ao enviar resumos."
+        }
+      ]
+    },
+    {
+      "subject": "Conceitos e Tipologia",
+      "summary": "\n<h1>Computação em nuvem — conceitos e tipologia</h1>\n\n<h2>1. Definição do NIST SP 800-145</h2>\n<p>Modelo que permite acesso ubíquo, conveniente e sob demanda a um <strong>pool compartilhado de recursos computacionais configuráveis</strong>, rapidamente provisionados e liberados com mínimo esforço de gerenciamento.</p>\n\n<h2>2. As 5 características essenciais</h2>\n<ol>\n<li><strong>Autosserviço sob demanda</strong> — o cliente provisiona sozinho, sem interação humana com o provedor;</li>\n<li><strong>Amplo acesso à rede</strong> — disponível por mecanismos padronizados em qualquer plataforma;</li>\n<li><strong>Agrupamento de recursos (resource pooling)</strong> — multi-inquilino, com independência de localização;</li>\n<li><strong>Elasticidade rápida</strong> — provisionamento e liberação automáticos, aparentando recursos ilimitados;</li>\n<li><strong>Serviço medido (measured service)</strong> — medição, controle e transparência do uso; base do pagamento por consumo.</li>\n</ol>\n\n<h2>3. Modelos de serviço e responsabilidade compartilhada</h2>\n<table><tbody>\n<tr><td><strong>IaaS</strong></td><td>Provedor entrega processamento, armazenamento e rede. Cliente gerencia <strong>SO, middleware, runtime, dados e aplicações</strong></td><td>EC2, Azure VM, Compute Engine</td></tr>\n<tr><td><strong>PaaS</strong></td><td>Provedor gerencia até o runtime. Cliente cuida de <strong>aplicação e dados</strong></td><td>App Service, Elastic Beanstalk, App Engine</td></tr>\n<tr><td><strong>SaaS</strong></td><td>Provedor gerencia tudo. Cliente cuida de <strong>dados, identidades e configuração de acesso</strong></td><td>Microsoft 365, Salesforce, Gmail</td></tr>\n</tbody></table>\n<div data-callout=\"info\"><p><strong>Regra do modelo de responsabilidade compartilhada:</strong> o provedor é responsável pela segurança <em>da</em> nuvem; o cliente, pela segurança <em>na</em> nuvem. Em <strong>todos</strong> os modelos, os <strong>dados e a gestão de identidades e acessos permanecem responsabilidade do cliente</strong>. Essa é a pegadinha número um do tema.</p></div>\n<p>Derivados: <strong>FaaS/serverless</strong>, <strong>CaaS</strong>, <strong>DBaaS</strong>, <strong>DaaS</strong> (desktop), <strong>XaaS</strong>.</p>\n\n<h2>4. Modelos de implantação</h2>\n<table><tbody>\n<tr><td><strong>Pública</strong></td><td>Infraestrutura para o público em geral; máxima economia de escala e elasticidade</td></tr>\n<tr><td><strong>Privada</strong></td><td>Uso exclusivo de uma organização; pode ser on-premises ou hospedada por terceiro. Maior controle e custo</td></tr>\n<tr><td><strong>Comunitária</strong></td><td>Compartilhada por organizações com <strong>preocupações comuns</strong> (missão, conformidade, segurança)</td></tr>\n<tr><td><strong>Híbrida</strong></td><td>Composição de duas ou mais nuvens distintas, ligadas por tecnologia que permite <strong>portabilidade de dados e aplicações</strong> (ex.: <em>cloud bursting</em>)</td></tr>\n</tbody></table>\n<p>Conceitos correlatos: <strong>multicloud</strong> (vários provedores públicos, sem necessariamente integração) e <strong>vendor lock-in</strong> (dependência tecnológica de um provedor).</p>\n\n<h2>5. Vantagens e riscos</h2>\n<table><tbody>\n<tr><td><strong>Vantagens</strong></td><td>CAPEX vira OPEX, elasticidade, agilidade, alcance global, alta disponibilidade, resiliência, atualização contínua</td></tr>\n<tr><td><strong>Riscos</strong></td><td>Vendor lock-in, dependência de conectividade, <strong>soberania e localização dos dados</strong>, transferência internacional (art. 33 da LGPD), configuração incorreta (bucket público), visibilidade e forense limitadas, custo descontrolado</td></tr>\n</tbody></table>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que na SaaS o cliente não tem nenhuma responsabilidade de segurança — ele responde pelos <strong>dados e acessos</strong>.</li>\n<li>Confundir <strong>elasticidade</strong> (automática, para mais e para menos) com <strong>escalabilidade</strong> (capacidade de crescer).</li>\n<li>Chamar de híbrida a nuvem que apenas usa dois provedores públicos — isso é <strong>multicloud</strong>.</li>\n<li>Esquecer o \"serviço medido\" entre as cinco características essenciais.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Segundo o NIST SP 800-145, são características essenciais da computação em nuvem:",
+          "options": [
+            "Virtualização, contêineres, microsserviços, DevOps e automação.",
+            "Autosserviço sob demanda, amplo acesso à rede, agrupamento de recursos, elasticidade rápida e serviço medido.",
+            "IaaS, PaaS, SaaS, FaaS e CaaS.",
+            "Nuvem pública, privada, comunitária, híbrida e multicloud.",
+            "Confidencialidade, integridade, disponibilidade, autenticidade e não repúdio."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Definição NIST",
+          "tags": [
+            "NIST 800-145",
+            "nuvem"
+          ],
+          "comment": "A letra C lista modelos de serviço e a D, modelos de implantação — os outros dois eixos da definição do NIST.",
+          "justification": "O NIST SP 800-145 define cinco características essenciais, três modelos de serviço e quatro modelos de implantação."
+        },
+        {
+          "statement": "No modelo de responsabilidade compartilhada em nuvem, considerando um serviço do tipo SaaS, permanece sob responsabilidade do cliente:",
+          "options": [
+            "A manutenção física dos servidores no data center do provedor.",
+            "A aplicação de patches no sistema operacional dos servidores da aplicação.",
+            "A gestão dos dados, das identidades e das permissões de acesso dos usuários.",
+            "A configuração dos hipervisores e da rede física.",
+            "Nenhuma responsabilidade, pois o provedor assume integralmente a segurança."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Responsabilidade compartilhada",
+          "tags": [
+            "SaaS",
+            "nuvem",
+            "IAM"
+          ],
+          "comment": "Dados e identidade nunca migram para o provedor, em nenhum modelo de serviço.",
+          "justification": "No SaaS o provedor gerencia toda a pilha técnica, mas o cliente permanece responsável pelos seus dados, pela gestão de identidades e acessos e pela configuração de segurança do serviço."
+        },
+        {
+          "statement": "Uma organização mantém uma nuvem privada em seu data center e, em períodos de pico, expande automaticamente sua capacidade utilizando recursos de um provedor público, com portabilidade de dados e aplicações entre os ambientes. Esse modelo de implantação é denominado:",
+          "options": [
+            "Nuvem comunitária.",
+            "Multicloud.",
+            "Nuvem híbrida.",
+            "Nuvem pública.",
+            "Colocation."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Modelos de implantação",
+          "tags": [
+            "nuvem híbrida",
+            "cloud bursting"
+          ],
+          "comment": "A técnica descrita chama-se cloud bursting e é o exemplo canônico de nuvem híbrida.",
+          "justification": "A nuvem híbrida combina duas ou mais infraestruturas distintas que permanecem entidades únicas, unidas por tecnologia que permite portabilidade de dados e aplicações."
+        }
+      ]
+    },
+    {
+      "subject": "Arquitetura em Nuvem",
+      "summary": "\n<h1>Arquitetura em nuvem</h1>\n\n<h2>1. Benefícios arquiteturais</h2>\n<table><tbody>\n<tr><td><strong>Alta disponibilidade</strong></td><td>Redundância entre zonas; expressa em SLA (99,9% ≈ 8h45 de indisponibilidade por ano; 99,99% ≈ 52 min; 99,999% ≈ 5 min)</td></tr>\n<tr><td><strong>Escalabilidade</strong></td><td><strong>Vertical (scale up)</strong>: máquina maior, exige reinício, tem teto. <strong>Horizontal (scale out)</strong>: mais instâncias, sem teto prático — modelo preferido em nuvem</td></tr>\n<tr><td><strong>Elasticidade</strong></td><td>Ajuste <strong>automático</strong> da capacidade conforme a demanda, para cima e para baixo (autoscaling)</td></tr>\n<tr><td><strong>Agilidade</strong></td><td>Provisionamento em minutos; redução do time to market</td></tr>\n<tr><td><strong>Recuperação de desastres</strong></td><td>Replicação entre regiões; estratégias backup-and-restore, pilot light, warm standby e multi-site ativo-ativo (RTO/RPO decrescentes, custo crescente)</td></tr>\n<tr><td><strong>Alcance global</strong></td><td>Implantação próxima ao usuário, reduzindo latência</td></tr>\n</tbody></table>\n\n<h2>2. Distribuição geográfica</h2>\n<ul>\n<li><strong>Região</strong> — área geográfica com um conjunto de data centers. Escolha considerando <strong>latência, custo, disponibilidade de serviços e requisitos legais de soberania de dados</strong>;</li>\n<li><strong>Zona de disponibilidade (AZ)</strong> — um ou mais data centers isolados dentro de uma região, com energia, refrigeração e rede independentes. Distribuir entre AZs protege contra falha de data center;</li>\n<li><strong>Pares de região</strong> (Azure) / replicação inter-regional — proteção contra desastre regional;</li>\n<li><strong>Edge locations / PoPs</strong> — CDN e serviços de borda para reduzir latência;</li>\n<li><strong>Zonas locais e regiões soberanas/governamentais</strong> — atendem requisitos específicos de latência ou conformidade.</li>\n</ul>\n<div data-callout=\"info\"><p>Regra prática: alta disponibilidade se resolve com <strong>múltiplas AZs</strong>; recuperação de desastre se resolve com <strong>múltiplas regiões</strong>.</p></div>\n\n<h2>3. Hierarquia de gestão e recursos</h2>\n<table><tbody>\n<tr><td><strong>Azure</strong></td><td>Grupos de gerenciamento → <strong>Assinaturas</strong> → Grupos de recursos → Recursos</td></tr>\n<tr><td><strong>AWS</strong></td><td>Organizations → Unidades organizacionais (OU) → <strong>Contas</strong> → Recursos (com tags)</td></tr>\n<tr><td><strong>Google Cloud</strong></td><td>Organização → Pastas → <strong>Projetos</strong> → Recursos</td></tr>\n</tbody></table>\n<p>Essa hierarquia sustenta <strong>governança</strong>: herança de políticas, separação de ambientes (dev/hml/prod), limites de cobrança e isolamento de blast radius. Complementos: <strong>tags</strong> para rateio de custos (FinOps), <strong>políticas</strong> (Azure Policy, AWS SCP, GCP Org Policy) e <strong>landing zone</strong> como arquitetura de partida.</p>\n\n<h2>4. Padrões arquiteturais</h2>\n<ul>\n<li><strong>Well-Architected Framework</strong> (AWS/Azure/GCP) — pilares: excelência operacional, <strong>segurança</strong>, <strong>confiabilidade</strong>, eficiência de desempenho, otimização de custos e sustentabilidade;</li>\n<li><strong>Microsserviços</strong> e <strong>arquitetura orientada a eventos</strong>;</li>\n<li><strong>Serverless</strong> — sem gestão de servidores, cobrança por execução;</li>\n<li><strong>Balanceamento de carga</strong> (camada 4 e 7), <strong>CDN</strong>, <strong>filas e mensageria</strong> para desacoplamento;</li>\n<li><strong>Design for failure</strong>: presuma que qualquer componente falha; use health checks, retry com backoff, circuit breaker e stateless.</li>\n</ul>\n\n<h2>5. Modelos de custo</h2>\n<p><strong>Pay-as-you-go</strong>, <strong>instâncias reservadas / savings plans</strong> (compromisso de 1 a 3 anos, desconto expressivo), <strong>spot</strong> (capacidade ociosa, barata e interrompível) e <strong>dedicado</strong>. Práticas de FinOps: rightsizing, desligamento fora do horário, tags de centro de custo, orçamento com alerta.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Confundir escalabilidade com elasticidade.</li>\n<li>Achar que distribuir entre AZs protege contra desastre <strong>regional</strong> — não protege.</li>\n<li>Trocar scale up (vertical) por scale out (horizontal).</li>\n<li>Ignorar a soberania de dados na escolha da região (relevante para a LGPD, art. 33).</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Sobre os conceitos de região e zona de disponibilidade em provedores de nuvem, assinale a alternativa correta.",
+          "options": [
+            "Zona de disponibilidade é um conjunto de regiões geograficamente distantes entre si.",
+            "A distribuição de instâncias entre múltiplas zonas de disponibilidade de uma mesma região aumenta a alta disponibilidade, mas não protege contra a indisponibilidade completa da região.",
+            "Todas as regiões oferecem exatamente o mesmo conjunto de serviços e preços.",
+            "A escolha da região é irrelevante para requisitos legais de soberania de dados.",
+            "Uma zona de disponibilidade corresponde sempre a um único rack de servidores."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Distribuição geográfica",
+          "tags": [
+            "região",
+            "AZ",
+            "alta disponibilidade"
+          ],
+          "comment": "Multi-AZ = alta disponibilidade. Multirregião = recuperação de desastre.",
+          "justification": "AZs são data centers isolados dentro de uma região, com infraestrutura independente. Para resiliência a desastres regionais é necessária replicação entre regiões distintas."
+        },
+        {
+          "statement": "A capacidade de um sistema em nuvem ajustar automaticamente sua capacidade computacional, aumentando ou reduzindo recursos conforme a variação da demanda, é denominada:",
+          "options": [
+            "Escalabilidade vertical.",
+            "Elasticidade.",
+            "Alta disponibilidade.",
+            "Tolerância a falhas.",
+            "Portabilidade."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Benefícios",
+          "tags": [
+            "elasticidade",
+            "autoscaling"
+          ],
+          "comment": "Escalabilidade é a CAPACIDADE de crescer; elasticidade é fazer isso AUTOMATICAMENTE nos dois sentidos.",
+          "justification": "Elasticidade rápida é uma das cinco características essenciais do NIST e implica provisionamento e liberação automáticos, proporcionais à demanda."
+        },
+        {
+          "statement": "No Microsoft Azure, o contêiner lógico que agrupa recursos relacionados, permitindo gerenciá-los, aplicar políticas e controlar acesso de forma conjunta, e que pode ser excluído removendo todos os recursos nele contidos, é denominado:",
+          "options": [
+            "Grupo de gerenciamento.",
+            "Assinatura.",
+            "Grupo de recursos.",
+            "Zona de disponibilidade.",
+            "Locatário (tenant)."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Hierarquia de recursos",
+          "tags": [
+            "Azure",
+            "governança"
+          ],
+          "comment": "Hierarquia Azure: grupo de gerenciamento → assinatura → grupo de recursos → recurso.",
+          "justification": "O grupo de recursos (resource group) é o contêiner lógico de recursos no Azure. A assinatura é a unidade de faturamento e limite de cota; o grupo de gerenciamento agrupa assinaturas."
+        }
+      ]
+    },
+    {
+      "subject": "Identidade e Segurança na Nuvem",
+      "summary": "\n<h1>Identidade, privacidade, conformidade e segurança na nuvem</h1>\n\n<h2>1. Identidade como novo perímetro</h2>\n<p>Em nuvem não há perímetro de rede confiável: o controle passa a ser a <strong>identidade</strong>. Elementos:</p>\n<ul>\n<li><strong>IAM do provedor</strong>: usuários, grupos, <strong>funções (roles)</strong>, políticas e permissões. Prefira <strong>roles assumidas temporariamente</strong> a chaves de acesso estáticas;</li>\n<li><strong>Menor privilégio</strong> e revisão de permissões efetivas (ferramentas de <em>access analyzer</em>);</li>\n<li><strong>MFA obrigatório</strong>, sobretudo na conta raiz/global admin — que não deve ser usada no dia a dia;</li>\n<li><strong>Federação e SSO</strong> (SAML/OIDC) com o diretório corporativo; <strong>SCIM</strong> para provisionamento;</li>\n<li><strong>Acesso condicional</strong> por risco, dispositivo, localização e postura;</li>\n<li><strong>Identidades gerenciadas / workload identity</strong> para aplicações — elimina segredo no código;</li>\n<li><strong>PIM/PAM</strong> com elevação just-in-time.</li>\n</ul>\n\n<h2>2. Proteção de dados</h2>\n<table><tbody>\n<tr><td><strong>Em trânsito</strong></td><td>TLS 1.2+ obrigatório; VPN ou link privado para tráfego interno</td></tr>\n<tr><td><strong>Em repouso</strong></td><td>Criptografia por padrão no armazenamento; chaves gerenciadas pelo provedor ou <strong>CMK</strong> (customer-managed key) em KMS/HSM. Para máximo controle, <strong>BYOK/HYOK</strong></td></tr>\n<tr><td><strong>Em uso</strong></td><td><strong>Confidential computing</strong> — enclaves seguros (SGX, SEV, TDX)</td></tr>\n<tr><td><strong>Classificação e DLP</strong></td><td>Rotulagem, prevenção de vazamento, mascaramento e tokenização</td></tr>\n<tr><td><strong>Segredos</strong></td><td>Key Vault, Secrets Manager, Secret Manager, HashiCorp Vault — com rotação automática</td></tr>\n</tbody></table>\n\n<h2>3. Segurança de rede em nuvem</h2>\n<p><strong>VPC/VNet</strong> com sub-redes públicas e privadas, <strong>security groups</strong> (stateful, por instância) e <strong>NACLs</strong> (stateless, por sub-rede), <strong>endpoints privados</strong> (evitam saída para a internet), <strong>WAF</strong> e <strong>anti-DDoS</strong> gerenciados, <strong>peering</strong> e conexão dedicada (Direct Connect, ExpressRoute, Interconnect).</p>\n\n<h2>4. Postura, visibilidade e conformidade</h2>\n<table><tbody>\n<tr><td><strong>CSPM</strong></td><td>Detecta configuração incorreta e desvio de conformidade</td></tr>\n<tr><td><strong>CWPP</strong></td><td>Protege cargas de trabalho (VMs, contêineres, serverless)</td></tr>\n<tr><td><strong>CIEM</strong></td><td>Gestão de <strong>permissões</strong> e privilégios excessivos em nuvem</td></tr>\n<tr><td><strong>CNAPP</strong></td><td>Plataforma integrada (CSPM + CWPP + CIEM + varredura de IaC)</td></tr>\n<tr><td><strong>Logs</strong></td><td>CloudTrail, Azure Activity Log, Cloud Audit Logs — habilitar em todas as contas e proteger contra exclusão</td></tr>\n</tbody></table>\n<p>Certificações e referências que o provedor costuma apresentar: <strong>ISO/IEC 27001, 27017 (nuvem), 27018 (PII em nuvem), 27701 (privacidade)</strong>, SOC 1/2/3, <strong>CSA STAR</strong> e a <strong>CSA Cloud Controls Matrix (CCM)</strong>.</p>\n\n<h2>5. Privacidade e LGPD na nuvem</h2>\n<ul>\n<li>O contratante costuma ser <strong>controlador</strong> e o provedor, <strong>operador</strong> — com contrato definindo instruções, subcontratação e segurança;</li>\n<li><strong>Transferência internacional</strong> (art. 33 da LGPD) quando os dados saem do país: exige base adequada — cláusulas-padrão contratuais, normas corporativas globais, selos ou decisão de adequação da ANPD;</li>\n<li><strong>Localização e soberania</strong>: escolha de região e, quando exigido, região soberana ou nuvem privada;</li>\n<li><strong>Direito de auditoria</strong>, portabilidade e plano de saída (evitar lock-in);</li>\n<li>Comunicação de incidentes pelo operador ao controlador em prazo contratual compatível com o art. 48.</li>\n</ul>\n\n<h2>6. As falhas mais comuns em nuvem</h2>\n<ol>\n<li><strong>Configuração incorreta</strong> — bucket ou blob público, banco exposto, security group 0.0.0.0/0;</li>\n<li><strong>Permissões excessivas</strong> e chaves de acesso de longa duração vazadas em repositórios;</li>\n<li>Ausência de MFA na conta raiz;</li>\n<li>Logs desabilitados ou sem retenção;</li>\n<li><strong>Shadow IT</strong> e contas fora da organização;</li>\n<li>Segredos embutidos em código e imagens.</li>\n</ol>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Dizer que a criptografia em repouso do provedor dispensa a gestão de chaves pelo cliente.</li>\n<li>Confundir security group (stateful, instância) com NACL (stateless, sub-rede).</li>\n<li>Achar que o provedor é o controlador dos dados do cliente — normalmente é <strong>operador</strong>.</li>\n<li>Supor que a certificação do provedor transfere a conformidade do cliente.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Em uma arquitetura na AWS, a diferença entre security groups e network ACLs é que:",
+          "options": [
+            "Security groups são stateless e aplicados na sub-rede; NACLs são stateful e aplicadas à instância.",
+            "Security groups são stateful e aplicados no nível da instância, permitindo apenas regras de permissão; NACLs são stateless, aplicadas no nível da sub-rede e admitem regras de negação.",
+            "Ambos são stateful e funcionalmente equivalentes.",
+            "Security groups atuam na camada 7 e NACLs na camada 2.",
+            "NACLs substituem a necessidade de security groups."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "dificil",
+          "subtopic": "Rede em nuvem",
+          "tags": [
+            "AWS",
+            "security group",
+            "NACL"
+          ],
+          "comment": "Stateful lembra do tráfego de retorno; stateless exige regra explícita nos dois sentidos.",
+          "justification": "Security groups são firewalls stateful de instância, com regras apenas de allow. NACLs são stateless, atuam na sub-rede e suportam allow e deny, avaliadas por ordem de numeração."
+        },
+        {
+          "statement": "Uma organização brasileira contrata um provedor de nuvem pública para hospedar sistema que trata dados pessoais de cidadãos, com armazenamento em região localizada no exterior. À luz da LGPD, é correto afirmar que:",
+          "options": [
+            "A contratação dispensa qualquer formalidade, pois o provedor possui certificação ISO/IEC 27001.",
+            "Configura-se transferência internacional de dados, que somente é permitida nas hipóteses do art. 33, tipicamente por cláusulas-padrão contratuais, normas corporativas globais, selos ou decisão de adequação da ANPD.",
+            "O provedor assume automaticamente a condição de controlador, transferindo a responsabilidade da organização contratante.",
+            "A LGPD não se aplica quando os dados estão armazenados fora do território nacional.",
+            "A criptografia em repouso dispensa a observância das regras de transferência internacional."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Conformidade em nuvem",
+          "tags": [
+            "LGPD",
+            "transferência internacional",
+            "nuvem"
+          ],
+          "comment": "Certificação do provedor é evidência de diligência na escolha, mas não substitui base legal nem afasta a responsabilidade do controlador.",
+          "justification": "O armazenamento em país estrangeiro caracteriza transferência internacional (art. 33). O provedor atua normalmente como operador, e a LGPD alcança dados coletados no território nacional (art. 3º)."
+        },
+        {
+          "statement": "A categoria de solução voltada especificamente à identificação e à redução de permissões excessivas e privilégios não utilizados em ambientes de nuvem é o:",
+          "options": [
+            "CSPM.",
+            "CWPP.",
+            "CIEM.",
+            "CASB.",
+            "SIEM."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "dificil",
+          "subtopic": "Ferramentas de nuvem",
+          "tags": [
+            "CIEM",
+            "IAM",
+            "least privilege"
+          ],
+          "comment": "Em nuvem, permissões excessivas são a norma: estudos apontam que a maioria das identidades usa menos de 5% das permissões concedidas.",
+          "justification": "O CIEM (Cloud Infrastructure Entitlement Management) analisa direitos efetivos e recomenda a redução ao menor privilégio. CSPM foca configuração; CWPP, cargas de trabalho; CASB, uso de SaaS."
+        }
+      ]
+    },
+    {
+      "subject": "IaC e Automação",
+      "summary": "\n<h1>Infrastructure as Code e automação</h1>\n\n<h2>1. Conceito</h2>\n<p>Provisionar e gerenciar infraestrutura por meio de <strong>arquivos de definição versionados</strong>, tratados como código-fonte: revisão por pares, histórico, testes e pipeline. Benefícios: <strong>reprodutibilidade</strong>, redução de erro humano, velocidade, documentação viva, ambientes idênticos e recuperação rápida.</p>\n\n<h2>2. Abordagens</h2>\n<table><tbody>\n<tr><td><strong>Declarativa</strong></td><td>Descreve o <strong>estado desejado</strong>; a ferramenta calcula o caminho</td><td>Terraform, CloudFormation, Bicep, ARM, Kubernetes manifests</td></tr>\n<tr><td><strong>Imperativa</strong></td><td>Descreve os <strong>passos</strong> a executar</td><td>Scripts shell, AWS CLI, Azure CLI</td></tr>\n<tr><td><strong>Mutável x imutável</strong></td><td>Alterar o servidor existente x <strong>substituí-lo</strong> por uma nova imagem</td><td>Infraestrutura imutável reduz o <em>configuration drift</em></td></tr>\n<tr><td><strong>Push x pull</strong></td><td>Servidor central envia x nó busca a configuração</td><td>Ansible (push) x Puppet/Chef (pull)</td></tr>\n</tbody></table>\n<p><strong>Idempotência</strong> é a propriedade central: aplicar a mesma definição várias vezes produz sempre o mesmo estado final.</p>\n\n<h2>3. Ferramentas por finalidade</h2>\n<table><tbody>\n<tr><td><strong>Provisionamento</strong></td><td>Terraform (multicloud, HCL), OpenTofu, Pulumi (linguagens de programação), CloudFormation (AWS), Bicep/ARM (Azure), Deployment Manager (GCP)</td></tr>\n<tr><td><strong>Gestão de configuração</strong></td><td>Ansible (sem agente, YAML), Puppet, Chef, SaltStack</td></tr>\n<tr><td><strong>Imagens</strong></td><td>Packer</td></tr>\n<tr><td><strong>Orquestração de contêineres</strong></td><td>Kubernetes, Helm, Kustomize</td></tr>\n<tr><td><strong>CI/CD e GitOps</strong></td><td>GitLab CI, GitHub Actions, Jenkins, Argo CD, Flux</td></tr>\n</tbody></table>\n<p><strong>GitOps</strong>: o repositório Git é a <strong>única fonte da verdade</strong>; um operador reconcilia continuamente o estado real com o declarado, e toda mudança passa por <em>pull request</em> — o que dá auditoria e reversão nativas.</p>\n\n<h2>4. Segurança em IaC</h2>\n<ul>\n<li><strong>Varredura estática de IaC</strong>: Checkov, tfsec, Terrascan, KICS, Trivy — detecta bucket público, SG aberto, criptografia desabilitada <em>antes</em> do provisionamento;</li>\n<li><strong>Política como código</strong>: OPA/Rego, Sentinel, Kyverno — bloqueia o plano que viola a política;</li>\n<li><strong>Proteção do estado</strong>: o arquivo de estado do Terraform pode conter <strong>segredos em texto claro</strong> — armazene em backend remoto criptografado, com bloqueio e acesso restrito;</li>\n<li><strong>Nunca versionar segredos</strong>: use cofre e variáveis protegidas; rode <em>secret scanning</em> no repositório;</li>\n<li><strong>Menor privilégio para o pipeline</strong>: credencial do CI com escopo mínimo e, preferencialmente, federação OIDC em vez de chave estática;</li>\n<li><strong>Revisão obrigatória</strong> do plano (<code>terraform plan</code>) antes do <em>apply</em> em produção.</li>\n</ul>\n\n<h2>5. Automação além da infraestrutura</h2>\n<p><strong>SOAR</strong> para resposta a incidentes, <strong>runbooks automatizados</strong> para operação, <strong>autoscaling</strong> e <strong>self-healing</strong>, <strong>compliance as code</strong> e remediação automática de desvios detectados pelo CSPM.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Chamar o Ansible de ferramenta declarativa pura de provisionamento — ele é de <strong>gestão de configuração</strong>, com playbooks em boa medida procedimentais.</li>\n<li>Ignorar que o <em>state file</em> do Terraform é dado sensível.</li>\n<li>Confundir idempotência com imutabilidade.</li>\n<li>Achar que IaC dispensa varredura de segurança — o erro de configuração passa a ser replicado <strong>em escala</strong>.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "A propriedade da Infraestrutura como Código segundo a qual a aplicação repetida de uma mesma definição produz sempre o mesmo estado final, sem efeitos colaterais adicionais, é a:",
+          "options": [
+            "Imutabilidade.",
+            "Idempotência.",
+            "Elasticidade.",
+            "Reprodutibilidade parcial.",
+            "Convergência imperativa."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Conceitos de IaC",
+          "tags": [
+            "IaC",
+            "idempotência"
+          ],
+          "comment": "Imutabilidade é outra coisa: substituir o recurso em vez de alterá-lo.",
+          "justification": "Idempotência garante que executar a definição uma ou várias vezes leva ao mesmo estado desejado, característica típica das ferramentas declarativas."
+        },
+        {
+          "statement": "Sobre a segurança em pipelines de Infraestrutura como Código, assinale a alternativa correta.",
+          "options": [
+            "O arquivo de estado do Terraform não contém informações sensíveis, podendo ser versionado publicamente.",
+            "Ferramentas de análise estática de IaC, como Checkov e tfsec, permitem identificar configurações inseguras antes do provisionamento dos recursos.",
+            "A adoção de IaC elimina a necessidade de varreduras de segurança, pois o código é revisado por pares.",
+            "Credenciais de longa duração no runner de CI são a prática recomendada, por simplificar a autenticação.",
+            "A política como código não se aplica a ambientes de nuvem."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Segurança em IaC",
+          "tags": [
+            "IaC",
+            "Checkov",
+            "DevSecOps"
+          ],
+          "comment": "A vantagem de IaC também é seu risco: um template errado replica a falha em centenas de recursos.",
+          "justification": "A varredura estática de IaC desloca a detecção para antes do provisionamento (shift left). O state file pode conter segredos e deve ficar em backend criptografado; a recomendação para pipelines é federação OIDC em vez de chaves estáticas."
+        },
+        {
+          "statement": "Na prática conhecida como GitOps, a característica central é que:",
+          "options": [
+            "Os servidores são configurados manualmente e o resultado é posteriormente documentado no Git.",
+            "O repositório Git é a única fonte da verdade sobre o estado desejado da infraestrutura, e um operador reconcilia continuamente o estado real com o declarado.",
+            "As alterações são aplicadas diretamente em produção por meio de comandos imperativos na CLI.",
+            "O versionamento é dispensável, pois a infraestrutura é imutável.",
+            "O modelo se aplica exclusivamente a bancos de dados relacionais."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "GitOps",
+          "tags": [
+            "GitOps",
+            "Argo CD",
+            "Kubernetes"
+          ],
+          "comment": "Ganho de segurança implícito: toda mudança tem autor, revisão, histórico e rollback por reversão de commit.",
+          "justification": "No GitOps o estado desejado reside no Git e agentes como Argo CD ou Flux reconciliam continuamente o cluster com esse estado, corrigindo desvios automaticamente."
+        }
+      ]
+    },
+    {
+      "subject": "AWS, Google Cloud e Azure",
+      "summary": "\n<h1>Principais serviços — AWS, Azure e Google Cloud</h1>\n<p>A cobrança costuma ser por <strong>equivalência entre provedores</strong>. Foque em reconhecer a função do serviço.</p>\n\n<h2>1. Tabela de equivalência</h2>\n<table><tbody>\n<tr><td><strong>Categoria</strong></td><td><strong>AWS</strong></td><td><strong>Azure</strong></td><td><strong>Google Cloud</strong></td></tr>\n<tr><td>Máquina virtual</td><td>EC2</td><td>Virtual Machines</td><td>Compute Engine</td></tr>\n<tr><td>Serverless (função)</td><td>Lambda</td><td>Functions</td><td>Cloud Functions / Cloud Run</td></tr>\n<tr><td>Contêiner gerenciado</td><td>ECS / <strong>EKS</strong></td><td>Container Instances / <strong>AKS</strong></td><td>Cloud Run / <strong>GKE</strong></td></tr>\n<tr><td>PaaS de aplicação</td><td>Elastic Beanstalk</td><td>App Service</td><td>App Engine</td></tr>\n<tr><td>Objeto</td><td><strong>S3</strong></td><td>Blob Storage</td><td>Cloud Storage</td></tr>\n<tr><td>Bloco</td><td>EBS</td><td>Managed Disks</td><td>Persistent Disk</td></tr>\n<tr><td>Arquivo</td><td>EFS / FSx</td><td>Azure Files</td><td>Filestore</td></tr>\n<tr><td>Arquivamento frio</td><td>S3 Glacier</td><td>Archive Storage</td><td>Archive Storage</td></tr>\n<tr><td>Banco relacional</td><td>RDS / <strong>Aurora</strong></td><td>Azure SQL Database</td><td>Cloud SQL / <strong>Spanner</strong></td></tr>\n<tr><td>NoSQL</td><td>DynamoDB</td><td>Cosmos DB</td><td>Firestore / Bigtable</td></tr>\n<tr><td>Data warehouse</td><td>Redshift</td><td>Synapse Analytics</td><td><strong>BigQuery</strong></td></tr>\n<tr><td>Rede virtual</td><td><strong>VPC</strong></td><td>VNet</td><td>VPC</td></tr>\n<tr><td>Balanceador</td><td>ELB / ALB / NLB</td><td>Load Balancer / App Gateway</td><td>Cloud Load Balancing</td></tr>\n<tr><td>DNS</td><td>Route 53</td><td>Azure DNS</td><td>Cloud DNS</td></tr>\n<tr><td>CDN</td><td>CloudFront</td><td>Azure Front Door / CDN</td><td>Cloud CDN</td></tr>\n<tr><td>Conexão dedicada</td><td>Direct Connect</td><td>ExpressRoute</td><td>Cloud Interconnect</td></tr>\n<tr><td>Identidade</td><td>IAM</td><td>Microsoft Entra ID</td><td>Cloud IAM</td></tr>\n<tr><td>Gestão de chaves</td><td>KMS / CloudHSM</td><td>Key Vault / Managed HSM</td><td>Cloud KMS</td></tr>\n<tr><td>Segredos</td><td>Secrets Manager</td><td>Key Vault</td><td>Secret Manager</td></tr>\n<tr><td>Log de auditoria</td><td><strong>CloudTrail</strong></td><td>Activity Log / Monitor</td><td>Cloud Audit Logs</td></tr>\n<tr><td>Monitoramento</td><td>CloudWatch</td><td>Azure Monitor</td><td>Cloud Monitoring (Operations)</td></tr>\n<tr><td>Postura de segurança</td><td>Security Hub / GuardDuty</td><td>Defender for Cloud</td><td>Security Command Center</td></tr>\n<tr><td>WAF e DDoS</td><td>AWS WAF / Shield</td><td>Azure WAF / DDoS Protection</td><td>Cloud Armor</td></tr>\n<tr><td>IaC nativa</td><td>CloudFormation</td><td>ARM / Bicep</td><td>Deployment Manager</td></tr>\n<tr><td>Fila / mensageria</td><td>SQS / SNS</td><td>Service Bus / Event Grid</td><td>Pub/Sub</td></tr>\n<tr><td>Governança de contas</td><td>Organizations / SCP</td><td>Grupos de gerenciamento / Azure Policy</td><td>Organização e pastas / Org Policy</td></tr>\n</tbody></table>\n\n<h2>2. Particularidades úteis</h2>\n<ul>\n<li><strong>AWS</strong>: maior participação de mercado; conta raiz deve ficar protegida com MFA e sem uso rotineiro; <strong>SCPs</strong> limitam o máximo de permissões de uma conta; <strong>S3 Block Public Access</strong> deve ficar ativo por padrão;</li>\n<li><strong>Azure</strong>: forte integração com Microsoft Entra ID e Microsoft 365; <strong>Azure Policy</strong> e <em>initiatives</em> para conformidade; RBAC por escopo (grupo de gerenciamento, assinatura, grupo de recursos, recurso);</li>\n<li><strong>Google Cloud</strong>: hierarquia organização → pastas → projetos; <strong>BigQuery</strong> como diferencial analítico; <strong>VPC global</strong> (as sub-redes são regionais, mas a VPC atravessa regiões — diferente de AWS e Azure).</li>\n</ul>\n\n<h2>3. Serviços de IA/dados frequentemente citados</h2>\n<p>AWS SageMaker e Bedrock · Azure Machine Learning e Azure OpenAI · Google Vertex AI. Em segurança: Amazon GuardDuty e Macie (descoberta de dados sensíveis), Microsoft Defender for Cloud e Sentinel, Google Chronicle e Security Command Center.</p>\n\n<h2>Erros clássicos de prova</h2>\n<ol>\n<li>Trocar <strong>CloudTrail</strong> (auditoria de chamadas de API) por <strong>CloudWatch</strong> (métricas e logs operacionais).</li>\n<li>Confundir S3 (objeto) com EBS (bloco) e EFS (arquivo).</li>\n<li>Associar BigQuery à Azure ou Synapse ao Google.</li>\n<li>Dizer que a VPC da AWS é global — é <strong>regional</strong>; a do Google é que é global.</li>\n</ol>\n",
+      "questions": [
+        {
+          "statement": "Assinale a alternativa que apresenta corretamente serviços equivalentes de armazenamento de objetos na AWS, no Microsoft Azure e no Google Cloud, respectivamente.",
+          "options": [
+            "EBS, Managed Disks e Persistent Disk.",
+            "S3, Blob Storage e Cloud Storage.",
+            "EFS, Azure Files e Filestore.",
+            "RDS, Azure SQL Database e Cloud SQL.",
+            "Glacier, Archive Storage e Bigtable."
+          ],
+          "correct": 1,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Equivalência de serviços",
+          "tags": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "armazenamento"
+          ],
+          "comment": "Três tipos de armazenamento: objeto (S3/Blob/Cloud Storage), bloco (EBS/Disks/Persistent Disk) e arquivo (EFS/Files/Filestore).",
+          "justification": "A letra A lista armazenamento em bloco; a C, em arquivo; a D, bancos relacionais; a E mistura arquivamento com NoSQL."
+        },
+        {
+          "statement": "O serviço da AWS que registra as chamadas de API realizadas na conta, incluindo identidade do solicitante, horário, endereço de origem e parâmetros, sendo essencial para auditoria e investigação de incidentes, é o:",
+          "options": [
+            "Amazon CloudWatch.",
+            "AWS Config.",
+            "AWS CloudTrail.",
+            "Amazon GuardDuty.",
+            "AWS Trusted Advisor."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "media",
+          "subtopic": "Auditoria em nuvem",
+          "tags": [
+            "AWS",
+            "CloudTrail",
+            "auditoria"
+          ],
+          "comment": "CloudTrail = quem fez o quê (auditoria). CloudWatch = como está se comportando (métricas e logs). Config = como está configurado ao longo do tempo.",
+          "justification": "O AWS CloudTrail é o serviço de registro de eventos de API e atividade de conta, base para trilha de auditoria e resposta a incidentes."
+        },
+        {
+          "statement": "No Google Cloud, o serviço de data warehouse totalmente gerenciado e serverless, voltado a consultas analíticas sobre grandes volumes de dados, é o:",
+          "options": [
+            "Cloud SQL.",
+            "Bigtable.",
+            "BigQuery.",
+            "Firestore.",
+            "Cloud Spanner."
+          ],
+          "correct": 2,
+          "banca": "FGV (estilo)",
+          "year": 2026,
+          "orgao": "DATAPREV",
+          "difficulty": "facil",
+          "subtopic": "Serviços de dados",
+          "tags": [
+            "GCP",
+            "BigQuery"
+          ],
+          "comment": "Equivalentes: BigQuery (GCP) ≈ Redshift (AWS) ≈ Synapse Analytics (Azure).",
+          "justification": "O BigQuery é o data warehouse serverless do Google Cloud. Cloud SQL e Spanner são relacionais; Bigtable e Firestore são NoSQL."
+        }
+      ]
+    }
+  ]
+}

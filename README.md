@@ -1,9 +1,17 @@
-# Concurso Studio — DATAPREV 2026 · Segurança Cibernética e Proteção de Dados
+# Concurso Studio — plataforma pessoal de estudos para concursos
 
-Plataforma pessoal de estudos para concursos, **offline-first**, estilo "Notion para concursos".
-Primeira instância: **DATAPREV 2026 — Perfil 5: Segurança Cibernética e Proteção de Dados** (Edital 001/2026, FGV, prova em 11/10/2026).
+Plataforma **offline-first**, estilo "Notion para concursos", com **vários concursos** no mesmo app.
 
-A arquitetura é modular: a mesma base cria plataformas para outros concursos (ABGF, PF, Receita Federal…) apenas adicionando um novo arquivo de seed — sem alterar a estrutura principal.
+Concursos já carregados:
+
+| Concurso | Cargo | Banca / prova |
+|---|---|---|
+| **DATAPREV 2026** | Perfil 5 — Segurança Cibernética e Proteção de Dados | Edital 001/2026 · FGV · 11/10/2026 |
+| **SEDES/DF 2026** | EDAS — Educador Social (cargo 405) | Edital 1/2026 · Instituto Quadrix · 06/09/2026 |
+
+Cada concurso é uma ilha: árvore do edital, progresso, questões, revisões e horas estudadas são independentes. O menu **CONCURSOS**, no topo da barra lateral, troca o edital ativo; a página `/concursos` mostra todos lado a lado com o progresso de cada um.
+
+Adicionar um terceiro concurso (ABGF, PF, Receita Federal…) é criar uma pasta em `public/content/` e registrá-la no manifesto — **nenhum TypeScript muda**.
 
 ---
 
@@ -29,6 +37,7 @@ Não há backend. Todos os dados ficam no **IndexedDB do navegador** (persistem 
 | **Dexie 4 (IndexedDB)** | Persistência local robusta, índices compostos, migrações de schema versionadas |
 | **TipTap 2** | Editor rico estilo Notion: headings, listas, checklists, tabelas, imagens, código, citações, callouts, destaques multicoloridos, cor e tamanho de fonte, undo/redo, atalhos Markdown nativos |
 | **TailwindCSS 3** | Design system próprio via CSS variables (tokens), dark/light mode por classe, bundle mínimo |
+| **Lucide** (`lucide-angular`) | Ícones da interface. Nenhum emoji: emoji varia de desenho entre sistemas operacionais, não herda a cor do tema e não escala com o texto. Os ícones passam por um registro central em `shared/icon/icon.component.ts` — só o que está no registro entra no bundle |
 | **Sem PrimeNG/PrimeFlex** | Decisão deliberada: para atingir o visual Notion/Linear/Obsidian com contraste AAA e controle total de tema, componentes próprios com Tailwind ficaram mais leves e consistentes que sobrescrever um design system pronto. A troca não afeta a arquitetura — qualquer aba é um componente standalone substituível |
 | **Lazy loading** | Cada página é um `loadComponent`; o TipTap só é baixado ao abrir uma página de assunto |
 | **RxJS** | Não utilizado para estado (apenas o que o Angular usa internamente) |
@@ -43,14 +52,16 @@ Não há backend. Todos os dados ficam no **IndexedDB do navegador** (persistem 
 src/app/
 ├── app.ts / app.html          # Shell: sidebar recolhível + topbar + router-outlet
 ├── app.config.ts              # Providers, APP_INITIALIZER (seed + stores), SYNC_ADAPTER
-├── app.routes.ts              # Rotas lazy: /, /assunto/:id, /busca
+├── app.routes.ts              # Rotas lazy, prefixadas por concurso (ver abaixo)
 ├── core/
+│   ├── routing/contest.routing.ts  # Prefixo /c/:contest, guard de ativação e redirects legados
 │   ├── models/models.ts       # Todas as interfaces e enums do domínio
 │   ├── db/
 │   │   ├── database.ts        # Schema Dexie (IndexedDB) versionado
-│   │   └── seed.ts            # Popula o banco na 1ª execução (idempotente)
+│   │   └── seed.ts            # Semeia o banco a partir dos JSON (idempotente, não destrutivo)
 │   ├── data/
-│   │   └── edital-dataprev-seguranca.ts   # Árvore de assuntos extraída do edital
+│   │   ├── content-types.ts   # Contrato dos JSON de conteúdo
+│   │   └── content-loader.ts  # fetch do manifesto e dos arquivos de área
 │   ├── services/
 │   │   ├── subject.store.ts   # Store (signals) da árvore de assuntos
 │   │   ├── review.service.ts  # Revisão espaçada (assuntos + flashcards)
@@ -67,6 +78,7 @@ src/app/
 │   │   └── tiptap-extensions.ts       # Extensões próprias: Callout, FontSize
 │   └── safe-html.pipe.ts
 └── features/
+    ├── contests/contests-page.component.ts  # Seleção de concurso (/concursos)
     ├── dashboard/dashboard.component.ts
     ├── search/search-page.component.ts
     └── subject/
@@ -80,6 +92,22 @@ src/app/
 ```
 
 ---
+
+## Rotas
+
+O slug do concurso vive **na URL**, não apenas na memória do app:
+
+| Rota | Página |
+|---|---|
+| `/` | Redireciona para o último concurso estudado |
+| `/concursos` | Seleção de concurso, com progresso de cada um |
+| `/c/:contest` | Dashboard do concurso |
+| `/c/:contest/assunto/:id` | Página do assunto (6 abas) |
+| `/c/:contest/busca` | Busca global dentro do concurso |
+
+Sem o prefixo, dois editais disputariam `/assunto/42`: um link salvo apontaria para o assunto errado assim que o banco fosse re-semeado, e abrir dois concursos em abas distintas embaralharia o estado das duas. O `activateContestGuard` trata a URL como autoridade — navegar para outro concurso troca o ativo.
+
+As URLs antigas (`/assunto/:id` e `/busca`) continuam funcionando por redirect. Para `/assunto/:id`, o destino é descoberto pelo **dono real do assunto**, não pelo concurso ativo — senão um favorito antigo abriria o assunto certo dentro do concurso errado.
 
 ## Modelo de dados (IndexedDB, banco `concurso-studio`)
 
@@ -110,13 +138,16 @@ Intervalos fixos: **1 · 3 · 7 · 15 · 30 · 90 dias**.
 ## Como estender sem alterar a estrutura
 
 ### Adicionar um novo concurso
-1. Crie `src/app/core/data/edital-<slug>.ts` exportando um `ContestSeed` (mesmo formato do arquivo da DATAPREV: árvore de `SubjectSeed` com `title`, `topics`, `children`).
-2. Registre-o no array `CONTEST_SEEDS` em `core/db/seed.ts`.
-3. Pronto — o seed é idempotente por `slug` e roda na próxima inicialização.
+1. Crie `public/content/<slug>/meta.json` (slug, name, role, year, `examInfo` opcional e a árvore `tree`).
+2. Crie um JSON por área no formato `{ "subjects": [ … ] }`. O campo `subject` deve casar **exatamente** com o título de uma folha da árvore (acento e caixa são ignorados).
+3. Registre o concurso em `public/content/index.json`, listando os nomes dos arquivos de área.
+4. Rode `npm run content:check` — o mesmo validador que roda no `prebuild` e barra o deploy com JSON inválido.
+
+O concurso aparece sozinho no menu **CONCURSOS** e ganha suas próprias rotas `/c/<slug>/…`. Títulos de assunto podem se repetir entre concursos sem conflito: o casamento de conteúdo, o progresso e a busca são escopados por `contestId`.
 
 ### Adicionar novos assuntos a um concurso existente
 - **Pela UI (futuro próximo)** ou programaticamente: `SubjectStore.addSubject(contestId, parentId, título)`.
-- Ou edite o arquivo de seed e apague o banco (DevTools → Application → IndexedDB) para re-seedar.
+- Ou edite `meta.json` e apague o banco (DevTools → Application → IndexedDB) para re-semear.
 
 ### Adicionar conteúdo
 Tudo pela interface: resumos e observações (editor), artigos de legislação (colar texto → grifar), questões (formulário completo com duplicar/editar/excluir) e flashcards. Auto-save sempre.
