@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============ Design tokens ============ */
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --raised: #ffffff;
+  --line: #e6e6e2;
+  --ink: #202020;
+  --soft: #64645f;
+  --faint: #a3a39c;
+  --accent: #2563eb;
+  --accent-ink: #ffffff;
+  --hover: #ececea;
+  --sel: #e8f0fe;
+  --ok: #16a34a;
+  --warn: #d97706;
+  --bad: #dc2626;
+  --hl-yellow: #fdf3a9;
+  --hl-green: #d3f2d9;
+  --hl-red: #fddcdc;
+  color-scheme: light;
+}
+.dark {
+  --bg: #191919;
+  --surface: #202020;
+  --raised: #262626;
+  --line: #343434;
+  --ink: #e8e8e5;
+  --soft: #9d9d97;
+  --faint: #6e6e68;
+  --accent: #6494f5;
+  --accent-ink: #10233f;
+  --hover: #2a2a2a;
+  --sel: #1f3050;
+  --ok: #4ade80;
+  --warn: #fbbf24;
+  --bad: #f87171;
+  --hl-yellow: #5d520f;
+  --hl-green: #1c4a2a;
+  --hl-red: #5a1f1f;
+  color-scheme: dark;
+}
+
+html { height: 100%; }
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* { scrollbar-width: thin; scrollbar-color: var(--faint) transparent; }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb { background: var(--line); border-radius: 8px; }
+
+/* ============ Reusable UI ============ */
+.btn {
+  @apply inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium
+         border border-line bg-surface text-ink cursor-pointer select-none
+         transition-colors;
+}
+.btn:hover { background: var(--hover); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.btn-primary:hover { filter: brightness(1.08); background: var(--accent); }
+.btn-ghost { border-color: transparent; background: transparent; }
+.btn-ghost:hover { background: var(--hover); }
+.btn-danger { color: var(--bad); }
+.icon-btn {
+  @apply inline-flex items-center justify-center rounded-md w-8 h-8 text-soft cursor-pointer
+         border border-transparent transition-colors shrink-0;
+  background: transparent;
+}
+.icon-btn:hover { background: var(--hover); color: var(--ink); }
+.input, .select, .textarea {
+  @apply w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm text-ink outline-none;
+}
+.input:focus, .select:focus, .textarea:focus { border-color: var(--accent); }
+.card { @apply rounded-xl border border-line bg-surface; }
+.chip { @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium; }
+.label { @apply block text-xs font-semibold text-soft mb-1 uppercase tracking-wide; }
+
+/* ============ TipTap / ProseMirror ============ */
+.tiptap { outline: none; min-height: 8rem; }
+.tiptap > * + * { margin-top: 0.5em; }
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: var(--faint);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+.tiptap h1 { font-size: 1.7em; font-weight: 700; margin-top: 1.2em; line-height: 1.25; }
+.tiptap h2 { font-size: 1.35em; font-weight: 700; margin-top: 1.1em; line-height: 1.3; }
+.tiptap h3 { font-size: 1.15em; font-weight: 600; margin-top: 1em; }
+.tiptap ul { list-style: disc; padding-left: 1.4em; }
+.tiptap ol { list-style: decimal; padding-left: 1.4em; }
+.tiptap li > p { margin: 0; }
+.tiptap blockquote {
+  border-left: 3px solid var(--line);
+  padding-left: 1em;
+  color: var(--soft);
+  margin: 0.6em 0;
+}
+.tiptap .callout {
+  background: var(--hover);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.75em 1em;
+}
+.tiptap .callout::before { content: '💡 '; }
+.tiptap code {
+  background: var(--hover);
+  border-radius: 5px;
+  padding: 0.15em 0.35em;
+  font-size: 0.88em;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+}
+.tiptap pre {
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.8em 1em;
+  overflow-x: auto;
+}
+.tiptap pre code { background: transparent; padding: 0; }
+.tiptap img { max-width: 100%; border-radius: 8px; }
+.tiptap a { color: var(--accent); text-decoration: underline; cursor: pointer; }
+.tiptap hr { border: none; border-top: 1px solid var(--line); margin: 1.2em 0; }
+.tiptap mark { border-radius: 3px; padding: 0 2px; background: var(--hl-yellow); color: inherit; }
+.tiptap table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.8em 0;
+  table-layout: fixed;
+}
+.tiptap th, .tiptap td {
+  border: 1px solid var(--line);
+  padding: 0.4em 0.6em;
+  vertical-align: top;
+  position: relative;
+}
+.tiptap th { background: var(--hover); font-weight: 600; text-align: left; }
+.tiptap .selectedCell::after {
+  content: ''; position: absolute; inset: 0; background: var(--sel); opacity: 0.5; pointer-events: none;
+}
+.tiptap ul[data-type='taskList'] { list-style: none; padding-left: 0.2em; }
+.tiptap ul[data-type='taskList'] li { display: flex; gap: 0.5em; align-items: flex-start; }
+.tiptap ul[data-type='taskList'] li > label { margin-top: 0.35em; }
+.tiptap ul[data-type='taskList'] input[type='checkbox'] { accent-color: var(--accent); width: 15px; height: 15px; }
+.tiptap ul[data-type='taskList'] li[data-checked='true'] > div { color: var(--faint); text-decoration: line-through; }
+
+/* Read-only rendered content reuses .tiptap styles via .rich-content */
+.rich-content { word-break: break-word; }
+
+/* Heatmap */
+.heat-0 { background: var(--hover); }
+.heat-1 { background: color-mix(in srgb, var(--accent) 25%, var(--surface)); }
+.heat-2 { background: color-mix(in srgb, var(--accent) 45%, var(--surface)); }
+.heat-3 { background: color-mix(in srgb, var(--accent) 70%, var(--surface)); }
+.heat-4 { background: var(--accent); }
+
+@media (max-width: 768px) {
+  body { font-size: 14.5px; }
+}

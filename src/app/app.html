@@ -1,0 +1,81 @@
+<div class="flex h-dvh overflow-hidden">
+
+  <!-- Backdrop (mobile) -->
+  @if (isMobile() && sidebarOpen()) {
+    <div class="fixed inset-0 z-30 bg-black/40" (click)="sidebarOpen.set(false)"></div>
+  }
+
+  <!-- Sidebar -->
+  <aside
+    class="z-40 flex h-full w-72 shrink-0 flex-col border-r border-line bg-surface transition-transform duration-200"
+    [class.fixed]="isMobile()"
+    [class.-translate-x-full]="!sidebarOpen()"
+    [class.hidden]="!isMobile() && !sidebarOpen()">
+
+    <div class="flex items-center gap-2 px-4 pt-4 pb-2">
+      <a routerLink="/" (click)="closeSidebarOnMobile()" class="flex items-center gap-2 no-underline">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg text-sm font-bold"
+              style="background: var(--accent); color: var(--accent-ink);">D</span>
+        <span class="leading-tight">
+          <span class="block text-sm font-bold text-ink">{{ store.contest()?.name ?? 'Concurso Studio' }}</span>
+          <span class="block text-[11px] text-faint">{{ store.contest()?.role }}</span>
+        </span>
+      </a>
+    </div>
+
+    <nav class="px-3 py-2">
+      <a routerLink="/" (click)="closeSidebarOnMobile()"
+         class="flex items-center gap-2 rounded-md px-2 py-1.5 text-[13.5px] font-medium text-soft hover:bg-hoverc hover:text-ink">
+        📊 Dashboard
+        @if (dueCount() > 0) {
+          <span class="chip ml-auto" style="background: var(--sel); color: var(--accent);">{{ dueCount() }} p/ revisar</span>
+        }
+      </a>
+      <a routerLink="/busca" (click)="closeSidebarOnMobile()"
+         class="flex items-center gap-2 rounded-md px-2 py-1.5 text-[13.5px] font-medium text-soft hover:bg-hoverc hover:text-ink">
+        🔍 Busca global
+      </a>
+    </nav>
+
+    <div class="px-4 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-wider text-faint">
+      Conteúdo programático
+    </div>
+
+    <div class="flex-1 overflow-y-auto px-2 pb-6">
+      @for (node of store.tree(); track node.id) {
+        <app-sidebar-node
+          [node]="node" [depth]="0"
+          [expandedIds]="expandedIds()"
+          (toggle)="toggleNode($event)"
+          (navigated)="closeSidebarOnMobile()" />
+      }
+    </div>
+
+    <div class="border-t border-line px-4 py-2 text-[11px] text-faint">
+      Edital 001/2026 · FGV · Prova 11/10/2026
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="flex min-w-0 flex-1 flex-col">
+    <header class="flex items-center gap-2 border-b border-line bg-surface px-3 py-2 sm:px-4">
+      <button type="button" class="icon-btn" (click)="toggleSidebar()" aria-label="Alternar menu">☰</button>
+
+      <div class="relative mx-auto w-full max-w-xl">
+        <input #searchInput type="search" class="input !py-1.5 !pl-8"
+               placeholder="Buscar em tudo…  (Ctrl+K)"
+               (keydown.enter)="submitSearch(searchInput.value)">
+        <span class="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-faint text-sm">🔍</span>
+      </div>
+
+      <button type="button" class="icon-btn" (click)="theme.toggle()"
+              [attr.aria-label]="theme.theme() === 'dark' ? 'Tema claro' : 'Tema escuro'">
+        {{ theme.theme() === 'dark' ? '☀️' : '🌙' }}
+      </button>
+    </header>
+
+    <main class="min-h-0 flex-1 overflow-y-auto">
+      <router-outlet />
+    </main>
+  </div>
+</div>

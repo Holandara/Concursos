@@ -1,0 +1,10 @@
+# Deploy no Netlify (SPA Angular)
+[build]
+  command = "npm run build"
+  publish = "dist/dataprev-study/browser"
+
+# Fallback SPA: todas as rotas servem o index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,989 @@
+import { SubjectContent } from './content-types';
+
+/* eslint-disable max-len */
+
+/**
+ * Segurança da Informação — bloco 2: servidores, PKI, riscos, continuidade,
+ * frameworks, operação de segurança, desenvolvimento seguro, IAM e incidentes.
+ */
+export const CONTENT_SEGURANCA_2: SubjectContent[] = [
+  {
+    subject: 'Segurança de Servidores e SO',
+    summary: `
+<h1>Segurança de servidores e sistemas operacionais</h1>
+
+<h2>1. Hardening — princípios</h2>
+<ul>
+<li><strong>Reduzir a superfície de ataque</strong>: desinstalar pacotes e desabilitar serviços não usados; fechar portas;</li>
+<li><strong>Configuração segura por padrão</strong>: trocar credenciais default, remover contas de exemplo e bancos de demonstração;</li>
+<li><strong>Menor privilégio</strong>: serviços rodando com conta dedicada e sem privilégio administrativo;</li>
+<li><strong>Baselines reconhecidos</strong>: <strong>CIS Benchmarks</strong>, <strong>DISA STIG</strong>, guias do fornecedor;</li>
+<li><strong>Gestão de patches</strong> com janela definida, teste em homologação e rollback;</li>
+<li><strong>Logging</strong> centralizado e protegido, com NTP sincronizado;</li>
+<li><strong>Integridade</strong>: FIM (AIDE, Tripwire, Wazuh), secure boot, assinatura de pacotes.</li>
+</ul>
+
+<h2>2. Linux</h2>
+<table><tbody>
+<tr><td><strong>Permissões</strong></td><td>rwx para owner/group/other; <strong>umask</strong> define o padrão; <strong>SUID/SGID/sticky bit</strong> são vetores clássicos de escalada — audite com <code>find / -perm -4000</code></td></tr>
+<tr><td><strong>Contas</strong></td><td><code>/etc/passwd</code> (público) e <code>/etc/shadow</code> (hashes, root apenas). Bloqueie login direto de root e use <strong>sudo</strong> com registro</td></tr>
+<tr><td><strong>SSH</strong></td><td><code>PermitRootLogin no</code>, <code>PasswordAuthentication no</code>, chaves ed25519/RSA-4096, <code>AllowUsers</code>, fail2ban</td></tr>
+<tr><td><strong>MAC</strong></td><td><strong>SELinux</strong> (rótulos, modos enforcing/permissive/disabled) e <strong>AppArmor</strong> (perfis por caminho)</td></tr>
+<tr><td><strong>Firewall local</strong></td><td>nftables/iptables, firewalld, ufw</td></tr>
+<tr><td><strong>Auditoria</strong></td><td><code>auditd</code>, <code>journald</code>, <code>/var/log/auth.log</code>, <code>last</code>, <code>lastb</code></td></tr>
+</tbody></table>
+
+<h2>3. Windows</h2>
+<table><tbody>
+<tr><td><strong>Active Directory</strong></td><td>Floresta, domínio, OU, GPO. Contas privilegiadas: Domain Admins, Enterprise Admins</td></tr>
+<tr><td><strong>Autenticação</strong></td><td><strong>Kerberos</strong> (padrão; TGT/TGS, KDC) e NTLM (legado). Ataques: <strong>Pass-the-Hash</strong>, <strong>Pass-the-Ticket</strong>, <strong>Kerberoasting</strong>, <strong>Golden/Silver Ticket</strong>, DCSync</td></tr>
+<tr><td><strong>Modelo em camadas</strong></td><td>Tier 0 (DC e identidade), Tier 1 (servidores), Tier 2 (estações) — sem reutilizar credencial entre camadas</td></tr>
+<tr><td><strong>Controles</strong></td><td><strong>LAPS</strong> (senha de admin local única por máquina), <strong>Credential Guard</strong>, <strong>UAC</strong>, AppLocker/WDAC, BitLocker + TPM, PAW (estação administrativa dedicada)</td></tr>
+<tr><td><strong>Logs</strong></td><td>Event Viewer: 4624 logon, 4625 falha de logon, 4672 privilégio especial, 4688 criação de processo, 4768/4769 Kerberos</td></tr>
+</tbody></table>
+
+<h2>4. Virtualização e contêineres (visão do SO)</h2>
+<p><strong>Hipervisor tipo 1</strong> (bare-metal: ESXi, Hyper-V, KVM) tem menor superfície que o <strong>tipo 2</strong> (hospedado: VirtualBox, VMware Workstation). Riscos específicos: <strong>VM escape</strong>, <strong>VM sprawl</strong>, snapshots desatualizados com vulnerabilidades antigas, e comprometimento do hipervisor (afeta todas as VMs).</p>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Dizer que os hashes de senha do Linux estão em <code>/etc/passwd</code> — estão em <code>/etc/shadow</code>.</li>
+<li>Confundir SELinux (MAC por rótulos) com permissões POSIX (DAC).</li>
+<li>Afirmar que hipervisor tipo 2 é mais seguro que tipo 1.</li>
+<li>Tratar hardening como atividade única, e não como <em>baseline</em> com verificação contínua de <em>drift</em>.</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'Em um servidor Linux, o arquivo que armazena os hashes das senhas dos usuários, com leitura restrita ao superusuário, é:',
+        options: ['/etc/passwd', '/etc/shadow', '/etc/group', '/etc/sudoers', '/var/log/auth.log'],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Hardening Linux', tags: ['Linux', 'hardening', 'contas'],
+        comment: '/etc/passwd é legível por todos e contém apenas dados de conta; o "x" no campo de senha indica que o hash está no shadow.',
+        justification: 'O /etc/shadow armazena os hashes e políticas de expiração, com permissão restrita ao root.',
+      },
+      {
+        statement: 'Um atacante obteve o hash NTLM de uma conta administrativa e o utilizou diretamente para autenticar-se em outros servidores do domínio, sem precisar descobrir a senha em texto claro. Essa técnica é conhecida como:',
+        options: ['Kerberoasting.', 'Pass-the-Hash.', 'Golden Ticket.', 'DCSync.', 'Password spraying.'],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Ataques a Active Directory', tags: ['Windows', 'AD', 'PtH'],
+        comment: 'Mitigações: Credential Guard, LAPS, modelo em camadas e restrição de logon interativo de contas privilegiadas.',
+        justification: 'No Pass-the-Hash o próprio hash serve como credencial no protocolo NTLM. Kerberoasting extrai tickets de serviço para quebra offline; Golden Ticket forja TGTs a partir da chave da conta krbtgt.',
+      },
+      {
+        statement: 'Sobre o uso de baselines de configuração segura em servidores, assinale a alternativa correta.',
+        options: [
+          'Os CIS Benchmarks e os DISA STIG são referências reconhecidas para o hardening de sistemas operacionais e aplicações.',
+          'A aplicação de um baseline é atividade pontual, dispensando verificação posterior.',
+          'Baselines devem ser aplicados apenas em servidores expostos à internet.',
+          'O hardening consiste exclusivamente na instalação de antivírus.',
+          'A remoção de serviços desnecessários aumenta a superfície de ataque.',
+        ],
+        correct: 0,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Baselines', tags: ['CIS', 'STIG', 'hardening'],
+        comment: 'Depois de aplicar, monitore o drift: gestão de configuração (controle 8.9 da ISO 27002:2022).',
+        justification: 'CIS Benchmarks e DISA STIG são os padrões de mercado. O baseline exige verificação contínua de conformidade, pois configurações sofrem desvio ao longo do tempo.',
+      },
+    ],
+  },
+
+  {
+    subject: 'Certificação Digital',
+    summary: `
+<h1>Certificação digital e ICP-Brasil</h1>
+
+<h2>1. PKI — componentes</h2>
+<table><tbody>
+<tr><td><strong>AC (CA)</strong></td><td>Autoridade Certificadora: <strong>emite, renova e revoga</strong> certificados</td></tr>
+<tr><td><strong>AR (RA)</strong></td><td>Autoridade de Registro: faz a <strong>identificação presencial</strong> do solicitante; <strong>não emite</strong> certificado</td></tr>
+<tr><td><strong>AC-Raiz</strong></td><td>Topo da cadeia; certificado <strong>autoassinado</strong>. No Brasil, o <strong>ITI</strong> é a AC-Raiz da ICP-Brasil</td></tr>
+<tr><td><strong>Repositório</strong></td><td>Publica certificados, LCR e políticas</td></tr>
+<tr><td><strong>ACT</strong></td><td>Autoridade de Carimbo do Tempo — prova temporal</td></tr>
+</tbody></table>
+<p>Estrutura da ICP-Brasil (MP nº 2.200-2/2001): <strong>CG-ICP</strong> (Comitê Gestor, normatiza) → <strong>ITI</strong> (AC-Raiz, credencia e fiscaliza) → ACs de 1º e 2º níveis → ARs.</p>
+
+<h2>2. Certificado X.509 — campos</h2>
+<p>Versão, número de série, algoritmo de assinatura, <strong>emissor (issuer)</strong>, validade (not before / not after), <strong>titular (subject)</strong>, <strong>chave pública</strong>, extensões (<strong>SAN</strong>, Key Usage, Extended Key Usage, Basic Constraints, CDP, AIA) e a <strong>assinatura da AC</strong>.</p>
+<div data-callout="info"><p>A <strong>chave privada nunca</strong> está no certificado. O certificado é público — ele apenas vincula uma identidade a uma chave pública, com a assinatura da AC como garantia.</p></div>
+
+<h2>3. Tipos na ICP-Brasil</h2>
+<table><tbody>
+<tr><td><strong>A1</strong></td><td>Assinatura, chave em <strong>software</strong> (arquivo), validade <strong>1 ano</strong></td></tr>
+<tr><td><strong>A3</strong></td><td>Assinatura, chave em <strong>hardware</strong> (token/smartcard), validade até <strong>3 anos</strong> (5 em alguns casos)</td></tr>
+<tr><td><strong>S1 / S3</strong></td><td>Sigilo (confidencialidade), mesmas mídias de A1/A3</td></tr>
+<tr><td><strong>T3 / T4</strong></td><td>Carimbo do tempo</td></tr>
+</tbody></table>
+<p>Nos tipos <strong>A3/S3</strong>, a chave privada é <strong>gerada e utilizada dentro do dispositivo</strong>, sem possibilidade de exportação — é isso que sustenta o não repúdio.</p>
+
+<h2>4. Validação e revogação</h2>
+<ul>
+<li><strong>LCR/CRL</strong>: lista de certificados revogados, publicada periodicamente. Desvantagem: <strong>latência</strong> e tamanho;</li>
+<li><strong>OCSP</strong>: consulta em <strong>tempo real</strong> por certificado. Desvantagem: privacidade e disponibilidade da AC;</li>
+<li><strong>OCSP Stapling</strong>: o próprio servidor apresenta a resposta OCSP assinada — resolve latência e privacidade;</li>
+<li>Motivos de revogação: comprometimento da chave, mudança de vínculo, cessação de operação, substituição.</li>
+</ul>
+
+<h2>5. Efeitos jurídicos</h2>
+<p>MP 2.200-2/2001, art. 10, § 1º: documentos assinados com certificado ICP-Brasil presumem-se <strong>verdadeiros em relação aos signatários</strong>. O § 2º admite outros meios de comprovação de autoria e integridade, <strong>desde que aceitos pelas partes</strong>. A <strong>Lei nº 14.063/2020</strong> criou três níveis para interações com o poder público: <strong>simples</strong>, <strong>avançada</strong> e <strong>qualificada</strong> (esta com certificado ICP-Brasil).</p>
+
+<h2>6. TLS na prática</h2>
+<p>Certificados de servidor: <strong>DV</strong> (validação de domínio), <strong>OV</strong> (organização) e <strong>EV</strong> (validação estendida). O nome do host deve constar na extensão <strong>SAN</strong> — o Common Name está obsoleto para essa finalidade. Erros típicos: certificado expirado, cadeia incompleta (falta da intermediária), nome divergente, autoassinado.</p>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Dizer que a AR emite certificados — ela apenas <strong>identifica e registra</strong>.</li>
+<li>Afirmar que o certificado contém a chave privada.</li>
+<li>Trocar A1 (software) por A3 (hardware).</li>
+<li>Dizer que OCSP é lista publicada periodicamente (isso é a LCR).</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'Na infraestrutura de chaves públicas brasileira (ICP-Brasil), a entidade responsável por identificar e cadastrar presencialmente os solicitantes, encaminhando as solicitações à Autoridade Certificadora, é a:',
+        options: ['Autoridade Certificadora Raiz.', 'Autoridade de Registro (AR).', 'Autoridade de Carimbo do Tempo.', 'Comitê Gestor da ICP-Brasil.', 'Autoridade Certificadora de 2º nível.'],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'PKI', tags: ['ICP-Brasil', 'AR', 'PKI'],
+        comment: 'AR identifica; AC emite. É a distinção mais cobrada sobre PKI.',
+        justification: 'A Autoridade de Registro é responsável pela identificação presencial e pelo encaminhamento das solicitações; a emissão, renovação e revogação competem à AC.',
+      },
+      {
+        statement: 'Sobre os certificados digitais da ICP-Brasil, assinale a alternativa correta.',
+        options: [
+          'O certificado do tipo A1 tem a chave privada armazenada em token criptográfico, com validade de três anos.',
+          'O certificado do tipo A3 tem a chave privada gerada e armazenada em dispositivo criptográfico (token ou smartcard), do qual não pode ser exportada.',
+          'Os certificados do tipo S são destinados exclusivamente a assinatura digital.',
+          'O certificado digital contém a chave privada do titular, protegida por senha.',
+          'A validade do certificado A1 é de cinco anos.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Tipos de certificado', tags: ['ICP-Brasil', 'A1', 'A3'],
+        comment: 'A = assinatura, S = sigilo, T = tempo. 1 = software, 3 = hardware.',
+        justification: 'O A3 usa mídia criptográfica com chave não exportável. O A1 é em software, com validade de 1 ano. Certificados do tipo S destinam-se a sigilo. O certificado jamais contém a chave privada.',
+      },
+      {
+        statement: 'Um navegador precisa verificar, em tempo real, se um certificado apresentado por um servidor foi revogado. O mecanismo mais adequado é:',
+        options: [
+          'Consultar a Lista de Certificados Revogados (LCR) publicada mensalmente.',
+          'Utilizar o protocolo OCSP, preferencialmente com OCSP Stapling.',
+          'Verificar a data de validade constante no campo notAfter.',
+          'Recalcular o hash do certificado com SHA-1.',
+          'Consultar o Common Name do certificado.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Revogação', tags: ['OCSP', 'CRL', 'TLS'],
+        comment: 'OCSP Stapling elimina o vazamento de privacidade (a AC deixa de saber quais sites o usuário visita) e a latência da consulta.',
+        justification: 'O OCSP consulta o status individual do certificado em tempo real. A LCR sofre com latência de publicação. A data de validade nada informa sobre revogação antecipada.',
+      },
+    ],
+  },
+
+  {
+    subject: 'Gestão de Riscos',
+    summary: `
+<h1>Gestão de riscos — ISO 31000:2018 e ISO/IEC 27005:2019</h1>
+
+<h2>1. ABNT NBR ISO 31000:2018</h2>
+<p>Diretrizes genéricas, <strong>não certificável</strong>. Define <strong>risco</strong> como o <em>efeito da incerteza nos objetivos</em> — pode ser <strong>positivo ou negativo</strong>. Três elementos:</p>
+<table><tbody>
+<tr><td><strong>Princípios</strong></td><td>8: integrada; estruturada e abrangente; personalizada; inclusiva; dinâmica; melhor informação disponível; fatores humanos e culturais; melhoria contínua. Todos convergem para a <strong>criação e proteção de valor</strong></td></tr>
+<tr><td><strong>Estrutura (framework)</strong></td><td>Liderança e comprometimento no centro + integração, concepção, implementação, avaliação e melhoria</td></tr>
+<tr><td><strong>Processo</strong></td><td>Escopo/contexto/critérios → <strong>processo de avaliação de riscos</strong> (identificação → análise → avaliação) → tratamento → registro e relato. Permeando tudo: <strong>comunicação e consulta</strong> e <strong>monitoramento e análise crítica</strong></td></tr>
+</tbody></table>
+
+<h2>2. As quatro (ou cinco) estratégias de tratamento</h2>
+<table><tbody>
+<tr><td><strong>Mitigar / modificar</strong></td><td>Implantar controles para reduzir probabilidade ou impacto</td></tr>
+<tr><td><strong>Transferir / compartilhar</strong></td><td>Seguro, terceirização, cláusula contratual. <em>A responsabilidade final não se transfere</em></td></tr>
+<tr><td><strong>Evitar</strong></td><td>Não iniciar ou descontinuar a atividade que gera o risco</td></tr>
+<tr><td><strong>Aceitar / reter</strong></td><td>Decisão consciente e formalizada pelo <strong>dono do risco</strong></td></tr>
+<tr><td><strong>Explorar / aumentar</strong></td><td>Para riscos positivos (oportunidades)</td></tr>
+</tbody></table>
+
+<h2>3. Conceitos que a banca cobra</h2>
+<ul>
+<li><strong>Risco inerente</strong> (antes dos controles) x <strong>risco residual</strong> (após os controles). O residual precisa ser <strong>aceito formalmente</strong>;</li>
+<li><strong>Apetite ao risco</strong>: quanto a organização está disposta a assumir. <strong>Tolerância</strong>: variação aceitável em torno do apetite;</li>
+<li><strong>Risco = probabilidade × impacto</strong>; matriz de calor (heat map) para priorização;</li>
+<li><strong>Análise qualitativa</strong> (escalas alto/médio/baixo — rápida, subjetiva) x <strong>quantitativa</strong> (valores financeiros);</li>
+<li>Fórmulas quantitativas clássicas: <strong>SLE = AV × EF</strong> (perda única = valor do ativo × fator de exposição); <strong>ALE = SLE × ARO</strong> (perda anual esperada); o custo do controle deve ser <strong>menor</strong> que a redução do ALE.</li>
+</ul>
+
+<h2>4. ISO/IEC 27005:2019</h2>
+<p>Aplica a lógica da 31000 ao contexto de segurança da informação, apoiando os requisitos 6.1 e 8.2/8.3 da 27001. Trabalha com <strong>ativos, ameaças, vulnerabilidades, controles existentes e consequências</strong>. Identificação de riscos pode ser feita por abordagem <strong>baseada em eventos</strong> ou <strong>baseada em ativos</strong>.</p>
+<p>Documentos-chave: <strong>critérios de risco</strong>, <strong>inventário de ativos</strong>, <strong>registro de riscos</strong>, <strong>Plano de Tratamento de Riscos</strong> e, na 27001, a <strong>SoA</strong>.</p>
+
+<h2>5. Outras referências</h2>
+<p><strong>NIST SP 800-30</strong> (guia de avaliação de risco), <strong>NIST SP 800-37</strong> (Risk Management Framework), <strong>FAIR</strong> (modelo quantitativo), <strong>COSO ERM</strong> (gestão de riscos corporativos), <strong>OCTAVE</strong>.</p>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Definir risco apenas como algo negativo — a ISO 31000 admite efeito positivo.</li>
+<li>Dizer que transferir o risco transfere a responsabilidade (accountability) — não transfere.</li>
+<li>Confundir apetite (nível desejado) com tolerância (desvio aceitável).</li>
+<li>Trocar a ordem: identificação → análise → avaliação. "Avaliação de riscos" é o processo que engloba as três.</li>
+<li>Achar que a ISO 31000 é certificável.</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'Segundo a ABNT NBR ISO 31000:2018, risco é definido como:',
+        options: [
+          'A probabilidade de ocorrência de um evento indesejado.',
+          'O efeito da incerteza nos objetivos, podendo ser positivo, negativo ou ambos.',
+          'A fraqueza de um ativo que pode ser explorada por uma ameaça.',
+          'O produto entre o valor do ativo e o fator de exposição.',
+          'A consequência financeira de um incidente de segurança.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Conceito de risco', tags: ['ISO 31000', 'risco'],
+        comment: 'A definição literal da norma é cobrada com frequência. Note o "efeito da incerteza", não "probabilidade".',
+        justification: 'Definição do item 3.1 da ISO 31000:2018. A letra C define vulnerabilidade; a D é a fórmula do SLE.',
+      },
+      {
+        statement: 'Uma organização contratou apólice de seguro cibernético para cobrir prejuízos decorrentes de incidentes. Essa decisão corresponde à estratégia de tratamento de riscos de:',
+        options: ['Evitar.', 'Mitigar.', 'Transferir (compartilhar).', 'Aceitar.', 'Explorar.'],
+        correct: 2,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Tratamento de riscos', tags: ['ISO 31000', 'transferência'],
+        comment: 'Cuidado com a pegadinha: transfere-se o impacto financeiro, não a responsabilidade perante titulares e reguladores.',
+        justification: 'A contratação de seguro compartilha o impacto financeiro com terceiro, caracterizando a transferência do risco.',
+      },
+      {
+        statement: 'Um ativo avaliado em R$ 500.000,00 sofreria perda de 40% de seu valor caso determinado incidente ocorresse, com expectativa de duas ocorrências por ano. A perda anual esperada (ALE) é de:',
+        options: ['R$ 200.000,00.', 'R$ 400.000,00.', 'R$ 250.000,00.', 'R$ 1.000.000,00.', 'R$ 100.000,00.'],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Análise quantitativa', tags: ['ALE', 'SLE', 'ARO'],
+        comment: 'Cálculo padrão da análise quantitativa. Serve para comparar o custo do controle com o benefício esperado.',
+        justification: 'SLE = AV × EF = 500.000 × 0,40 = R$ 200.000. ALE = SLE × ARO = 200.000 × 2 = R$ 400.000.',
+      },
+      {
+        statement: 'Sobre risco inerente e risco residual, assinale a alternativa correta.',
+        options: [
+          'Risco residual é o risco existente antes da aplicação de qualquer controle.',
+          'Risco residual é aquele que permanece após a implementação dos controles e deve ser formalmente aceito pelo responsável.',
+          'Risco inerente é sempre inferior ao risco residual.',
+          'Uma vez implementados os controles, o risco residual é sempre nulo.',
+          'O risco residual dispensa monitoramento após sua aceitação.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Risco residual', tags: ['risco residual', 'ISO 27005'],
+        comment: 'A ISO 27001 exige aprovação formal do risco residual pelos proprietários do risco (6.1.3, f).',
+        justification: 'O risco inerente antecede os controles; o residual é o remanescente e nunca é nulo, devendo ser aceito formalmente e mantido sob monitoramento.',
+      },
+    ],
+  },
+
+  {
+    subject: 'Continuidade de Negócio',
+    summary: `
+<h1>Continuidade de negócios — ISO 22301:2020 e ISO 22313:2020</h1>
+
+<h2>1. Quem é quem</h2>
+<table><tbody>
+<tr><td><strong>ISO 22301:2020</strong></td><td><strong>Requisitos</strong> do Sistema de Gestão de Continuidade de Negócios (SGCN). <strong>Certificável</strong>. Estrutura de Alto Nível (cláusulas 4 a 10)</td></tr>
+<tr><td><strong>ISO 22313:2020</strong></td><td><strong>Orientações</strong> para aplicar a 22301. Não certificável</td></tr>
+<tr><td><strong>ISO/TS 22317</strong></td><td>Diretrizes específicas para o <strong>BIA</strong></td></tr>
+</tbody></table>
+
+<h2>2. Métricas — o núcleo das questões</h2>
+<table><tbody>
+<tr><td><strong>RTO</strong></td><td>Recovery Time Objective</td><td>Tempo máximo aceitável para <strong>restaurar</strong> o serviço. Olha para <strong>frente</strong></td></tr>
+<tr><td><strong>RPO</strong></td><td>Recovery Point Objective</td><td>Volume máximo de <strong>perda de dados</strong> aceitável, medido em tempo. Olha para <strong>trás</strong> e determina a frequência do backup</td></tr>
+<tr><td><strong>MTPD / MTD</strong></td><td>Maximum Tolerable Period of Disruption</td><td>Tempo além do qual o impacto se torna inaceitável. <strong>RTO ≤ MTPD</strong></td></tr>
+<tr><td><strong>MBCO</strong></td><td>Minimum Business Continuity Objective</td><td>Nível mínimo de serviço aceitável durante a interrupção</td></tr>
+<tr><td><strong>WRT</strong></td><td>Work Recovery Time</td><td>Tempo para reintegrar dados e voltar à operação normal. MTD = RTO + WRT</td></tr>
+<tr><td><strong>MTBF / MTTR</strong></td><td>Confiabilidade</td><td>Tempo médio entre falhas / tempo médio de reparo</td></tr>
+</tbody></table>
+<div data-callout="info"><p>Mnemônico: <strong>RPO = Perda</strong> (dados que posso perder) · <strong>RTO = Tempo</strong> (quanto posso ficar parada). RPO de 1 hora exige backup ou replicação no máximo de hora em hora.</p></div>
+
+<h2>3. Análise de Impacto no Negócio (BIA)</h2>
+<p>Identifica <strong>atividades críticas</strong>, seus <strong>impactos ao longo do tempo</strong> (financeiro, legal, reputacional, operacional), <strong>dependências</strong> (pessoas, TI, fornecedores, instalações) e define <strong>MTPD, RTO, RPO e MBCO</strong>. O BIA <strong>precede</strong> a definição das estratégias de continuidade. É diferente da <strong>avaliação de riscos</strong>: o BIA olha a <em>consequência</em> da interrupção, independentemente da causa; a avaliação de riscos olha as <em>causas prováveis</em>.</p>
+
+<h2>4. Planos — não confunda</h2>
+<table><tbody>
+<tr><td><strong>PCN / BCP</strong></td><td>Plano de Continuidade de Negócios — mantém as atividades críticas funcionando</td></tr>
+<tr><td><strong>PRD / DRP</strong></td><td>Plano de Recuperação de Desastres — foco em <strong>TI e infraestrutura</strong>; subconjunto do PCN</td></tr>
+<tr><td><strong>PAC</strong></td><td>Plano de Administração de Crises — comando, comunicação e decisão</td></tr>
+<tr><td><strong>PCO</strong></td><td>Plano de Continuidade Operacional</td></tr>
+</tbody></table>
+
+<h2>5. Estratégias de site alternativo</h2>
+<table><tbody>
+<tr><td><strong>Hot site</strong></td><td>Espelhado e pronto</td><td>Ativação em minutos/horas</td><td>Custo alto</td></tr>
+<tr><td><strong>Warm site</strong></td><td>Infra e hardware, dados a restaurar</td><td>Horas/dias</td><td>Custo médio</td></tr>
+<tr><td><strong>Cold site</strong></td><td>Apenas espaço, energia e link</td><td>Dias/semanas</td><td>Custo baixo</td></tr>
+<tr><td><strong>Mirror site</strong></td><td>Réplica em tempo real, ativo-ativo</td><td>Praticamente imediato</td><td>Custo máximo</td></tr>
+<tr><td><strong>Acordo de reciprocidade</strong></td><td>Convênio com outra organização</td><td>Variável</td><td>Baixo, porém pouco confiável</td></tr>
+</tbody></table>
+
+<h2>6. Testes (do mais leve ao mais realista)</h2>
+<ol>
+<li><strong>Revisão de documentação / checklist</strong>;</li>
+<li><strong>Tabletop (mesa)</strong> — discussão de cenário;</li>
+<li><strong>Walkthrough / simulação</strong>;</li>
+<li><strong>Teste paralelo</strong> — sistemas alternativos ativados sem desligar a produção;</li>
+<li><strong>Interrupção completa (full interruption)</strong> — produção é desligada. O mais realista e o mais arriscado.</li>
+</ol>
+<p>A 22301 exige <strong>programa de exercícios e testes</strong>, análise pós-exercício e melhoria contínua. Controle correlato na ISO 27002:2022: <strong>5.30 Prontidão de TIC para continuidade de negócios</strong>.</p>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Trocar RTO por RPO.</li>
+<li>Dizer que DRP e BCP são sinônimos — o DRP é <strong>parte</strong> do BCP.</li>
+<li>Afirmar que o BIA é feito depois de escolher as estratégias.</li>
+<li>Confundir hot site (pronto) com warm site (parcial).</li>
+<li>Chamar a ISO 22313 de certificável.</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'Uma organização define que, em caso de indisponibilidade do sistema de folha de pagamento, pode tolerar a perda de, no máximo, 30 minutos de transações, e que o serviço deve estar restabelecido em até 4 horas. Esses parâmetros correspondem, respectivamente, a:',
+        options: [
+          'RTO de 30 minutos e RPO de 4 horas.',
+          'RPO de 30 minutos e RTO de 4 horas.',
+          'MTPD de 30 minutos e MBCO de 4 horas.',
+          'MTBF de 30 minutos e MTTR de 4 horas.',
+          'WRT de 30 minutos e MTD de 4 horas.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Métricas de continuidade', tags: ['RTO', 'RPO', 'ISO 22301'],
+        comment: 'RPO = dados (para trás). RTO = tempo de volta ao ar (para frente).',
+        justification: 'A perda tolerável de dados é o RPO (30 minutos, definindo a frequência de backup ou replicação). O tempo máximo de restauração é o RTO (4 horas).',
+      },
+      {
+        statement: 'A respeito da Análise de Impacto no Negócio (BIA), assinale a alternativa correta.',
+        options: [
+          'É realizada após a definição das estratégias de continuidade, para validá-las.',
+          'Identifica as atividades críticas, seus impactos ao longo do tempo e as dependências, subsidiando a definição de MTPD, RTO e RPO.',
+          'Substitui integralmente o processo de avaliação de riscos.',
+          'Analisa exclusivamente as causas prováveis das interrupções.',
+          'É documento facultativo na ISO 22301:2020.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'BIA', tags: ['BIA', 'ISO 22301'],
+        comment: 'BIA olha consequência (independente da causa); avaliação de riscos olha causa e probabilidade. São complementares, exigidos na cláusula 8.2 da 22301.',
+        justification: 'O BIA precede e fundamenta a escolha das estratégias de continuidade, estabelecendo os objetivos de recuperação.',
+      },
+      {
+        statement: 'O tipo de teste de plano de continuidade em que os sistemas do site alternativo são ativados e processam as mesmas transações da produção, sem que esta seja desligada, é o teste:',
+        options: ['De mesa (tabletop).', 'De leitura de checklist.', 'Paralelo.', 'De interrupção completa.', 'De walkthrough.'],
+        correct: 2,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Testes de continuidade', tags: ['testes', 'DRP'],
+        comment: 'Ordem crescente de realismo e risco: checklist → tabletop → walkthrough → paralelo → interrupção completa.',
+        justification: 'No teste paralelo o ambiente alternativo é acionado em paralelo à produção, permitindo comparar resultados sem interromper o serviço.',
+      },
+    ],
+  },
+
+  {
+    subject: 'NIST Cybersecurity Framework 1.1',
+    summary: `
+<h1>NIST Cybersecurity Framework 1.1</h1>
+<p>Publicado em 2014 (v1.0) e revisado em <strong>2018 (v1.1)</strong>. É <strong>voluntário, baseado em risco e agnóstico de tecnologia</strong>. Composto por três partes: <strong>Núcleo (Core)</strong>, <strong>Níveis de Implementação (Tiers)</strong> e <strong>Perfis (Profiles)</strong>.</p>
+
+<h2>1. Núcleo — 5 funções (decore a ordem)</h2>
+<table><tbody>
+<tr><td><strong>IDENTIFY (ID)</strong></td><td>Gestão de ativos, ambiente de negócio, governança, avaliação de riscos, estratégia de gestão de riscos e <strong>gestão de riscos da cadeia de suprimentos (ID.SC)</strong> — novidade da v1.1</td></tr>
+<tr><td><strong>PROTECT (PR)</strong></td><td>Gestão de identidade, autenticação e <strong>controle de acesso (PR.AC)</strong>, conscientização e treinamento, segurança de dados, processos e procedimentos, manutenção, tecnologia de proteção</td></tr>
+<tr><td><strong>DETECT (DE)</strong></td><td>Anomalias e eventos, monitoramento contínuo, processos de detecção</td></tr>
+<tr><td><strong>RESPOND (RS)</strong></td><td>Planejamento de resposta, comunicações, análise, mitigação, melhorias</td></tr>
+<tr><td><strong>RECOVER (RC)</strong></td><td>Planejamento de recuperação, melhorias, comunicações</td></tr>
+</tbody></table>
+<p>Hierarquia do Núcleo: <strong>Funções → Categorias (23) → Subcategorias (108) → Referências informativas</strong> (ISO 27001, COBIT, NIST SP 800-53, CIS Controls, ISA 62443).</p>
+
+<h2>2. Níveis de implementação (Tiers) — 1 a 4</h2>
+<table><tbody>
+<tr><td><strong>Tier 1 — Parcial</strong></td><td>Ad hoc, reativo, sem processo formal, pouca consciência de risco</td></tr>
+<tr><td><strong>Tier 2 — Risco Informado</strong></td><td>Práticas aprovadas pela gestão, mas <strong>não estabelecidas como política organizacional</strong></td></tr>
+<tr><td><strong>Tier 3 — Repetível</strong></td><td>Política formal, processos atualizados regularmente, integração com a gestão de riscos corporativa</td></tr>
+<tr><td><strong>Tier 4 — Adaptativo</strong></td><td>Adaptação contínua com base em lições aprendidas e indicadores preditivos; cibersegurança na cultura organizacional</td></tr>
+</tbody></table>
+<div data-callout="warning"><p>Tiers <strong>não são níveis de maturidade</strong> e não indicam obrigatoriamente o objetivo a alcançar — a própria norma diz que a progressão só é encorajada quando reduz risco e é custo-efetiva. Questão clássica.</p></div>
+
+<h2>3. Perfis</h2>
+<p><strong>Perfil Atual</strong> (o que está implementado) x <strong>Perfil Alvo</strong> (o desejado, alinhado a objetivos de negócio, requisitos legais e apetite ao risco). A comparação gera a <strong>análise de lacunas (gap analysis)</strong> e o <strong>plano de ação priorizado</strong>.</p>
+
+<h2>4. Processo de sete passos para estabelecer o programa</h2>
+<ol>
+<li>Priorizar e definir escopo;</li>
+<li>Orientar (identificar sistemas, ativos, requisitos legais e ameaças);</li>
+<li>Criar o Perfil Atual;</li>
+<li>Conduzir a avaliação de riscos;</li>
+<li>Criar o Perfil Alvo;</li>
+<li>Determinar, analisar e priorizar as lacunas;</li>
+<li>Implementar o plano de ação.</li>
+</ol>
+
+<h2>5. Novidades da v1.1 em relação à v1.0</h2>
+<ul>
+<li>Nova categoria <strong>ID.SC — gestão de risco da cadeia de suprimentos</strong>;</li>
+<li>Ampliação da <strong>PR.AC</strong> para gestão de identidade e <strong>autenticação</strong>;</li>
+<li>Nova seção sobre <strong>autoavaliação do risco de cibersegurança com métricas</strong>;</li>
+<li>Detalhamento do uso do framework para <strong>divulgação de vulnerabilidades</strong>.</li>
+</ul>
+
+<h2>6. Nota sobre a versão 2.0</h2>
+<div data-callout="info"><p>Em 2024 o NIST publicou o <strong>CSF 2.0</strong>, que acrescentou a função <strong>GOVERN (GV)</strong> — passando a seis funções — e ampliou o escopo para além da infraestrutura crítica. O edital cobra a <strong>versão 1.1</strong>, mas conheça a mudança: é distrator perfeito.</p></div>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Incluir "Governar" entre as funções da <strong>v1.1</strong> (só existe na 2.0).</li>
+<li>Trocar a ordem das funções — a sequência é Identificar, Proteger, Detectar, Responder, Recuperar.</li>
+<li>Tratar Tiers como maturidade obrigatória.</li>
+<li>Dizer que o CSF é certificável ou obrigatório.</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'As funções do Núcleo do NIST Cybersecurity Framework versão 1.1 são:',
+        options: [
+          'Governar, Identificar, Proteger, Detectar, Responder e Recuperar.',
+          'Identificar, Proteger, Detectar, Responder e Recuperar.',
+          'Planejar, Fazer, Checar e Agir.',
+          'Prevenir, Detectar, Corrigir e Monitorar.',
+          'Identificar, Avaliar, Tratar, Comunicar e Monitorar.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Funções do Núcleo', tags: ['NIST CSF', 'funções'],
+        comment: 'A função GOVERN só aparece no CSF 2.0 (2024) — é o distrator mais eficiente nessa questão.',
+        justification: 'O CSF 1.1 possui cinco funções: Identify, Protect, Detect, Respond e Recover. A letra A descreve o CSF 2.0.',
+      },
+      {
+        statement: 'Sobre os Níveis de Implementação (Tiers) do NIST CSF 1.1, assinale a alternativa correta.',
+        options: [
+          'Representam níveis de maturidade que toda organização deve necessariamente alcançar até o Tier 4.',
+          'Descrevem o grau em que as práticas de gestão de risco de cibersegurança da organização exibem as características do framework, variando de Parcial (Tier 1) a Adaptativo (Tier 4).',
+          'São certificados por organismos acreditados pelo NIST.',
+          'Correspondem às cinco funções do Núcleo.',
+          'Substituem a necessidade de definição de Perfis Atual e Alvo.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Tiers', tags: ['NIST CSF', 'tiers'],
+        comment: 'O framework é explícito: a progressão para tiers superiores é encorajada apenas quando reduz risco de forma custo-efetiva.',
+        justification: 'Os Tiers (Partial, Risk Informed, Repeatable, Adaptive) descrevem o rigor e a sofisticação das práticas de gestão de risco, sem constituir escala de maturidade obrigatória nem objeto de certificação.',
+      },
+      {
+        statement: 'No NIST CSF 1.1, a comparação entre o Perfil Atual e o Perfil Alvo tem por finalidade principal:',
+        options: [
+          'Certificar a conformidade da organização com a ISO/IEC 27001.',
+          'Identificar lacunas e priorizar um plano de ação para alcançar os resultados desejados de cibersegurança.',
+          'Definir o orçamento anual da área de tecnologia da informação.',
+          'Estabelecer as cinco funções do Núcleo.',
+          'Determinar o Tier em que a organização será auditada.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Perfis', tags: ['NIST CSF', 'gap analysis'],
+        comment: 'É o passo 6 do processo de sete etapas do framework.',
+        justification: 'A análise de lacunas entre os perfis Atual e Alvo gera o plano de ação priorizado, considerando custo, benefício e risco.',
+      },
+    ],
+  },
+
+  {
+    subject: 'Defesa Moderna: BAS, XDR, SOAR, CASB, UEBA',
+    summary: `
+<h1>Defesa moderna: BAS, XDR, SOAR, CASB e UEBA</h1>
+
+<h2>1. BAS — Breach and Attack Simulation</h2>
+<p>Plataforma que <strong>simula ataques de forma automatizada e contínua</strong> contra o próprio ambiente, validando se os controles detectam e bloqueiam. Executa TTPs mapeadas no <strong>MITRE ATT&amp;CK</strong> e produz um "placar" de cobertura.</p>
+<table><tbody>
+<tr><td><strong>Scanner de vulnerabilidade</strong></td><td>Identifica falhas; <strong>não explora</strong></td></tr>
+<tr><td><strong>Pentest</strong></td><td>Explora; <strong>pontual</strong>, manual, criativo</td></tr>
+<tr><td><strong>Red team</strong></td><td>Simula um adversário real, com objetivo e furtividade, por semanas</td></tr>
+<tr><td><strong>BAS</strong></td><td><strong>Contínuo, automatizado e seguro</strong> (payloads inofensivos); valida <em>controles</em>, não descobre vulnerabilidades novas</td></tr>
+</tbody></table>
+
+<h2>2. XDR — Extended Detection and Response</h2>
+<p>Evolução do <strong>EDR</strong> (só endpoint) e do NDR (só rede): correlaciona telemetria de <strong>endpoint + rede + e-mail + nuvem + identidade</strong> em uma plataforma única, com detecção e resposta integradas.</p>
+<table><tbody>
+<tr><td><strong>EDR</strong></td><td>Endpoint: telemetria, detecção comportamental, isolamento, rollback</td></tr>
+<tr><td><strong>XDR</strong></td><td>Múltiplos domínios correlacionados nativamente; menos alertas, mais contexto</td></tr>
+<tr><td><strong>MDR</strong></td><td>Serviço <strong>gerenciado</strong> de detecção e resposta (pessoas + tecnologia)</td></tr>
+<tr><td><strong>SIEM</strong></td><td>Agnóstico de fornecedor, foco em log, correlação e conformidade</td></tr>
+</tbody></table>
+
+<h2>3. SOAR — Security Orchestration, Automation and Response</h2>
+<p>Três capacidades (Gartner): <strong>orquestração</strong> (integra ferramentas via API), <strong>automação</strong> (executa <em>playbooks</em> sem intervenção) e <strong>gestão de casos/resposta a incidentes</strong>. Também agrega <strong>threat intelligence</strong>.</p>
+<ul>
+<li>Benefícios: reduz <strong>MTTD e MTTR</strong>, padroniza a resposta, combate a <em>fadiga de alertas</em>, documenta a trilha para auditoria;</li>
+<li>Playbooks típicos: triagem de phishing, enriquecimento de IoC, bloqueio de IP/hash, isolamento de endpoint, desativação de conta, abertura de chamado;</li>
+<li>Cuidado de prova: SOAR <strong>não substitui</strong> o SIEM — normalmente <em>consome</em> os alertas dele.</li>
+</ul>
+
+<h2>4. CASB — Cloud Access Security Broker</h2>
+<p>Ponto de aplicação de política entre usuários e serviços em nuvem. <strong>Quatro pilares</strong>: <strong>visibilidade</strong> (descoberta de <em>shadow IT</em>), <strong>conformidade</strong>, <strong>segurança de dados</strong> (DLP, criptografia, tokenização) e <strong>proteção contra ameaças</strong>.</p>
+<p>Modos de implantação: <strong>API (out-of-band)</strong> — inspeciona dados já em repouso no SaaS, sem latência, mas não em tempo real; <strong>proxy forward</strong> — exige agente/PAC no cliente; <strong>proxy reverse</strong> — sem agente, ideal para dispositivos não gerenciados (BYOD), atua em tempo real. Compõe o <strong>SSE/SASE</strong> junto com SWG, ZTNA e FWaaS.</p>
+
+<h2>5. UEBA — User and Entity Behavior Analytics</h2>
+<p>Constrói uma <strong>linha de base</strong> do comportamento de usuários, contas de serviço, dispositivos e aplicações; pontua desvios (<em>risk scoring</em>) usando estatística e aprendizado de máquina.</p>
+<ul>
+<li>Casos de uso: <strong>ameaça interna (insider)</strong>, conta comprometida, <strong>viagem impossível</strong>, acesso atípico a repositórios, exfiltração, uso anômalo de conta privilegiada;</li>
+<li>Detecta o que assinatura não pega: credencial legítima usada de forma ilegítima;</li>
+<li>Desafios: período de aprendizado, falsos positivos e necessidade de contexto de identidade (integração com IAM/AD).</li>
+</ul>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Dizer que BAS explora vulnerabilidades reais com risco ao ambiente — os payloads são controlados.</li>
+<li>Confundir XDR (plataforma de detecção/resposta multi-domínio) com SIEM (agregação e correlação de logs).</li>
+<li>Afirmar que CASB em modo API atua em tempo real.</li>
+<li>Tratar UEBA como antivírus baseado em assinatura.</li>
+<li>Dizer que SOAR substitui analistas — ele automatiza tarefas repetitivas e libera o analista para investigação.</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'A tecnologia que estabelece uma linha de base do comportamento normal de usuários e entidades e atribui pontuações de risco a desvios, sendo especialmente eficaz na detecção de ameaças internas e contas comprometidas, é:',
+        options: ['CASB.', 'BAS.', 'UEBA.', 'SOAR.', 'WAF.'],
+        correct: 2,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'UEBA', tags: ['UEBA', 'insider threat'],
+        comment: 'Credencial válida usada por quem não deveria é invisível para controles baseados em assinatura ou em regra de acesso.',
+        justification: 'O UEBA (User and Entity Behavior Analytics) baseia-se em análise comportamental e risk scoring, detectando anomalias como viagem impossível e acesso atípico a dados.',
+      },
+      {
+        statement: 'Sobre as diferenças entre BAS (Breach and Attack Simulation) e teste de intrusão (pentest), assinale a alternativa correta.',
+        options: [
+          'O BAS é executado manualmente por especialistas, uma vez por ano, enquanto o pentest é automatizado e contínuo.',
+          'O BAS executa de forma automatizada e contínua técnicas de ataque para validar a eficácia dos controles de segurança, enquanto o pentest é uma avaliação pontual e majoritariamente manual.',
+          'Ambos têm por objetivo principal descobrir vulnerabilidades inéditas de dia zero.',
+          'O BAS substitui integralmente a necessidade de testes de intrusão e de exercícios de red team.',
+          'O pentest não pode explorar vulnerabilidades identificadas.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'BAS', tags: ['BAS', 'pentest', 'MITRE ATT&CK'],
+        comment: 'BAS responde "meus controles funcionam?"; pentest responde "é possível invadir e até onde?".',
+        justification: 'O BAS valida continuamente controles contra TTPs conhecidas (mapeadas no MITRE ATT&CK), com payloads seguros. Não substitui a criatividade do pentest e do red team, que exploram caminhos não previstos.',
+      },
+      {
+        statement: 'Um CASB implantado em modo de integração por API (out-of-band) apresenta como característica:',
+        options: [
+          'Bloqueio de uploads em tempo real, antes que o dado chegue ao provedor de nuvem.',
+          'Inspeção e aplicação de políticas sobre dados já armazenados no serviço de nuvem, sem introduzir latência no tráfego do usuário.',
+          'Necessidade obrigatória de instalação de agente em todos os dispositivos.',
+          'Atuação exclusiva sobre tráfego de rede em camada 3.',
+          'Impossibilidade de aplicar políticas de DLP.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'dificil',
+        subtopic: 'CASB', tags: ['CASB', 'nuvem', 'SASE'],
+        comment: 'API = retroativo e sem latência; proxy = tempo real, mas no caminho do tráfego.',
+        justification: 'No modo API o CASB conecta-se diretamente ao SaaS e avalia dados em repouso e eventos já ocorridos. O bloqueio em tempo real exige modo proxy (forward ou reverse).',
+      },
+    ],
+  },
+
+  {
+    subject: 'Operação de Segurança (SOC)',
+    summary: `
+<h1>Operação de segurança — SOC</h1>
+
+<h2>1. Estrutura de níveis</h2>
+<table><tbody>
+<tr><td><strong>N1 — Triagem</strong></td><td>Monitora o painel, valida alertas, descarta falsos positivos, escala. Segue <em>runbooks</em></td></tr>
+<tr><td><strong>N2 — Investigação</strong></td><td>Análise aprofundada, correlação, contenção inicial, determinação de escopo</td></tr>
+<tr><td><strong>N3 — Threat hunting e forense</strong></td><td>Caça proativa, engenharia reversa, resposta avançada, criação de detecções</td></tr>
+<tr><td><strong>Engenharia de detecção</strong></td><td>Cria e mantém regras, casos de uso e integrações; mede cobertura ATT&amp;CK</td></tr>
+<tr><td><strong>Gestão</strong></td><td>SOC Manager, indicadores, relacionamento com o negócio</td></tr>
+</tbody></table>
+<p>Modelos: <strong>interno</strong>, <strong>terceirizado (MSSP/MDR)</strong>, <strong>híbrido</strong>, <strong>virtual</strong> e <strong>follow-the-sun</strong>.</p>
+
+<h2>2. Pilha tecnológica</h2>
+<ul>
+<li><strong>Perímetro e rede</strong>: NGFW, proxy/SWG, IPS/IDS, NDR, sandbox de e-mail;</li>
+<li><strong>Endpoint</strong>: antivírus de nova geração, <strong>EDR/XDR</strong>, DLP de endpoint, controle de aplicação;</li>
+<li><strong>Dados e nuvem</strong>: DLP, <strong>CASB</strong>, CSPM, CWPP;</li>
+<li><strong>Identidade</strong>: IAM, <strong>PAM</strong>, MFA, UEBA;</li>
+<li><strong>Detecção e resposta</strong>: <strong>SIEM</strong>, <strong>SOAR</strong>, TIP (plataforma de threat intel), gestão de casos;</li>
+<li><strong>Higiene</strong>: gestão de vulnerabilidades, gestão de patches, <strong>backup</strong> e verificação de restauração, gestão de configuração.</li>
+</ul>
+
+<h2>3. Fluxo operacional</h2>
+<p>Coleta e monitoração → detecção → <strong>triagem</strong> → investigação → <strong>contenção</strong> → erradicação → recuperação → lições aprendidas → <strong>nova detecção</strong> (o ciclo retroalimenta a engenharia de detecção).</p>
+
+<h2>4. Indicadores</h2>
+<table><tbody>
+<tr><td><strong>MTTD</strong></td><td>Tempo médio para detectar</td></tr>
+<tr><td><strong>MTTA</strong></td><td>Tempo médio para reconhecer/acusar o alerta</td></tr>
+<tr><td><strong>MTTR</strong></td><td>Tempo médio para responder/remediar</td></tr>
+<tr><td><strong>Taxa de falsos positivos</strong></td><td>Qualidade das regras; relaciona-se à fadiga de alertas</td></tr>
+<tr><td><strong>Cobertura MITRE ATT&amp;CK</strong></td><td>Percentual de técnicas com detecção</td></tr>
+<tr><td><strong>Dwell time</strong></td><td>Tempo em que o atacante permaneceu não detectado</td></tr>
+</tbody></table>
+
+<h2>5. Monitoração e observabilidade</h2>
+<p>Fontes essenciais: logs de autenticação e de diretório, DNS, proxy/URL, firewall, EDR, e-mail, nuvem (CloudTrail e equivalentes), aplicação e banco de dados. Requisitos: <strong>NTP sincronizado</strong>, retenção compatível com a legislação e com o <em>dwell time</em> médio, e <strong>proteção da integridade dos logs</strong> (WORM, acesso restrito).</p>
+
+<h2>6. Backup na operação</h2>
+<p>Tipos: <strong>completo</strong> (full), <strong>incremental</strong> (só o que mudou desde o último backup de qualquer tipo — restauração mais lenta, backup mais rápido) e <strong>diferencial</strong> (o que mudou desde o último full — backup maior, restauração mais rápida). Regra <strong>3-2-1-1-0</strong>, cópia imutável, teste periódico de restauração e verificação de integridade.</p>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Trocar backup incremental por diferencial.</li>
+<li>Achar que o N1 investiga a fundo — o N1 <strong>tria e escala</strong>.</li>
+<li>Confundir MTTD com MTTR.</li>
+<li>Tratar o SOC como equipe puramente reativa — o N3 faz caça proativa.</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'Em uma política de backup, a estratégia em que cada cópia registra apenas as alterações ocorridas desde o último backup completo, resultando em cópias progressivamente maiores porém em restauração que exige apenas o backup completo e a última cópia, é o backup:',
+        options: ['Incremental.', 'Diferencial.', 'Sintético.', 'Espelhado.', 'Contínuo.'],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Backup', tags: ['backup', 'diferencial', 'incremental'],
+        comment: 'Diferencial = full + última cópia. Incremental = full + TODAS as cópias na ordem.',
+        justification: 'O backup diferencial acumula as mudanças desde o último full, exigindo apenas duas mídias na restauração. O incremental parte do último backup de qualquer tipo, gerando cópias menores mas restauração mais complexa.',
+      },
+      {
+        statement: 'Sobre a estrutura de níveis de um SOC, assinale a alternativa correta.',
+        options: [
+          'O analista de nível 1 é responsável pela engenharia reversa de malware e pela caça proativa a ameaças.',
+          'O analista de nível 1 realiza a triagem inicial dos alertas, seguindo procedimentos documentados, e escala os casos relevantes.',
+          'O nível 3 responde exclusivamente pelo descarte de falsos positivos.',
+          'A engenharia de detecção é atribuição do nível 1.',
+          'Em SOCs terceirizados, não há divisão por níveis.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Estrutura do SOC', tags: ['SOC', 'triagem'],
+        comment: 'A pirâmide de escalonamento é padrão de mercado, com ou sem terceirização.',
+        justification: 'O nível 1 executa a triagem com base em runbooks; a análise aprofundada é do nível 2 e a caça proativa, forense e engenharia reversa, do nível 3.',
+      },
+      {
+        statement: 'O indicador que mede o intervalo entre o comprometimento inicial de um ambiente e o momento em que a atividade do atacante é efetivamente descoberta é conhecido como:',
+        options: ['MTBF.', 'Dwell time.', 'RPO.', 'Taxa de falsos negativos.', 'Uptime.'],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Métricas do SOC', tags: ['dwell time', 'MTTD'],
+        comment: 'Quanto maior o dwell time, maior o alcance da movimentação lateral e da exfiltração.',
+        justification: 'Dwell time é o tempo de permanência não detectada do adversário no ambiente. MTBF é métrica de confiabilidade e RPO, de continuidade.',
+      },
+    ],
+  },
+
+  {
+    subject: 'Desenvolvimento Seguro',
+    summary: `
+<h1>Desenvolvimento seguro — SAST, DAST e IAST</h1>
+
+<h2>1. SDLC seguro (S-SDLC)</h2>
+<p>Segurança em <strong>todas as fases</strong>, com custo de correção crescendo exponencialmente ao longo do ciclo (<em>shift left</em>):</p>
+<table><tbody>
+<tr><td><strong>Requisitos</strong></td><td>Requisitos de segurança e privacidade, conformidade legal (LGPD)</td></tr>
+<tr><td><strong>Design</strong></td><td><strong>Modelagem de ameaças</strong> (STRIDE), padrões de arquitetura segura, <em>privacy by design</em></td></tr>
+<tr><td><strong>Codificação</strong></td><td>Padrões de codificação segura, revisão de código, <strong>SAST</strong> e <strong>SCA</strong> na IDE e no commit</td></tr>
+<tr><td><strong>Testes</strong></td><td><strong>DAST</strong>, <strong>IAST</strong>, fuzzing, pentest de aplicação</td></tr>
+<tr><td><strong>Implantação</strong></td><td>Hardening, gestão de segredos, assinatura de artefatos, <strong>SBOM</strong></td></tr>
+<tr><td><strong>Operação</strong></td><td><strong>RASP</strong>, WAF, monitoramento, gestão de vulnerabilidades, resposta a incidentes</td></tr>
+</tbody></table>
+<p>Frameworks: <strong>Microsoft SDL</strong>, <strong>OWASP SAMM</strong>, <strong>BSIMM</strong>, <strong>OWASP ASVS</strong> (requisitos verificáveis, níveis 1 a 3) e <strong>OWASP Top 10</strong>.</p>
+
+<h2>2. Comparativo das técnicas de teste (o núcleo da questão)</h2>
+<table><tbody>
+<tr><td></td><td><strong>SAST</strong></td><td><strong>DAST</strong></td><td><strong>IAST</strong></td></tr>
+<tr><td>Abordagem</td><td>Caixa <strong>branca</strong></td><td>Caixa <strong>preta</strong></td><td>Caixa <strong>cinza</strong></td></tr>
+<tr><td>Objeto</td><td>Código-fonte, bytecode ou binário, <strong>sem executar</strong></td><td>Aplicação <strong>em execução</strong>, de fora</td><td>Aplicação em execução, com <strong>agente instrumentando</strong> o runtime</td></tr>
+<tr><td>Momento</td><td>Muito cedo (IDE, commit, build)</td><td>Testes/homologação/produção</td><td>Durante os testes funcionais/QA</td></tr>
+<tr><td>Cobertura</td><td>Todo o código, inclusive caminhos não exercitados</td><td>Só o que é alcançado pela requisição</td><td>O que é exercitado, com visibilidade interna</td></tr>
+<tr><td>Falsos positivos</td><td><strong>Altos</strong></td><td>Baixos</td><td><strong>Muito baixos</strong></td></tr>
+<tr><td>Aponta linha do código?</td><td>Sim</td><td>Não</td><td>Sim</td></tr>
+<tr><td>Depende de linguagem?</td><td>Sim</td><td>Não</td><td>Sim (agente por runtime)</td></tr>
+<tr><td>Acha erro de configuração de ambiente?</td><td>Não</td><td><strong>Sim</strong></td><td>Parcialmente</td></tr>
+</tbody></table>
+<p>Complementos: <strong>SCA</strong> (Software Composition Analysis — vulnerabilidades e licenças em dependências de terceiros; gera o <strong>SBOM</strong>), <strong>RASP</strong> (proteção em tempo de execução, dentro da aplicação) e <strong>fuzzing</strong> (entradas malformadas em massa).</p>
+
+<h2>3. Práticas de codificação segura</h2>
+<ul>
+<li><strong>Validação de entrada por allowlist</strong>, no <strong>servidor</strong> (validação no cliente é usabilidade, não segurança);</li>
+<li><strong>Codificação de saída conforme o contexto</strong> (HTML, atributo, JS, URL) contra XSS;</li>
+<li><strong>Consultas parametrizadas</strong> contra injeção;</li>
+<li><strong>Gestão de segredos</strong>: nunca no código ou no repositório; use cofre (Vault, KMS, Secrets Manager) e rotação;</li>
+<li>Tratamento de erro sem <strong>vazamento de informação</strong> (stack trace, versão, caminho);</li>
+<li>Hash de senha com <strong>Argon2/bcrypt/scrypt/PBKDF2</strong> + salt;</li>
+<li>Cabeçalhos de segurança: <strong>CSP</strong>, HSTS, X-Content-Type-Options, X-Frame-Options/frame-ancestors, cookies <code>HttpOnly</code>, <code>Secure</code>, <code>SameSite</code>;</li>
+<li>Controle de acesso <strong>no servidor</strong>, negando por padrão, verificado por objeto.</li>
+</ul>
+
+<h2>4. DevSecOps e cadeia de suprimentos</h2>
+<p>Segurança como <strong>gate automatizado no pipeline</strong>: SAST e SCA no commit/PR, DAST no ambiente de teste, verificação de imagem de contêiner, política como código (OPA), assinatura de artefatos (<strong>Sigstore</strong>), atestações <strong>SLSA</strong> e <strong>SBOM</strong> (CycloneDX, SPDX). Referência: <strong>NIST SP 800-218 (SSDF)</strong>.</p>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Dizer que SAST executa a aplicação — <strong>não executa</strong>.</li>
+<li>Afirmar que DAST aponta a linha do código vulnerável.</li>
+<li>Trocar caixa branca (SAST) por caixa preta (DAST).</li>
+<li>Confiar em validação feita apenas no cliente.</li>
+<li>Achar que WAF substitui correção de código — é <strong>mitigação compensatória</strong> (virtual patching).</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'Sobre as técnicas de teste de segurança de aplicações, assinale a alternativa correta.',
+        options: [
+          'O SAST analisa a aplicação em execução, a partir de requisições externas, sem acesso ao código-fonte.',
+          'O DAST examina o código-fonte estaticamente, apontando o arquivo e a linha da vulnerabilidade.',
+          'O SAST é uma técnica de caixa branca que analisa o código sem executá-lo, permitindo identificar vulnerabilidades ainda na fase de codificação, com tendência a maior taxa de falsos positivos.',
+          'O IAST dispensa a execução da aplicação, sendo equivalente ao SAST.',
+          'O SCA é utilizado para detectar erros de configuração do servidor web em produção.',
+        ],
+        correct: 2,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'SAST x DAST x IAST', tags: ['SAST', 'DAST', 'DevSecOps'],
+        comment: 'S de Static = não executa. D de Dynamic = executa. I de Interactive = executa com agente por dentro.',
+        justification: 'O SAST é análise estática de caixa branca, aplicável desde a IDE, com alto índice de falsos positivos por não conhecer o contexto de execução. O DAST é dinâmico, de caixa preta, e não localiza a linha do código. O SCA analisa dependências de terceiros.',
+      },
+      {
+        statement: 'A técnica que instrumenta a aplicação com um agente em tempo de execução, combinando visibilidade do código com a observação do comportamento real durante os testes funcionais e apresentando taxa muito baixa de falsos positivos, é o:',
+        options: ['SAST.', 'DAST.', 'IAST.', 'SCA.', 'Fuzzing.'],
+        correct: 2,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'IAST', tags: ['IAST', 'testes de segurança'],
+        comment: 'IAST é caixa cinza: enxerga o fluxo de dados por dentro enquanto a aplicação responde a requisições reais.',
+        justification: 'O IAST (Interactive Application Security Testing) combina as abordagens estática e dinâmica por meio de instrumentação do runtime, confirmando a exploração real do fluxo e reduzindo drasticamente falsos positivos.',
+      },
+      {
+        statement: 'No contexto de DevSecOps e segurança da cadeia de suprimentos de software, o artefato que relaciona todos os componentes e dependências que integram uma aplicação, permitindo identificar rapidamente o impacto de uma nova vulnerabilidade divulgada, é o:',
+        options: ['SBOM (Software Bill of Materials).', 'SLA.', 'Dockerfile.', 'Playbook de SOAR.', 'Relatório de pentest.'],
+        correct: 0,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Cadeia de suprimentos', tags: ['SBOM', 'SCA', 'DevSecOps'],
+        comment: 'O caso Log4Shell popularizou o SBOM: sem inventário de dependências, ninguém sabia onde estava o Log4j.',
+        justification: 'O SBOM é o inventário formal dos componentes de software, gerado tipicamente por ferramentas de SCA nos formatos CycloneDX ou SPDX.',
+      },
+    ],
+  },
+
+  {
+    subject: 'Gestão de Identidade e Acesso',
+    summary: `
+<h1>Gestão de identidade e acesso (IAM e PAM)</h1>
+
+<h2>1. IAAA</h2>
+<p><strong>Identificação</strong> (quem alega ser) → <strong>Autenticação</strong> (prova) → <strong>Autorização</strong> (o que pode fazer) → <strong>Auditoria/Accountability</strong> (registro). O <strong>AAA</strong> de rede (RADIUS/TACACS+/Diameter) implementa autenticação, autorização e <em>accounting</em>.</p>
+<table><tbody>
+<tr><td><strong>RADIUS</strong></td><td>UDP; cifra <strong>apenas a senha</strong>; combina autenticação e autorização</td></tr>
+<tr><td><strong>TACACS+</strong></td><td>TCP 49; cifra <strong>todo o payload</strong>; <strong>separa</strong> autenticação, autorização e accounting — preferido para administração de equipamentos</td></tr>
+</tbody></table>
+
+<h2>2. Ciclo de vida da identidade</h2>
+<p><strong>Joiner → Mover → Leaver (JML)</strong>. Provisionamento, alteração por mudança de função e <strong>desprovisionamento imediato</strong> no desligamento. Riscos: <strong>acúmulo de privilégios (privilege creep)</strong> em transferências, contas órfãs de ex-colaboradores, contas de serviço sem dono.</p>
+<p><strong>Recertificação de acessos</strong>: revisão periódica pelos gestores (controle exigido por ISO 27002 e auditorias).</p>
+
+<h2>3. Modelos de autorização</h2>
+<table><tbody>
+<tr><td><strong>DAC</strong></td><td>O <strong>proprietário</strong> do recurso concede acesso (ACL do sistema de arquivos)</td></tr>
+<tr><td><strong>MAC</strong></td><td><strong>Mandatório</strong>: rótulos de sensibilidade e níveis de habilitação definidos pelo sistema/política, não pelo usuário. Ambientes militares; SELinux</td></tr>
+<tr><td><strong>RBAC</strong></td><td>Acesso pelo <strong>papel</strong> ocupado. Escalável; risco de explosão de papéis</td></tr>
+<tr><td><strong>ABAC</strong></td><td>Por <strong>atributos</strong> e contexto (departamento, horário, localização, sensibilidade do dado, postura do dispositivo). Mais granular e dinâmico</td></tr>
+<tr><td><strong>RuBAC</strong></td><td>Por regras globais (ex.: "nenhum acesso fora do horário comercial")</td></tr>
+</tbody></table>
+<p>Modelos formais: <strong>Bell-LaPadula</strong> (confidencialidade — <em>no read up, no write down</em>) e <strong>Biba</strong> (integridade — <em>no read down, no write up</em>).</p>
+
+<h2>4. Federação e SSO</h2>
+<table><tbody>
+<tr><td><strong>SAML 2.0</strong></td><td>XML; <strong>IdP</strong> e <strong>SP</strong>; típico em SSO corporativo e web</td></tr>
+<tr><td><strong>OAuth 2.0</strong></td><td><strong>Autorização</strong> delegada (não é autenticação!). Papéis: resource owner, client, authorization server, resource server. Fluxo recomendado: <strong>Authorization Code com PKCE</strong></td></tr>
+<tr><td><strong>OpenID Connect</strong></td><td>Camada de <strong>autenticação</strong> sobre o OAuth 2.0; entrega o <strong>ID Token</strong> em JWT</td></tr>
+<tr><td><strong>Kerberos</strong></td><td>Autenticação por tickets em rede confiável (AD); KDC, TGT, TGS</td></tr>
+<tr><td><strong>LDAP</strong></td><td>Protocolo de diretório (consulta e autenticação simples). Use <strong>LDAPS</strong></td></tr>
+<tr><td><strong>SCIM</strong></td><td>Provisionamento automatizado de contas entre sistemas</td></tr>
+<tr><td><strong>FIDO2 / WebAuthn</strong></td><td>Autenticação <strong>sem senha</strong>, resistente a phishing (chave vinculada à origem)</td></tr>
+</tbody></table>
+<div data-callout="warning"><p>Erro clássico: dizer que <strong>OAuth 2.0 é protocolo de autenticação</strong>. Ele é de <strong>autorização</strong>; quem autentica é o <strong>OpenID Connect</strong>.</p></div>
+
+<h2>5. PAM — Privileged Access Management</h2>
+<ul>
+<li><strong>Cofre de credenciais</strong> com rotação automática de senhas privilegiadas;</li>
+<li><strong>Check-out/check-in</strong> e <strong>acesso just-in-time</strong> (privilégio temporário, expira sozinho);</li>
+<li><strong>Sessão intermediada (jump/bastion host)</strong> com <strong>gravação da sessão</strong> e possibilidade de encerramento em tempo real;</li>
+<li><strong>Eliminação de credenciais embutidas</strong> em scripts e aplicações (secrets management);</li>
+<li>Aprovação prévia, MFA reforçado e trilha de auditoria completa;</li>
+<li><strong>Zero standing privileges</strong>: ninguém é administrador permanente.</li>
+</ul>
+
+<h2>Erros clássicos de prova</h2>
+<ol>
+<li>Confundir OAuth (autorização) com OIDC (autenticação).</li>
+<li>Trocar DAC (proprietário) por MAC (sistema/rótulos).</li>
+<li>Dizer que RADIUS cifra todo o pacote — cifra <strong>só a senha</strong>.</li>
+<li>Achar que SSO e MFA são a mesma coisa: SSO reduz o número de autenticações; MFA aumenta a força de cada uma.</li>
+<li>Tratar PAM como sinônimo de IAM — PAM é a disciplina específica das contas <strong>privilegiadas</strong>.</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'A respeito dos protocolos OAuth 2.0 e OpenID Connect, assinale a alternativa correta.',
+        options: [
+          'O OAuth 2.0 é um protocolo de autenticação que emite o ID Token no formato JWT.',
+          'O OpenID Connect é uma camada de autenticação construída sobre o OAuth 2.0, que permanece sendo um framework de autorização delegada.',
+          'Ambos são equivalentes ao SAML 2.0 e utilizam XML como formato de asserção.',
+          'O OAuth 2.0 substitui o uso de tokens por autenticação baseada em certificados digitais.',
+          'O OpenID Connect é utilizado exclusivamente para provisionamento de contas.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Federação de identidade', tags: ['OAuth', 'OIDC', 'SSO'],
+        comment: 'Usar OAuth puro para "login social" é um antipadrão de segurança conhecido — falta a asserção de identidade.',
+        justification: 'O OAuth 2.0 delega autorização (access token); o OIDC acrescenta a camada de autenticação, emitindo o ID Token em JWT. O SCIM é que trata de provisionamento.',
+      },
+      {
+        statement: 'Em um modelo de controle de acesso, o sistema atribui rótulos de sensibilidade aos objetos e níveis de habilitação aos sujeitos, e o próprio proprietário do recurso não pode alterar essas permissões. Trata-se do modelo:',
+        options: ['DAC (Discretionary Access Control).', 'MAC (Mandatory Access Control).', 'RBAC (Role-Based Access Control).', 'ABAC (Attribute-Based Access Control).', 'RuBAC (Rule-Based Access Control).'],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Modelos de autorização', tags: ['MAC', 'DAC', 'controle de acesso'],
+        comment: 'A palavra-chave é "o proprietário não pode alterar" — isso exclui o DAC por definição.',
+        justification: 'No MAC a política é imposta pelo sistema por meio de rótulos e níveis de habilitação, sem discricionariedade do proprietário. É o modelo do SELinux e de ambientes militares.',
+      },
+      {
+        statement: 'Uma solução de PAM (Privileged Access Management) tipicamente oferece:',
+        options: [
+          'Autenticação única (SSO) para todos os usuários finais da organização.',
+          'Cofre de credenciais com rotação automática de senhas, acesso just-in-time, intermediação e gravação de sessões privilegiadas.',
+          'Análise estática de código-fonte em busca de credenciais expostas.',
+          'Substituição do diretório corporativo (Active Directory).',
+          'Bloqueio de tráfego malicioso na borda da rede.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'PAM', tags: ['PAM', 'contas privilegiadas'],
+        comment: 'Objetivo final do PAM: zero standing privileges — nenhum administrador permanente.',
+        justification: 'O PAM controla o ciclo de vida das credenciais privilegiadas, com cofre, rotação, elevação temporária, bastion host e gravação de sessão para auditoria.',
+      },
+    ],
+  },
+
+  {
+    subject: 'Resposta a Incidentes',
+    summary: `
+<h1>Resposta a incidentes — NIST SP 800-61</h1>
+
+<h2>1. As quatro fases do ciclo (NIST SP 800-61 Rev. 2)</h2>
+<table><tbody>
+<tr><td><strong>1. Preparação</strong></td><td>Política e plano, equipe (CSIRT), ferramentas, jump bag, treinamento, exercícios, canais de comunicação, contatos externos. Inclui também <strong>prevenção</strong> de incidentes</td></tr>
+<tr><td><strong>2. Detecção e Análise</strong></td><td>Precursores e indicadores, triagem, validação, <strong>classificação e priorização</strong>, notificação, documentação</td></tr>
+<tr><td><strong>3. Contenção, Erradicação e Recuperação</strong></td><td>Contenção de curto e longo prazo, coleta de evidências, remoção da causa, restauração e validação</td></tr>
+<tr><td><strong>4. Atividade Pós-Incidente</strong></td><td><strong>Lições aprendidas</strong> (reunião em até algumas semanas), relatório, uso dos dados coletados, retenção de evidências</td></tr>
+</tbody></table>
+<div data-callout="info"><p>Comparativo: o <strong>SANS</strong> usa <strong>6 fases</strong> — Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned. O NIST agrupa contenção, erradicação e recuperação em uma única fase. Se a questão citar "quatro fases", é NIST; "seis fases", é SANS.</p></div>
+
+<h2>2. Priorização</h2>
+<p>O NIST recomenda priorizar por <strong>impacto funcional</strong>, <strong>impacto na informação</strong> e <strong>recuperabilidade</strong> — <em>não</em> por ordem de chegada.</p>
+
+<h2>3. Contenção</h2>
+<ul>
+<li><strong>Curto prazo</strong>: isolar o host, bloquear IP/conta, segmentar. Decisão entre <em>desligar</em> (perde memória volátil e evidência) ou <em>isolar</em> (preserva evidência e permite observar);</li>
+<li><strong>Longo prazo</strong>: correções temporárias que permitem operar até a erradicação;</li>
+<li>Critérios de decisão: dano potencial, preservação de evidência, disponibilidade do serviço, tempo e recursos, eficácia e duração da solução.</li>
+</ul>
+
+<h2>4. Forense — ordem de volatilidade (RFC 3227)</h2>
+<ol>
+<li>Registradores e cache;</li>
+<li><strong>Memória RAM</strong> e tabela de roteamento, cache ARP, tabela de processos, estatísticas do kernel;</li>
+<li>Sistemas de arquivos temporários;</li>
+<li><strong>Disco</strong>;</li>
+<li>Logs remotos e dados de monitoramento;</li>
+<li>Configuração física e topologia de rede;</li>
+<li>Mídias de arquivamento.</li>
+</ol>
+<p><strong>Cadeia de custódia</strong>: quem coletou, quando, onde, como, quem teve posse. <strong>Hash</strong> (SHA-256) da imagem para provar integridade; trabalhe sempre sobre <strong>cópia bit a bit</strong>, com <strong>bloqueador de escrita</strong>. Etapas da perícia: identificação → preservação → coleta → exame → análise → apresentação.</p>
+
+<h2>5. Classificação de incidentes e obrigações legais</h2>
+<ul>
+<li>Vetores comuns (NIST): mídia removível, atrito/força bruta, <strong>web</strong>, <strong>e-mail</strong>, personificação, uso impróprio, perda ou roubo de equipamento;</li>
+<li><strong>LGPD art. 48</strong>: comunicar incidente com risco ou dano relevante à <strong>ANPD e ao titular</strong>. A Resolução CD/ANPD nº 15/2024 estabeleceu prazo e formulário — confira a regulamentação vigente;</li>
+<li>Coordenação com jurídico, comunicação, alta direção e, quando cabível, autoridades policiais e <strong>CTIR Gov</strong>;</li>
+<li>Norma correlata: <strong>ISO/IEC 27035</strong> (gestão de incidentes) e controle <strong>ISO 27002 5.24 a 5.28</strong>.</li>
+</ul>
+
+<h2>6. Erros que a banca explora</h2>
+<ol>
+<li>Inverter a ordem: <strong>contenção vem antes da erradicação</strong>, que vem antes da recuperação.</li>
+<li>Desligar a máquina antes de coletar a memória volátil.</li>
+<li>Analisar a evidência original em vez de cópia forense.</li>
+<li>Achar que "lições aprendidas" é opcional.</li>
+<li>Confundir <strong>evento</strong> (qualquer ocorrência observável) com <strong>incidente</strong> (evento que viola ou ameaça políticas de segurança).</li>
+</ol>
+`,
+    questions: [
+      {
+        statement: 'Segundo o NIST SP 800-61, o ciclo de vida da resposta a incidentes de segurança computacional compreende as fases:',
+        options: [
+          'Identificação, Contenção, Erradicação e Recuperação.',
+          'Preparação; Detecção e Análise; Contenção, Erradicação e Recuperação; e Atividade Pós-Incidente.',
+          'Planejar, Fazer, Checar e Agir.',
+          'Prevenção, Detecção, Correção e Auditoria.',
+          'Identificar, Proteger, Detectar, Responder e Recuperar.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Ciclo NIST', tags: ['NIST 800-61', 'resposta a incidentes'],
+        comment: 'A letra E é o NIST CSF (framework de cibersegurança), não o guia de resposta a incidentes. Distrator recorrente.',
+        justification: 'O NIST SP 800-61 define quatro fases, agrupando contenção, erradicação e recuperação. O modelo SANS, com seis fases, separa essas etapas.',
+      },
+      {
+        statement: 'Durante a resposta a um incidente em um servidor comprometido que ainda está ligado, e considerando a ordem de volatilidade prevista na RFC 3227, o analista deve priorizar a coleta de:',
+        options: [
+          'A imagem do disco rígido, antes de qualquer outra evidência.',
+          'Os backups em fita armazenados fora do site.',
+          'O conteúdo da memória RAM, das conexões de rede ativas e da tabela de processos.',
+          'A documentação de topologia da rede.',
+          'Os logs arquivados em mídia óptica.',
+        ],
+        correct: 2,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Forense computacional', tags: ['RFC 3227', 'volatilidade', 'forense'],
+        comment: 'Malware fileless vive só na memória: desligar a máquina destrói a única evidência existente.',
+        justification: 'A RFC 3227 estabelece a coleta do mais volátil para o menos volátil. Memória, conexões e processos desaparecem ao desligar; o disco persiste.',
+      },
+      {
+        statement: 'Sobre a distinção entre evento e incidente de segurança da informação, assinale a alternativa correta.',
+        options: [
+          'Todo evento de segurança constitui um incidente.',
+          'Evento é qualquer ocorrência observável em um sistema ou rede, enquanto incidente é o evento que viola ou ameaça violar políticas de segurança, práticas ou padrões aceitáveis.',
+          'Incidente é sinônimo de vulnerabilidade.',
+          'Evento é sempre malicioso; incidente pode ser acidental.',
+          'A distinção não é relevante para o processo de resposta.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'facil',
+        subtopic: 'Conceitos', tags: ['incidente', 'evento', 'NIST'],
+        comment: 'Um login bem-sucedido é evento. Um login bem-sucedido de outro país às 3h da manhã em conta de administrador é candidato a incidente.',
+        justification: 'Definição do NIST SP 800-61. Todo incidente é um evento, mas nem todo evento é incidente — a diferença está na violação ou ameaça iminente às políticas de segurança.',
+      },
+      {
+        statement: 'Ao decidir entre desligar imediatamente um servidor comprometido ou apenas isolá-lo da rede, a equipe de resposta a incidentes deve considerar, entre outros fatores previstos no NIST SP 800-61:',
+        options: [
+          'Exclusivamente o custo financeiro da indisponibilidade.',
+          'O dano potencial, a necessidade de preservação de evidências, a disponibilidade do serviço, o tempo e os recursos necessários e a eficácia e a duração da solução.',
+          'Apenas a preferência do fornecedor da solução de antivírus.',
+          'Somente o horário comercial da organização.',
+          'A ordem cronológica de abertura dos chamados.',
+        ],
+        correct: 1,
+        banca: 'FGV (estilo)', year: 2026, orgao: 'DATAPREV', difficulty: 'media',
+        subtopic: 'Contenção', tags: ['contenção', 'NIST 800-61'],
+        comment: 'Desligar é a contenção mais rápida e a pior para a investigação. Isolar preserva memória e permite observar o comportamento do atacante.',
+        justification: 'O NIST SP 800-61 lista critérios de escolha da estratégia de contenção, incluindo dano potencial, preservação de evidências, disponibilidade do serviço, tempo e recursos, e eficácia e duração da solução.',
+      },
+    ],
+  },
+];
